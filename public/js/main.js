@@ -75,6 +75,8 @@ $(document).ready(() => {
   // Tabs
   $('.ui.tabular .item').tab()
 
+  // Accordion
+  $('.ui.accordion').accordion()
 
   // countdown
   ;(function() {
@@ -86,10 +88,10 @@ $(document).ready(() => {
       endDate: "06/18/2017 8:00:00",
       lineWidth: 5,
       radius: 60,
-      secondsStrokeStyle: "#634994",
-      minutesStrokeStyle: "#634994",
-      hoursStrokeStyle: "#634994",
-      daysStrokeStyle: "#634994",
+      secondsStrokeStyle: "#2196F3",
+      minutesStrokeStyle: "#2196F3",
+      hoursStrokeStyle: "#2196F3",
+      daysStrokeStyle: "#2196F3",
       secondsCanvasSelector: "#seconds-canvas",
       minutesCanvasSelector: "#minutes-canvas",
       hoursCanvasSelector: "#hours-canvas",

@@ -1,0 +1,12 @@
+<div class="TopNav">
+  <div class="TopNavMenuContainer">
+    <div class="ui menu stackable">
+      <a href="/" class="item Logo">MetaX</a>
+      <div class="right menu overflow-x">
+        <a href="/" {{ if eq .Title "AdToken"}} class="item active" {{ else }} class="item" {{ end }}>Overview</a>
+        <a href="/white-paper" {{ if eq .Title "White Paper"}} class="item active" {{ else }} class="item" {{ end }}>White Paper</a>
+        <a href="/team" {{ if eq .Title "Team"}} class="item active" {{ else }} class="item" {{ end }}>Team</a>
+      </div>
+    </div>
+  </div>
+</div>

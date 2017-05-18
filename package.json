@@ -1,0 +1,22 @@
+{
+  "name": "adtoken-site",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "hugo && aws s3 sync ./public s3://adtoken.com --acl=public-read --profile=metax --region=us-west-2",
+    "deploy-staging": "hugo && aws s3 sync ./public s3://staging.adtoken.com/ --acl=public-read --profile=metax --region=us-west-2",
+    "invalidate-cache": "aws cloudfront create-invalidation --distribution-id <id> --paths /index.html /assets/* /* /media/* --profile=metax"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metaxchain/adtoken-site.git"
+  },
+  "author": "",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/metaxchain/adtoken-site/issues"
+  },
+  "homepage": "https://github.com/metaxchain/adtoken-site#readme"
+}

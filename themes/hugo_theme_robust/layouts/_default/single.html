@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {{ partial "head.html" }}
+  </head>
+  <body>
+    {{ if eq .Title "White Paper" }}
+      {{ partial "white_paper.html" . }}
+    {{ end }}
+    {{ if eq .Title "Team" }}
+      {{ partial "team.html" . }}
+    {{ end }}
+
+    {{ partial "footer_scripts.html" }}
+  </body>
+</html>
+

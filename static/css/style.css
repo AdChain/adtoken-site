@@ -253,7 +253,7 @@ body,
 }
 
 :root:root:root:root:root .Section .ui.header .ui.divider {
-  width: 40%;
+  width: 20% !important;
   margin: 10px auto 0 auto;
   border-color: #2196f3;
 }
@@ -611,6 +611,26 @@ body,
 }
 /**
  * /END WHITE PAPER
+ */
+
+/**
+ * TEAM
+ */
+:root:root:root .TeamSection .card {
+  border: 0;
+  background: none;
+  box-shadow: none;
+}
+
+:root:root:root .TeamSection .card .image {
+  background: none;
+}
+
+:root:root:root:root:root .TeamSection .cards {
+  margin-bottom: 80px !important;
+}
+/**
+ * /END TEAM
  */
 
 /**

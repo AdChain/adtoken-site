@@ -1,7 +1,7 @@
 /*
   site specs
 
-  max width = 1200px
+  max width = 1000px
 
   Notes:
 
@@ -11,6 +11,25 @@
   override semantic ui styles.
 */
 
+@font-face {
+  font-family: 'AvenirNextLTW01Regular';
+  src: url('/fonts/avenirnext/AvenirNextLTW01RegularRegular.eot');
+  src: url('/fonts/avenirnext/AvenirNextLTW01RegularRegular.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/avenirnext/AvenirNextLTW01RegularRegular.woff') format('woff'),
+  url('/fonts/avenirnext/AvenirNextLTW01RegularRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'AvenirNextLTW01Regular';
+  src: url('/fonts/avenirnextbold/AvenirNextLTW01BoldRegular.eot');
+  src: url('/fonts/avenirnextbold/AvenirNextLTW01BoldRegular.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/avenirnextbold/AvenirNextLTW01BoldRegular.woff') format('woff'),
+  url('/fonts/avenirnextbold/AvenirNextLTW01BoldRegular.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
 
 /*
  * GLOBAL
@@ -61,8 +80,10 @@ body {
 
 body,
 .ui.header,
-.ui.card>.content>.header, .ui.cards>.card>.content>.header {
+.ui.card>.content>.header,
+.ui.cards>.card>.content>.header {
   color: #4A4A4A;
+  font-family: 'AvenirNextLTW01Regular', 'Lato','Helvetica Neue',Arial,Helvetica,sans-serif
 }
 /*
  * /END GLOBAL
@@ -102,7 +123,7 @@ body,
   border: none;
   border-radius: 0;
   box-shadow: none;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   background: none;
 }
@@ -149,6 +170,7 @@ body,
 @media only screen and (max-width: 767px) {
   :root:root .TopNav .right.menu {
     overflow: auto !important;
+    justify-content: center;
   }
 
   :root:root .TopNav .menu .item {
@@ -188,36 +210,10 @@ body,
 /*
  HOME HERO
 */
-:root:root .HomeHero {
-  padding: 80px 0 40px 0 !important;
-  z-index: 10;
-  position: relative;
-}
-
-:root:root .HomeHero .ui.header {
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.5;
-  font-size: 3em;
-}
-
-:root:root .HomeHero .divider {
-  width: 40%;
-  margin: 0 auto;
-  border-color: #2196f3;
-}
-
 :root:root .HomeHIW .divider {
   width: 20%;
   margin: 0 auto 80px auto;
   border-color: #2196f3;
-}
-
-:root:root .HomeHero .ui.header .sub {
-  font-size: 18px;
-  line-height: 1.5;
-  margin: 15px 0 25px 0;
-  padding-bottom: 20px;
 }
 
 :root:root .HomeCards {
@@ -227,12 +223,24 @@ body,
  /END HOME HERO
 */
 
+/*
+ TOP HERO
+*/
+:root:root .TopHero {
+  padding: 80px 0 40px 0 !important;
+  z-index: 10;
+  position: relative;
+}
+/*
+ /END TOP HERO
+*/
+
 
 /*
  SECTION
 */
 :root:root:root:root:root .Section > .grid {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto !important;
 }
 
@@ -242,6 +250,12 @@ body,
 
 :root:root:root:root:root .Section h2 {
   font-size: 2.2em;
+}
+
+:root:root:root:root:root .Section .ui.header .ui.divider {
+  width: 40%;
+  margin: 10px auto 0 auto;
+  border-color: #2196f3;
 }
 /*
  /END SECTION
@@ -388,7 +402,7 @@ body,
 }
 
 :root:root .SectionTabs .ui.tab {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -430,7 +444,7 @@ body,
 }
 
 :root:root:root .SectionContent > .ui.grid {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto !important;
 }
 
@@ -590,6 +604,16 @@ body,
  */
 
 /**
+ * WHITE PAPER
+ */
+:root:root:root .WhitePaper .ten {
+  margin-top: 40px;
+}
+/**
+ * /END WHITE PAPER
+ */
+
+/**
  * SITE FOOTER
  */
 :root:root:root .SiteFooter {
@@ -606,7 +630,7 @@ body,
 .SiteFooter .menu {
   border: none;
   border-radius: 0;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   background: none;
   box-shadow: none;
@@ -651,6 +675,7 @@ body,
 @media only screen and (max-width: 767px) {
   :root:root .SiteFooter .right.menu {
     overflow: auto !important;
+    justify-content: center;
   }
 
   :root:root .SiteFooter .menu .item {

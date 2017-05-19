@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "hugo && aws s3 sync ./public s3://adtoken.com --acl=public-read --profile=metax --region=us-west-2",
     "deploy-staging": "hugo && aws s3 sync ./public s3://staging.adtoken.com/ --acl=public-read --profile=metax --region=us-west-2",
-    "invalidate-cache": "aws cloudfront create-invalidation --distribution-id E3MTBLBQ6FT84K --paths /index.html /assets/* /* /white-paper/* /team/* --profile=metax"
+    "invalidate-cache": "aws cloudfront create-invalidation --distribution-id E3MTBLBQ6FT84K --paths /index.html /* /assets/* /css/* /js/* /white-paper/* /team/* --profile=metax"
   },
   "repository": {
     "type": "git",

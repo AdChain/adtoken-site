@@ -85,7 +85,7 @@ $(document).ready(() => {
     }
 
     var opts = {
-      endDate: "06/18/2017 8:00:00",
+      endDate: "06/19/2017 8:00:00",
       lineWidth: 5,
       radius: 60,
       secondsStrokeStyle: "#2196F3",

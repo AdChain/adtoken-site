@@ -3,9 +3,9 @@
   <head>
     <script>
   
-  var url = window.location.href.replace(/http:\/\/(?:www\.)?(adtoken)\.com/gi, 'https://$1.com');
+  var url = window.location.href.replace(/http:\/\/(?:www\.)?adtoken.com/gi, 'https://adtoken.com');
   if (url !== window.location.href) {
-    
+    window.location.href = url;
   }
 </script>
 

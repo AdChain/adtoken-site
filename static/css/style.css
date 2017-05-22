@@ -208,20 +208,52 @@ body,
  */
 
 /*
- HOME HERO
+ * HOME CLEAN UP SECTION
+ */
+:root:root .HomeCleanUp mark {
+  color: #C72828;
+  background: transparent;
+  font-weight: bold;
+}
+/*
+ * /END HOME CLEAN UP SECTION
+ */
+
+
+
+/*
+ HOME HOW IT WORKS
 */
+
 :root:root .HomeHIW .divider {
   width: 20%;
   margin: 0 auto 80px auto;
   border-color: #2196f3;
 }
 
-:root:root .HomeCards {
-  background: #E0E0E0;
+:root:root:root:root .HomeHIW .image {
+  max-width: 100px;
 }
+
+:root:root:root:root .HomeHIW .graph {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+:root:root:root:root .HomeHIW .graph img {
+  width: 100%;
+}
+
 /*
- /END HOME HERO
+ /END HOME HOW IT WORKS
 */
+
+:root:root .HomeHIW .divider {
+  width: 20%;
+  margin: 0 auto 80px auto;
+  border-color: #2196f3;
+}
 
 /*
  TOP HERO
@@ -244,19 +276,49 @@ body,
   margin: 0 auto !important;
 }
 
+:root:root .Section .ui.header {
+  margin-bottom: 20px;
+}
+
 :root:root .Section .ui.header .sub {
   padding-top: 25px;
 }
 
 :root:root:root:root:root .Section h2 {
   font-size: 2.2em;
+  text-transform: uppercase;
+}
+
+:root:root:root:root:root .Section .ui.header {
+  position: relative;
 }
 
 :root:root:root:root:root .Section .ui.header .ui.divider {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  margin: 0 auto;
+  border-color: #2196f3;
+  z-index: -1;
+}
+
+:root:root:root:root:root .Section .ui.header > span {
+  display: inline-block;
+  background: #F5F5F5;
+  padding: 0 10px;
+}
+
+
+:root:root:root:root:root .TopHero .ui.header .ui.divider {
+  position: relative;
+  top: 0;
   width: 20% !important;
   margin: 10px auto 0 auto;
   border-color: #2196f3;
 }
+
+
+
 /*
  /END SECTION
 */
@@ -434,11 +496,9 @@ body,
  */
 :root:root:root:root:root .SectionContent {
   width: 100%;
-  background: #0B0D2C url(../assets/bg/gradient_purple.svg) 0 0 no-repeat;
   background-size: cover;
   z-index: 8;
   position: relative;
-  color: rgba(255,255,255,0.9);
   padding: 100px 0 100px 0;
   z-index: 8;
 }
@@ -448,16 +508,11 @@ body,
   margin: 0 auto !important;
 }
 
-:root:root .SectionContent .header {
-  color: rgba(255,255,255,0.9);
-  margin-bottom: 40px;
-}
-
 :root:root .SectionContentImageContainer {
   display: flex;
   width: 100%;
   height: 100px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -468,7 +523,7 @@ body,
 }
 
 :root:root .SectionContent p {
-  max-width: 300px;
+  max-width: 400px;
   margin: 0 auto;
 }
 
@@ -547,6 +602,11 @@ body,
 /**
  * COUNTDOWN
  */
+:root:root:root .HomeCountdown .header {
+  font-weight: normal;
+  font-size: 14px;
+  text-transform: uppercase;
+}
 .clocks {
   margin: 0 auto;
   text-align: center;
@@ -577,13 +637,21 @@ body,
   width: 100px;
   margin: -20px 0 0 -50px;
   text-align: center;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: normal;
+  text-transform: uppercase;
 }
 
-.clock label span {
+:root:root .clock label span {
   display: block;
   font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+
+
+
 }
 /**
  * /END COUNTDOWN
@@ -606,8 +674,8 @@ body,
 /**
  * WHITE PAPER
  */
-:root:root:root .WhitePaper .ten {
-  margin-top: 40px;
+:root:root:root .WhitePaper .row.ten {
+  margin-bottom: 40px;
 }
 /**
  * /END WHITE PAPER

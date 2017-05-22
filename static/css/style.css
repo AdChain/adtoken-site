@@ -78,6 +78,7 @@ body::-webkit-scrollbar-thumb:hover,
 
 body {
   background: #F5F5F5;
+  font-size: 1.2em;
 }
 
 body,
@@ -85,7 +86,8 @@ body,
 .ui.card>.content>.header,
 .ui.cards>.card>.content>.header {
   color: #4A4A4A;
-  font-family: 'AvenirNextLTW01Regular', 'Lato','Helvetica Neue',Arial,Helvetica,sans-serif
+  font-family: 'AvenirNextLTW01Regular', 'Lato','Helvetica Neue',Arial,Helvetica,sans-serif;
+  font-size: 1.3em;
 }
 /*
  * /END GLOBAL

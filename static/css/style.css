@@ -184,82 +184,10 @@ body,
 
 
 /*
- * HOME Page
- */
-:root:root .HomePage .button.primary {
-  color: rgba(255,255,255,0.9);
-  background: #2196F3;
-}
-
-:root:root .HomePage .button.primary:hover {
-  filter: hue-rotate(5deg);
-}
-
-:root:root .HomePage .button.gray {
-  background: #4A4A4A;
-  color: rgba(255, 255, 255, 0.9);
-}
-
-:root:root .HomePage .button.white {
-  background: #FAFAFA;
-}
-/*
- * /END HOME VIEW
- */
-
-/*
- * HOME CLEAN UP SECTION
- */
-:root:root .HomeCleanUp mark {
-  color: #C72828;
-  background: transparent;
-  font-weight: bold;
-}
-/*
- * /END HOME CLEAN UP SECTION
- */
-
-
-
-/*
- HOME HOW IT WORKS
-*/
-
-:root:root .HomeHIW .divider {
-  width: 20%;
-  margin: 0 auto 80px auto;
-  border-color: #2196f3;
-}
-
-:root:root:root:root .HomeHIW .image {
-  max-width: 100px;
-}
-
-:root:root:root:root .HomeHIW .graph {
-  width: 100%;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-:root:root:root:root .HomeHIW .graph img {
-  width: 100%;
-}
-
-/*
- /END HOME HOW IT WORKS
-*/
-
-:root:root .HomeHIW .divider {
-  width: 20%;
-  margin: 0 auto 80px auto;
-  border-color: #2196f3;
-}
-
-/*
  TOP HERO
 */
 :root:root .TopHero {
-  padding: 80px 0 40px 0 !important;
+  padding: 100px 0 40px 0 !important;
   z-index: 10;
   position: relative;
 }
@@ -271,6 +199,9 @@ body,
 /*
  SECTION
 */
+:root:root:root:root:root .Section {
+  margin-bottom: 100px;
+}
 :root:root:root:root:root .Section > .grid {
   max-width: 1000px;
   margin: 0 auto !important;
@@ -284,16 +215,16 @@ body,
   padding-top: 25px;
 }
 
-:root:root:root:root:root .Section h2 {
+:root:root:root .Section h2 {
   font-size: 2.2em;
   text-transform: uppercase;
 }
 
-:root:root:root:root:root .Section .ui.header {
+:root:root:root .Section .ui.header {
   position: relative;
 }
 
-:root:root:root:root:root .Section .ui.header .ui.divider {
+:root:root:root .Section .ui.header .ui.divider {
   position: absolute;
   top: 20px;
   width: 100%;
@@ -302,14 +233,14 @@ body,
   z-index: -1;
 }
 
-:root:root:root:root:root .Section .ui.header > span {
+:root:root:root .Section .ui.header > span {
   display: inline-block;
   background: #F5F5F5;
   padding: 0 10px;
 }
 
 
-:root:root:root:root:root .TopHero .ui.header .ui.divider {
+:root:root:root .TopHero .ui.header .ui.divider {
   position: relative;
   top: 0;
   width: 20% !important;
@@ -494,12 +425,11 @@ body,
 /**
  * SECTION CONTENT
  */
-:root:root:root:root:root .SectionContent {
+:root:root:root .SectionContent {
   width: 100%;
   background-size: cover;
   z-index: 8;
   position: relative;
-  padding: 100px 0 100px 0;
   z-index: 8;
 }
 
@@ -516,7 +446,7 @@ body,
   text-align: center;
 }
 
-:root:root:root:root:root .SectionContentImageContainer img {
+:root:root:root .SectionContentImageContainer img {
   display: inline-block;
   margin: 0 auto;
   align-self: flex-end;
@@ -529,6 +459,124 @@ body,
 
 /**
  * /END SECTION CONTENT
+ */
+
+/*
+ * HOME Page
+ */
+:root:root .HomePage .button.primary {
+  color: rgba(255,255,255,0.9);
+  background: #2196F3;
+}
+
+:root:root .HomePage .button.primary:hover {
+  filter: hue-rotate(5deg);
+}
+
+:root:root .HomePage .button.gray {
+  background: #4A4A4A;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+:root:root .HomePage .button.white {
+  background: #FAFAFA;
+}
+/*
+ * /END HOME VIEW
+ */
+
+/*
+ * HOME CLEAN UP SECTION
+ */
+:root:root .HomeCleanUp mark {
+  color: #C72828;
+  background: transparent;
+  font-weight: bold;
+}
+/*
+ * /END HOME CLEAN UP SECTION
+ */
+
+
+
+/*
+ HOME HOW IT WORKS
+*/
+
+:root:root .HomeHIW .divider {
+  width: 20%;
+  margin: 0 auto 80px auto;
+  border-color: #2196f3;
+}
+
+:root:root:root .HomeHIW .image {
+  max-width: 100px;
+}
+
+:root:root:root .HomeHIW .graph {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+:root:root:root .HomeHIW .graph img {
+  width: 100%;
+}
+
+/*
+ /END HOME HOW IT WORKS
+*/
+
+:root:root .HomeHIW .divider {
+  width: 20%;
+  margin: 0 auto 80px auto;
+  border-color: #2196f3;
+}
+
+/*
+ * HOME SUBSCRIBE
+ */
+
+:root:root:root:root:root .HomeSubscribe {
+  margin-bottom: 0;
+}
+
+/*
+ * /END HOME SUBSCRIBE
+ */
+
+/*
+ * HOME BREAKDOWN
+ */
+
+:root:root:root .HomeBreakdown .statistics {
+  margin-bottom: 0;
+}
+
+:root:root:root .HomeBreakdown .statistic {
+  margin: 0;
+}
+
+:root:root:root .HomeBreakdown .statistics .value {
+  margin-bottom: 15px;
+}
+
+:root:root:root .HomeBreakdown .statistic:not(:last-child) .value {
+  border-right: 1px solid #2196f3;
+}
+
+:root:root:root .HomeBreakdown .statistics .label {
+  font-weight: normal;
+  white-space: normal;
+  text-transform: none;
+}
+
+:root:root:root .HomeBreakdown .statistics .label p {
+  padding: 0 20px;
+}
+
+/*
+ * /END HOME BREAKDOWN
  */
 
 
@@ -694,7 +742,7 @@ body,
   background: none;
 }
 
-:root:root:root:root:root .TeamSection .cards {
+:root:root:root .TeamSection .cards {
   margin-bottom: 80px !important;
 }
 /**

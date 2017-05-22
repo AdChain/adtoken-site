@@ -42,6 +42,7 @@
   color: rgba(0, 0, 0, 0.8);
 }
 
+/*
 ::-moz-selection {
   background: rgba(125, 75, 125, 0.7);
   color: #fff;
@@ -51,6 +52,7 @@
   background: rgba(125, 75, 125, 0.7);
   color: #fff;
 }
+*/
 
 body::-webkit-scrollbar,
 .overflow-x::-webkit-scrollbar {
@@ -573,6 +575,12 @@ body,
 
 :root:root:root .HomeBreakdown .statistics .label p {
   padding: 0 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  :root:root:root:root .HomeBreakdown .statistic .value {
+    border-right: none;
+  }
 }
 
 /*

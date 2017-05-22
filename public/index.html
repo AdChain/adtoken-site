@@ -479,11 +479,92 @@ As long as the adChain Registry is kept clean of fraudulent publisher domains th
       </p>
     </div>
     <div class="column sixteen wide center aligned">
-      <div class="ui image centered">
-        <a href="/assets/breakdown/pie.png" target="_blank">
-          <img src="/assets/breakdown/pie.png" width="600" />
-        </a>
-      </div>
+      <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+      <script src="https://www.amcharts.com/lib/3/pie.js"></script>
+      <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+      <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+      <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+      <div id="chartdiv"></div>
+      <script>
+      var chart = AmCharts.makeChart("chartdiv", {
+        "type": "pie",
+        "startDuration": 0,
+         "theme": "light",
+        "addClassNames": true,
+        "legend":{
+          "position":"bottom",
+          "autoMargins":true,
+          "align": "center"
+        },
+        "innerRadius": "30%",
+        "defs": {
+          "filter": [{
+            "id": "shadow",
+            "width": "200%",
+            "height": "200%",
+            "feOffset": {
+              "result": "offOut",
+              "in": "SourceAlpha",
+              "dx": 0,
+              "dy": 0
+            },
+            "feGaussianBlur": {
+              "result": "blurOut",
+              "in": "offOut",
+              "stdDeviation": 5
+            },
+            "feBlend": {
+              "in": "SourceGraphic",
+              "in2": "blurOut",
+              "mode": "normal"
+            }
+          }]
+        },
+        "dataProvider": [{
+          "title": "Generate Administrative",
+          "value": 13
+        }, {
+          "title": "Development & IT",
+          "value": 28
+        }, {
+          "title": "Consulting & Subcontractors",
+          "value": 4
+        }, {
+          "title": "Legal & Profressional",
+          "value": 5
+        }, {
+          "title": "adChain Association",
+          "value": 24
+        }, {
+          "title": "Sales & Marketing",
+          "value": 12
+        }, {
+          "title": "Data & Marketing Association",
+          "value": 14
+        }],
+        "valueField": "value",
+        "titleField": "title",
+        "export": {
+          "enabled": false
+        }
+      });
+
+      chart.addListener("init", handleInit);
+
+      chart.addListener("rollOverSlice", function(e) {
+        handleRollOver(e);
+      });
+
+      function handleInit(){
+        chart.legend.addListener("rollOverItem", handleRollOver);
+      }
+
+      function handleRollOver(e){
+        var wedge = e.dataItem.wedge.node;
+        wedge.parentNode.appendChild(wedge);
+      }
+      </script>
+
       </div>
   </div>
 </div>

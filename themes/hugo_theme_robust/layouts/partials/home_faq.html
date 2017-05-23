@@ -12,47 +12,44 @@
     <div class="column sixteen wide">
       <div class="ui two column very relaxed grid stackable">
         <div class="column">
-          <div class="ui accordion">
-            <div class="active title">
-              <i class="dropdown icon"></i>
-            What if this happens?
-            </div>
-            <div class="active content">
-                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-            </div>
-          </div>
 
-          <div class="ui accordion">
-            <div class="active title">
-              <i class="dropdown icon"></i>
-            What if this happens?
-            </div>
-            <div class="active content">
-                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-            </div>
-          </div>
-
+          {{ $data := getJSON "faq.json" }}
+          {{ range $index, $d := $data }}
+             {{ if mod $index 2 | eq 0 }}
+              <div class="ui accordion">
+                <div class="title">
+                  <i class="dropdown icon"></i>
+                  {{ $d.q }}
+                </div>
+                <div class="content">
+                  {{ range $p := $d.a }}
+                    <p>{{ $p }}</p>
+                  {{ end }}
+                </div>
+              </div>
+              {{ end }}
+          {{ end }}
 
         </div>
         <div class="column">
-          <div class="ui accordion">
-            <div class="active title">
-              <i class="dropdown icon"></i>
-            What if this happens?
-            </div>
-            <div class="active content">
-                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-            </div>
-          </div>
-          <div class="ui accordion">
-            <div class="active title">
-              <i class="dropdown icon"></i>
-            What if this happens?
-            </div>
-            <div class="active content">
-                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-            </div>
-          </div>
+
+          {{ $data := getJSON "faq.json" }}
+          {{ range $index, $d := $data }}
+             {{ if mod $index 2 | eq 1 }}
+              <div class="ui accordion">
+                <div class="title">
+                  <i class="dropdown icon"></i>
+                  {{ $d.q }}
+                </div>
+                <div class="content">
+                  {{ range $p := $d.a }}
+                    <p>{{ $p }}</p>
+                  {{ end }}
+                </div>
+              </div>
+            {{ end }}
+          {{ end }}
+
         </div>
       </div>
     </div>

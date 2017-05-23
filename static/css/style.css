@@ -733,6 +733,10 @@ body,
 :root:root .HomeFAQ .column.grid .column:last-child {
   border-left: 1px solid #2196f3;
 }
+
+:root:root .HomeFAQ .accordion p {
+  margin-bottom: 15px;
+}
 /**
  * /END HOME FAQ
  */

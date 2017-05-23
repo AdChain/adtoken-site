@@ -146,7 +146,7 @@
     </div>
     <div class="column sixteen wide">
       <div class="ui grid stackable">
-        <div class="column eight wide center aligned">
+        <div class="column eight wide left aligned">
           <div class="SectionContentImageContainer">
             <img class="ui image" src="/assets/what_it_is/hammer.svg" width="100" />
           </div>
@@ -154,7 +154,7 @@
 adChain is a browser agnostic Ethereum based solution for digital advertising that seamlessly integrates with pre-existing RTB and programmatic industry standards.
           </p>
         </div>
-        <div class="column eight wide center aligned">
+        <div class="column eight wide left aligned">
           <div class="SectionContentImageContainer">
             <img class="ui image" src="/assets/what_it_is/hive.svg" width="90" />
           </div>
@@ -166,7 +166,7 @@ The core utility of the adChain Protocol is adToken [ADT]. adToken is required t
     </div>
     <div class="column sixteen wide">
       <div class="ui grid stackable">
-        <div class="column eight wide center aligned">
+        <div class="column eight wide left aligned">
           <div class="SectionContentImageContainer">
             <img class="ui image" src="/assets/what_it_is/adt.svg" width="90" />
           </div>
@@ -174,9 +174,9 @@ The core utility of the adChain Protocol is adToken [ADT]. adToken is required t
 The adChain Registry is a smart contract on the Ethereum blockchain, which stores domain names accredited as non-fraudulent by adToken holders.
           </p>
         </div>
-        <div class="column eight wide center aligned">
+        <div class="column eight wide left aligned">
           <div class="SectionContentImageContainer">
-            <img class="ui image" src="/assets/what_it_is/adchain.png" width="170" />
+            <img class="ui image" src="/assets/what_it_is/a_d_chain.png" width="170" />
           </div>
           <p>
 adToken holders are incentivized to clean up the digital advertising supply chain by voting fraudulent publishers out of the adChain Registry based on their merits.
@@ -286,8 +286,8 @@ The digital advertising supply chain is a littered landscape filled with problem
           <div class="column ten wide centered left aligned">
             <ul class="ui bulleted list">
               <li class="item"><p>The CPM (cost per mille) is an industry standard.</p></li>
-              <li class="item"><p>It is the root cause of a staggering 8 billion dollar yearly ad fraud problem.</p></li>
               <li class="item"><p>The CPM is defined as cost per 1,000 impressions.</p></li>
+              <li class="item"><p>It is the root cause of a staggering 8 billion dollar yearly ad fraud problem.</p></li>
               <li class="item"><p>Impressions are determined and counted on the basis of whether an advertisement was seen or not.</p></li>
             </ul>
           </div>
@@ -323,10 +323,10 @@ The digital advertising supply chain is a littered landscape filled with problem
         <div class="row">
           <div class="column ten wide centered stackable">
             <div class="ui grid stackable centered">
-              <div class="column eight wide center aligned">
+              <div class="column eight wide left aligned">
                 <mark>P&G recently pulled 1 billion dollars from their digital ad spend budget.</mark>
               </div>
-              <div class="column eight wide center aligned">
+              <div class="column eight wide left aligned">
                 <mark>Meanwhile Facebook and Google continue to grow stronger, capturing 99% of all growth in 2016.</mark>
               </div>
             </div>
@@ -426,7 +426,7 @@ As long as the adChain Registry is kept clean of fraudulent publisher domains th
     </div>
     <div class="column ten wide centered center aligned">
       <p>
-          A total fixed supply of 1,000,000,000 ADT will be created prior to the adChain Protocol going live on the Ethereum mainnet
+          A total fixed supply of 1,000,000,000 ADT will be created prior to the adChain Protocol going live on the Ethereum mainnet.
       </p>
     </div>
     <div class="column sixteen wide center aligned">
@@ -521,31 +521,49 @@ As long as the adChain Registry is kept clean of fraudulent publisher domains th
           }]
         },
         "dataProvider": [{
-          "title": "Generate Administrative",
-          "value": 13
-        }, {
           "title": "Development & IT",
-          "value": 28
-        }, {
-          "title": "Consulting & Subcontractors",
-          "value": 4
-        }, {
-          "title": "Legal & Profressional",
-          "value": 5
-        }, {
+          "value": 28,
+          "color": "#4CAF50"
+          },
+          {
           "title": "adChain Association",
-          "value": 24
-        }, {
-          "title": "Sales & Marketing",
-          "value": 12
-        }, {
+          "value": 24,
+          "color": "#64B5F6"
+          },
+          {
           "title": "Data & Marketing Association",
-          "value": 14
+          "value": 14,
+          "color": "#E57373"
+          },
+          {
+          "title": "Generate Administrative",
+          "value": 13,
+          "color": "#FF8A65"
+          },
+          {
+          "title": "Sales & Marketing",
+          "value": 12,
+          "color": "#FFB74D"
+          },
+          {
+          "title": "Legal & Profressional",
+          "value": 5,
+          "color": "#F06292"
+          },
+          {
+          "title": "Consulting & Subcontractors",
+          "value": 4,
+          "color": "#BA68C8"
         }],
         "valueField": "value",
         "titleField": "title",
+        "colorField": "color",
         "export": {
           "enabled": false
+        },
+        "balloon": {
+          "fillColor": "#FFFFFF",
+          "fillAlpha": 1
         }
       });
 
@@ -584,7 +602,10 @@ As long as the adChain Registry is kept clean of fraudulent publisher domains th
       <div class="ui grid stackable">
         <div class="column ten wide centered left aligned">
           <p>
-adChain begins its journey as a Registry of reputable publishers, but its future promises to deliver much more. As an open protocol built on the Ethereum blockchain it enables developers from around the globe the ability to create dApps that provide key functionality and facilitate ease-of-use. This will lead to a rich ecosystem-enabling environment for advertisers and publishers to openly coordinate advertising campaigns with one another via a suite of customizable dApps. Some examples of dApps to be built on adChain are bot detection dApps, reputation score dApps, automated payment delivery dApps, DMP (data management platform) dApps and even virtuous Ad Blocker dApps. But the most exciting dApps are likely to be those we have yet to even think of!
+          adChain begins its journey as a Registry of reputable publishers, but its future promises to deliver much more. As an open protocol built on the Ethereum blockchain it enables developers from around the globe the ability to create dApps that provide key functionality and facilitate ease-of-use.
+          </p>
+          <p>
+          This will lead to a rich ecosystem-enabling environment for advertisers and publishers to openly coordinate advertising campaigns with one another via a suite of customizable dApps. Some examples of dApps to be built on adChain are bot detection dApps, reputation score dApps, automated payment delivery dApps, DMP (data management platform) dApps and even virtuous Ad Blocker dApps. But the most exciting dApps are likely to be those we have yet to even think of!
         </p>
         </div>
       </div>

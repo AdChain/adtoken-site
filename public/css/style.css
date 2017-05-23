@@ -237,7 +237,7 @@ body,
 
 :root:root:root .Section .ui.header .ui.divider {
   position: absolute;
-  top: 20px;
+  top: 1.8em;
   width: 100%;
   margin: 0 auto;
   border-color: #2196f3;

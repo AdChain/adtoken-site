@@ -1,0 +1,57 @@
+[{
+  "q": "What is adToken?",
+  "a": ["The core utility of the adChain Protocol is adToken [ADT]. adToken is required to use adChain. ADT is a multi-purpose token with usage properties for voting, depositing and challenging entry into the adChain Registry.",
+    "The adChain Registry is a smart contract on the Ethereum blockchain which stores domain names accredited as non-fraudulent by adToken holders.",
+    "adToken is the native token of the adChain protocol.",
+    "adToken is ERC20 compliant.",
+    "Publishers must deposit adToken to gain entry into the adChain Registry.",
+    "adToken holders can issue a Challenge in adToken by matching a publishers deposit if they believe a publisher is fraudulent.",
+    "adToken holders realize upside by seeing the number of publishers applying to and renewing listings in the registry increase.",
+    "adToken holders are incentivized to keep fraudulent applicants out of the registry by voting judiciously to maintain this virtuous cycle."
+  ]
+},
+{
+  "q": "What is adToken used for?",
+  "a": ["adToken is a core component of the adChain protocol and is required to use adChain. adToken is a multi-purpose token and can be used to vote, deposit, and challenge applicants in the adChain Registry",
+    "The adToken voting mechanism is commit-reveal and derives from Colony’s partial-lock token weighted voting system.",
+    "In the future, adToken will be used to power dApps created by MetaX and ConsenSys that sit on top of the adChain protocol."
+  ]
+}, {
+"q": "What is the adToken breakdown?",
+"a": ["The token breakdown is as follows:",
+  "500 million to be distributed in a public token sale with a cap of $10 million sold200 million reserved for MetaX 200 million reserved for ConsenSys100 million sold to fund development via multiple pre-sale agreements.",
+  "To signal the level of commitment both ConsenSys and MetaX have for this system, each entity has agreed to lock-up 90% of their share of tokens with the following unlocking schedule:",
+  "50% unlocked 1 year after public saleRemaining tokens unlocked 18 months after public sale"
+]
+},
+{
+  "q": "When is the adChain Token Launch?",
+  "a": ["The adToken Launch is June 19, 2017 at 8:00 a.m. PST and will last for xxx."]
+}, {
+"q": "How do I purchase adToken?",
+"a": []
+}, {
+"q": "Was there a security audit for the Token Launch smart contract?",
+"a": []
+},
+{
+  "q": "Will there be multiple token launches?",
+  "a": ["It is the belief of ConsenSys and MetaX that token launches in this ecosystem may be naive in selling upwards of 75% during their first “token round.” Typical startups would exhibit an even greater failure rate if they limited their startup capital to only one funding round. As such, ConsenSys and MetaX believe it is in the best interest of the platform to retain 40% of the tokens after the first public sale. This gives the adChain team flexibility to initiate future token sales if warranted."]
+}, {
+"q": "What method of payment is accepted for adToken?",
+"a": ["We will only be accepting Ether."]
+}, {
+"q": "How is adChain different from BAT?",
+"a": ["We see adToken as complementary to BAT. We foresee use cases where AdToken and BAT are coupled to provide an enhanced user experience that minimizes opportunities for fraud while protecting user privacy. Also exciting is the emergent design properties that both blockchain-based solutions provide. We look forward to innovative solutions involving BAT.",
+  "Ultimately, we consider adChain to be an open, decentralized platform - more akin to an operating system. It facilitates coordination for the online advertising industry. Incentives matter! The fundamental realization is that the digital advertising system needs to get out from the CPM revenue flow."
+]
+}, {
+"q": "How are adChain and the DMA working together?",
+"a": ["The success of adChain is dependent on industry adoption. As such, we’ve spent nearly a year developing connections and partnerships that will support this endeavor. One of our first trade organization partnerships is with the Data and Marketing Association (DMA), whose membership spans the digital advertising eco-system. They are committed to bringing blockchain to the industry and we are working to on-board advertisers, agencies, DMPS,  DSPs, exchanges, safety vendors SSPs, publishers and vendors."]
+}, {
+"q": "What is the adChain Association?",
+"a": ["The adChain Association is a non-profit organization the details of which are still being structured and will be shared publicly once finalized. The goal of the ACA is to move the online advertising industry forward by providing guidance to adChain protocol updates and promoting the benefits of open technology. The ACA takes decentralization seriously and will facilitate this goal.",
+  "With respect to AdTokens and any information related thereto: (1) any public sale of AdTokens will be subject to terms, conditions and disclosures set forth in one or more documents and related sources of information (e.g., websites) that have not yet been finalized and are subject to change until the time of the public sale; (2) please read all final materials carefully because you will be bound by such terms and conditions in connection with any purchase; (3) any purchase involves substantial risks, including the complete loss of funds and the complete loss of value of the AdTokens; (4) materials are solely for informational and illustrative purposes and provided without representation, warranty or guaranty of any kind, and do not constitute an offer to sell or solicitation of an offer to purchase any instrument or asset; and (5) nothing herein constitutes investment advice or any recommendation whatsoever."
+]
+}
+]

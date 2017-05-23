@@ -120,12 +120,12 @@ var contentTop = []
  }
 })
 
-  var minTop = $('#Countdown').offset().top;
-
  // Set up content an array of locations
  $('#affix').find('a').each(function(){
   contentTop.push( $( $(this).attr('href') ).offset().top );
  })
+
+  var minTop = contentTop[0] - 200
 
  // Animate menu scroll to content
   $('#affix').find('a').click(function(){

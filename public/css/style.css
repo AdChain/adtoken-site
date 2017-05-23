@@ -81,6 +81,13 @@ body {
   font-size: 1.2em;
 }
 
+:root:root .statistic .label,
+:root:root .statistic .value {
+  color: #4A4A4A;
+  text-transform: none;
+  font-family: 'AvenirNextLTW01Regular', 'Lato','Helvetica Neue',Arial,Helvetica,sans-serif;
+}
+
 body,
 .ui.header,
 .ui.card>.content>.header,
@@ -573,6 +580,7 @@ body,
   font-weight: normal;
   white-space: normal;
   text-transform: none;
+  font-size: 0.8em;
 }
 
 :root:root:root .HomeBreakdown .statistics .label p {

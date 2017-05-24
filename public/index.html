@@ -49,7 +49,7 @@
         <a href="/"  class="item active" >Overview</a>
         <a href="/white-paper"  class="item" >White Paper</a>
         <a href="/team"  class="item" >Team</a>
-        <a href="https://medium.com/@AdChain" target="_blank" class="item">Blog</a>
+        <a href="http://blog.adchain.com" target="_blank" class="item">Blog</a>
       </div>
     </div>
   </div>
@@ -851,17 +851,20 @@ As long as the adChain Registry is kept clean of fraudulent publisher domains th
       </h2>
     </div>
     <div class="column sixteen wide center aligned">
-  <div id="mc_embed_signup" class="fadeInUp animated">
-    <form action="//adchain.us5.list-manage.com/subscribe/post?u=0b1e10820775a3f5fa3032dfa&amp;id=7382083765" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-      <div id="mc_embed_signup_scroll">
-        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-        
-        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0b1e10820775a3f5fa3032dfa_7382083765" tabindex="-1" value=""></div>
-        <div class="clear"><input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="ui button gray"></div>
-      </div>
-    </form>
-  </div>
+  <button id="open-popup" class="ui button gray">Sign Up</button>
 </div>
+
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+
+<script>
+function showMailingPopUp() {
+  var config={"baseUrl":"mc.us5.list-manage.com","uuid":"0b1e10820775a3f5fa3032dfa","lid":"7382083765"};
+    require(["mojo/signup-forms/Loader"], function(L) { L.start(config) })
+    document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+};
+
+document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
+</script>
 
   </div>
 </div>
@@ -873,7 +876,7 @@ As long as the adChain Registry is kept clean of fraudulent publisher domains th
       <a href="/" class="item">Overview</a>
       <a href="/white-paper" class="item">White Paper</a>
       <a href="/team" class="item">Team</a>
-      <a href="https://medium.com/@AdChain" target="_blank" class="item">Blog</a>
+      <a href="http://blog.adchain.com" target="_blank" class="item">Blog</a>
     </div>
   </div>
 </div>

@@ -49,7 +49,8 @@
         <a href="/"  class="item" >Overview</a>
         <a href="/white-paper"  class="item" >White Paper</a>
         <a href="/team"  class="item" >Team</a>
-        <a href="http://blog.adchain.com" target="_blank" class="item">Blog</a>
+        <a href="/resources"  class="item" >Resources</a>
+        <a href="http://blog.adtoken.com" target="_blank" class="item">Blog</a>
       </div>
     </div>
   </div>
@@ -537,7 +538,7 @@ As long as the adChain Registry is kept clean of fraudulent publisher domains th
           "color": "#E57373"
           },
           {
-          "title": "Generate Administrative",
+          "title": "General Administrative",
           "value": 13,
           "color": "#FF8A65"
           },
@@ -864,7 +865,9 @@ function showMailingPopUp() {
     document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
 };
 
-document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
+document.getElementById("open-popup").addEventListener('click', function(event) {
+  showMailingPopUp()
+})
 </script>
 
   </div>
@@ -877,7 +880,8 @@ document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
       <a href="/" class="item">Overview</a>
       <a href="/white-paper" class="item">White Paper</a>
       <a href="/team" class="item">Team</a>
-      <a href="http://blog.adchain.com" target="_blank" class="item">Blog</a>
+      <a href="/resources" class="item">Resources</a>
+      <a href="http://blog.adtoken.com" target="_blank" class="item">Blog</a>
     </div>
   </div>
 </div>

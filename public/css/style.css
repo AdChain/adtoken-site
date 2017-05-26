@@ -233,10 +233,16 @@ body,
 
 :root:root .Section .ui.header .sub {
   padding-top: 25px;
+  line-height: 1.4;
 }
 
 :root:root:root .Section h2 {
   font-size: 2.2em;
+  text-transform: uppercase;
+}
+
+:root:root:root .Section h3 {
+  font-size: 1.8em;
   text-transform: uppercase;
 }
 
@@ -756,6 +762,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
 :root:root .HomeFAQ .accordion p {
   margin-bottom: 15px;
 }
+
+@media only screen and (max-width: 767px) {
+  :root:root:root .HomeFAQ .column.grid .column {
+    border-left: none;
+  }
+}
 /**
  * /END HOME FAQ
  */
@@ -781,13 +793,107 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
 
 :root:root:root .TeamSection .card .image {
   background: none;
+  width: 250px;
+  height: 250px;
+  transform: scale(0.8);
+  overflow: hidden;
+  margin: 0 auto -40px auto !important;
+}
+
+:root:root:root .TeamSection .card .image.aligned {
+  background: transparent url(/assets/team/hexagon_single.svg) no-repeat center center;
+  background-size: auto 230px;
+  margin: 0 auto;
+}
+
+:root:root:root .TeamSection .card .image.small {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.hexagon {
+  overflow: hidden;
+  visibility: hidden;
+  transform: rotate(120deg) scale(0.9);
+  cursor: pointer;
+  width: 200px;
+  height: 400px;
+  margin: -75px 0 0 25px;
+}
+
+.hexagon-in1 {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-60deg);
+}
+
+.hexagon-in2 {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  visibility: visible;
+  transform: rotate(-60deg);
+  background-size: 250px auto;
+}
+
+:root:root:root .TeamSection .description a {
+  cursor: pointer;
+  display: inline-block;
+}
+
+:root:root:root .TeamSection .description i {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  opacity: 0.8;
+  transition: all 0.2s ease-out;
+}
+
+:root:root:root .TeamSection .description i:hover {
+  opacity: 1;
+}
+
+:root:root:root .TeamSection .description .twitter {
+  background-image: url(/assets/social/black/twitter.png);
+}
+
+:root:root:root .TeamSection .description .github {
+  background-image: url(/assets/social/black/github.png);
+}
+
+:root:root:root .TeamSection .description .linkedin {
+  background-image: url(/assets/social/black/linkedin.png);
 }
 
 :root:root:root .TeamSection .cards {
   margin-bottom: 80px !important;
 }
+
+:root:root:root .TeamSection .content {
+  border: none;
+}
+
+:root:root:root .TeamSection .description a {
+  color: #4A4A4A;
+}
 /**
  * /END TEAM
+ */
+
+/**
+ * RESOURCES
+ */
+:root:root:root .ResourcesSection .sub {
+  font-size: 0.6em;
+}
+/**
+ * /END RESOURCES
  */
 
 /**

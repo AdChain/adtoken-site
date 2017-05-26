@@ -50,7 +50,8 @@
         <a href="/"  class="item" >Overview</a>
         <a href="/white-paper"  class="item active" >White Paper</a>
         <a href="/team"  class="item" >Team</a>
-        <a href="http://blog.adchain.com" target="_blank" class="item">Blog</a>
+        <a href="/resources"  class="item" >Resources</a>
+        <a href="http://blog.adtoken.com" target="_blank" class="item">Blog</a>
       </div>
     </div>
   </div>
@@ -108,6 +109,34 @@ Tasked with constructing the first decentralized and virtuous white list of repu
   </div>
 </div>
 
+    <div class="column sixteen wide HomeSubscribe Section AltSection" id="Newsletter">
+  <div class="ui grid padded stackable">
+    <div class="column sixteen wide center aligned">
+      <h2 class="ui header">
+        Sign up for adToken updates
+      </h2>
+    </div>
+    <div class="column sixteen wide center aligned">
+  <button id="open-popup" class="ui button white">Sign Up</button>
+</div>
+
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+
+<script>
+function showMailingPopUp() {
+  var config={"baseUrl":"mc.us5.list-manage.com","uuid":"0b1e10820775a3f5fa3032dfa","lid":"7382083765"};
+    require(["mojo/signup-forms/Loader"], function(L) { L.start(config) })
+    document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+};
+
+document.getElementById("open-popup").addEventListener('click', function(event) {
+  showMailingPopUp()
+})
+</script>
+
+  </div>
+</div>
+
 
     <div class="column sixteen wide SiteFooter">
   <div class="ui menu stackable">
@@ -116,7 +145,8 @@ Tasked with constructing the first decentralized and virtuous white list of repu
       <a href="/" class="item">Overview</a>
       <a href="/white-paper" class="item">White Paper</a>
       <a href="/team" class="item">Team</a>
-      <a href="http://blog.adchain.com" target="_blank" class="item">Blog</a>
+      <a href="/resources" class="item">Resources</a>
+      <a href="http://blog.adtoken.com" target="_blank" class="item">Blog</a>
     </div>
   </div>
 </div>
@@ -124,6 +154,7 @@ Tasked with constructing the first decentralized and virtuous white list of repu
   </div>
 </main>
 
+    
     
     
 

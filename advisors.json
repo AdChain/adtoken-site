@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Raleigh Harbour",
+    "title": "",
+    "image": "/assets/team/headshots/raleigh.jpg",
+    "linkedin": "https://www.linkedin.com/in/raleighharbour"
+  },
+  {
+    "name": "Toby Gabriner",
+    "title": "",
+    "image": "/assets/team/headshots/toby.jpg",
+    "linkedin": "https://www.linkedin.com/in/tobygabriner"
+  },
+  {
+    "name": "Mike Goldin",
+    "title": "",
+    "image": "/assets/team/headshots/mike.jpg",
+    "linkedin": "https://www.linkedin.com/in/skmgoldin"
+  },
+  {
+    "name": "Mark D’Agostino",
+    "title": "",
+    "image": "/assets/team/headshots/mark.jpg",
+    "linkedin": "https://www.linkedin.com/in/markdagostinocpa"
+  },
+  {
+    "name": "Shailin Harbour",
+    "title": "",
+    "image": "/assets/team/headshots/shailin.jpg",
+    "linkedin": "https://www.linkedin.com/in/shailindhar"
+  }
+]

@@ -10,6 +10,9 @@
     {{ if eq .Title "Team" }}
       {{ partial "team.html" . }}
     {{ end }}
+    {{ if eq .Title "Resources" }}
+      {{ partial "resources.html" . }}
+    {{ end }}
 
     {{ partial "footer_scripts.html" }}
   </body>

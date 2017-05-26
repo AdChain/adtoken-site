@@ -1,0 +1,78 @@
+[
+  {
+    "name": "Ken Brook",
+    "title": "CEO",
+    "image": "/assets/team/headshots/ken.jpg",
+    "linkedin": "https://www.linkedin.com/in/kenbrook",
+    "twitter": "https://twitter.com/cryptok3n"
+  },
+  {
+    "name": "Kristen Hester",
+    "title": "CFO",
+    "image": "/assets/team/headshots/kristen.jpg",
+    "linkedin": "https://www.linkedin.com/in/kristenghester"
+  },
+  {
+    "name": "James Young",
+    "title": "Tech Lead",
+    "image": "/assets/team/headshots/james.jpg",
+    "linkedin": "https://www.linkedin.com/in/jamessyoung",
+    "twitter": "https://twitter.com/jamesyoung"
+  },
+  {
+    "name": "Edwin Cheung",
+    "title": "Software Engineer",
+    "image": "/assets/team/headshots/edwin.jpg",
+    "linkedin": "https://www.linkedin.com/in/eccheung4"
+  },
+  {
+    "name": "Miguel Mota",
+    "title": "Software Engineer",
+    "image": "/assets/team/headshots/miguel.jpg",
+    "linkedin": "https://www.linkedin.com/in/miguelmota",
+    "github": "https://github.com/miguelmota",
+    "twitter": "https://twitter.com/miguelmotah"
+  },
+  {
+    "name": "Jon Roethke",
+    "title": "Business Development",
+    "image": "/assets/team/headshots/jon.jpg",
+    "linkedin": "https://www.linkedin.com/in/jonroethke"
+  },
+  {
+    "name": "Hunter Gebron",
+    "title": "Business Development",
+    "image": "/assets/team/headshots/hunter.jpg",
+    "linkedin": "https://www.linkedin.com/in/hunter-gebron-4a386040"
+  },
+  {
+    "name": "Manuel Amaya",
+    "title": "Data Scientist",
+    "image": "/assets/team/headshots/manuel.jpg",
+    "linkedin": "https://www.linkedin.com/in/manuel-amaya"
+  },
+  {
+    "name": "Miguel Morales",
+    "title": "Product Engineer",
+    "image": "/assets/team/headshots/miguel_morales.jpg",
+    "linkedin": "https://www.linkedin.com/in/therevoltingx"
+  },
+  {
+    "name": "Eduardo Muñoz",
+    "title": "Project Manager",
+    "image": "/assets/team/headshots/eduardo.jpg",
+    "linkedin": "https://www.linkedin.com/in/eamunoz"
+  },
+  {
+    "name": "Keanu Newman",
+    "title": "Data Analyst",
+    "image": "/assets/team/headshots/keanu.jpg",
+    "linkedin": "https://www.linkedin.com/in/keanunewman"
+  },
+  {
+    "name": "Zayi Reyes",
+    "title": "Marketing Associate",
+    "image": "/assets/team/headshots/zayi.jpg",
+    "linkedin": "https://www.linkedin.com/in/zayireyes"
+  }
+]

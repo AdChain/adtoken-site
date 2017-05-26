@@ -11,5 +11,7 @@ function showMailingPopUp() {
     document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
 };
 
-document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
+document.getElementById("open-popup").addEventListener('click', function(event) {
+  showMailingPopUp()
+})
 </script>

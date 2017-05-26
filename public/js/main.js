@@ -45,17 +45,17 @@
   */
 })();
 
-$(document).ready(() => {
+$(document).ready(function () {
   $('.HomeHeroPlayButton')
-  .click(event => {
+  .click(function(event) {
     event.preventDefault()
     const $iframe = $('.ui.modal iframe')
 
     $('.ui.modal').modal({
-      onShow: () => {
+      onShow: function() {
         $iframe.attr('src', $iframe.data('src'))
       },
-      onHidden: () => {
+      onHidden: function() {
         $iframe.attr('src', '')
       }
     })
@@ -65,7 +65,7 @@ $(document).ready(() => {
    const myVivus = new Vivus('svgPlayButton', {
     type: 'async',
     duration: 100
-   }, () => {
+   }, function() {
     $('#svgPlayButton').addClass('fill')
    })
    */
@@ -85,7 +85,7 @@ $(document).ready(() => {
     }
 
     var opts = {
-      endDate: "06/19/2017 8:00:00",
+      endDate: "06/26/2017 15:00:00", // UTC
       lineWidth: 5,
       radius: 60,
       secondsStrokeStyle: "#0071BC",

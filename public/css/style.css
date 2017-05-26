@@ -83,17 +83,26 @@ body {
 
 :root:root .statistic .label,
 :root:root .statistic .value {
-  color: #4A4A4A;
   text-transform: none;
-  font-family: 'AvenirNextLTW01Regular', 'Lato','Helvetica Neue',Arial,Helvetica,sans-serif;
 }
 
 body,
 .ui.header,
 .ui.card>.content>.header,
-.ui.cards>.card>.content>.header {
+.ui.cards>.card>.content>.header,
+:root:root .statistic .label,
+:root:root .statistic .value,
+:root:root .ui.button {
+  font-family: 'Titillium Web', 'AvenirNextLTW01Regular', 'Lato','Helvetica Neue',Arial,Helvetica,sans-serif;
+}
+
+body,
+.ui.header,
+.ui.card>.content>.header,
+.ui.cards>.card>.content>.header,
+:root:root .statistic .label,
+:root:root .statistic .value {
   color: #4A4A4A;
-  font-family: 'AvenirNextLTW01Regular', 'Lato','Helvetica Neue',Arial,Helvetica,sans-serif;
   font-size: 1.3em;
 }
 /*
@@ -146,7 +155,7 @@ body,
   height: 50px;
   color: transparent;
   background-color: transparent;
-  background-image: url(../assets/metax_white_logo.png);
+  background-image: url(../assets/adtoken_logo.svg);
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -175,7 +184,7 @@ body,
 :root:root .TopNav .menu .item.active:hover {
   color: rgba(255,255,255,1);
   background: rgba(0,0,0, 0.2);
-  border-top-color: #2196F3;
+  border-top-color: #0071BC;
 }
 
 @media only screen and (max-width: 767px) {
@@ -235,12 +244,12 @@ body,
   position: relative;
 }
 
-:root:root:root .Section .ui.header .ui.divider {
+:root:root:root .Section .ui.header .divider {
   position: absolute;
-  top: 1.8em;
+  top: 25%;
   width: 100%;
   margin: 0 auto;
-  border-color: #2196f3;
+  border-color: #0071BC;
   z-index: -1;
 }
 
@@ -256,7 +265,7 @@ body,
   top: 0;
   width: 20% !important;
   margin: 10px auto 0 auto;
-  border-color: #2196f3;
+  border-color: #0071BC;
 }
 
 
@@ -269,7 +278,12 @@ body,
  ALT SECTION
 */
 :root:root .AltSection {
-  background: #2196F3;
+background: rgb(0,113,188);
+background: -moz-linear-gradient(45deg, rgba(0,113,188,1) 0%, rgba(102,45,145,1) 100%);
+background: -webkit-linear-gradient(45deg, rgba(0,113,188,1) 0%,rgba(102,45,145,1) 100%);
+background: linear-gradient(45deg, rgba(0,113,188,1) 0%,rgba(102,45,145,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', endColorstr='#662d91',GradientType=1 );
+
   background-size: cover;
 }
 
@@ -477,7 +491,7 @@ body,
  */
 :root:root .HomePage .button.primary {
   color: rgba(255,255,255,0.9);
-  background: #2196F3;
+  background: #0071BC;
 }
 
 :root:root .HomePage .button.primary:hover {
@@ -503,6 +517,10 @@ body,
   color: #C72828;
   background: transparent;
   font-weight: bold;
+}
+
+:root:root:root .HomeCleanUp .ui.header .ui.divider {
+  border-color: #C72828;
 }
 /*
  * /END HOME CLEAN UP SECTION
@@ -570,6 +588,8 @@ body,
 
 :root:root:root .HomeBreakdown .statistics .value {
   margin-bottom: 15px;
+  color: #0071BC;
+  font-size: 2.5em !important;
 }
 
 :root:root:root .HomeBreakdown .statistic:not(:last-child) .value {
@@ -703,7 +723,7 @@ body,
   width: 100px;
   margin: -20px 0 0 -50px;
   text-align: center;
-  font-size: 12px;
+  font-size: 0.7em;
   font-weight: normal;
   text-transform: uppercase;
 }
@@ -711,14 +731,13 @@ body,
 :root:root .clock label span {
   display: block;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 2.5em;
   margin-bottom: 10px;
 }
 
 
 
 
-}
 /**
  * /END COUNTDOWN
  */
@@ -801,7 +820,7 @@ body,
   height: 50px;
   color: transparent;
   background-color: transparent;
-  background-image: url(../assets/metax_white_logo.png);
+  background-image: url(../assets/adtoken_logo.svg);
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -906,7 +925,7 @@ body,
   display: block;
   position: absolute;
   left: 7px;
-  background-color: #2196F3;
+  background-color: #0071BC;
   width: 1px;
   height: 95%;
 }
@@ -932,7 +951,7 @@ body,
   width: 10px;
   background-color: #F5F5F5;
   border-radius: 50%;
-  box-shadow: 0px 0px 0px 2px #2196F3;
+  box-shadow: 0px 0px 0px 2px #0071BC;
 }
 .toc li.red a:before {
   box-shadow: 0px 0px 0px 2px #C72828;
@@ -948,7 +967,7 @@ body,
   font-weight: bold;
 }
 .toc li.selected a:before {
-  background-color: #2196F3;
+  background-color: #0071BC;
 }
 .toc li.red.selected a:before {
   background-color: #C72828;

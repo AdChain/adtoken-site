@@ -85,13 +85,13 @@ $(document).ready(() => {
     }
 
     var opts = {
-      endDate: "06/19/2017 8:00:00",
+      endDate: "06/26/2017 15:00:00", // UTC
       lineWidth: 5,
       radius: 60,
-      secondsStrokeStyle: "#2196F3",
-      minutesStrokeStyle: "#2196F3",
-      hoursStrokeStyle: "#2196F3",
-      daysStrokeStyle: "#2196F3",
+      secondsStrokeStyle: "#0071BC",
+      minutesStrokeStyle: "#0071BC",
+      hoursStrokeStyle: "#0071BC",
+      daysStrokeStyle: "#0071BC",
       secondsCanvasSelector: "#seconds-canvas",
       minutesCanvasSelector: "#minutes-canvas",
       hoursCanvasSelector: "#hours-canvas",

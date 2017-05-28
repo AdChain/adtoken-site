@@ -8,7 +8,8 @@
     "deploy": "hugo && aws s3 sync ./public s3://adtoken.com --acl=public-read --profile=metax --region=us-west-2",
     "deploy-staging": "hugo && aws s3 sync ./public s3://staging.adtoken.com/ --acl=public-read --profile=metax --region=us-west-2",
     "invalidate-cache": "aws cloudfront create-invalidation --distribution-id E3MTBLBQ6FT84K --paths /index.html /* /assets/* /css/* /js/* /white-paper/* /team/* --profile=metax",
-    "ics": "node tools/reminder-generator.js"
+    "ics": "node tools/reminder-generator.js",
+    "build:vendor": "cat static/js/vendor/jquery-3.1.1.min.js static/js/vendor/semantic.min.js static/js/vendor/clock.js static/js/vendor/jquery.unveil.js static/js/vendor/inview.js > static/js/vendor.bundle.js"
   },
   "repository": {
     "type": "git",

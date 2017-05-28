@@ -105,6 +105,14 @@ body,
   color: #4A4A4A;
   font-size: 1.3em;
 }
+
+/*
+ * LAZY LOAD
+ */
+img[data-src] {
+  opacity: 0;
+  transition: opacity 0.25s ease-in;
+}
 /*
  * /END GLOBAL
  */
@@ -512,8 +520,72 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
 :root:root .HomePage .button.white {
   background: #FAFAFA;
 }
+
 /*
  * /END HOME VIEW
+ */
+
+/*
+ * HOME HERO
+ */
+:root:root .HomeHero .image.small {
+  height: 150px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -50px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+:root:root .HomeHero .ui.image {
+  animation-duration: 0.7s;
+  animation-name: fadeInDown;
+  animation-fill-mode: forwards;
+}
+:root:root .HomeHero .ui.header {
+  animation-duration: 0.7s;
+  animation-name: fadeInUp;
+  animation-fill-mode: forwards;
+}
+:root:root .HomeFadeIn {
+  opacity: 0;
+  animation-delay: 0.3s;
+  animation-duration: 0.7s;
+  animation-name: fadeIn;
+  animation-fill-mode: forwards;
+}
+
+/*
+ * /END HOME HERO
  */
 
 /*

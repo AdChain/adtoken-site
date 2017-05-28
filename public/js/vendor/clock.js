@@ -196,7 +196,6 @@
             var seconds = timeValues[2];
 
             this.settings.endDate = ( Date.UTC( year, month - 1, day, hours, minutes, seconds ) / 1000 );
-            console.log(this.settings.endDate)
 
             countdown = true;
 

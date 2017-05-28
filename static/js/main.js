@@ -104,6 +104,14 @@ $(document).ready(function () {
 
     var clock  = new Clock(opts)
   })()
+
+
+
+  $("img[data-src]")
+  .unveil(400)
+  .on('load', function() {
+    this.style.opacity = 1;
+  })
 })
 
 $(document).ready(function() {
@@ -166,4 +174,133 @@ function scrollFn(){
 })
 
 
+function loadScript(url) {
+  return new Promise(function(resolve, reject) {
+      var head = document.getElementsByTagName('head')[0];
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = url;
 
+      script.onload = function() {
+        resolve()
+      };
+
+      head.appendChild(script);
+  })
+}
+
+$(document).ready(function() {
+  if (!$('#chartdiv').length) {
+    return false
+  }
+
+  InView(document.getElementById('chartdiv'), function(isInView, data) {
+      if (isInView) {
+        loadScript('https://www.amcharts.com/lib/3/amcharts.js')
+        .then(function() {
+          return loadScript('https://www.amcharts.com/lib/3/pie.js')
+        })
+        .then(initChart)
+
+        this.destroy()
+      }
+  })
+
+  function initChart() {
+    var chart = AmCharts.makeChart("chartdiv", {
+      "type": "pie",
+      "startDuration": 0,
+       "theme": "light",
+      "addClassNames": true,
+      "legend":{
+        "position":"bottom",
+        "autoMargins":true,
+        "align": "center"
+      },
+      "innerRadius": "30%",
+      "defs": {
+        "filter": [{
+          "id": "shadow",
+          "width": "200%",
+          "height": "200%",
+          "feOffset": {
+            "result": "offOut",
+            "in": "SourceAlpha",
+            "dx": 0,
+            "dy": 0
+          },
+          "feGaussianBlur": {
+            "result": "blurOut",
+            "in": "offOut",
+            "stdDeviation": 5
+          },
+          "feBlend": {
+            "in": "SourceGraphic",
+            "in2": "blurOut",
+            "mode": "normal"
+          }
+        }]
+      },
+      "dataProvider": [{
+        "title": "Development & IT",
+        "value": 28,
+        "color": "#4CAF50"
+        },
+        {
+        "title": "adChain Association",
+        "value": 24,
+        "color": "#64B5F6"
+        },
+        {
+        "title": "Data & Marketing Association",
+        "value": 14,
+        "color": "#E57373"
+        },
+        {
+        "title": "General Administrative",
+        "value": 13,
+        "color": "#FF8A65"
+        },
+        {
+        "title": "Sales & Marketing",
+        "value": 12,
+        "color": "#FFB74D"
+        },
+        {
+        "title": "Legal & Profressional",
+        "value": 5,
+        "color": "#F06292"
+        },
+        {
+        "title": "Consulting & Subcontractors",
+        "value": 4,
+        "color": "#BA68C8"
+      }],
+      "valueField": "value",
+      "titleField": "title",
+      "colorField": "color",
+      "export": {
+        "enabled": false
+      },
+      "balloon": {
+        "fillColor": "#FFFFFF",
+        "fillAlpha": 1
+      }
+    });
+
+    chart.addListener("init", handleInit);
+
+    chart.addListener("rollOverSlice", function(e) {
+      handleRollOver(e);
+    });
+
+    function handleInit(){
+      chart.legend.addListener("rollOverItem", handleRollOver);
+    }
+
+    function handleRollOver(e){
+      var wedge = e.dataItem.wedge.node;
+      wedge.parentNode.appendChild(wedge);
+    }
+  }
+})

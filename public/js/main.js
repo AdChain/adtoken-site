@@ -111,7 +111,19 @@ $(document).ready(function () {
   .unveil(400)
   .on('load', function() {
     this.style.opacity = 1;
+  });
+
+  // Fade in content
+  [].slice.call(document.querySelectorAll('.Section.fadeIn'))
+  .forEach(function(el) {
+    InView(el, function(isInView, data) {
+      if (isInView) {
+        el.classList.add('animate')
+        this.destroy()
+      }
+    })
   })
+
 })
 
 $(document).ready(function() {
@@ -194,6 +206,7 @@ $(document).ready(function() {
     return false
   }
 
+  // lazy load breakdown chart
   InView(document.getElementById('chartdiv'), function(isInView, data) {
       if (isInView) {
         loadScript('https://www.amcharts.com/lib/3/amcharts.js')
@@ -204,7 +217,7 @@ $(document).ready(function() {
 
         this.destroy()
       }
-  })
+  });
 
   function initChart() {
     var chart = AmCharts.makeChart("chartdiv", {
@@ -285,6 +298,10 @@ $(document).ready(function() {
       "balloon": {
         "fillColor": "#FFFFFF",
         "fillAlpha": 1
+      },
+      "labelText": "[[title]]: [[value]]%",
+      "legend": {
+        "valueText": "[[value]]%",
       }
     });
 

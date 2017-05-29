@@ -31,6 +31,40 @@
   font-style: normal;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -50px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 /*
  * GLOBAL
  */
@@ -229,6 +263,14 @@ img[data-src] {
 */
 :root:root:root:root:root .Section {
   margin-bottom: 100px;
+}
+:root:root:root:root:root .Section.fadeIn {
+  opacity: 0;
+}
+:root:root:root:root:root .Section.animate {
+  animation-duration: 0.7s;
+  animation-name: fadeInUp;
+  animation-fill-mode: forwards;
 }
 :root:root:root:root:root .Section > .grid {
   max-width: 1000px;
@@ -532,50 +574,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
   height: 150px;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 50px, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -50px, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
 
 :root:root .HomeHero .ui.image {
   animation-duration: 0.7s;
   animation-name: fadeInDown;
   animation-fill-mode: forwards;
 }
+
 :root:root .HomeHero .ui.header {
   animation-duration: 0.7s;
   animation-name: fadeInUp;
   animation-fill-mode: forwards;
 }
+
 :root:root .HomeFadeIn {
   opacity: 0;
   animation-delay: 0.3s;
@@ -865,16 +876,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
 
 :root:root:root .TeamSection .card .image {
   background: none;
-  width: 250px;
-  height: 250px;
-  transform: scale(0.8);
-  overflow: hidden;
-  margin: 0 auto -40px auto !important;
+}
+
+:root:root:root .TeamSection .card .image img {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
 }
 
 :root:root:root .TeamSection .card .image.aligned {
-  background: transparent url(/assets/team/hexagon_single.svg) no-repeat center center;
-  background-size: auto 230px;
   margin: 0 auto;
 }
 

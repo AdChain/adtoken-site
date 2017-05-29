@@ -703,9 +703,14 @@ f.activateTest=function(){return!0},f.deactivateTest=function(){return!0}):(n.de
     if (!(_this instanceof InView)) {
       return new InView(el, callback);
     }
+
     _this.el = el;
     _this.callback = callback.bind(_this);
     _this.destroy = function() {};
+
+    if (!el) {
+      return _this;
+    }
 
     var isDestroyed = false;
 

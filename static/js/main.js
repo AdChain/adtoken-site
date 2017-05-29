@@ -285,6 +285,10 @@ $(document).ready(function() {
       "balloon": {
         "fillColor": "#FFFFFF",
         "fillAlpha": 1
+      },
+      "labelText": "[[title]]: [[value]]%",
+      "legend": {
+        "valueText": "[[value]]%",
       }
     });
 

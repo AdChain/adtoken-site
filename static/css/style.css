@@ -431,6 +431,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
 :root:root .SectionAccordion .accordion {
   margin-bottom: 20px;
 }
+
+:root:root .SectionAccordion .accordion .title {
+  cursor: pointer;
+}
 /**
  * /END SECTION ACCORDION
  */

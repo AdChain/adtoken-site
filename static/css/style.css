@@ -101,7 +101,7 @@ body::-webkit-scrollbar-track,
 
 body::-webkit-scrollbar-thumb,
 .overflow-x::-webkit-scrollbar-thumb {
-  background-color: rgba(43, 43, 43, 0.7);
+  background-color: rgba(100, 100, 100, 0.7);
   border: 1px solid rgba(49, 49, 49, 0.6);
 }
 
@@ -232,7 +232,7 @@ img[data-src] {
 @media only screen and (max-width: 767px) {
   :root:root .TopNav .right.menu {
     overflow: auto !important;
-    justify-content: center;
+    -webkit-overflow-scrolling: touch;
   }
 
   :root:root .TopNav .menu .item {
@@ -249,7 +249,7 @@ img[data-src] {
  TOP HERO
 */
 :root:root .TopHero {
-  padding: 100px 0 40px 0 !important;
+  padding: 40px 0 40px 0 !important;
   z-index: 10;
   position: relative;
 }
@@ -309,6 +309,15 @@ img[data-src] {
   z-index: -1;
 }
 
+@media (max-width: 640px) {
+  :root:root:root .Section .ui.header .divider {
+    position: relative;
+    top: 0;
+    width: 40%;
+    margin: 20px auto 0 auto;
+  }
+}
+
 :root:root:root .Section .ui.header > span {
   display: inline-block;
   background: #F5F5F5;
@@ -324,6 +333,11 @@ img[data-src] {
   border-color: #0071BC;
 }
 
+@media (max-width: 640px) {
+  :root:root:root .TopHero .ui.header .ui.divider {
+    width: 40% !important;
+  }
+}
 
 
 /*
@@ -629,6 +643,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
   width: 20%;
   margin: 0 auto 80px auto;
   border-color: #2196f3;
+}
+
+@media (max-width: 640px) {
+  :root:root:root .HomeHIW .divider {
+    width: 40%;
+  }
 }
 
 :root:root:root .HomeHIW .image {
@@ -996,13 +1016,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
   background: rgba(0,0,0,0.2);
 }
 
-.SiteFooter .menu {
+:root:root .SiteFooter .menu {
   border: none;
   border-radius: 0;
   max-width: 1000px;
-  margin: 0 auto;
   background: none;
   box-shadow: none;
+}
+
+:root:root .SiteFooter .menu.stackable:first-child {
+  margin: 0 auto !important;
+}
+
+:root:root:root .SiteFooter .SocialMenu {
+  margin-left: 0 !important;
 }
 
 :root:root:root .SiteFooter .menu .Logo,
@@ -1035,23 +1062,89 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
   display: none;
 }
 
-:root:root .SiteFooter .menu .item:hover {
+:root:root .SiteFooter .menu .item:not(.SocialSection):not(.divider):hover {
   color: rgba(255,255,255,1);
   background: rgba(0,0,0, 0.2);
   border-top-color: rgba(76, 60, 76, 0.53)
 }
 
+:root:root .SiteFooter .divider {
+  padding: 0;
+  width: 2px;
+  height: 80%;
+  margin: auto;
+  background: #585858;
+  opacity: 1;
+}
+
+:root:root .SiteFooter .SocialSection a {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+:root:root .SiteFooter .SocialIcon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  opacity: 0.8;
+  transition: all 0.2s ease-out;
+}
+
+:root:root .SiteFooter .SocialIcon:hover {
+  opacity: 1;
+}
+
+:root:root .SiteFooter .SocialIcon.twitter {
+  background-image: url(/assets/social/white/twitter.svg);
+}
+
+:root:root .SiteFooter .SocialIcon.github {
+  background-image: url(/assets/social/white/github.svg);
+}
+
+:root:root .SiteFooter .SocialIcon.linkedin {
+  background-image: url(/assets/social/white/linkedin.svg);
+}
+
+:root:root .SiteFooter .SocialIcon.medium {
+  background-image: url(/assets/social/white/medium.svg);
+}
+
+:root:root .SiteFooter .SocialIcon.reddit {
+  background-image: url(/assets/social/white/reddit.svg);
+}
+
+:root:root .SiteFooter .SocialIcon.slack {
+  background-image: url(/assets/social/white/slack.svg);
+}
+
 @media only screen and (max-width: 767px) {
   :root:root .SiteFooter .right.menu {
     overflow: auto !important;
-    justify-content: center;
+    -webkit-overflow-scrolling: touch;
   }
 
-  :root:root .SiteFooter .menu .item {
+  :root:root .SiteFooter .menu .item:not(.SocialSection):not(.divider) {
     display: inline-block !important;
     width: auto !important;
   }
+
+  :root:root .SiteFooter .menu .divider {
+    display: none !important;
+  }
+
+  :root:root .SiteFooter .SocialSection {
+    width: 100% !important;
+    text-align: center;
+    justify-content: center;
+  }
 }
+}
+
 /**
  * /END SITE FOOTER
  */

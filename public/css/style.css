@@ -101,7 +101,7 @@ body::-webkit-scrollbar-track,
 
 body::-webkit-scrollbar-thumb,
 .overflow-x::-webkit-scrollbar-thumb {
-  background-color: rgba(43, 43, 43, 0.7);
+  background-color: rgba(100, 100, 100, 0.7);
   border: 1px solid rgba(49, 49, 49, 0.6);
 }
 
@@ -232,7 +232,7 @@ img[data-src] {
 @media only screen and (max-width: 767px) {
   :root:root .TopNav .right.menu {
     overflow: auto !important;
-    justify-content: center;
+    -webkit-overflow-scrolling: touch;
   }
 
   :root:root .TopNav .menu .item {
@@ -249,7 +249,7 @@ img[data-src] {
  TOP HERO
 */
 :root:root .TopHero {
-  padding: 100px 0 40px 0 !important;
+  padding: 40px 0 40px 0 !important;
   z-index: 10;
   position: relative;
 }
@@ -309,6 +309,15 @@ img[data-src] {
   z-index: -1;
 }
 
+@media (max-width: 640px) {
+  :root:root:root .Section .ui.header .divider {
+    position: relative;
+    top: 0;
+    width: 40%;
+    margin: 20px auto 0 auto;
+  }
+}
+
 :root:root:root .Section .ui.header > span {
   display: inline-block;
   background: #F5F5F5;
@@ -324,6 +333,11 @@ img[data-src] {
   border-color: #0071BC;
 }
 
+@media (max-width: 640px) {
+  :root:root:root .TopHero .ui.header .ui.divider {
+    width: 40% !important;
+  }
+}
 
 
 /*
@@ -629,6 +643,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
   width: 20%;
   margin: 0 auto 80px auto;
   border-color: #2196f3;
+}
+
+@media (max-width: 640px) {
+  :root:root:root .HomeHIW .divider {
+    width: 40%;
+  }
 }
 
 :root:root:root .HomeHIW .image {
@@ -1044,7 +1064,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
 @media only screen and (max-width: 767px) {
   :root:root .SiteFooter .right.menu {
     overflow: auto !important;
-    justify-content: center;
+    -webkit-overflow-scrolling: touch;
   }
 
   :root:root .SiteFooter .menu .item {

@@ -140,6 +140,7 @@
     <div class="column sixteen wide center aligned">
       <h2 class="ui header">
         <span>What it is</span>
+        <div class="ui divider"></div>
         <div class="sub header">
           Ethereum based solution for digital advertising
         </div>
@@ -765,7 +766,9 @@ As long as the adChain Registry is kept clean of fraudulent publisher domains th
 <script>
 function showMailingPopUp() {
   var config={"baseUrl":"mc.us5.list-manage.com","uuid":"0b1e10820775a3f5fa3032dfa","lid":"7382083765"};
-    require(["mojo/signup-forms/Loader"], function(L) { L.start(config) })
+  require(["mojo/signup-forms/Loader"], function(L) {
+  L.start(config)
+  })
     document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
 };
 

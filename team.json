@@ -14,24 +14,30 @@
   },
   {
     "name": "James Young",
-    "title": "Tech Lead",
+    "title": "Engineering Lead",
     "image": "/assets/team/headshots/james.jpg",
     "linkedin": "https://www.linkedin.com/in/jamessyoung",
     "twitter": "https://twitter.com/jamesyoung"
   },
   {
     "name": "Edwin Cheung",
-    "title": "Software Engineer",
+    "title": "Engineering",
     "image": "/assets/team/headshots/edwin.jpg",
     "linkedin": "https://www.linkedin.com/in/eccheung4"
   },
   {
     "name": "Miguel Mota",
-    "title": "Software Engineer",
+    "title": "Engineering",
     "image": "/assets/team/headshots/miguel.jpg",
     "linkedin": "https://www.linkedin.com/in/miguelmota",
     "github": "https://github.com/miguelmota",
     "twitter": "https://twitter.com/miguelmotah"
+  },
+  {
+    "name": "Miguel Morales",
+    "title": "Engineering",
+    "image": "/assets/team/headshots/miguel_morales.jpg",
+    "linkedin": "https://www.linkedin.com/in/therevoltingx"
   },
   {
     "name": "Jon Roethke",
@@ -47,31 +53,25 @@
   },
   {
     "name": "Manuel Amaya",
-    "title": "Data Scientist",
+    "title": "Data Science",
     "image": "/assets/team/headshots/manuel.jpg",
     "linkedin": "https://www.linkedin.com/in/manuel-amaya"
   },
   {
-    "name": "Miguel Morales",
-    "title": "Product Engineer",
-    "image": "/assets/team/headshots/miguel_morales.jpg",
-    "linkedin": "https://www.linkedin.com/in/therevoltingx"
-  },
-  {
     "name": "Eduardo Muñoz",
-    "title": "Project Manager",
+    "title": "Project Management",
     "image": "/assets/team/headshots/eduardo.jpg",
     "linkedin": "https://www.linkedin.com/in/eamunoz"
   },
   {
     "name": "Keanu Newman",
-    "title": "Data Analyst",
+    "title": "Data Analytics",
     "image": "/assets/team/headshots/keanu.jpg",
     "linkedin": "https://www.linkedin.com/in/keanunewman"
   },
   {
     "name": "Zayi Reyes",
-    "title": "Marketing Associate",
+    "title": "Marketing",
     "image": "/assets/team/headshots/zayi.jpg",
     "linkedin": "https://www.linkedin.com/in/zayireyes"
   }

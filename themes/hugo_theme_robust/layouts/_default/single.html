@@ -13,6 +13,9 @@
     {{ if eq .Title "Resources" }}
       {{ partial "resources.html" . }}
     {{ end }}
+    {{ if eq .Title "Token" }}
+      {{ partial "token.html" . }}
+    {{ end }}
 
     {{ partial "footer_scripts.html" }}
   </body>

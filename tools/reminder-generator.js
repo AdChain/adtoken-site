@@ -6,7 +6,7 @@ var ics = new ICS()
 
 var out = ics.buildEvent({
   uid: `${Date.now()}`,
-  start: '2017-06-26 08:00',
+  start: '2017-06-26 09:00',
   timeZone: 'America/Los_Angeles',
   title: 'adToken Launch',
   description: 'Token Launch Sale for adToken',

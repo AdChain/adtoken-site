@@ -85,7 +85,7 @@ $(document).ready(function () {
     }
 
     var opts = {
-      endDate: "06/26/2017 15:00:00", // UTC
+      endDate: "06/26/2017 16:00:00", // UTC
       lineWidth: 5,
       radius: 60,
       secondsStrokeStyle: "#0071BC",
@@ -214,9 +214,7 @@ $(document).ready(function() {
           return loadScript('https://www.amcharts.com/lib/3/pie.js')
         })
         .then(() => {
-          setTimeout(() => {
-            initChart()
-          }, 200)
+          initChart()
         })
 
         this.destroy()
@@ -227,10 +225,10 @@ $(document).ready(function() {
     var chart = AmCharts.makeChart("chartdiv", {
       "type": "pie",
       "startDuration": 0,
-       "theme": "light",
+      "theme": "light",
       "addClassNames": true,
       "legend":{
-        "position":"bottom",
+        "position": "bottom",
         "autoMargins":true,
         "align": "center"
       },
@@ -312,11 +310,11 @@ $(document).ready(function() {
     chart.addListener("init", handleInit);
 
     chart.addListener("rollOverSlice", function(e) {
-      //handleRollOver(e);
+      handleRollOver(e);
     });
 
     function handleInit(){
-      //chart.legend.addListener("rollOverItem", handleRollOver);
+      chart.legend.addListener("rollOverItem", handleRollOver);
     }
 
     function handleRollOver(e){

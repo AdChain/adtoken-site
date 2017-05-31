@@ -213,7 +213,9 @@ $(document).ready(function() {
         .then(function() {
           return loadScript('https://www.amcharts.com/lib/3/pie.js')
         })
-        .then(initChart)
+        .then(() => {
+          initChart()
+        })
 
         this.destroy()
       }

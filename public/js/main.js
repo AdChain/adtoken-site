@@ -213,7 +213,11 @@ $(document).ready(function() {
         .then(function() {
           return loadScript('https://www.amcharts.com/lib/3/pie.js')
         })
-        .then(initChart)
+        .then(() => {
+          setTimeout(() => {
+            initChart()
+          }, 200)
+        })
 
         this.destroy()
       }
@@ -308,11 +312,11 @@ $(document).ready(function() {
     chart.addListener("init", handleInit);
 
     chart.addListener("rollOverSlice", function(e) {
-      handleRollOver(e);
+      //handleRollOver(e);
     });
 
     function handleInit(){
-      chart.legend.addListener("rollOverItem", handleRollOver);
+      //chart.legend.addListener("rollOverItem", handleRollOver);
     }
 
     function handleRollOver(e){

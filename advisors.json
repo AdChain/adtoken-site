@@ -15,7 +15,15 @@
     "name": "Mike Goldin",
     "title": "Engineering at ConsenSys",
     "image": "/assets/team/headshots/mike.jpg",
-    "linkedin": "https://www.linkedin.com/in/skmgoldin"
+    "linkedin": "https://www.linkedin.com/in/skmgoldin",
+    "github": "https://github.com/skmgoldin"
+  },
+  {
+    "name": "Ameen Soleimani",
+    "title": "Engineering at ConsenSys",
+    "image": "/assets/team/headshots/ameen.jpg",
+    "linkedin": "https://www.linkedin.com/in/ameen-soleimani-97181942/",
+    "github": "https://github.com/ameensol"
   },
   {
     "name": "Mark D’Agostino",

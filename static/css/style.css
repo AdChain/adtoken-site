@@ -115,6 +115,7 @@ body,
 .ui.card>.content>.header,
 .ui.cards>.card>.content>.header,
 .ui.items>.item>.content>.header,
+:root:root .SectionAccordion .accordion .title,
 :root:root .statistic .label,
 :root:root .statistic .value,
 :root:root .ui.button {
@@ -129,6 +130,10 @@ body,
 :root:root .statistic .value {
   color: #4A4A4A;
   font-size: 1.3em;
+}
+
+:root:root .SectionAccordion .accordion .title {
+  color: #4A4A4A;
 }
 
 /*
@@ -288,6 +293,10 @@ img[data-src] {
 :root:root:root .Section h2 .sub,
 :root:root:root .Section h3 .sub {
   text-transform: uppercase;
+}
+
+:root:root:root .Section h4 {
+  font-size: 1.4em;
 }
 
 :root:root:root .Section .ui.header {
@@ -454,7 +463,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
   margin-bottom: 20px;
 }
 
-:root:root .SectionAccordion .accordion .title {
+:root:root .Section .accordion .title {
   cursor: pointer;
 }
 /**
@@ -560,7 +569,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
 }
 
 :root:root .SectionContent p {
-  max-width: 400px;
   margin: 0 auto;
 }
 
@@ -882,6 +890,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
   :root:root:root .HomeFAQ .column.grid .column {
     border-left: none;
   }
+}
+
+:root:root .HomeFAQ h4:not(:first-child) {
+  margin-top: 60px;
 }
 /**
  * /END HOME FAQ

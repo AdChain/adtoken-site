@@ -1,1 +1,155 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630.44 263.82"><defs><style>.cls-1,.cls-10,.cls-8,.cls-9{fill:none;stroke-miterlimit:10;}.cls-1{stroke:#0071BC;}.cls-1,.cls-10,.cls-9{stroke-width:2px;}.cls-2{font-size:14px;}.cls-11,.cls-2,.cls-3,.cls-6,.cls-7{fill:#4a4a4a;}.cls-11,.cls-2,.cls-3,.cls-5,.cls-6,.cls-7{font-family:Avenir Next;}.cls-11,.cls-2,.cls-5,.cls-6{font-weight:700;}.cls-3{font-size:12px;}.cls-4{letter-spacing:-1px;}.cls-5{font-size:11px;fill:#0071BC;}.cls-6,.cls-7{font-size:8px;}.cls-8{stroke:#4a4a4a;stroke-width:0.5px;}.cls-9{stroke:#63aa59;}.cls-10{stroke:#c62828;}.cls-11{font-size:16.16px;}.cls-12{white-space:pre;}</style></defs><title>adtoken diagram</title><rect class="cls-1" x="12.3" y="14.61" width="100" height="48.39" rx="12" ry="12"/><rect class="cls-1" x="199.33" y="14.61" width="100" height="48.39" rx="12" ry="12"/><rect class="cls-1" x="303.48" y="14.61" width="100" height="48.39" rx="12" ry="12"/><rect class="cls-1" x="490.69" y="14.61" width="100" height="48.39" rx="12" ry="12"/><rect class="cls-1" x="246.37" y="104.23" width="110.04" height="144.51" rx="12" ry="12"/><path class="cls-1" d="M397.8,143s-8-1.12-9,0c-4,4.44,2.13,21.45,0,27-1.58,4.13-9,9-9,9s7.37,5.48,9,9c1.83,4-2.88,23.71,0,27,1.07,1.22,9,0,9,0"/><rect class="cls-1" x="412.5" y="135.95" width="200.15" height="89.65" rx="12" ry="12"/><line class="cls-1" x1="190.83" y1="44" x2="119.83" y2="44"/><polyline class="cls-1" points="182.19 53 190.69 44 182.19 35"/><line class="cls-1" x1="412.83" y1="44" x2="482.83" y2="44"/><polyline class="cls-1" points="420.73 52.38 412.2 44 420.73 35.62"/><line class="cls-1" x1="270.83" y1="99" x2="270.83" y2="68"/><polyline class="cls-1" points="278.9 90.79 270.52 99.31 262.14 90.79"/><text class="cls-2" transform="translate(34.22 44)">site.com</text><text class="cls-2" transform="translate(228.36 44)">apply</text><text class="cls-2" transform="translate(321.65 44)">challenge</text><text class="cls-2" transform="translate(521.48 36.8)">safety<tspan x="-3.72" y="16.8">vendor</tspan></text><text class="cls-3" transform="translate(412.2 24.39)">100 ad<tspan class="cls-4" x="38.54" y="0">T</tspan><tspan x="44.22" y="0">o</tspan><tspan x="51.54" y="0">k</tspan><tspan x="57.65" y="0">en</tspan></text><text class="cls-3" transform="translate(118.18 24.39)">100 ad<tspan class="cls-4" x="38.54" y="0">T</tspan><tspan x="44.22" y="0">o</tspan><tspan x="51.54" y="0">k</tspan><tspan x="57.65" y="0">en</tspan></text><line class="cls-1" x1="336.83" y1="99" x2="336.83" y2="68"/><polyline class="cls-1" points="344.9 90.79 336.52 99.31 328.14 90.79"/><text class="cls-5" transform="translate(256.7 121.24)">adChain <tspan x="46.91" y="0">R</tspan><tspan x="54.08" y="0">egistry</tspan></text><text class="cls-6" transform="translate(254.38 138.5)">domain name</text><text class="cls-6" transform="translate(318.46 138.5)">st<tspan x="6.27" y="0">a</tspan><tspan x="10.59" y="0">tus</tspan></text><text class="cls-7" transform="translate(253.58 161.52)">nytimes.com<tspan x="4.25" y="28.8">fooba</tspan><tspan x="25.92" y="28.8">r</tspan><tspan x="28.43" y="28.8">.net</tspan><tspan x="7.89" y="57.6">site.com</tspan></text><line class="cls-8" x1="309.13" y1="128.26" x2="309.13" y2="234.9"/><line class="cls-8" x1="344.9" y1="142.5" x2="252.09" y2="142.5"/><polyline class="cls-9" points="326.62 159.47 330.18 163.52 333.87 152.63"/><line class="cls-10" x1="334.82" y1="183.89" x2="325.49" y2="193.23"/><line class="cls-10" x1="334.82" y1="193.23" x2="325.49" y2="183.89"/><text class="cls-11" transform="translate(325.83 222.42)">?</text><text class="cls-6" transform="translate(423.47 153.94)">domain name</text><text class="cls-6" transform="translate(485.16 153.94)">vote</text><line class="cls-8" x1="478.22" y1="143.71" x2="478.22" y2="215.65"/><line class="cls-8" x1="597.69" y1="163.95" x2="421.19" y2="163.95"/><polyline class="cls-9" points="490.62 177.47 494.18 181.52 497.87 170.63"/><line class="cls-10" x1="498.82" y1="201.89" x2="489.49" y2="211.23"/><line class="cls-10" x1="498.82" y1="211.23" x2="489.49" y2="201.89"/><text class="cls-7" transform="translate(434.63 177.52)">0x123<tspan x="0.45" y="28.8">0xabc</tspan></text><line class="cls-8" x1="508.24" y1="143.05" x2="508.24" y2="215"/><text class="cls-6" transform="translate(522.13 149.2)">number o<tspan x="35.9" y="0">f</tspan><tspan class="cls-12" x="38.68" y="0"> votes</tspan><tspan x="-6.28" y="9.6">(based on ad</tspan><tspan x="42.06" y="9.6">T</tspan><tspan x="45.84" y="9.6">o</tspan><tspan x="50.72" y="9.6">k</tspan><tspan x="54.92" y="9.6">en)</tspan></text><text class="cls-7" transform="translate(544.14 177.52)">100<tspan x="0" y="28.8">200</tspan></text></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 407.9 170.1" style="enable-background:new 0 0 407.9 170.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FAFAFA;}
+	.st1{fill:#424242;}
+	.st2{fill:none;stroke:url(#SVGID_1_);stroke-width:2;stroke-miterlimit:10;}
+	.st3{fill:#E0E0E0;}
+	.st4{fill:none;stroke:url(#SVGID_2_);stroke-miterlimit:10;}
+	.st5{fill:none;stroke:url(#SVGID_3_);stroke-width:2;stroke-miterlimit:10;}
+	.st6{fill:none;stroke:url(#SVGID_4_);stroke-miterlimit:10;}
+	.st7{fill:none;stroke:#0071BC;stroke-miterlimit:10;}
+	.st8{fill:none;stroke:#0071BC;stroke-width:2;stroke-miterlimit:10;}
+	.st9{fill:#4A4A4A;}
+	.st10{fill:#0071BC;}
+	.st11{fill:none;stroke:#4A4A4A;stroke-width:0.5;stroke-miterlimit:10;}
+	.st12{fill:none;stroke:#63AA59;stroke-width:2;stroke-miterlimit:10;}
+	.st13{fill:none;stroke:#C62828;stroke-width:2;stroke-miterlimit:10;}
+	.st14{fill:none;stroke:url(#SVGID_5_);stroke-miterlimit:10;}
+	.st15{fill:none;stroke:#BDBDBD;stroke-miterlimit:10;}
+	.st16{fill:none;stroke:url(#SVGID_6_);stroke-width:2;stroke-miterlimit:10;}
+	.st17{fill:none;stroke:url(#SVGID_7_);stroke-width:2;stroke-miterlimit:10;}
+	.st18{fill:none;stroke:url(#SVGID_8_);stroke-miterlimit:10;}
+	.st19{fill:none;stroke:url(#SVGID_9_);stroke-width:2;stroke-miterlimit:10;}
+	.st20{fill:none;stroke:url(#SVGID_10_);stroke-miterlimit:10;}
+	.st21{fill:none;stroke:url(#SVGID_11_);stroke-miterlimit:10;}
+	.st22{fill:none;stroke:url(#SVGID_12_);stroke-width:2;stroke-miterlimit:10;}
+	.st23{fill:none;stroke:url(#SVGID_13_);stroke-width:2;stroke-miterlimit:10;}
+	.st24{fill:none;stroke:url(#SVGID_14_);stroke-width:2;stroke-miterlimit:10;}
+	.st25{fill:none;stroke:url(#SVGID_15_);stroke-width:2;stroke-miterlimit:10;}
+	.st26{fill:none;stroke:url(#SVGID_16_);stroke-width:2;stroke-miterlimit:10;}
+	.st27{fill:none;stroke:url(#SVGID_17_);stroke-width:2;stroke-miterlimit:10;}
+	.st28{fill:none;stroke:url(#SVGID_18_);stroke-width:2;stroke-miterlimit:10;}
+	.st29{fill:none;stroke:url(#SVGID_19_);stroke-width:2;stroke-miterlimit:10;}
+	.st30{fill:#0A6AB8;}
+	.st31{fill:#1E4DA7;}
+	.st32{fill:url(#SVGID_22_);}
+	.st33{fill:url(#SVGID_23_);}
+	.st34{fill:url(#SVGID_24_);}
+	.st35{fill:url(#SVGID_25_);}
+	.st36{fill:url(#SVGID_26_);}
+	.st37{fill:url(#SVGID_27_);}
+	.st38{fill:url(#SVGID_28_);}
+	.st39{fill:url(#SVGID_29_);}
+	.st40{fill:url(#SVGID_30_);}
+	.st41{fill:url(#SVGID_31_);}
+	.st42{fill:url(#SVGID_32_);}
+	.st43{fill:url(#SVGID_33_);}
+	.st44{fill:url(#SVGID_34_);}
+	.st45{fill:url(#SVGID_35_);}
+	.st46{fill:url(#SVGID_36_);}
+	.st47{fill:url(#SVGID_37_);}
+	.st48{fill:url(#SVGID_38_);}
+	.st49{fill:url(#SVGID_39_);}
+	.st50{fill:url(#SVGID_40_);}
+	.st51{fill:url(#SVGID_41_);}
+	.st52{fill:url(#SVGID_42_);}
+	.st53{fill:url(#SVGID_43_);}
+	.st54{fill:url(#SVGID_44_);}
+	.st55{fill:url(#SVGID_45_);}
+	.st56{fill:url(#SVGID_46_);}
+	.st57{fill:url(#SVGID_47_);}
+	.st58{fill:url(#SVGID_48_);}
+	.st59{fill:url(#SVGID_49_);}
+	.st60{fill:url(#SVGID_50_);}
+	.st61{fill:url(#SVGID_51_);}
+	.st62{fill:url(#SVGID_52_);}
+	.st63{fill:url(#SVGID_53_);}
+	.st64{font-family:'TitilliumWeb-SemiBold';}
+	.st65{font-size:9.0553px;}
+	.st66{font-family:'TitilliumWeb-Light';}
+	.st67{font-size:7.7617px;}
+	.st68{font-family:'TitilliumWeb-Bold';}
+	.st69{font-size:7.1149px;}
+	.st70{font-size:5.1745px;}
+	.st71{font-family:'TitilliumWeb-Regular';}
+	.st72{font-family:'AvenirNext-Bold';}
+	.st73{font-size:10.4537px;}
+	.st74{font-family:'AvenirNext-Medium';}
+</style>
+<path class="st7" d="M71.8,39.8H11.4c-1.2,0-2.1-1-2.1-2.1v-27c0-1.2,1-2.1,2.1-2.1h60.4c1.2,0,2.1,1,2.1,2.1v27
+	C74,38.8,73,39.8,71.8,39.8z"/>
+<path class="st7" d="M192.5,39.8h-59.9c-1.3,0-2.4-1.1-2.4-2.4V10.9c0-1.3,1.1-2.4,2.4-2.4h59.9c1.3,0,2.4,1.1,2.4,2.4v26.5
+	C194.9,38.7,193.8,39.8,192.5,39.8z"/>
+<path class="st7" d="M259.8,39.8h-59.7c-1.4,0-2.5-1.1-2.5-2.5V11c0-1.4,1.1-2.5,2.5-2.5h59.7c1.4,0,2.5,1.1,2.5,2.5v26.4
+	C262.3,38.7,261.2,39.8,259.8,39.8z"/>
+<path class="st7" d="M381.2,39.8h-60.2c-1.2,0-2.2-1-2.2-2.2V10.7c0-1.2,1-2.2,2.2-2.2h60.2c1.2,0,2.2,1,2.2,2.2v26.9
+	C383.4,38.8,382.4,39.8,381.2,39.8z"/>
+<path class="st7" d="M229.9,159.9h-67.3c-1.1,0-1.9-0.9-1.9-1.9V68.4c0-1.1,0.9-1.9,1.9-1.9h67.3c1.1,0,1.9,0.9,1.9,1.9V158
+	C231.9,159,231,159.9,229.9,159.9z"/>
+<path class="st7" d="M258.6,91.5c0,0-5.2-0.7-5.8,0c-2.6,2.9,1.4,13.9,0,17.5c-1,2.7-5.8,5.8-5.8,5.8s4.8,3.5,5.8,5.8
+	c1.2,2.6-1.9,15.3,0,17.5c0.7,0.8,5.8,0,5.8,0"/>
+<path class="st7" d="M395.2,145H270.6c-1.3,0-2.4-1.1-2.4-2.4V89.4c0-1.3,1.1-2.4,2.4-2.4h124.6c1.3,0,2.4,1.1,2.4,2.4v53.1
+	C397.6,143.9,396.5,145,395.2,145z"/>
+<g>
+	<line class="st7" x1="124.8" y1="27.5" x2="78.8" y2="27.5"/>
+	<polyline class="st7" points="119.2,33.3 124.7,27.5 119.2,21.7 	"/>
+</g>
+<g>
+	<line class="st7" x1="268.4" y1="27.5" x2="313.6" y2="27.5"/>
+	<polyline class="st7" points="273.5,32.9 267.9,27.5 273.5,22.1 	"/>
+</g>
+<line class="st7" x1="176.5" y1="63.1" x2="176.5" y2="43"/>
+<polyline class="st7" points="181.7,57.8 176.3,63.3 170.9,57.8 "/>
+<text transform="matrix(1 0 0 1 23.4628 27.4963)" class="st9 st64 st65">site.com</text>
+<text transform="matrix(1 0 0 1 152.0538 27.4963)" class="st9 st64 st65">apply</text>
+<text transform="matrix(1 0 0 1 212.3787 27.4963)" class="st9 st64 st65">challenge</text>
+<text transform="matrix(1 0 0 1 338.9213 21.8397)"><tspan x="0" y="0" class="st9 st64 st65">safety</tspan><tspan x="-1.3" y="10.9" class="st9 st64 st65">vendor</tspan></text>
+<text transform="matrix(1 0 0 1 267.9486 14.8127)" class="st9 st66 st67">100 adToken</text>
+<text transform="matrix(1 0 0 1 77.7738 14.8122)" class="st9 st66 st67">100 adToken</text>
+<line class="st7" x1="219.2" y1="63.1" x2="219.2" y2="43"/>
+<polyline class="st7" points="224.4,57.8 219,63.3 213.6,57.8 "/>
+<text transform="matrix(1 0 0 1 167.3651 77.4577)" class="st10 st68 st69">adChain Registry</text>
+<g>
+	<text transform="matrix(1 0 0 1 167.1718 88.6188)" class="st9 st68 st70">domain name</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 207.1932 88.6188)" class="st9 st68 st70">status</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 166.4276 103.5075)"><tspan x="0" y="0" class="st9 st71 st70">nytimes.com</tspan><tspan x="2.7" y="18.6" class="st9 st71 st70">foobar.net</tspan><tspan x="4.8" y="37.3" class="st9 st71 st70">site.com</tspan></text>
+</g>
+<line class="st11" x1="201.3" y1="82" x2="201.3" y2="151"/>
+<line class="st11" x1="224.4" y1="91.2" x2="164.4" y2="91.2"/>
+<polyline class="st12" points="212.6,102.2 214.9,104.8 217.3,97.8 "/>
+<g>
+	<line class="st13" x1="217.9" y1="118" x2="211.9" y2="124"/>
+	<line class="st13" x1="217.9" y1="124" x2="211.9" y2="118"/>
+</g>
+<text transform="matrix(1 0 0 1 212.0804 142.8971)" class="st9 st72 st73">?</text>
+<g>
+	<text transform="matrix(1 0 0 1 276.5419 98.6086)" class="st9 st68 st70">domain name</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 315.4789 98.6086)" class="st9 st68 st70">vote</text>
+</g>
+<line class="st11" x1="310.6" y1="92" x2="310.6" y2="138.5"/>
+<line class="st11" x1="387.9" y1="105.1" x2="273.8" y2="105.1"/>
+<polyline class="st12" points="318.7,113.8 321,116.4 323.4,109.4 "/>
+<g>
+	<line class="st13" x1="324" y1="129.6" x2="317.9" y2="135.7"/>
+	<line class="st13" x1="324" y1="135.7" x2="317.9" y2="129.6"/>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 282.453 113.8551)"><tspan x="0" y="0" class="st9 st74 st70">0x123</tspan><tspan x="0.3" y="18.6" class="st9 st74 st70">0xabc</tspan></text>
+</g>
+<line class="st11" x1="330.1" y1="91.6" x2="330.1" y2="138.1"/>
+<g>
+	<text transform="matrix(1 0 0 1 340.3148 95.5422)"><tspan x="0" y="0" class="st9 st68 st70">number of votes</tspan><tspan x="-3.5" y="6.2" class="st9 st68 st70">(based on adToken)</tspan></text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 353.2836 113.8556)"><tspan x="0" y="0" class="st9 st74 st70">100</tspan><tspan x="0" y="18.6" class="st9 st74 st70">200</tspan></text>
+</g>
+</svg>

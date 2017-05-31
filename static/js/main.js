@@ -227,6 +227,8 @@
           "position": "bottom",
           "autoMargins": true,
           "align": "center",
+          "spacing": 50,
+          "equalWidths": true,
           "valueText": "[[value]]%",
         },
         "innerRadius": "30%",

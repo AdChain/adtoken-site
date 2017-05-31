@@ -5,7 +5,7 @@
     "adToken is the native token of the adChain protocol.",
     "adToken is ERC20 compliant.",
     "Publishers must deposit adToken to gain entry into the adChain Registry.",
-    "adToken holders can issue a Challenge in adToken by matching a publishers deposit if they believe a publisher is fraudulent.",
+    "adToken holders can issue a challenge in adToken by matching a publishers deposit if they believe a publisher is fraudulent.",
     "adToken holders realize upside by seeing the number of publishers applying to and renewing listings in the registry increase.",
     "adToken holders are incentivized to keep fraudulent applicants out of the registry by voting judiciously to maintain this virtuous cycle."
   ]
@@ -21,7 +21,7 @@
 "a": ["The token breakdown is as follows:",
   "500 million to be distributed in a public token sale with a cap of $10 million sold. 200 million reserved for MetaX. 200 million reserved for ConsenSys. 100 million sold to fund development via multiple pre-sale agreements.",
   "To signal the level of commitment both ConsenSys and MetaX have for this system, each entity has agreed to lock-up 90% of their share of tokens with the following unlocking schedule:",
-  "50% unlocked 1 year after public saleRemaining tokens unlocked 18 months after public sale."
+  "50% unlocked 1 year after public sale. Remaining tokens unlocked 18 months after public sale."
 ]
 },
 {
@@ -47,7 +47,7 @@
 ]
 }, {
 "q": "How are adChain and the DMA working together?",
-"a": ["The success of adChain is dependent on industry adoption. As such, we’ve spent nearly a year developing connections and partnerships that will support this endeavor. One of our first trade organization partnerships is with the Data and Marketing Association (DMA), whose membership spans the digital advertising eco-system. They are committed to bringing blockchain to the industry and we are working to on-board advertisers, agencies, DMPS,  DSPs, exchanges, safety vendors SSPs, publishers and vendors."]
+"a": ["The success of adChain is dependent on industry adoption. As such, we’ve spent nearly a year developing connections and partnerships that will support this endeavor. One of our first trade organization partnerships is with the Data and Marketing Association (DMA), whose membership spans the digital advertising eco-system. They are committed to bringing blockchain to the industry and we are working to on-board advertisers, agencies, DMPs, DSPs, exchanges, safety vendors SSPs, publishers and vendors."]
 }, {
 "q": "What is the adChain Association?",
 "a": ["The adChain Association is a non-profit organization the details of which are still being structured and will be shared publicly once finalized. The goal of the ACA is to move the online advertising industry forward by providing guidance to adChain protocol updates and promoting the benefits of open technology. The ACA takes decentralization seriously and will facilitate this goal.",

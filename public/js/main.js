@@ -229,8 +229,9 @@ $(document).ready(function() {
       "addClassNames": true,
       "legend":{
         "position": "bottom",
-        "autoMargins":true,
-        "align": "center"
+        "autoMargins": true,
+        "align": "center",
+        "valueText": "[[value]]%",
       },
       "innerRadius": "30%",
       "defs": {
@@ -301,10 +302,7 @@ $(document).ready(function() {
         "fillColor": "#FFFFFF",
         "fillAlpha": 1
       },
-      "labelText": "[[title]]: [[value]]%",
-      "legend": {
-        "valueText": "[[value]]%",
-      }
+      "labelText": "[[title]]: [[value]]%"
     });
 
     chart.addListener("init", handleInit);

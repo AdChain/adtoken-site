@@ -11,26 +11,6 @@
   override semantic ui styles.
 */
 
-@font-face {
-  font-family: 'AvenirNextLTW01Regular';
-  src: url('/fonts/avenirnext/AvenirNextLTW01RegularRegular.eot');
-  src: url('/fonts/avenirnext/AvenirNextLTW01RegularRegular.eot?#iefix') format('embedded-opentype'),
-  url('/fonts/avenirnext/AvenirNextLTW01RegularRegular.woff') format('woff'),
-  url('/fonts/avenirnext/AvenirNextLTW01RegularRegular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-	font-family: 'AvenirNextLTW01Regular';
-  src: url('/fonts/avenirnextbold/AvenirNextLTW01BoldRegular.eot');
-  src: url('/fonts/avenirnextbold/AvenirNextLTW01BoldRegular.eot?#iefix') format('embedded-opentype'),
-  url('/fonts/avenirnextbold/AvenirNextLTW01BoldRegular.woff') format('woff'),
-  url('/fonts/avenirnextbold/AvenirNextLTW01BoldRegular.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -62,6 +42,16 @@
   to {
     opacity: 1;
     transform: none;
+  }
+}
+
+@keyframes scale0to1 {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
   }
 }
 
@@ -309,6 +299,15 @@ img[data-src] {
   z-index: -1;
 }
 
+:root:root:root .Section.fadeIn .ui.header .divider {
+  transform: scaleX(0);
+  transition: transform 0.7s ease-out;
+}
+
+:root:root:root .Section.animate .ui.header .divider {
+  transform: scaleX(1);
+}
+
 @media (max-width: 640px) {
   :root:root:root .Section .ui.header .divider {
     position: relative;
@@ -324,13 +323,18 @@ img[data-src] {
   padding: 0 10px;
 }
 
-
 :root:root:root .TopHero .ui.header .ui.divider {
   position: relative;
   top: 0;
   width: 20% !important;
   margin: 10px auto 0 auto;
   border-color: #0071BC;
+  transform: scaleX(0);
+  transition: transform 0.7s ease-out;
+  animation-delay: 0.2s;
+  animation-duration: 0.7s;
+  animation-name: scale0to1;
+  animation-fill-mode: forwards;
 }
 
 @media (max-width: 640px) {

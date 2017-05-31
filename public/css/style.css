@@ -11,26 +11,6 @@
   override semantic ui styles.
 */
 
-@font-face {
-  font-family: 'AvenirNextLTW01Regular';
-  src: url('/fonts/avenirnext/AvenirNextLTW01RegularRegular.eot');
-  src: url('/fonts/avenirnext/AvenirNextLTW01RegularRegular.eot?#iefix') format('embedded-opentype'),
-  url('/fonts/avenirnext/AvenirNextLTW01RegularRegular.woff') format('woff'),
-  url('/fonts/avenirnext/AvenirNextLTW01RegularRegular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-	font-family: 'AvenirNextLTW01Regular';
-  src: url('/fonts/avenirnextbold/AvenirNextLTW01BoldRegular.eot');
-  src: url('/fonts/avenirnextbold/AvenirNextLTW01BoldRegular.eot?#iefix') format('embedded-opentype'),
-  url('/fonts/avenirnextbold/AvenirNextLTW01BoldRegular.woff') format('woff'),
-  url('/fonts/avenirnextbold/AvenirNextLTW01BoldRegular.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;

@@ -331,7 +331,7 @@ img[data-src] {
   border-color: #0071BC;
   transform: scaleX(0);
   transition: transform 0.7s ease-out;
-  animation-delay: 0.2s;
+  animation-delay: 0.5s;
   animation-duration: 0.7s;
   animation-name: scale0to1;
   animation-fill-mode: forwards;

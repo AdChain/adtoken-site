@@ -11,7 +11,8 @@
     "ics": "node tools/reminder-generator.js",
     "build:vendor": "cat static/js/vendor/jquery-3.1.1.min.js static/js/vendor/semantic.min.js static/js/vendor/clock.js static/js/vendor/jquery.unveil.js static/js/vendor/inview.js > static/js/vendor.bundle.js",
     "htmlmin": "html-minifier --minify-js --minify-css --remove-comments --remove-empty-attributes --case-sensitive --use-short-doctype --collapse-whitespace public/index.html > index.html.tmp && mv index.html.tmp public/index.html",
-    "uglifyjs": "uglifyjs public/js/main.js > main.js.tmp && mv main.js.tmp public/js/main.js"
+    "uglifyjs": "uglifyjs public/js/main.js > main.js.tmp && mv main.js.tmp public/js/main.js",
+    "update-white-paper": "npm run invalidate-cache"
   },
   "repository": {
     "type": "git",

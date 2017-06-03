@@ -1017,6 +1017,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
  */
 :root:root:root .ResourcesSection .sub {
   font-size: 0.6em;
+  text-transform: none !important;
 }
 /**
  * /END RESOURCES

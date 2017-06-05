@@ -42,6 +42,28 @@
           </div>
           </h3>
         </div>
+
+        <div class="column sixteen wide left aligned NewsSection">
+          <h3 class="ui header">
+            News
+            <div class="sub header">
+              {{ $items := getJSON "news.json" }}
+              {{ range $item := $items }}
+              <p>
+              <a href="{{ $item.url }}" target="_blank">
+                <img src="https://www.google.com/s2/favicons?domain={{ $item.domain }}" width="16" />
+                {{ $item.title }}</a><br/>
+              <small>
+                <a href="{{ $item.url }}" target="_blank">
+                  {{ $item.domain }}
+                </a>
+                </small>
+              </p>
+              {{ end }}
+          </div>
+          </h3>
+        </div>
+
       </div>
     </div>
 

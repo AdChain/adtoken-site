@@ -1019,6 +1019,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
   font-size: 0.6em;
   text-transform: none !important;
 }
+
+:root:root:root .NewsSection small a,
+:root:root:root .NewsSection small a:hover {
+  color:#8c8c8c;
+  text-decoration: none;
+}
 /**
  * /END RESOURCES
  */

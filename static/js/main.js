@@ -281,7 +281,7 @@
           "color": "#FFB74D"
           },
           {
-          "title": "Legal & Profressional",
+          "title": "Legal & Professional",
           "value": 5,
           "color": "#F06292"
           },

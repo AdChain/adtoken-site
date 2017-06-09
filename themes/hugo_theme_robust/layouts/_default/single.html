@@ -7,6 +7,9 @@
     {{ if eq .Title "White Paper" }}
       {{ partial "white_paper.html" . }}
     {{ end }}
+    {{ if eq .Title "About" }}
+      {{ partial "about.html" . }}
+    {{ end }}
     {{ if eq .Title "Team" }}
       {{ partial "team.html" . }}
     {{ end }}

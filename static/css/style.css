@@ -577,28 +577,28 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
  */
 
 /*
- * HOME Page
+ * BUTTON
  */
-:root:root .HomePage .button.primary {
+:root:root .button.primary {
   color: rgba(255,255,255,0.9);
   background: #0071BC;
 }
 
-:root:root .HomePage .button.primary:hover {
+:root:root .button.primary:hover {
   filter: hue-rotate(5deg);
 }
 
-:root:root .HomePage .button.gray {
+:root:root .button.gray {
   background: #4A4A4A;
   color: rgba(255, 255, 255, 0.9);
 }
 
-:root:root .HomePage .button.white {
+:root:root .button.white {
   background: #FAFAFA;
 }
 
 /*
- * /END HOME VIEW
+ * /END BUTTON
  */
 
 /*

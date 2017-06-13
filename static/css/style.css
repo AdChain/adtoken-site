@@ -1013,6 +1013,106 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
  */
 
 /**
+ * TOKEN INSTRUCTIONS
+ */
+:root:root:root .TokenPage .TopHero {
+  margin-bottom: 0 !important;
+}
+
+:root:root:root .TokenDisclaimer {
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+:root:root:root .TokenDisclaimer p {
+  line-height: 1.2;
+}
+
+:root:root:root .TokenDisclaimer p small {
+
+}
+
+:root:root:root .TokenPage .TabsSection {
+  width: 100%;
+  padding: 0;
+}
+
+:root:root:root .TokenPage .tabular.menu {
+  justify-content: center;
+  background: #FAFAFA;
+  border: none;
+  padding: 20px;
+  margin-bottom: 60px;
+}
+
+:root:root:root .TokenPage .tabular.menu .item {
+  border-bottom: 1px solid transparent !important;
+  padding: 10px;
+  margin: 0 20px;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+:root:root:root .TokenPage .tabular.menu .item:hover {
+  border-bottom-color: #e2e2e2 !important;
+}
+
+:root:root:root .TokenPage .tabular.menu .item.active,
+:root:root:root .TokenPage .tabular.menu .item.active:hover {
+  border: none;
+  background: none;
+  border-bottom: 1px solid #000 !important;
+  font-weight: normal;
+}
+
+:root:root:root .TokenTabItemsContainer {
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  :root:root:root:root:root .TokenTabItemsContainer {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  :root:root:root .TokenPage .tabular.menu {
+    width: 100%;
+    padding: 0;
+  }
+  :root:root:root .TokenPage .tabular.menu .item {
+    width: auto !important;
+    display: inline-block;
+  }
+}
+
+:root:root:root .TokenPage .TabsSection {
+  max-width: 700px !important;
+  margin: 0 auto !important;
+}
+
+:root:root:root .TokenPage .TabsSection .ui.header > span {
+  display: inline-block;
+  background: #F5F5F5;
+  padding: 0 10px;
+}
+
+:root:root:root .TabsSection .ui.header .ui.divider {
+  position: relative;
+  top: 0;
+  width: 20% !important;
+  margin: 10px auto 0 auto;
+  border-color: #0071BC;
+  transform: scaleX(0);
+  transition: transform 0.7s ease-out;
+  animation-duration: 0.7s;
+  animation-name: scale0to1;
+  animation-fill-mode: forwards;
+}
+
+/**
+ * /END TOKEN INSTRUCTIONS
+ */
+
+/**
  * RESOURCES
  */
 :root:root:root .ResourcesSection .sub {

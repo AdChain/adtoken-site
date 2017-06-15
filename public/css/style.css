@@ -1034,7 +1034,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
 
 :root:root:root .TokenPage .TabsSection {
   width: 100%;
-  padding: 0;
 }
 
 :root:root:root .TokenPage .tabular.menu {
@@ -1106,6 +1105,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
   animation-duration: 0.7s;
   animation-name: scale0to1;
   animation-fill-mode: forwards;
+}
+
+:root:root:root .TokenPage ol li,
+:root:root:root .TokenPage ul li {
+  margin-bottom: 15px;
+  line-height: 1.4;
 }
 
 /**

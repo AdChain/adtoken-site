@@ -1,202 +1,198 @@
 <div class="column sixteen wide Section TopHero">
   <div class="ui grid padded stackable">
+
     <div class="column sixteen wide center aligned">
       <h2 class="ui header">
         Purchasing adToken
         <div class="ui divider"></div>
       </h2>
     </div>
-    <div class="row ui grid stackable cards center aligned">
-      <div class="column ten wide centered center aligned">
+
+    <div class="ui grid stackable cards center aligned">
+      <div class="column twelve wide centered left aligned" style="text-align:left">
         <p>
-          Thank you for your interest in purchasing adToken. The information below has been organized to help you in your adToken purchase using MyEtherWallet, Mist, Parity, imToken, or MetaMask.
+        Thank you for your interest in purchasing adToken. The information <a href="#instructions">below</a> has been organized to help you in your adToken purchase using MyEtherWallet, Mist, or Parity.
         </p>
       </div>
-      <div class="column ten wide centered center aligned" id="address">
-        <div class="ui large header">OFFICIAL ETH WALLET ADDRESS</div>
-      <div class="ui huge segment">
-        <code>
-          (will be revealed approaching launch date)
-        </code>
-      </div>
+
+      <div class="column twelve wide centered center aligned" id="address">
+        <p>TOKEN LAUNCH DATE:</p>
         <p>
           JUNE 26TH, 2017 AT 9AM PDT / 4PM GMT
         </p>
       </div>
-      <div class="column eight wide centered left aligned">
-        <ul class="ui list">
-          <li class="item">Do not send funds from exchanges such as Poloniex, Coinbase, or GDAX.</li>
-          <li class="item">Only use the purchasing partners mentioned below.</li>
-          <li class="item">Do not send your funds before the fundraiser has begun.</li>
-          <li class="item">By participating in the token sale, I agree to the <a href="/terms">terms and conditions</a>.</li>
+
+      <div class="column twelve wide centered center aligned" id="address">
+        <p style="text-align:left">
+        The mainnet adToken sale contract address will be displayed approaching closer to the date of the token launch. <strong>Right below is the sale contract address on the <a href="https://rinkeby.etherscan.io/address/0x06970bbec4ac9497b4663ae3675611c4629e6a40" target="_blank">Rinkeby testnet</a> for testing before the actual token launch.</strong>
+        </p>
+
+        <div class="ui large header">
+          ADTOKEN SALE CONTRACT ADDRESS
+          <div><strong style="color:#ff7a00">(RINKEBY TESTNET)</strong></div>
+        </div>
+
+        <div class="ui huge segment" style="overflow-x:auto">
+          <code>
+            0x06970bbec4ac9497b4663ae3675611c4629e6a40
+          </code>
+        </div>
+
+        <p><a href="https://rinkeby.etherscan.io/address/0x06970bbec4ac9497b4663ae3675611c4629e6a40#code" target="_blank">
+          View adToken sale contract on etherscan
+        </a></p>
+
+        <div class="ui large header" id="abi">
+          ADTOKEN SALE CONTRACT ABI
+        </div>
+
+        <div class="ui accordion" style="margin-bottom:15px">
+          <div class="title active">
+            <i class="dropdown icon"></i>
+              ADTOKEN SALE CONTRACT ABI JSON
+          </div>
+          <div class="content active">
+            <div class="ui huge segment left aligned">
+              {{ partial "adtoken_sale_contract_abi.html" }}
+            </div>
+          </div>
+        </div>
+
+        <p><a href="https://adtoken-sale.s3-us-west-2.amazonaws.com/sale.json" target="_blank">Download adToken Sale Contract ABI</a>
+        </p>
+
+        <div class="ui large header" id="abi">
+          CONTRACT FUNCTION TO EXECUTE
+        </div>
+
+        <div class="ui huge segment" style="overflow-x:auto">
+          <code>
+            purchaseTokens()
+          </code>
+        </div>
+
+        <p style="text-align:left;">The <code>purchaseTokens()</code> smart contract function needs to be executed in order to purchase tokens. <strong>You must send ETH when calling <code>purchaseToken()</code> function to buy adToken.</strong> Further instructions are detailed <a href="#instructions">below</a>.</p>
+
       </div>
-    </div>
+
+      <div class="column ten wide centered left aligned">
+        <p><strong>IMPORTANT NOTES</strong></p>
+        <ul class="ui list">
+          <li class="item"><strong>Do NOT send ETH directly to the adToken sale contract address. Please follow instructions <a href="#instructions">below</a> on how to execute <em><code>purchaseTokens()</code></em> smart contract function in order to purchase adToken.</strong></li>
+          <li class="item">Do NOT send funds from exchanges such as Poloniex, Bitfinex, Bittrex, Coinbase, GDAX, etc.</li>
+          <li class="item">Do not send your funds before the fundraiser has begun.</li>
+          <li class="item">We recommend using the wallet applications mentioned below.</li>
+          <li class="item">Only ETH is accepted. Do NOT try sending anything other than ETH.</li>
+          <li class="item">ALWAYS double check addresses you are sending ether to.</li>
+          <li class="item">By participating in the token sale, you agree to the <a href="/terms">terms and conditions</a>.</li>
+      </div>
+
+      <div class="column sixteen wide centered center aligned">
+        <div style="padding-top:20px;padding-bottom:40px;">
+          <p>
+            All transactions sent to adToken sale contract are viewable on etherscan website
+          </p>
+          <p>
+          <a
+            href="https://rinkeby.etherscan.io/address/0x06970bbec4ac9497b4663ae3675611c4629e6a40"
+            target="_blank">view transactions on rinkeby.etherscan.io</a>
+          </p>
+        </div>
+      </div>
+
   </div>
 </div>
 
-    <div class="column sixteen wide centered left aligned TokenTabItemsContainer">
+<div class="column sixteen wide centered left aligned TokenTabItemsContainer" id="instructions">
 
-      <div class="ui tabular menu stackable">
-        <a class="active item" data-tab="first">MyEtherWallet</a>
-        <a class="item" data-tab="fifth">MetaMask</a>
-        <a class="item" data-tab="second">Mist</a>
-        <a class="item" data-tab="third">Parity</a>
-        <!--<a class="item" data-tab="fourth">imToken</a>-->
-      </div>
-  </div>
+    <div class="ui tabular menu stackable">
+      <a class="active item" data-tab="first">MyEtherWallet</a>
+      <!--<a class="item" data-tab="fifth">MetaMask</a>-->
+      <a class="item" data-tab="second">Mist</a>
+      <a class="item" data-tab="third">Parity</a>
+      <!--<a class="item" data-tab="fourth">imToken</a>-->
+    </div>
+</div>
 
-  <div class="column sixteen wide centered left aligned TabsSection">
-      <div class="ui active tab" data-tab="first">
-        <div class="ui grid stackable">
-          <div class="column sixteen wide centered center aligned">
-            <div class="ui large header">
-              MyEtherWallet
-              <div class="ui divider"></div>
-            </div>
-          </div>
-          <div class="column sixteen wide centered left aligend">
-            <p>
-            <a href="https://myetherwallet.com/" target="_blank">MyEtherWallet</a> is a popular and reliable service that can be used to send ETH to our token sale. If you do not have an account with MyEtherWallet and you’d like to get one, please start on step one. If you already have an account with MyEtherWallet, please skip to step 5. Please follow the steps below in order to use it correctly:
-            </p>
-          </div>
-          <div class="column sixteen wide centered left aligend">
-            <p>GENERATING WALLET</p>
-            <ol>
-              <li>Visit <a href="https://www.myetherwallet.com" target="_blank">https://www.myetherwallet.com</a>.</li>
-              <li>Select the tab <em>“Generate Wallet”</em>, insert a strong password, and click on the <em>“GENERATE”</em> button.</li>
-              <li>MyEtherWallet gives you two options on how to store your private key. The first option is download the <em>.JSON</em> file with an encrypted version of the private key and requires a password to decrypt. The second option is to download an unencrypted version of the <em>.JSON</em> file.
-              </li>
-              <li>Save your wallet address or QR code. In order to receive transactions, you must provide the senders with a public key to which they can send the ETH to.
-              </li>
-            </ol>
-          </div>
-          <div class="column sixteen wide centered left aligend">
-            <p>PURCHASING ADTOKEN</p>
-            <ol start="5">
-              <li>Select the tab <em>“Send Ether & Tokens”</em>.</li>
-              <li>Select the option for which to open your ETH wallet in order to login to your account.</li>
-              <li>Copy the ETH wallet address found <a href="#address">above</a>. Please make sure that the address used is from the official adToken site. Insert the amount of ETH to send and finish by clicking <em>“Generate Transaction”</em>.</li>
-            </ol>
-          </div>
-        </div>
-      </div>
+<div class="ui grid stackable">
+  <div class="column ten wide centered left aligned TabsSection">
+    <div class="ui active tab" data-tab="first">
+      {{ partial "token_instructions_myetherwallet.html" . }}
+    </div>
 
 
-      <div class="ui tab" data-tab="second">
-        <div class="ui grid stackable">
-          <div class="column sixteen wide centered center aligned">
-            <div class="ui large header">
-              Mist
-              <div class="ui divider"></div>
-            </div>
-          </div>
-          <div class="column sixteen wide centered left aligend">
-            <p>
-If this is your first token purchase, we recommend that you complete it using MyEtherWallet. If you have experience using Mist, please follow the instructions shown below:
-            </p>
-          </div>
-          <div class="column sixteen wide centered left aligend">
-            <ol>
-              <li>Open your <a href="https://github.com/ethereum/mist/releases" target="_blank">Mist</a> app.</li>
-              <li>Go to the <em>“Send”</em> tab in the options.</li>
-              <li>Paste the adToken ETH address in the <em>“To:”</em> section. Make sure you copy the contract address from <a href="#address">above</a>.</li>
-              <li>The fee should be set to the faster end of the bar. Click <em>“Send”</em>.</li>
-              <li>A summary of the transaction will appear. Please note, the transaction has not yet been generated.</li>
-              <li>Enter your password again and click <em>“Send Transaction”</em>.</li>
-            </ol>
-          </div>
-        </div>
-      </div>
-
-      <div class="ui tab" data-tab="third">
-        <div class="ui grid stackable">
-          <div class="column sixteen wide centered center aligned">
-            <div class="ui large header">
-              Parity
-              <div class="ui divider"></div>
-            </div>
-          </div>
-          <div class="column sixteen wide centered left aligend">
-            <p>
-            <a href="https://parity.io/">Parity</a> is a secure browser-based wallet that enables you to schedule future purchases. Please follow the instructions below to purchase adToken through Parity:
-            </p>
-          </div>
-          <div class="column sixteen wide centered left aligend">
-            <ol>
-              <li>Open your Parity app.</li>
-              <li>Open the <em>“Accounts”</em> tab and select the account you would like to transfer funds from.</li>
-              <li>Click <em>“Transfer”</em></li>
-              <li>Paste the adToken ETH address found <a href="#address">above</a> in the <em>“recipient address”</em> field.</li>
-              <li>Select the ETH amount.</li>
-              <li>Click <em>“Send”</em>. You will need to confirm by entering your password.</li>
-            </ol>
-          </div>
-        </div>
-      </div>
-
-      <!-->
-      <div class="ui tab" data-tab="fourth">
-        <div class="ui grid stackable">
-          <div class="column sixteen wide centered center aligned">
-            <div class="ui large header">
-              imToken
-              <div class="ui divider"></div>
-            </div>
-          </div>
-          <div class="column sixteen wide centered left aligend">
-            <p>
-If you would like to purchase adToken on your mobile device, you now can with imToken. Please follow the instructions outlined below:
-            </p>
-          </div>
-          <div class="column sixteen wide centered left aligend">
-            <ol>
-              <li>Open the <a href="https://itunes.apple.com/us/app/imtoken/id1153230571?mt=8" target="_blank">imToken</a> app on your mobile device.</li>
-              <li>Select the <em>“Discover”</em> option on the bottom menu.</li>
-              <li>Click on the <em>“ICO”</em> option.</li>
-              <li>Find the <em>“AdToken”</em> icon and click on it.</li>
-              <li>At the bottom of the screen, you will have the option to enter an amount of ETH.</li>
-              <li>Click <em>“Join Now”</em> and enter your password.</li>
-              <li>Click <em>“Confirm”</em>.</li>
-            </ol>
-          </div>
-        </div>
-      </div>
+    <div class="ui tab" data-tab="second">
+      <p>Instructions for Mist coming soon.</p>
+      <!--
+      {{ partial "token_instructions_mist.html" . }}
       -->
+    </div>
 
-      <div class="ui tab" data-tab="fifth">
-        <div class="ui grid stackable">
-          <div class="column sixteen wide centered center aligned">
-            <div class="ui large header">
-              MetaMask
-              <div class="ui divider"></div>
-            </div>
-          </div>
-          <div class="column sixteen wide centered left aligend">
-            <p>
-            <a href="https://metamask.io/" target="_blank">MetaMask</a> is a simple add-on that allows you to send tokens easily and securely. Please follow the instructions below to purchase adToken using MetaMask.
-            </p>
-          </div>
-          <div class="column sixteen wide centered left aligend">
-            <ol>
-              <li>Click on the extension/add-on icon in your browser.</li>
-              <li>Click <em>“Buy”</em>.</li>
-              <li>Copy the ETH wallet address found <a href="#address">above</a> and paste it in the <em>“Recipient Address”</em> field. Please make sure that the address used is from the official adToken site.</li>
-              <li>Enter the amount of ETH you want to send.</li>
-              <li>Click <em>“Send”</em>.</li>
-            </ol>
+    <div class="ui tab" data-tab="third">
+      <p>Instructions for Parity coming soon.</p>
+      <!--
+      {{ partial "token_instructions_parity.html" . }}
+      -->
+    </div>
+
+    <!--
+    <div class="ui tab" data-tab="fourth">
+      <div class="ui grid stackable">
+        <div class="column sixteen wide centered center aligned">
+          <div class="ui large header">
+            imToken
+            <div class="ui divider"></div>
           </div>
         </div>
+        <div class="column sixteen wide centered left aligend">
+          <p>
+  If you would like to purchase adToken on your mobile device, you now can with imToken. Please follow the instructions outlined below:
+          </p>
+        </div>
+        <div class="column sixteen wide centered left aligend">
+          <ol>
+            <li>Open the <a href="https://itunes.apple.com/us/app/imtoken/id1153230571?mt=8" target="_blank">imToken</a> app on your mobile device.</li>
+            <li>Select the <em>“Discover”</em> option on the bottom menu.</li>
+            <li>Click on the <em>“ICO”</em> option.</li>
+            <li>Find the <em>“AdToken”</em> icon and click on it.</li>
+            <li>At the bottom of the screen, you will have the option to enter an amount of ETH.</li>
+            <li>Click <em>“Join Now”</em> and enter your password.</li>
+            <li>Click <em>“Confirm”</em>.</li>
+          </ol>
+        </div>
       </div>
+    </div>
+    -->
 
+    <div class="ui tab" data-tab="fifth">
+      <div class="ui grid stackable">
+        <div class="column sixteen wide centered center aligned">
+          <div class="ui large header">
+            MetaMask
+            <div class="ui divider"></div>
+          </div>
+        </div>
+        <div class="column sixteen wide centered left aligend">
+          <p>
+          <a href="https://metamask.io/" target="_blank">MetaMask</a> is a simple add-on that allows you to send tokens easily and securely. Please follow the instructions below to purchase adToken using MetaMask.
+          </p>
+        </div>
+        <div class="column sixteen wide centered left aligend">
+          <ol>
+            <li>Click on the extension/add-on icon in your browser.</li>
+            <li>Click <em>“Buy”</em>.</li>
+            <li>Copy the adToken contract address found <a href="#address">above</a> and paste it in the <em>“Recipient Address”</em> field.</li>
+            <li>Enter the amount of ETH you want to send.</li>
+            <li>Click <em>“Send”</em>.</li>
+          </ol>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="column sixteen wide centered left aligned TokenDisclaimer">
-    <div class="ui grid stackable">
-      <div class="column ten wide centered">
+  <div class="column ten wide centered left aligned TokenDisclaimer">
         <p><small>
           Disclaimer: The purchasing instructions are only to be used as a helpful guidance. Buyers are recommended to conduct their own research and should not solely rely on our material. We cannot guarantee that the presented materials are accurate, nor should the associated software mentioned be liable. Buyers therefore assume their own risks in connection with the token sale. Please visit our <a href="/terms">terms and conditions</a> concerning the token sale.
         </small></p>
-      </div>
-  </div>
+    </div>
 </div>

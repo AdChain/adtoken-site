@@ -12,12 +12,56 @@
   </div>
   <div class="column sixteen wide centered left aligend">
     <ol>
-      <li>Open your <a href="https://github.com/ethereum/mist/releases" target="_blank">Mist</a> app.</li>
-      <li>Go to the <em>“Send”</em> tab in the options.</li>
-      <li>Paste the adToken contract address found <a href="#address">above</a> in the <em>“To:”</em> section.</li>
-      <li>The fee should be set to the faster end of the bar. Click <em>“Send”</em>.</li>
-      <li>A summary of the transaction will appear. Please note, the transaction has not yet been generated.</li>
-      <li>Enter your password again and click <em>“Send Transaction”</em>.</li>
+      <li><p>Make sure you have the <a href="https://github.com/ethereum/mist/releases" target="_blank">latest version</a> of Mist installed.</p></li>
+      <li><p>Open Mist application.</p></li>
+      <li>
+      <p>Go to <em>"Contracts"</em> tab</p>
+
+      <p><a class="ui image" href="/assets/instructions/mist/overview.png" target="_blank">
+        <img src="/assets/instructions/mist/overview.png" />
+      </a></p>
+      </li>
+
+      <li><p>Click on <em>"WATCH CONTRACT"</em> button.</p>
+
+      <p><a class="ui image" href="/assets/instructions/mist/contracts.png" target="_blank">
+        <img src="/assets/instructions/mist/contracts.png" />
+      </a></p>
+      </li>
+
+      <li>
+      <p>In the <em>"Watch contract"</em> dialog window, enter the following:</p>
+        <ul>
+          <li><p>In <em>"CONTRACT NAME"</em> field, enter <strong>"AdToken Sale"</strong>.</p></li>
+          <li><p>In <em>"CONTRACT ADDRESS"</em> field, enter adToken Contract Sale Address found <a href="#address">above</a>.</p></li>
+          <li><p>In <em>"JSON INTERFACE"</em> field, enter adToken Contract Sale ABI JSON found <a href="#abi">above</a>.</p></li>
+        </ul>
+      </li>
+
+      <li><p>Click <em>"OK"</em> button.</p>
+
+      <p><a class="ui image" href="/assets/instructions/mist/watch_contract_dialog.png" target="_blank">
+        <img src="/assets/instructions/mist/watch_contract_dialog.png" />
+      </a></p>
+      </li>
+
+      <li><p>Click on the <em>"AdToken Sale"</em> contract.</p></li>
+      <li><p>Scroll down. You should see a form title <em>"WRITE TO CONTRACT"</em>.</p>
+
+      <p>Fill in form with the following information:</p>
+
+        <ul>
+          <li><p>In <em>"Select function"</em> dropdown, choose <strong><em>"purchaseTokens"</em></strong>.</p></li>
+          <li><p>In <em>"Execute from"</em> dropdown, choose your ethereum account.</p></li>
+          <li><p>In <em>"Send ETHER"</em> field, enter the desired amount of ETH you'd like to use to purchase adToken.</p></li>
+        </ul>
+      </li>
+
+      <li><p>Click on <em>"Execute"</em> button.</p></li>
+      <li><p>In the Execute contract dialog, input the desired Gas limit.</p></li>
+      <li><p>Enter account password and click on <em>"SEND TRANSACTION"</em>.</p></li>
+      <li><p>You can check the status of the purchase in etherscan website.</p></li>
+
     </ol>
   </div>
 </div>

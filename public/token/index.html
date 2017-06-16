@@ -65,24 +65,815 @@
 
 <main class="main TokenPage">
   <div class="ui grid padded stackable">
+    
     <div class="column sixteen wide Section TopHero">
   <div class="ui grid padded stackable">
 
     <div class="column sixteen wide center aligned">
       <h2 class="ui header">
-        Token Launch
+        Purchasing adToken
         <div class="ui divider"></div>
       </h2>
     </div>
 
-    <div class="column sixteen wide center aligned">
-      <p>Token launch details will be released soon.</p>
-    </div>
+    <div class="ui grid stackable cards center aligned">
+      <div class="column twelve wide centered left aligned" style="text-align:left">
+        <p>
+        Thank you for your interest in purchasing adToken. The following information has been organized to help you in purchasing adToken. There are also guides <a href="#instructions">below</a> on how to purchase using MyEtherWallet, Mist, or Parity.
+        </p>
+      </div>
+
+      <div class="column twelve wide centered center aligned" id="address">
+        <p>TOKEN LAUNCH DATE:</p>
+        <p>
+          JUNE 26TH, 2017 AT 9AM PDT / 4PM GMT
+        </p>
+      </div>
+
+      <div class="column twelve wide centered center aligned" id="address">
+        <p style="text-align:left">
+        The mainnet adToken sale contract address will be displayed approaching closer to the date of the token launch. <strong>Right below is the sale contract address on the <a href="https://kovan.etherscan.io/address/0xaef29c68232c586ef932e86dcc5e2d9c71920c78" target="_blank">Kovan testnet</a> for testing before the actual token launch.</strong>
+        </p>
+
+        <div class="ui large header">
+          ADTOKEN SALE CONTRACT ADDRESS
+          <div><strong style="color:#ff7a00">(KOVAN TESTNET)</strong></div>
+        </div>
+
+        <div class="ui huge segment" style="overflow-x:auto">
+          <code>
+        0xaef29c68232c586ef932e86dcc5e2d9c71920c78
+          </code>
+        </div>
+
+        <p><a href="https://kovan.etherscan.io/address/0xaef29c68232c586ef932e86dcc5e2d9c71920c78#code" target="_blank">
+          View adToken sale contract on etherscan
+        </a></p>
+
+        <div class="ui large header" id="abi">
+          ADTOKEN SALE CONTRACT ABI
+        </div>
+
+        <div class="ui accordion" style="margin-bottom:15px">
+          <div class="title active">
+            <i class="dropdown icon"></i>
+              ADTOKEN SALE CONTRACT ABI JSON
+          </div>
+          <div class="content active">
+            <div class="ui huge segment left aligned">
+              <textarea class="ui input" rows="6" style="width:100%;border-color:gainsboro">[
+  {
+    "constant": false,
+    "inputs": [],
+    "name": "emergencyToggle",
+    "outputs": [],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "filters",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [],
+    "name": "purchaseTokens",
+    "outputs": [],
+    "payable": true,
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "freezeBlock",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "startBlock",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "wallet",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_newBlock",
+        "type": "uint256"
+      }
+    ],
+    "name": "changeStartBlock",
+    "outputs": [],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_preBuyers",
+        "type": "address[]"
+      },
+      {
+        "name": "_preBuyersTokens",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "distributePreBuyersRewards",
+    "outputs": [],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_wallet",
+        "type": "address"
+      }
+    ],
+    "name": "changeWallet",
+    "outputs": [],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "price",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_newPrice",
+        "type": "uint256"
+      }
+    ],
+    "name": "changePrice",
+    "outputs": [],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "changeOwner",
+    "outputs": [],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "foundersTokensDisbursed",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_founders",
+        "type": "address[]"
+      },
+      {
+        "name": "_foundersTokens",
+        "type": "uint256[]"
+      },
+      {
+        "name": "_founderTimelocks",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "distributeFoundersRewards",
+    "outputs": [],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "emergencyFlag",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "preSaleTokensDisbursed",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "token",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "_owner",
+        "type": "address"
+      },
+      {
+        "name": "_wallet",
+        "type": "address"
+      },
+      {
+        "name": "_tokenSupply",
+        "type": "uint256"
+      },
+      {
+        "name": "_tokenName",
+        "type": "string"
+      },
+      {
+        "name": "_tokenDecimals",
+        "type": "uint8"
+      },
+      {
+        "name": "_tokenSymbol",
+        "type": "string"
+      },
+      {
+        "name": "_price",
+        "type": "uint256"
+      },
+      {
+        "name": "_startBlock",
+        "type": "uint256"
+      },
+      {
+        "name": "_freezeBlock",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "purchaser",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "PurchasedTokens",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "preBuyer",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "TransferredPreBuyersReward",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "TransferredFoundersTokens",
+    "type": "event"
+  }
+]</textarea>
+
+            </div>
+          </div>
+        </div>
+
+        <p><a href="https://adtoken-sale.s3-us-west-2.amazonaws.com/Sale.json" target="_blank">Download adToken Sale Contract ABI</a>
+        </p>
+
+        <div class="ui large header" id="abi">
+          CONTRACT FUNCTION TO EXECUTE
+        </div>
+
+        <div class="ui huge segment" style="overflow-x:auto">
+          <code>
+            purchaseTokens()
+          </code>
+        </div>
+
+        <p style="text-align:left;">The <code>purchaseTokens()</code> smart contract function needs to be executed in order to purchase tokens. <strong>You must send ETH when calling <code>purchaseToken()</code> function to buy adToken.</strong> Further instructions are detailed <a href="#instructions">below</a>.</p>
+
+      </div>
+
+      <div class="column ten wide centered left aligned">
+        <p><strong>IMPORTANT NOTES</strong></p>
+        <ul class="ui list">
+          <li class="item"><strong>Do NOT send ETH directly to the adToken sale contract address. Please follow instructions <a href="#instructions">below</a> on how to execute <em><code>purchaseTokens()</code></em> smart contract function in order to purchase adToken.</strong></li>
+          <li class="item">Do NOT send funds from exchanges such as Poloniex, Bitfinex, Bittrex, Coinbase, GDAX, etc.</li>
+          <li class="item">Do not send your funds before the fundraiser has begun.</li>
+          <li class="item">We recommend using the wallet applications mentioned below.</li>
+          <li class="item">Only ETH is accepted. Do NOT try sending anything other than ETH.</li>
+          <li class="item">ALWAYS double check addresses you are sending ether to.</li>
+          
+      </div>
+
+      <div class="column sixteen wide centered center aligned">
+        <div style="padding-top:20px;padding-bottom:40px;">
+          <p>
+            All transactions sent to adToken sale contract are viewable on etherscan website
+          </p>
+          <p>
+          <a
+            href="https://kovan.etherscan.io/address/0x06970bbec4ac9497b4663ae3675611c4629e6a40"
+            target="_blank">view transactions on kovan.etherscan.io</a>
+          </p>
+        </div>
+      </div>
+
   </div>
 </div>
 
+<div class="column sixteen wide centered left aligned TokenTabItemsContainer" id="instructions">
+
+    <div class="ui tabular menu stackable">
+      <a class="active item" data-tab="first">MyEtherWallet</a>
+      
+      <a class="item" data-tab="second">Mist</a>
+      <a class="item" data-tab="third">Parity</a>
+      
+    </div>
+</div>
+
+<div class="ui grid stackable">
+  <div class="column ten wide centered left aligned TabsSection">
+    <div class="ui active tab" data-tab="first" id="MEW">
+      <div class="ui grid stackable">
+  <div class="column sixteen wide centered center aligned">
+    <div class="ui large header">
+      MyEtherWallet
+      <div class="ui divider"></div>
+    </div>
+  </div>
+  <div class="column sixteen wide centered left aligend">
+    <p>
+    <a href="https://myetherwallet.com/" target="_blank">MyEtherWallet</a> is a popular and reliable application that can be used to generate accounts and send ether to the adToken sale contract.</p>
+
+    <p>If you do not have an account with MyEtherWallet and you'd like to create one, please start on step 1.</p>
+
+    <p>If you already have an ethereum account address and ether in the account, please skip to step 7.
+    </p>
+  </div>
+  <div class="column sixteen wide centered left aligend">
+    <p>GENERATING WALLET</p>
+    <ol>
+      <li>
+
+      <p>Visit <a href="https://www.myetherwallet.com" target="_blank">myetherwallet.com</a>.</p>
+
+      <li><p>Select the tab <em>"Generate Wallet"</em>, insert a strong password, and click on the <em>"Generate Wallet"</em> button.</p></li>
+
+      <p><a class="ui image" href="/assets/instructions/myetherwallet/generate_wallet.png" target="_blank">
+        <img src="/assets/instructions/myetherwallet/generate_wallet.png" />
+      </a></p>
+
+      <li><p>Click on the <em>"Download"</em> button to download the Keystore File. Store this file in a secure location. This will give you access to your account. Click on <em>"I understand. Continue."</em> button.</p>
+
+      <p><a class="ui image" href="/assets/instructions/myetherwallet/download_keystore.png" target="_blank">
+        <img src="/assets/instructions/myetherwallet/download_keystore.png" />
+      </a></p>
+    </li>
+
+    <li><p>Print your paper wallet and store in a secure location. Never share your Private Key with anyone. Click on <em>"Next: Save your Address"</em> button.</p>
+
+      <p><a class="ui image" href="/assets/instructions/myetherwallet/print_paper_wallet.png" target="_blank">
+        <img src="/assets/instructions/myetherwallet/print_paper_wallet.png" />
+      </a></p>
+    </li>
+
+    <li>
+    <p>Select your keystore wallet file and enter your wallet password. Click on <em>"Unlock"</em> button.</p>
+
+      <p><a class="ui image" href="/assets/instructions/myetherwallet/unlock_wallet.png" target="_blank">
+        <img src="/assets/instructions/myetherwallet/unlock_wallet.png" />
+      </a></p>
+    </li>
+
+    <li>
+    <p>Scroll down and you will see your "Account Address". Send ETH to this account wallet address.</p>
+
+      <p><a class="ui image" href="/assets/instructions/myetherwallet/account_address.png" target="_blank">
+        <img src="/assets/instructions/myetherwallet/account_address.png" />
+      </a></p>
+
+    </li>
+    </ol>
+
+    <p>ACCESS ADTOKEN SALE CONTRACT</p>
+    <ol start="7">
+      <li>
+        <p>Click <em>"Contracts"</em> navigation item.</p>
+
+      <p><a class="ui image" href="/assets/instructions/myetherwallet/contract_page.png" target="_blank">
+        <img src="/assets/instructions/myetherwallet/contract_page.png" />
+      </a></p>
+      </li>
+
+      <li><p>Enter the adToken Sale Contract address found <a href="#address">above</a> in the <em>"Contract Address"</em> field.</p></li>
+
+      <li>
+      <p>
+      Enter the adToken Sale Contract ABI JSON found <a href="#abi">above</a> in the <em>"ABI / JSON Interface"</em> field.</p></li>
+
+      <li><p>Click on <em>"Access"</em> button.</p></li>
+
+      <li>
+
+      <p>In the <em>"Read / Write Contract"</em> dropdown, select <strong><em>"purchaseTokens"</em></strong>. Then restore your wallet.</p>
+
+      <p><a class="ui image" href="/assets/instructions/myetherwallet/read_write_contract.png" target="_blank">
+        <img src="/assets/instructions/myetherwallet/read_write_contract.png" />
+      </a></p>
+
+      </li>
+
+      <li>
+
+      <p>A dialog window will appear prompting for Amount to Send. Enter the desired of ETH you'd like to use to purchase adToken. Set the Gas Limit to desired amount. You can use default Gas Limit displayed in the input field.</p>
+
+      <p><a class="ui image" href="/assets/instructions/myetherwallet/generate_transaction.png" target="_blank">
+        <img src="/assets/instructions/myetherwallet/generate_transaction.png" />
+      </a></p>
+
+      </li>
+
+      <li>
+      <p>Verify that the inputs are correct and click on <em>"Yes, I am sure! Make transactions."</em> button.</p>
+
+      <p><a class="ui image" href="/assets/instructions/myetherwallet/generate_transaction_confirm.png" target="_blank">
+        <img src="/assets/instructions/myetherwallet/generate_transaction_confirm.png" />
+      </a></p>
+
+      </li>
+
+      <li>
+      <p>You will see at the bottom of the screen a message saying that the transaction was sent successfully. You can click on the <em>"View your transaction"</em> link to view the current state.</p>
+
+      </li>
+
+      <p><a class="ui image" href="/assets/instructions/myetherwallet/transaction_sent.png" target="_blank">
+        <img src="/assets/instructions/myetherwallet/transaction_sent.png" />
+      </a></p>
+
+      <li>
+      <p>
+      Here you can see etherscan website displays that the transaction was successful.
+      </p>
+
+      <p><a class="ui image" href="/assets/instructions/myetherwallet/etherscan_view_transaction.png" target="_blank">
+        <img src="/assets/instructions/myetherwallet/etherscan_view_transaction.png" />
+      </a></p>
+      </li>
+
+    </ol>
+  </div>
+</div>
+
+    </div>
+
+
+    <div class="ui tab" data-tab="second" id="Mist">
+      <div class="ui grid stackable">
+  <div class="column sixteen wide centered center aligned">
+    <div class="ui large header">
+      Mist
+      <div class="ui divider"></div>
+    </div>
+  </div>
+  <div class="column sixteen wide centered left aligend">
+    <p>
+    If this is your first token purchase, we recommend that you complete it using MyEtherWallet. If you have experience using Mist, please follow the instructions shown below:
+    </p>
+  </div>
+  <div class="column sixteen wide centered left aligend">
+    <ol>
+      <li><p>Make sure you have the <a href="https://github.com/ethereum/mist/releases" target="_blank">latest version</a> of Mist installed.</p></li>
+      <li><p>Open Mist application.</p></li>
+      <li>
+      <p>Go to <em>"Contracts"</em> tab</p>
+
+      <p><a class="ui image" href="/assets/instructions/mist/overview.png" target="_blank">
+        <img src="/assets/instructions/mist/overview.png" />
+      </a></p>
+      </li>
+
+      <li><p>Click on <em>"WATCH CONTRACT"</em> button.</p>
+
+      <p><a class="ui image" href="/assets/instructions/mist/contracts.png" target="_blank">
+        <img src="/assets/instructions/mist/contracts.png" />
+      </a></p>
+      </li>
+
+      <li>
+      <p>In the <em>"Watch contract"</em> dialog window, enter the following:</p>
+        <ul>
+          <li><p>In <em>"CONTRACT NAME"</em> field, enter <strong>"AdToken Sale"</strong>.</p></li>
+          <li><p>In <em>"CONTRACT ADDRESS"</em> field, enter adToken Contract Sale Address found <a href="#address">above</a>.</p></li>
+          <li><p>In <em>"JSON INTERFACE"</em> field, enter adToken Contract Sale ABI JSON found <a href="#abi">above</a>.</p></li>
+        </ul>
+      </li>
+
+      <li><p>Click <em>"OK"</em> button.</p>
+
+      <p><a class="ui image" href="/assets/instructions/mist/watch_contract_dialog.png" target="_blank">
+        <img src="/assets/instructions/mist/watch_contract_dialog.png" />
+      </a></p>
+      </li>
+
+      <li><p>Click on the <em>"AdToken Sale"</em> contract.</p></li>
+      <li><p>Scroll down. You should see a form title <em>"WRITE TO CONTRACT"</em>.</p>
+
+      <p>Fill in form with the following information:</p>
+
+        <ul>
+          <li><p>In <em>"Select function"</em> dropdown, choose <strong><em>"purchaseTokens"</em></strong>.</p></li>
+          <li><p>In <em>"Execute from"</em> dropdown, choose your ethereum account.</p></li>
+          <li><p>In <em>"Send ETHER"</em> field, enter the desired amount of ETH you'd like to use to purchase adToken.</p></li>
+        </ul>
+      </li>
+
+      <li><p>Click on <em>"Execute"</em> button.</p></li>
+      <li><p>In the Execute contract dialog, input the desired Gas limit.</p></li>
+      <li><p>Enter account password and click on <em>"SEND TRANSACTION"</em>.</p></li>
+      <li><p>You can check the status of the purchase in etherscan website.</p></li>
+
+    </ol>
+  </div>
+</div>
+
+    </div>
+
+    <div class="ui tab" data-tab="third" id="Parity">
+      <div class="ui grid stackable">
+  <div class="column sixteen wide centered center aligned">
+    <div class="ui large header">
+      Parity
+      <div class="ui divider"></div>
+    </div>
+  </div>
+  <div class="column sixteen wide centered left aligend">
+    <p>
+    If this is your first token purchase, we recommend that you complete it using MyEtherWallet. If you have experience using Parity, please follow the instructions shown below:
+    </p>
+  </div>
+  <div class="column sixteen wide centered left aligend">
+    <ol>
+      <li><p>Make sure you have the <a href="https://parity.io/parity.html" target="_blank">latest version</a> of Parity installed.</p></li>
+      <li>
+      <p>Start Parity application and navigate to <em><a href="http://127.0.0.1:8180/" target="_blank">http://127.0.0.1:8180</a></em> in your browser.</p>
+
+      <p><a class="ui image" href="/assets/instructions/parity/home.png" target="_blank">
+        <img src="/assets/instructions/parity/home.png" />
+      </a></p>
+      </li>
+
+      <li>
+      <p>Enable the Contracts tab by checking the checkbox where it say <em>"Contracts"</em>.</p>
+
+      <p><a class="ui image" href="/assets/instructions/parity/settings_contracts.png" target="_blank">
+        <img src="/assets/instructions/parity/settings_contracts.png" />
+      </a></p>
+      </li>
+
+      <li>
+      <p>Go to <em>"CONTRACTS"</em> tab and click on <em>"+ WATCH"</em> menu item.</p>
+
+      <p><a class="ui image" href="/assets/instructions/parity/contracts_page.png" target="_blank">
+        <img src="/assets/instructions/parity/contracts_page.png" />
+      </a></p>
+      </li>
+
+      <li>
+      <p>Select <em>"Custom Contract"</em> option and click the <em>"Next"</em> button.</p>
+
+      <p><a class="ui image" href="/assets/instructions/parity/contract_type.png" target="_blank">
+        <img src="/assets/instructions/parity/contract_type.png" />
+      </a></p>
+      </li>
+
+
+      <li>
+      <p>In the <em>"ENTER CONTRACT DETAILS" form, enter the following:</em></p>
+        <ul>
+          <li><p>In <em>"network address"</em> field, enter adToken Contract Sale Address found <a href="#address">above</a>.</p></li>
+          <li><p>In <em>"contract name"</em> field, enter <strong>"AdToken Sale"</strong>.</p></li>
+          <li><p>In <em>"contract abi"</em> field, enter adToken Contract Sale ABI JSON found <a href="#abi">above</a>.</p></li>
+        </ul>
+
+        <p>Then click on <em>"+ ADD CONTRACT"</em> button.</p>
+
+
+      <p><a class="ui image" href="/assets/instructions/parity/contract_details.png" target="_blank">
+        <img src="/assets/instructions/parity/contract_details.png" />
+      </a></p>
+
+      </li>
+
+      <li>
+      <p>You will now see the newly added contract under <em>"CONTRACTS"</em>. Click on <em>"AdToken Sale"</em> contract.</p>
+
+      <p><a class="ui image" href="/assets/instructions/parity/contract_adtoken_sale.png" target="_blank">
+        <img src="/assets/instructions/parity/contract_adtoken_sale.png" />
+      </a></p>
+
+      </li>
+
+      <li>
+      <p>Click on <em>"EXECUTE"</em> button.</p>
+
+      <p><a class="ui image" href="/assets/instructions/parity/contract_function_details.png" target="_blank">
+        <img src="/assets/instructions/parity/contract_function_details.png" />
+      </a></p>
+      </li>
+
+      <li>
+      <p>In the <em>"FUNCTION DETAILS"</em> form, set <em>"function to execute"</em> dropdown to <strong><em>"purchaseTokens()"</em></strong></p>
+
+      </li>
+
+      <li><p>In the <em>"transaction value (in ETH)"</em> field, enter the desired of ETH you'd like to use to purchase adToken.</p></li>
+      <li>
+      <p>Click on <em>"POST TRANSACTION"</em> button.</p>
+
+
+      <p><a class="ui image" href="/assets/instructions/parity/contract_function_details.png" target="_blank">
+        <img src="/assets/instructions/parity/contract_function_details.png" />
+      </a></p>
+      </li>
+      <li>
+      <p>Enter Account Password to unlock account and click on <em>"CONFIRM REQUEST"</em> button.</p>
+
+
+      <p><a class="ui image" href="/assets/instructions/parity/transaction_confirm.png" target="_blank">
+        <img src="/assets/instructions/parity/transaction_confirm.png" />
+      </a></p>
+      </li>
+      <li><p>You can check the status of the purchase in etherscan website.</p></li>
+    </ol>
+  </div>
+</div>
+
+    </div>
 
     
+
+    <div class="ui tab" data-tab="fifth">
+      <div class="ui grid stackable">
+        <div class="column sixteen wide centered center aligned">
+          <div class="ui large header">
+            MetaMask
+            <div class="ui divider"></div>
+          </div>
+        </div>
+        <div class="column sixteen wide centered left aligend">
+          <p>
+          <a href="https://metamask.io/" target="_blank">MetaMask</a> is a simple add-on that allows you to send tokens easily and securely. Please follow the instructions below to purchase adToken using MetaMask.
+          </p>
+        </div>
+        <div class="column sixteen wide centered left aligend">
+          <ol>
+            <li>Click on the extension/add-on icon in your browser.</li>
+            <li>Click <em>“Buy”</em>.</li>
+            <li>Copy the adToken contract address found <a href="#address">above</a> and paste it in the <em>“Recipient Address”</em> field.</li>
+            <li>Enter the amount of ETH you want to send.</li>
+            <li>Click <em>“Send”</em>.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="column ten wide centered left aligned TokenDisclaimer">
+        <p><small>
+          Disclaimer: The purchasing instructions are only to be used as a helpful guidance. Buyers are recommended to conduct their own research and should not solely rely on our material. We cannot guarantee that the presented materials are accurate, nor should the associated software mentioned be liable. Buyers therefore assume their own risks in connection with the token sale.
+          
+        </small></p>
+    </div>
+</div>
+
 
     <div class="column sixteen wide SiteFooter">
   <div class="ui menu stackable">

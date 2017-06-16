@@ -1,6 +1,29 @@
 ;(function() {
   'use strict';
 
+  if (window.ZeroClipboard) {
+    ZeroClipboard.config({
+      swfPath: '/js/vendor/ZeroClipboard.swf'
+    })
+
+    var client = new ZeroClipboard(document.querySelectorAll('.CopyToClipboard'));
+
+    client.on('copy', function(event) {
+      var target = event.target
+      target.textContent = 'Copied!'
+      target.disabled = true
+
+      setTimeout(function() {
+        target.textContent = 'Copy'
+        target.disabled = false
+      }, 3e3)
+    })
+
+    $('.CopyToClipboard').on('click', function(event) {
+      event.preventDefault()
+    })
+  }
+
   (function() {
     // Responsive Video
     function responsiveVideo(selector) {

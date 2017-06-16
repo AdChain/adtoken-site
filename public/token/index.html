@@ -573,7 +573,7 @@
     </li>
 
     <li>
-    <p>Scroll down and you will see your "Account Address". Send ETH to this account wallet address.</p>
+    <p>Scroll down and you will see your "Account Address". You will have to send ether to this account address in order to fund your wallet required for purchasing adToken.</p>
 
       <p><a class="ui image" href="/assets/instructions/myetherwallet/account_address.png" target="_blank">
         <img src="/assets/instructions/myetherwallet/account_address.png" />
@@ -612,7 +612,9 @@
 
       <li>
 
-      <p>A dialog window will appear prompting for Amount to Send. Enter the desired of ETH you'd like to use to purchase adToken. Set the Gas Limit to desired amount. You can use default Gas Limit displayed in the input field.</p>
+      <p>
+      Click <em>“Write”</em> button and a
+      dialog window will appear prompting for Amount to Send. Enter the desired amount of ETH you'd like to use to purchase adToken. Set the Gas Limit to <em>100,000</em>.</p>
 
       <p><a class="ui image" href="/assets/instructions/myetherwallet/generate_transaction.png" target="_blank">
         <img src="/assets/instructions/myetherwallet/generate_transaction.png" />
@@ -621,7 +623,7 @@
       </li>
 
       <li>
-      <p>Verify that the inputs are correct and click on <em>"Yes, I am sure! Make transactions."</em> button.</p>
+      <p>Verify that the inputs are correct and click on <em>"Yes, I am sure! Make transaction."</em> button.</p>
 
       <p><a class="ui image" href="/assets/instructions/myetherwallet/generate_transaction_confirm.png" target="_blank">
         <img src="/assets/instructions/myetherwallet/generate_transaction_confirm.png" />
@@ -671,16 +673,16 @@
   <div class="column sixteen wide centered left aligend">
     <ol>
       <li><p>Make sure you have the <a href="https://github.com/ethereum/mist/releases" target="_blank">latest version</a> of Mist installed.</p></li>
-      <li><p>Open Mist application.</p></li>
+      <li><p>Open the Mist application.</p></li>
       <li>
-      <p>Go to <em>"Contracts"</em> tab</p>
+      <p>Go to the <em>"Contracts"</em> tab</p>
 
       <p><a class="ui image" href="/assets/instructions/mist/overview.png" target="_blank">
         <img src="/assets/instructions/mist/overview.png" />
       </a></p>
       </li>
 
-      <li><p>Click on <em>"WATCH CONTRACT"</em> button.</p>
+      <li><p>Click on the <em>"WATCH CONTRACT"</em> button.</p>
 
       <p><a class="ui image" href="/assets/instructions/mist/contracts.png" target="_blank">
         <img src="/assets/instructions/mist/contracts.png" />
@@ -690,13 +692,13 @@
       <li>
       <p>In the <em>"Watch contract"</em> dialog window, enter the following:</p>
         <ul>
-          <li><p>In <em>"CONTRACT NAME"</em> field, enter <strong>"AdToken Sale"</strong>.</p></li>
-          <li><p>In <em>"CONTRACT ADDRESS"</em> field, enter adToken Contract Sale Address found <a href="#address">above</a>.</p></li>
-          <li><p>In <em>"JSON INTERFACE"</em> field, enter adToken Contract Sale ABI JSON found <a href="#abi">above</a>.</p></li>
+          <li><p>In the <em>"CONTRACT NAME"</em> field, enter <strong>"AdToken Sale"</strong>.</p></li>
+          <li><p>In the <em>"CONTRACT ADDRESS"</em> field, enter adToken Contract Sale Address found <a href="#address">above</a>.</p></li>
+          <li><p>In the <em>"JSON INTERFACE"</em> field, enter adToken Contract Sale ABI JSON found <a href="#abi">above</a>.</p></li>
         </ul>
       </li>
 
-      <li><p>Click <em>"OK"</em> button.</p>
+      <li><p>Click the <em>"OK"</em> button.</p>
 
       <p><a class="ui image" href="/assets/instructions/mist/watch_contract_dialog.png" target="_blank">
         <img src="/assets/instructions/mist/watch_contract_dialog.png" />
@@ -706,18 +708,18 @@
       <li><p>Click on the <em>"AdToken Sale"</em> contract.</p></li>
       <li><p>Scroll down. You should see a form title <em>"WRITE TO CONTRACT"</em>.</p>
 
-      <p>Fill in form with the following information:</p>
+      <p>Fill in the form with the following information:</p>
 
         <ul>
-          <li><p>In <em>"Select function"</em> dropdown, choose <strong><em>"purchaseTokens"</em></strong>.</p></li>
-          <li><p>In <em>"Execute from"</em> dropdown, choose your ethereum account.</p></li>
-          <li><p>In <em>"Send ETHER"</em> field, enter the desired amount of ETH you'd like to use to purchase adToken.</p></li>
+          <li><p>In the <em>"Select function"</em> dropdown, choose <strong><em>"purchaseTokens"</em></strong>.</p></li>
+          <li><p>In the <em>"Execute from"</em> dropdown, choose your ethereum account.</p></li>
+          <li><p>In the <em>"Send ETHER"</em> field, enter the desired amount of ETH you'd like to use to purchase adToken.</p></li>
         </ul>
       </li>
 
-      <li><p>Click on <em>"Execute"</em> button.</p></li>
-      <li><p>In the Execute contract dialog, input the desired Gas limit.</p></li>
-      <li><p>Enter account password and click on <em>"SEND TRANSACTION"</em>.</p></li>
+      <li><p>Click on the <em>"Execute"</em> button.</p></li>
+      <li><p>In the Execute contract dialog, input <em>100,000</em> as the Gas limit.</p></li>
+      <li><p>Enter the account password and click on <em>"SEND TRANSACTION"</em>.</p></li>
       <li><p>You can check the status of the purchase in etherscan website.</p></li>
 
     </ol>
@@ -743,7 +745,9 @@
     <ol>
       <li><p>Make sure you have the <a href="https://parity.io/parity.html" target="_blank">latest version</a> of Parity installed.</p></li>
       <li>
-      <p>Start Parity application and navigate to <em><a href="http://127.0.0.1:8180/" target="_blank">http://127.0.0.1:8180</a></em> in your browser.</p>
+      <p>Start Parity application. Note: if using testnet you have start parity first by running "<code>parity --chain=kovan</code>" in command line.</p></li>
+
+      <li>Navigate to <em><a href="http://126.0.0.1:8180/" target="_blank">http://127.0.0.1:8180</a></em> in your browser.</p>
 
       <p><a class="ui image" href="/assets/instructions/parity/home.png" target="_blank">
         <img src="/assets/instructions/parity/home.png" />
@@ -751,7 +755,7 @@
       </li>
 
       <li>
-      <p>Enable the Contracts tab by checking the checkbox where it say <em>"Contracts"</em>.</p>
+      <p>Enable the Contracts tab by checking the checkbox where it say <em>"Contracts"</em> under the <em>"Settings"</em> page.</p>
 
       <p><a class="ui image" href="/assets/instructions/parity/settings_contracts.png" target="_blank">
         <img src="/assets/instructions/parity/settings_contracts.png" />

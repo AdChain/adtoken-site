@@ -151,7 +151,6 @@ img[data-src] {
  * BUTTON
  */
 :root:root .ui.button {
-  text-transform: uppercase;
   padding: 1em 2em;
   transition: all 0.2s ease-out;
 }

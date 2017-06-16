@@ -11,7 +11,7 @@
     <div class="ui grid stackable cards center aligned">
       <div class="column twelve wide centered left aligned" style="text-align:left">
         <p>
-        Thank you for your interest in purchasing adToken. The information <a href="#instructions">below</a> has been organized to help you in your adToken purchase using MyEtherWallet, Mist, or Parity.
+        Thank you for your interest in purchasing adToken. The following information has been organized to help you in purchasing adToken. There are also guides <a href="#instructions">below</a> on how to purchase using MyEtherWallet, Mist, or Parity.
         </p>
       </div>
 
@@ -24,21 +24,21 @@
 
       <div class="column twelve wide centered center aligned" id="address">
         <p style="text-align:left">
-        The mainnet adToken sale contract address will be displayed approaching closer to the date of the token launch. <strong>Right below is the sale contract address on the <a href="https://rinkeby.etherscan.io/address/0x06970bbec4ac9497b4663ae3675611c4629e6a40" target="_blank">Rinkeby testnet</a> for testing before the actual token launch.</strong>
+        The mainnet adToken sale contract address will be displayed approaching closer to the date of the token launch. <strong>Right below is the sale contract address on the <a href="https://kovan.etherscan.io/address/0xaef29c68232c586ef932e86dcc5e2d9c71920c78" target="_blank">Kovan testnet</a> for testing before the actual token launch.</strong>
         </p>
 
         <div class="ui large header">
           ADTOKEN SALE CONTRACT ADDRESS
-          <div><strong style="color:#ff7a00">(RINKEBY TESTNET)</strong></div>
+          <div><strong style="color:#ff7a00">(KOVAN TESTNET)</strong></div>
         </div>
 
         <div class="ui huge segment" style="overflow-x:auto">
           <code>
-            0x06970bbec4ac9497b4663ae3675611c4629e6a40
+        0xaef29c68232c586ef932e86dcc5e2d9c71920c78
           </code>
         </div>
 
-        <p><a href="https://rinkeby.etherscan.io/address/0x06970bbec4ac9497b4663ae3675611c4629e6a40#code" target="_blank">
+        <p><a href="https://kovan.etherscan.io/address/0xaef29c68232c586ef932e86dcc5e2d9c71920c78#code" target="_blank">
           View adToken sale contract on etherscan
         </a></p>
 
@@ -58,7 +58,7 @@
           </div>
         </div>
 
-        <p><a href="https://adtoken-sale.s3-us-west-2.amazonaws.com/sale.json" target="_blank">Download adToken Sale Contract ABI</a>
+        <p><a href="https://adtoken-sale.s3-us-west-2.amazonaws.com/Sale.json" target="_blank">Download adToken Sale Contract ABI</a>
         </p>
 
         <div class="ui large header" id="abi">
@@ -84,7 +84,9 @@
           <li class="item">We recommend using the wallet applications mentioned below.</li>
           <li class="item">Only ETH is accepted. Do NOT try sending anything other than ETH.</li>
           <li class="item">ALWAYS double check addresses you are sending ether to.</li>
+          <!--
           <li class="item">By participating in the token sale, you agree to the <a href="/terms">terms and conditions</a>.</li>
+          -->
       </div>
 
       <div class="column sixteen wide centered center aligned">
@@ -94,8 +96,8 @@
           </p>
           <p>
           <a
-            href="https://rinkeby.etherscan.io/address/0x06970bbec4ac9497b4663ae3675611c4629e6a40"
-            target="_blank">view transactions on rinkeby.etherscan.io</a>
+            href="https://kovan.etherscan.io/address/0x06970bbec4ac9497b4663ae3675611c4629e6a40"
+            target="_blank">view transactions on kovan.etherscan.io</a>
           </p>
         </div>
       </div>
@@ -126,10 +128,7 @@
     </div>
 
     <div class="ui tab" data-tab="third" id="Parity">
-      <p>Instructions for Parity coming soon.</p>
-      <!--
       {{ partial "token_instructions_parity.html" . }}
-      -->
     </div>
 
     <!--
@@ -189,7 +188,10 @@
 
   <div class="column ten wide centered left aligned TokenDisclaimer">
         <p><small>
-          Disclaimer: The purchasing instructions are only to be used as a helpful guidance. Buyers are recommended to conduct their own research and should not solely rely on our material. We cannot guarantee that the presented materials are accurate, nor should the associated software mentioned be liable. Buyers therefore assume their own risks in connection with the token sale. Please visit our <a href="/terms">terms and conditions</a> concerning the token sale.
+          Disclaimer: The purchasing instructions are only to be used as a helpful guidance. Buyers are recommended to conduct their own research and should not solely rely on our material. We cannot guarantee that the presented materials are accurate, nor should the associated software mentioned be liable. Buyers therefore assume their own risks in connection with the token sale.
+          <!-->
+          Please visit our <a href="/terms">terms and conditions</a> concerning the token sale.
+          -->
         </small></p>
     </div>
 </div>

@@ -7,17 +7,47 @@
   </div>
   <div class="column sixteen wide centered left aligend">
     <p>
-    <a href="https://parity.io/">Parity</a> is a secure browser-based wallet that enables you to schedule future purchases. Please follow the instructions below to purchase adToken through Parity:
+    If this is your first token purchase, we recommend that you complete it using MyEtherWallet. If you have experience using Parity, please follow the instructions shown below:
     </p>
   </div>
   <div class="column sixteen wide centered left aligend">
     <ol>
-      <li>Open your Parity app.</li>
-      <li>Open the <em>“Accounts”</em> tab and select the account you would like to transfer funds from.</li>
-      <li>Click <em>“Transfer”</em></li>
-      <li>Paste the adToken contract address found <a href="#address">above</a> in the <em>“recipient address”</em> field.</li>
-      <li>Select the ETH amount.</li>
-      <li>Click <em>“Send”</em>. You will need to confirm by entering your password.</li>
+      <li><p>Make sure you have the <a href="https://parity.io/parity.html" target="_blank">latest version</a> of Parity installed.</p></li>
+      <li><p>Start Parity application and navigate to <em><a href="http://127.0.0.1:8180/" target="_blank">http://127.0.0.1:8180</a></em> in your browser.</p></li>
+
+      <!--
+      home
+      -->
+
+      <li><p>Enable the Contracts tab by checking the checkbox where it say <em>"Contracts"</em>.</p></li>
+
+      <!--
+      settings_contracts
+      -->
+
+      <li><p>Go to <em>"CONTRACTS"</em> tab and click on <em>"+ WATCH"</em> menu item.</p></li>
+      <li><p>Select <em>"Custom Contract"</em> option and click the <em>"Next"</em> button.</p></li>
+      <li>
+      <p>In the <em>"ENTER CONTRACT DETAILS" form, enter the following:</em></p>
+        <ul>
+          <li><p>In <em>"network address"</em> field, enter adToken Contract Sale Address found <a href="#address">above</a>.</p></li>
+          <li><p>In <em>"contract name"</em> field, enter <strong>"AdToken Sale"</strong>.</p></li>
+          <li><p>In <em>"contract abi"</em> field, enter adToken Contract Sale ABI JSON found <a href="#abi">above</a>.</p></li>
+        </ul>
+
+        <p>Then click on <em>"+ ADD CONTRACT"</em> button.</p>
+      </li>
+
+      <li><p>You will now see the newly added contract under <em>"CONTRACTS"</em>. Click on <em>"AdToken Sale"</em> contract.</p></li>
+
+      <li><p>Click on <em>"EXECUTE"</em> button.</p></li>
+
+      <li><p>In the <em>"FUNCTION DETAILS"</em> form, set <em>"function to execute"</em> dropdown to <strong><em>"purchaseTokens()"</em></strong></p></li>
+
+      <li><p>In the <em>"transaction value (in ETH)"</em> field, enter the desired of ETH you'd like to use to purchase adToken.</p></li>
+      <li><p>Click on <em>"POST TRANSACTION"</em> button.</p></li>
+      <li><p>Enter Account Password to unlock account and click on <em>"CONFIRM REQUEST"</em> button.</p></li>
+      <li><p>You can check the status of the purchase in etherscan website.</p></li>
     </ol>
   </div>
 </div>

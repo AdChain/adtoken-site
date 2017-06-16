@@ -80,7 +80,7 @@
     <div class="ui grid stackable cards center aligned">
       <div class="column twelve wide centered left aligned" style="text-align:left">
         <p>
-        Thank you for your interest in purchasing adToken. The information <a href="#instructions">below</a> has been organized to help you in your adToken purchase using MyEtherWallet, Mist, or Parity.
+        Thank you for your interest in purchasing adToken. The following information has been organized to help you in purchasing adToken. There are also guides <a href="#instructions">below</a> on how to purchase using MyEtherWallet, Mist, or Parity.
         </p>
       </div>
 
@@ -93,21 +93,21 @@
 
       <div class="column twelve wide centered center aligned" id="address">
         <p style="text-align:left">
-        The mainnet adToken sale contract address will be displayed approaching closer to the date of the token launch. <strong>Right below is the sale contract address on the <a href="https://rinkeby.etherscan.io/address/0x06970bbec4ac9497b4663ae3675611c4629e6a40" target="_blank">Rinkeby testnet</a> for testing before the actual token launch.</strong>
+        The mainnet adToken sale contract address will be displayed approaching closer to the date of the token launch. <strong>Right below is the sale contract address on the <a href="https://kovan.etherscan.io/address/0xaef29c68232c586ef932e86dcc5e2d9c71920c78" target="_blank">Kovan testnet</a> for testing before the actual token launch.</strong>
         </p>
 
         <div class="ui large header">
           ADTOKEN SALE CONTRACT ADDRESS
-          <div><strong style="color:#ff7a00">(RINKEBY TESTNET)</strong></div>
+          <div><strong style="color:#ff7a00">(KOVAN TESTNET)</strong></div>
         </div>
 
         <div class="ui huge segment" style="overflow-x:auto">
           <code>
-            0x06970bbec4ac9497b4663ae3675611c4629e6a40
+        0xaef29c68232c586ef932e86dcc5e2d9c71920c78
           </code>
         </div>
 
-        <p><a href="https://rinkeby.etherscan.io/address/0x06970bbec4ac9497b4663ae3675611c4629e6a40#code" target="_blank">
+        <p><a href="https://kovan.etherscan.io/address/0xaef29c68232c586ef932e86dcc5e2d9c71920c78#code" target="_blank">
           View adToken sale contract on etherscan
         </a></p>
 
@@ -463,7 +463,7 @@
           </div>
         </div>
 
-        <p><a href="https://adtoken-sale.s3-us-west-2.amazonaws.com/sale.json" target="_blank">Download adToken Sale Contract ABI</a>
+        <p><a href="https://adtoken-sale.s3-us-west-2.amazonaws.com/Sale.json" target="_blank">Download adToken Sale Contract ABI</a>
         </p>
 
         <div class="ui large header" id="abi">
@@ -489,7 +489,7 @@
           <li class="item">We recommend using the wallet applications mentioned below.</li>
           <li class="item">Only ETH is accepted. Do NOT try sending anything other than ETH.</li>
           <li class="item">ALWAYS double check addresses you are sending ether to.</li>
-          <li class="item">By participating in the token sale, you agree to the <a href="/terms">terms and conditions</a>.</li>
+          
       </div>
 
       <div class="column sixteen wide centered center aligned">
@@ -499,8 +499,8 @@
           </p>
           <p>
           <a
-            href="https://rinkeby.etherscan.io/address/0x06970bbec4ac9497b4663ae3675611c4629e6a40"
-            target="_blank">view transactions on rinkeby.etherscan.io</a>
+            href="https://kovan.etherscan.io/address/0x06970bbec4ac9497b4663ae3675611c4629e6a40"
+            target="_blank">view transactions on kovan.etherscan.io</a>
           </p>
         </div>
       </div>
@@ -521,7 +521,7 @@
 
 <div class="ui grid stackable">
   <div class="column ten wide centered left aligned TabsSection">
-    <div class="ui active tab" data-tab="first">
+    <div class="ui active tab" data-tab="first" id="MEW">
       <div class="ui grid stackable">
   <div class="column sixteen wide centered center aligned">
     <div class="ui large header">
@@ -656,14 +656,128 @@
     </div>
 
 
-    <div class="ui tab" data-tab="second">
-      <p>Instructions for Mist coming soon.</p>
-      
+    <div class="ui tab" data-tab="second" id="Mist">
+      <div class="ui grid stackable">
+  <div class="column sixteen wide centered center aligned">
+    <div class="ui large header">
+      Mist
+      <div class="ui divider"></div>
+    </div>
+  </div>
+  <div class="column sixteen wide centered left aligend">
+    <p>
+    If this is your first token purchase, we recommend that you complete it using MyEtherWallet. If you have experience using Mist, please follow the instructions shown below:
+    </p>
+  </div>
+  <div class="column sixteen wide centered left aligend">
+    <ol>
+      <li><p>Make sure you have the <a href="https://github.com/ethereum/mist/releases" target="_blank">latest version</a> of Mist installed.</p></li>
+      <li><p>Open Mist application.</p></li>
+      <li>
+      <p>Go to <em>"Contracts"</em> tab</p>
+
+      <p><a class="ui image" href="/assets/instructions/mist/overview.png" target="_blank">
+        <img src="/assets/instructions/mist/overview.png" />
+      </a></p>
+      </li>
+
+      <li><p>Click on <em>"WATCH CONTRACT"</em> button.</p>
+
+      <p><a class="ui image" href="/assets/instructions/mist/contracts.png" target="_blank">
+        <img src="/assets/instructions/mist/contracts.png" />
+      </a></p>
+      </li>
+
+      <li>
+      <p>In the <em>"Watch contract"</em> dialog window, enter the following:</p>
+        <ul>
+          <li><p>In <em>"CONTRACT NAME"</em> field, enter <strong>"AdToken Sale"</strong>.</p></li>
+          <li><p>In <em>"CONTRACT ADDRESS"</em> field, enter adToken Contract Sale Address found <a href="#address">above</a>.</p></li>
+          <li><p>In <em>"JSON INTERFACE"</em> field, enter adToken Contract Sale ABI JSON found <a href="#abi">above</a>.</p></li>
+        </ul>
+      </li>
+
+      <li><p>Click <em>"OK"</em> button.</p>
+
+      <p><a class="ui image" href="/assets/instructions/mist/watch_contract_dialog.png" target="_blank">
+        <img src="/assets/instructions/mist/watch_contract_dialog.png" />
+      </a></p>
+      </li>
+
+      <li><p>Click on the <em>"AdToken Sale"</em> contract.</p></li>
+      <li><p>Scroll down. You should see a form title <em>"WRITE TO CONTRACT"</em>.</p>
+
+      <p>Fill in form with the following information:</p>
+
+        <ul>
+          <li><p>In <em>"Select function"</em> dropdown, choose <strong><em>"purchaseTokens"</em></strong>.</p></li>
+          <li><p>In <em>"Execute from"</em> dropdown, choose your ethereum account.</p></li>
+          <li><p>In <em>"Send ETHER"</em> field, enter the desired amount of ETH you'd like to use to purchase adToken.</p></li>
+        </ul>
+      </li>
+
+      <li><p>Click on <em>"Execute"</em> button.</p></li>
+      <li><p>In the Execute contract dialog, input the desired Gas limit.</p></li>
+      <li><p>Enter account password and click on <em>"SEND TRANSACTION"</em>.</p></li>
+      <li><p>You can check the status of the purchase in etherscan website.</p></li>
+
+    </ol>
+  </div>
+</div>
+
     </div>
 
-    <div class="ui tab" data-tab="third">
-      <p>Instructions for Parity coming soon.</p>
+    <div class="ui tab" data-tab="third" id="Parity">
+      <div class="ui grid stackable">
+  <div class="column sixteen wide centered center aligned">
+    <div class="ui large header">
+      Parity
+      <div class="ui divider"></div>
+    </div>
+  </div>
+  <div class="column sixteen wide centered left aligend">
+    <p>
+    If this is your first token purchase, we recommend that you complete it using MyEtherWallet. If you have experience using Parity, please follow the instructions shown below:
+    </p>
+  </div>
+  <div class="column sixteen wide centered left aligend">
+    <ol>
+      <li><p>Make sure you have the <a href="https://parity.io/parity.html" target="_blank">latest version</a> of Parity installed.</p></li>
+      <li><p>Start Parity application and navigate to <em><a href="http://127.0.0.1:8180/" target="_blank">http://127.0.0.1:8180</a></em> in your browser.</p></li>
+
       
+
+      <li><p>Enable the Contracts tab by checking the checkbox where it say <em>"Contracts"</em>.</p></li>
+
+      
+
+      <li><p>Go to <em>"CONTRACTS"</em> tab and click on <em>"+ WATCH"</em> menu item.</p></li>
+      <li><p>Select <em>"Custom Contract"</em> option and click the <em>"Next"</em> button.</p></li>
+      <li>
+      <p>In the <em>"ENTER CONTRACT DETAILS" form, enter the following:</em></p>
+        <ul>
+          <li><p>In <em>"network address"</em> field, enter adToken Contract Sale Address found <a href="#address">above</a>.</p></li>
+          <li><p>In <em>"contract name"</em> field, enter <strong>"AdToken Sale"</strong>.</p></li>
+          <li><p>In <em>"contract abi"</em> field, enter adToken Contract Sale ABI JSON found <a href="#abi">above</a>.</p></li>
+        </ul>
+
+        <p>Then click on <em>"+ ADD CONTRACT"</em> button.</p>
+      </li>
+
+      <li><p>You will now see the newly added contract under <em>"CONTRACTS"</em>. Click on <em>"AdToken Sale"</em> contract.</p></li>
+
+      <li><p>Click on <em>"EXECUTE"</em> button.</p></li>
+
+      <li><p>In the <em>"FUNCTION DETAILS"</em> form, set <em>"function to execute"</em> dropdown to <strong><em>"purchaseTokens()"</em></strong></p></li>
+
+      <li><p>In the <em>"transaction value (in ETH)"</em> field, enter the desired of ETH you'd like to use to purchase adToken.</p></li>
+      <li><p>Click on <em>"POST TRANSACTION"</em> button.</p></li>
+      <li><p>Enter Account Password to unlock account and click on <em>"CONFIRM REQUEST"</em> button.</p></li>
+      <li><p>You can check the status of the purchase in etherscan website.</p></li>
+    </ol>
+  </div>
+</div>
+
     </div>
 
     
@@ -696,7 +810,8 @@
 
   <div class="column ten wide centered left aligned TokenDisclaimer">
         <p><small>
-          Disclaimer: The purchasing instructions are only to be used as a helpful guidance. Buyers are recommended to conduct their own research and should not solely rely on our material. We cannot guarantee that the presented materials are accurate, nor should the associated software mentioned be liable. Buyers therefore assume their own risks in connection with the token sale. Please visit our <a href="/terms">terms and conditions</a> concerning the token sale.
+          Disclaimer: The purchasing instructions are only to be used as a helpful guidance. Buyers are recommended to conduct their own research and should not solely rely on our material. We cannot guarantee that the presented materials are accurate, nor should the associated software mentioned be liable. Buyers therefore assume their own risks in connection with the token sale.
+          
         </small></p>
     </div>
 </div>

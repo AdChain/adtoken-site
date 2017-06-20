@@ -274,6 +274,7 @@ img[data-src] {
 
 :root:root .Section .ui.header {
   margin-bottom: 20px;
+  line-height: 1.4;
 }
 
 :root:root .Section .ui.header .sub {
@@ -818,7 +819,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
  */
 :root:root:root .HomeCountdown .header {
   font-weight: normal;
-  font-size: 14px;
+  font-size: 1em;
   text-transform: uppercase;
 }
 .clocks {
@@ -1028,7 +1029,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
 }
 
 :root:root:root .TokenDisclaimer p small {
-
+  font-size: 11px;
 }
 
 :root:root:root .TokenPage .TabsSection {
@@ -1110,6 +1111,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
 :root:root:root .TokenPage ul li {
   margin-bottom: 15px;
   line-height: 1.4;
+}
+
+:root:root:root .TokenPage .HashtagAnchor {
+  color: #222;
+  border-bottom: 1px dotted #222;
 }
 
 /**

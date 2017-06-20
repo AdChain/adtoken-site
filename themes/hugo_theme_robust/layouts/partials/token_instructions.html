@@ -11,25 +11,24 @@
     <div class="ui grid stackable cards center aligned">
       <div class="column twelve wide centered left aligned" style="text-align:left">
         <p>
-        Thank you for your interest in purchasing adToken. The following information has been organized to help you in purchasing adToken. There are also guides <a href="#instructions">below</a> on how to purchase using MyEtherWallet, Mist, Parity, or MetaMask.
+        Thank you for your interest in purchasing adToken. The following information has been organized to help you in purchasing adToken. There are guides <a href="#instructions" class="HashtagAnchor">below</a> on how to purchase using MyEtherWallet, Mist, Parity, or MetaMask. We also recommend you read our <a href="/#FAQ" target="_blank">FAQ</a> section before proceeding to purchasing adToken.
         </p>
       </div>
 
-      <div class="column twelve wide centered center aligned">
+      <div class="column sixteen wide centered center aligned" id="date">
         <p>TOKEN LAUNCH DATE:</p>
-        <p>
-          JUNE 26TH, 2017 AT 9AM PDT / 4PM GMT
+        <p style="text-transform:uppercase">
+          June 26th, 2017<br/>starting on block <strong>3,939,181</strong>, around 9am PDT / 4pm GMT
         </p>
       </div>
 
       <div class="column twelve wide centered center aligned">
-        <p style="text-align:left">
-        The mainnet adToken sale contract address will be displayed approaching closer to the date of the token launch. <strong>Right below is the sale contract address on the <a href="https://kovan.etherscan.io/address/0xaef29c68232c586ef932e86dcc5e2d9c71920c78" target="_blank">Kovan testnet</a> for testing before the actual token launch.</strong>
+        <p>
+        Displayed right below is the <strong>mainnet</strong> adToken sale contract address.
         </p>
 
         <div class="ui large header" id="address">
           ADTOKEN SALE CONTRACT ADDRESS
-          <div><strong style="color:#ff7a00">(KOVAN TESTNET)</strong></div>
         </div>
 
         <div style="padding:20px 5px;">
@@ -37,7 +36,7 @@
             <input
               type="text"
               id="SaleContractAddress"
-              value="0xaef29c68232c586ef932e86dcc5e2d9c71920c78">
+              value="0x5678bcea6d6f33f645dca8c8c9b7d8d5caf0a2b1">
             <div class="ui label">
               <a
                   href="#SaleContractAddress"
@@ -49,9 +48,30 @@
           </div>
         </div>
 
-        <p><a href="https://kovan.etherscan.io/address/0xaef29c68232c586ef932e86dcc5e2d9c71920c78#code" target="_blank">
+        <p><a href="https://etherscan.io/address/0x5678bcea6d6f33f645dca8c8c9b7d8d5caf0a2b1#code" target="_blank">
           View adToken sale contract on etherscan
         </a></p>
+
+        <div class="ui accordion" style="margin-bottom:15px">
+          <div class="title">
+            <i class="dropdown icon"></i>
+            <small>Kovan testnet</small>
+          </div>
+          <div class="content">
+            <div><p style="text-align:left;margin-bottom:10px;">Right below is the adToken sale contract address on the <strong><a href="https://kovan.etherscan.io/address/0xaef29c68232c586ef932e86dcc5e2d9c71920c78" target="_blank">Kovan testnet</a></strong> for testing before the actual token launch.</p></div>
+
+          <div class="ui input small fluid" style="margin-bottom:10px;">
+            <input
+              type="text"
+              value="0xaef29c68232c586ef932e86dcc5e2d9c71920c78">
+          </div>
+
+            <p><a href="https://kovan.etherscan.io/address/0xaef29c68232c586ef932e86dcc5e2d9c71920c78#code" target="_blank">
+              View adToken sale contract on kovan etherscan
+            </a></p>
+
+          </div>
+        </div>
 
         <div class="ui large header" id="abi">
           ADTOKEN SALE CONTRACT ABI
@@ -91,22 +111,20 @@
           </code>
         </div>
 
-        <p style="text-align:left;">The <code>purchaseTokens()</code> smart contract function needs to be executed in order to purchase tokens. <strong>You must send ETH when calling <code>purchaseToken()</code> function to buy adToken.</strong> Further instructions are detailed <a href="#instructions">below</a>.</p>
+        <p style="text-align:left;">The <code>purchaseTokens()</code> smart contract function needs to be executed in order to purchase tokens. <strong>You must send ETH when calling <code>purchaseToken()</code> function to buy adToken.</strong> Further instructions are detailed <a href="#instructions" class="HashtagAnchor">below</a>.</p>
 
       </div>
 
       <div class="column ten wide centered left aligned">
         <p><strong>IMPORTANT NOTES</strong></p>
         <ul class="ui list">
-          <li class="item"><strong>Do NOT send ETH directly to the adToken sale contract address. Please follow instructions <a href="#instructions">below</a> on how to execute <em><code>purchaseTokens()</code></em> smart contract function in order to purchase adToken.</strong></li>
-          <li class="item">Do NOT send funds from exchanges such as Poloniex, Bitfinex, Bittrex, Coinbase, GDAX, etc.</li>
-          <li class="item">Do not send your funds before the fundraiser has begun.</li>
-          <li class="item">We recommend using the wallet applications mentioned below.</li>
-          <li class="item">Only ETH is accepted. Do NOT try sending anything other than ETH.</li>
-          <li class="item">ALWAYS double check addresses you are sending ether to.</li>
-          <!--
-          <li class="item">By participating in the token sale, you agree to the <a href="/terms">terms and conditions</a>.</li>
-          -->
+          <li class="item"><strong>Do not send ETH directly to the adToken sale contract address. Please follow instructions <a href="#instructions" class="HashtagAnchor">below</a> on how to properly execute the <em><code>purchaseTokens()</code></em> smart contract function in order to purchase adToken.</strong></li>
+          <li class="item">Do not send funds from exchanges such as Poloniex, Bitfinex, Bittrex, Coinbase, GDAX, etc.</li>
+          <li class="item">Do not send ether before the <a href="#date" class="HashtagAnchor">specified</a> start block time. You can view the lastest block number <a href="https://etherscan.io/blocks" target="_blank">here</a>.</li>
+          <li class="item">We recommend using the wallet applications mentioned <a href="#instructions" class="HashtagAnchor">below</a>.</li>
+          <li class="item">Only ETH is accepted. Do not try sending anything other than ETH.</li>
+          <li class="item">Always double check addresses you are sending ETH to.</li>
+          <li class="item">By participating in the token sale, you agree to the <a href="https://adtoken.com/terms-of-use.pdf" target="_blank">terms of use</a> and <a href="https://adtoken.com/purchase-agreement.pdf" target="_blank">purchase agreement</a>.</li>
       </div>
 
       <div class="column sixteen wide centered center aligned">
@@ -116,8 +134,19 @@
           </p>
           <p>
           <a
-            href="https://kovan.etherscan.io/address/0x06970bbec4ac9497b4663ae3675611c4629e6a40"
-            target="_blank">view transactions on kovan.etherscan.io</a>
+            href="https://etherscan.io/address/0x5678bcea6d6f33f645dca8c8c9b7d8d5caf0a2b1"
+            target="_blank">view transactions on etherscan.io</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="column sixteen wide centered center aligned">
+        <div style="padding-top:20px;padding-bottom:40px;">
+          <p>
+          The adToken sale smart contracts have been audited and tested.<br />The contracts can be viewed on
+          <a
+            href="https://github.com/AdChain/token-launch-contracts"
+            target="_blank">github</a>.
           </p>
         </div>
       </div>
@@ -187,9 +216,7 @@
   <div class="column ten wide centered left aligned TokenDisclaimer">
         <p><small>
           Disclaimer: The purchasing instructions are only to be used as a helpful guidance. Buyers are recommended to conduct their own research and should not solely rely on our material. We cannot guarantee that the presented materials are accurate, nor should the associated software mentioned be liable. Buyers therefore assume their own risks in connection with the token sale.
-          <!-->
-          Please visit our <a href="/terms">terms and conditions</a> concerning the token sale.
-          -->
+          Please visit our <a href="https://adtoken.com/terms-of-use.pdf" target="_blank">terms of use</a> and <a href="https://adtoken.com/purchase-agreement.pdf" target="_blank">purchase agreement</a> concerning the token sale.
         </small></p>
     </div>
 </div>

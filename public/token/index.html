@@ -79,36 +79,67 @@
     <div class="ui grid stackable cards center aligned">
       <div class="column twelve wide centered left aligned" style="text-align:left">
         <p>
-        Thank you for your interest in purchasing adToken. The following information has been organized to help you in purchasing adToken. There are also guides <a href="#instructions">below</a> on how to purchase using MyEtherWallet, Mist, or Parity.
+        Thank you for your interest in purchasing adToken. The following information has been organized to help you in purchasing adToken. There are also guides <a href="#instructions">below</a> on how to purchase using MyEtherWallet, Mist, Parity, or MetaMask.
         </p>
       </div>
 
-      <div class="column twelve wide centered center aligned" id="address">
+      <div class="column sixteen wide centered center aligned" id="date">
         <p>TOKEN LAUNCH DATE:</p>
-        <p>
-          JUNE 26TH, 2017 AT 9AM PDT / 4PM GMT
+        <p style="text-transform:uppercase">
+          June 26th, 2017<br/>starting on block <strong>3,939,181</strong>, around 9am PDT / 4pm GMT
         </p>
       </div>
 
-      <div class="column twelve wide centered center aligned" id="address">
-        <p style="text-align:left">
-        The mainnet adToken sale contract address will be displayed approaching closer to the date of the token launch. <strong>Right below is the sale contract address on the <a href="https://kovan.etherscan.io/address/0xaef29c68232c586ef932e86dcc5e2d9c71920c78" target="_blank">Kovan testnet</a> for testing before the actual token launch.</strong>
+      <div class="column twelve wide centered center aligned">
+        <p>
+        Displayed right below is the <strong>mainnet</strong> adToken sale contract address.
         </p>
 
-        <div class="ui large header">
+        <div class="ui large header" id="address">
           ADTOKEN SALE CONTRACT ADDRESS
-          <div><strong style="color:#ff7a00">(KOVAN TESTNET)</strong></div>
         </div>
 
-        <div class="ui huge segment" style="overflow-x:auto">
-          <code>
-        0xaef29c68232c586ef932e86dcc5e2d9c71920c78
-          </code>
+        <div style="padding:20px 5px;">
+          <div class="ui right labeled large input fluid">
+            <input
+              type="text"
+              id="SaleContractAddress"
+              value="0x5678bcea6d6f33f645dca8c8c9b7d8d5caf0a2b1">
+            <div class="ui label">
+              <a
+                  href="#SaleContractAddress"
+                  class="CopyToClipboard"
+                  data-clipboard-target="SaleContractAddress">
+                  Copy
+              </a>
+            </div>
+          </div>
         </div>
 
-        <p><a href="https://kovan.etherscan.io/address/0xaef29c68232c586ef932e86dcc5e2d9c71920c78#code" target="_blank">
+        <p><a href="https://etherscan.io/address/0x5678bcea6d6f33f645dca8c8c9b7d8d5caf0a2b1#code" target="_blank">
           View adToken sale contract on etherscan
         </a></p>
+
+        <div class="ui accordion" style="margin-bottom:15px">
+          <div class="title">
+            <i class="dropdown icon"></i>
+            <small>Kovan testnet</small>
+          </div>
+          <div class="content">
+            <div><p style="text-align:left;margin-bottom:10px;">Right below is the adToken sale contract address on the <strong><a href="https://kovan.etherscan.io/address/0xaef29c68232c586ef932e86dcc5e2d9c71920c78" target="_blank">Kovan testnet</a></strong> for testing before the actual token launch.</p></div>
+
+          <div class="ui input small fluid" style="margin-bottom:10px;">
+            <input
+              type="text"
+              value="0xaef29c68232c586ef932e86dcc5e2d9c71920c78">
+          </div>
+
+            <p><a href="https://kovan.etherscan.io/address/0xaef29c68232c586ef932e86dcc5e2d9c71920c78#code" target="_blank">
+              View adToken sale contract on kovan etherscan
+            </a></p>
+
+          </div>
+        </div>
 
         <div class="ui large header" id="abi">
           ADTOKEN SALE CONTRACT ABI
@@ -121,8 +152,7 @@
           </div>
           <div class="content active">
             <div class="ui huge segment left aligned">
-              <textarea class="ui input" rows="6" style="width:100%;border-color:gainsboro">[
-  {
+              <textarea class="ui input" rows="6" style="width:100%;border-color:gainsboro" id="SaleContractAbi">[{
     "constant": false,
     "inputs": [],
     "name": "emergencyToggle",
@@ -132,19 +162,15 @@
   },
   {
     "constant": true,
-    "inputs": [
-      {
-        "name": "",
-        "type": "uint256"
-      }
-    ],
+    "inputs": [{
+      "name": "",
+      "type": "uint256"
+    }],
     "name": "filters",
-    "outputs": [
-      {
-        "name": "",
-        "type": "address"
-      }
-    ],
+    "outputs": [{
+      "name": "",
+      "type": "address"
+    }],
     "payable": false,
     "type": "function"
   },
@@ -160,12 +186,10 @@
     "constant": true,
     "inputs": [],
     "name": "freezeBlock",
-    "outputs": [
-      {
-        "name": "",
-        "type": "uint256"
-      }
-    ],
+    "outputs": [{
+      "name": "",
+      "type": "uint256"
+    }],
     "payable": false,
     "type": "function"
   },
@@ -173,12 +197,10 @@
     "constant": true,
     "inputs": [],
     "name": "startBlock",
-    "outputs": [
-      {
-        "name": "",
-        "type": "uint256"
-      }
-    ],
+    "outputs": [{
+      "name": "",
+      "type": "uint256"
+    }],
     "payable": false,
     "type": "function"
   },
@@ -186,23 +208,19 @@
     "constant": true,
     "inputs": [],
     "name": "wallet",
-    "outputs": [
-      {
-        "name": "",
-        "type": "address"
-      }
-    ],
+    "outputs": [{
+      "name": "",
+      "type": "address"
+    }],
     "payable": false,
     "type": "function"
   },
   {
     "constant": false,
-    "inputs": [
-      {
-        "name": "_newBlock",
-        "type": "uint256"
-      }
-    ],
+    "inputs": [{
+      "name": "_newBlock",
+      "type": "uint256"
+    }],
     "name": "changeStartBlock",
     "outputs": [],
     "payable": false,
@@ -212,19 +230,16 @@
     "constant": true,
     "inputs": [],
     "name": "owner",
-    "outputs": [
-      {
-        "name": "",
-        "type": "address"
-      }
-    ],
+    "outputs": [{
+      "name": "",
+      "type": "address"
+    }],
     "payable": false,
     "type": "function"
   },
   {
     "constant": false,
-    "inputs": [
-      {
+    "inputs": [{
         "name": "_preBuyers",
         "type": "address[]"
       },
@@ -240,12 +255,10 @@
   },
   {
     "constant": false,
-    "inputs": [
-      {
-        "name": "_wallet",
-        "type": "address"
-      }
-    ],
+    "inputs": [{
+      "name": "_wallet",
+      "type": "address"
+    }],
     "name": "changeWallet",
     "outputs": [],
     "payable": false,
@@ -255,23 +268,19 @@
     "constant": true,
     "inputs": [],
     "name": "price",
-    "outputs": [
-      {
-        "name": "",
-        "type": "uint256"
-      }
-    ],
+    "outputs": [{
+      "name": "",
+      "type": "uint256"
+    }],
     "payable": false,
     "type": "function"
   },
   {
     "constant": false,
-    "inputs": [
-      {
-        "name": "_newPrice",
-        "type": "uint256"
-      }
-    ],
+    "inputs": [{
+      "name": "_newPrice",
+      "type": "uint256"
+    }],
     "name": "changePrice",
     "outputs": [],
     "payable": false,
@@ -279,12 +288,10 @@
   },
   {
     "constant": false,
-    "inputs": [
-      {
-        "name": "_newOwner",
-        "type": "address"
-      }
-    ],
+    "inputs": [{
+      "name": "_newOwner",
+      "type": "address"
+    }],
     "name": "changeOwner",
     "outputs": [],
     "payable": false,
@@ -294,19 +301,16 @@
     "constant": true,
     "inputs": [],
     "name": "foundersTokensDisbursed",
-    "outputs": [
-      {
-        "name": "",
-        "type": "bool"
-      }
-    ],
+    "outputs": [{
+      "name": "",
+      "type": "bool"
+    }],
     "payable": false,
     "type": "function"
   },
   {
     "constant": false,
-    "inputs": [
-      {
+    "inputs": [{
         "name": "_founders",
         "type": "address[]"
       },
@@ -328,12 +332,10 @@
     "constant": true,
     "inputs": [],
     "name": "emergencyFlag",
-    "outputs": [
-      {
-        "name": "",
-        "type": "bool"
-      }
-    ],
+    "outputs": [{
+      "name": "",
+      "type": "bool"
+    }],
     "payable": false,
     "type": "function"
   },
@@ -341,12 +343,10 @@
     "constant": true,
     "inputs": [],
     "name": "preSaleTokensDisbursed",
-    "outputs": [
-      {
-        "name": "",
-        "type": "bool"
-      }
-    ],
+    "outputs": [{
+      "name": "",
+      "type": "bool"
+    }],
     "payable": false,
     "type": "function"
   },
@@ -354,18 +354,15 @@
     "constant": true,
     "inputs": [],
     "name": "token",
-    "outputs": [
-      {
-        "name": "",
-        "type": "address"
-      }
-    ],
+    "outputs": [{
+      "name": "",
+      "type": "address"
+    }],
     "payable": false,
     "type": "function"
   },
   {
-    "inputs": [
-      {
+    "inputs": [{
         "name": "_owner",
         "type": "address"
       },
@@ -407,8 +404,7 @@
   },
   {
     "anonymous": false,
-    "inputs": [
-      {
+    "inputs": [{
         "indexed": true,
         "name": "purchaser",
         "type": "address"
@@ -424,8 +420,7 @@
   },
   {
     "anonymous": false,
-    "inputs": [
-      {
+    "inputs": [{
         "indexed": true,
         "name": "preBuyer",
         "type": "address"
@@ -441,8 +436,7 @@
   },
   {
     "anonymous": false,
-    "inputs": [
-      {
+    "inputs": [{
         "indexed": false,
         "name": "vault",
         "type": "address"
@@ -458,8 +452,17 @@
   }
 ]</textarea>
 
+              <div class="ui" style="text-align:right;">
+                <a
+                    href="#SaleContractAbi"
+                    class="ui button default CopyToClipboard"
+                    data-clipboard-target="SaleContractAbi">
+                    Copy
+                </a>
+              </div>
             </div>
           </div>
+
         </div>
 
         <p><a href="https://adtoken-sale.s3-us-west-2.amazonaws.com/Sale.json" target="_blank">Download adToken Sale Contract ABI</a>
@@ -482,13 +485,13 @@
       <div class="column ten wide centered left aligned">
         <p><strong>IMPORTANT NOTES</strong></p>
         <ul class="ui list">
-          <li class="item"><strong>Do NOT send ETH directly to the adToken sale contract address. Please follow instructions <a href="#instructions">below</a> on how to execute <em><code>purchaseTokens()</code></em> smart contract function in order to purchase adToken.</strong></li>
-          <li class="item">Do NOT send funds from exchanges such as Poloniex, Bitfinex, Bittrex, Coinbase, GDAX, etc.</li>
-          <li class="item">Do not send your funds before the fundraiser has begun.</li>
-          <li class="item">We recommend using the wallet applications mentioned below.</li>
-          <li class="item">Only ETH is accepted. Do NOT try sending anything other than ETH.</li>
-          <li class="item">ALWAYS double check addresses you are sending ether to.</li>
-          
+          <li class="item"><strong>Do not send ETH directly to the adToken sale contract address. Please follow instructions <a href="#instructions">below</a> on how to properly execute the <em><code>purchaseTokens()</code></em> smart contract function in order to purchase adToken.</strong></li>
+          <li class="item">Do not send funds from exchanges such as Poloniex, Bitfinex, Bittrex, Coinbase, GDAX, etc.</li>
+          <li class="item">Do not send ether before the <a href="#date">specified</a> start block time. You can view last block number <a href="https://etherscan.io/blocks" target="_blank">here</a>.</li>
+          <li class="item">We recommend using the wallet applications mentioned <a href="#instructions">below</a>.</li>
+          <li class="item">Only ETH is accepted. Do not try sending anything other than ETH.</li>
+          <li class="item">Always double check addresses you are sending ETH to.</li>
+          <li class="item">By participating in the token sale, you agree to the <a href="https://adtoken.com/terms-of-use.pdf" target="_blank">terms of use</a> and <a href="https://adtoken.com/purchase-agreement.pdf" target="_blank">purchase agreement</a>.</li>
       </div>
 
       <div class="column sixteen wide centered center aligned">
@@ -498,8 +501,8 @@
           </p>
           <p>
           <a
-            href="https://kovan.etherscan.io/address/0x06970bbec4ac9497b4663ae3675611c4629e6a40"
-            target="_blank">view transactions on kovan.etherscan.io</a>
+            href="https://etherscan.io/address/0x5678bcea6d6f33f645dca8c8c9b7d8d5caf0a2b1"
+            target="_blank">view transactions on etherscan.io</a>
           </p>
         </div>
       </div>
@@ -511,10 +514,9 @@
 
     <div class="ui tabular menu stackable">
       <a class="active item" data-tab="first">MyEtherWallet</a>
-      
       <a class="item" data-tab="second">Mist</a>
       <a class="item" data-tab="third">Parity</a>
-      
+      <a class="item" data-tab="fifth">MetaMask</a>
     </div>
 </div>
 
@@ -745,7 +747,8 @@
     <ol>
       <li><p>Make sure you have the <a href="https://parity.io/parity.html" target="_blank">latest version</a> of Parity installed.</p></li>
       <li>
-      <p>Start Parity application. Note: if using testnet you have start parity first by running "<code>parity --chain=kovan</code>" in command line.</p></li>
+      <p>Start Parity application. <br />
+      <small>Note: if using testnet you have start parity first by running "<code>parity --chain=kovan</code>" in command line.</small></p></li>
 
       <li>Navigate to <em><a href="http://126.0.0.1:8180/" target="_blank">http://127.0.0.1:8180</a></em> in your browser.</p>
 
@@ -844,36 +847,60 @@
 
     
 
-    <div class="ui tab" data-tab="fifth">
+    <div class="ui tab" data-tab="fifth" id="MetaMask">
       <div class="ui grid stackable">
-        <div class="column sixteen wide centered center aligned">
-          <div class="ui large header">
-            MetaMask
-            <div class="ui divider"></div>
-          </div>
-        </div>
-        <div class="column sixteen wide centered left aligend">
-          <p>
-          <a href="https://metamask.io/" target="_blank">MetaMask</a> is a simple add-on that allows you to send tokens easily and securely. Please follow the instructions below to purchase adToken using MetaMask.
-          </p>
-        </div>
-        <div class="column sixteen wide centered left aligend">
-          <ol>
-            <li>Click on the extension/add-on icon in your browser.</li>
-            <li>Click <em>“Buy”</em>.</li>
-            <li>Copy the adToken contract address found <a href="#address">above</a> and paste it in the <em>“Recipient Address”</em> field.</li>
-            <li>Enter the amount of ETH you want to send.</li>
-            <li>Click <em>“Send”</em>.</li>
-          </ol>
-        </div>
-      </div>
+  <div class="column sixteen wide centered center aligned">
+    <div class="ui large header">
+      MetaMask
+      <div class="ui divider"></div>
+    </div>
+  </div>
+  <div class="column sixteen wide centered left aligend">
+    <p>
+    <a href="https://metamask.io/" target="_blank">MetaMask</a> is a simple browser extension that allows you to send tokens easily and securely.
+    If this is your first token purchase, we recommend that you complete it using MyEtherWallet. If it's not your first time then please follow the instructions below to purchase adToken using MetaMask.
+    </p>
+  </div>
+  <div class="column sixteen wide centered left aligend">
+    <ol>
+      <li><p>Make sure you have the <a href="https://metamask.io/" target="_blank">latest version</a> of MetaMask installed.</p></li>
+      <li><p>Click on the MetaMask extension/add-on icon in your browser.</p></li>
+      <li>
+
+      <p>Click on the <em>"SEND"</em> button.</p>
+
+      <p><a class="ui image" href="/assets/instructions/metamask/account.png" target="_blank">
+        <img src="/assets/instructions/metamask/account.png" style="max-width:400px" />
+      </a></p>
+      </li>
+
+
+      <li><p>Copy the adToken contract address found <a href="#address">above</a> and paste it in the <em>"Recipient Address"</em> field.</p></li>
+      <li><p>In the <em>"Amount"</em> field, enter the amount of ETH you would like to spend on purchasing adToken.</p></li>
+      <li><p>Enter <strong><em>"0x3290ce29"</em></strong> in the <em>"TRANSACTION DATA (OPTIONAL)"</em> field.</p></li>
+      <li>
+      <p>Click on the <em>"SEND"</em> button.</p>
+
+      <p><a class="ui image" href="/assets/instructions/metamask/send.png" target="_blank">
+        <img src="/assets/instructions/metamask/send.png" style="max-width:400px" />
+      </a></p>
+      </li>
+
+
+      <li><p>Enter <em>100,000</em> in the Gas limit field.</p></li>
+      <li><p>Click on the <em>"ACCEPT"</em> button.</p></li>
+      <li><p>Transaction will appear under <em>"HISTORY"</em> section.</p></li>
+    </ol>
+  </div>
+</div>
+
     </div>
   </div>
 
   <div class="column ten wide centered left aligned TokenDisclaimer">
         <p><small>
           Disclaimer: The purchasing instructions are only to be used as a helpful guidance. Buyers are recommended to conduct their own research and should not solely rely on our material. We cannot guarantee that the presented materials are accurate, nor should the associated software mentioned be liable. Buyers therefore assume their own risks in connection with the token sale.
-          
+          Please visit our <a href="https://adtoken.com/terms-of-use.pdf" target="_blank">terms of use</a> and <a href="https://adtoken.com/purchase-agreement.pdf" target="_blank">purchase agreement</a> concerning the token sale.
         </small></p>
     </div>
 </div>

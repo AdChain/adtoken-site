@@ -1,5 +1,4 @@
-<textarea class="ui input" rows="6" style="width:100%;border-color:gainsboro" id="SaleContractAbi">[
-  {
+<textarea class="ui input" rows="6" style="width:100%;border-color:gainsboro" id="SaleContractAbi">[{
     "constant": false,
     "inputs": [],
     "name": "emergencyToggle",
@@ -9,19 +8,15 @@
   },
   {
     "constant": true,
-    "inputs": [
-      {
-        "name": "",
-        "type": "uint256"
-      }
-    ],
+    "inputs": [{
+      "name": "",
+      "type": "uint256"
+    }],
     "name": "filters",
-    "outputs": [
-      {
-        "name": "",
-        "type": "address"
-      }
-    ],
+    "outputs": [{
+      "name": "",
+      "type": "address"
+    }],
     "payable": false,
     "type": "function"
   },
@@ -37,12 +32,10 @@
     "constant": true,
     "inputs": [],
     "name": "freezeBlock",
-    "outputs": [
-      {
-        "name": "",
-        "type": "uint256"
-      }
-    ],
+    "outputs": [{
+      "name": "",
+      "type": "uint256"
+    }],
     "payable": false,
     "type": "function"
   },
@@ -50,12 +43,10 @@
     "constant": true,
     "inputs": [],
     "name": "startBlock",
-    "outputs": [
-      {
-        "name": "",
-        "type": "uint256"
-      }
-    ],
+    "outputs": [{
+      "name": "",
+      "type": "uint256"
+    }],
     "payable": false,
     "type": "function"
   },
@@ -63,23 +54,19 @@
     "constant": true,
     "inputs": [],
     "name": "wallet",
-    "outputs": [
-      {
-        "name": "",
-        "type": "address"
-      }
-    ],
+    "outputs": [{
+      "name": "",
+      "type": "address"
+    }],
     "payable": false,
     "type": "function"
   },
   {
     "constant": false,
-    "inputs": [
-      {
-        "name": "_newBlock",
-        "type": "uint256"
-      }
-    ],
+    "inputs": [{
+      "name": "_newBlock",
+      "type": "uint256"
+    }],
     "name": "changeStartBlock",
     "outputs": [],
     "payable": false,
@@ -89,19 +76,16 @@
     "constant": true,
     "inputs": [],
     "name": "owner",
-    "outputs": [
-      {
-        "name": "",
-        "type": "address"
-      }
-    ],
+    "outputs": [{
+      "name": "",
+      "type": "address"
+    }],
     "payable": false,
     "type": "function"
   },
   {
     "constant": false,
-    "inputs": [
-      {
+    "inputs": [{
         "name": "_preBuyers",
         "type": "address[]"
       },
@@ -117,12 +101,10 @@
   },
   {
     "constant": false,
-    "inputs": [
-      {
-        "name": "_wallet",
-        "type": "address"
-      }
-    ],
+    "inputs": [{
+      "name": "_wallet",
+      "type": "address"
+    }],
     "name": "changeWallet",
     "outputs": [],
     "payable": false,
@@ -132,23 +114,19 @@
     "constant": true,
     "inputs": [],
     "name": "price",
-    "outputs": [
-      {
-        "name": "",
-        "type": "uint256"
-      }
-    ],
+    "outputs": [{
+      "name": "",
+      "type": "uint256"
+    }],
     "payable": false,
     "type": "function"
   },
   {
     "constant": false,
-    "inputs": [
-      {
-        "name": "_newPrice",
-        "type": "uint256"
-      }
-    ],
+    "inputs": [{
+      "name": "_newPrice",
+      "type": "uint256"
+    }],
     "name": "changePrice",
     "outputs": [],
     "payable": false,
@@ -156,12 +134,10 @@
   },
   {
     "constant": false,
-    "inputs": [
-      {
-        "name": "_newOwner",
-        "type": "address"
-      }
-    ],
+    "inputs": [{
+      "name": "_newOwner",
+      "type": "address"
+    }],
     "name": "changeOwner",
     "outputs": [],
     "payable": false,
@@ -171,19 +147,16 @@
     "constant": true,
     "inputs": [],
     "name": "foundersTokensDisbursed",
-    "outputs": [
-      {
-        "name": "",
-        "type": "bool"
-      }
-    ],
+    "outputs": [{
+      "name": "",
+      "type": "bool"
+    }],
     "payable": false,
     "type": "function"
   },
   {
     "constant": false,
-    "inputs": [
-      {
+    "inputs": [{
         "name": "_founders",
         "type": "address[]"
       },
@@ -205,12 +178,10 @@
     "constant": true,
     "inputs": [],
     "name": "emergencyFlag",
-    "outputs": [
-      {
-        "name": "",
-        "type": "bool"
-      }
-    ],
+    "outputs": [{
+      "name": "",
+      "type": "bool"
+    }],
     "payable": false,
     "type": "function"
   },
@@ -218,12 +189,10 @@
     "constant": true,
     "inputs": [],
     "name": "preSaleTokensDisbursed",
-    "outputs": [
-      {
-        "name": "",
-        "type": "bool"
-      }
-    ],
+    "outputs": [{
+      "name": "",
+      "type": "bool"
+    }],
     "payable": false,
     "type": "function"
   },
@@ -231,18 +200,15 @@
     "constant": true,
     "inputs": [],
     "name": "token",
-    "outputs": [
-      {
-        "name": "",
-        "type": "address"
-      }
-    ],
+    "outputs": [{
+      "name": "",
+      "type": "address"
+    }],
     "payable": false,
     "type": "function"
   },
   {
-    "inputs": [
-      {
+    "inputs": [{
         "name": "_owner",
         "type": "address"
       },
@@ -284,8 +250,7 @@
   },
   {
     "anonymous": false,
-    "inputs": [
-      {
+    "inputs": [{
         "indexed": true,
         "name": "purchaser",
         "type": "address"
@@ -301,8 +266,7 @@
   },
   {
     "anonymous": false,
-    "inputs": [
-      {
+    "inputs": [{
         "indexed": true,
         "name": "preBuyer",
         "type": "address"
@@ -318,8 +282,7 @@
   },
   {
     "anonymous": false,
-    "inputs": [
-      {
+    "inputs": [{
         "indexed": false,
         "name": "vault",
         "type": "address"

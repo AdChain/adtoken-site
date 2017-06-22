@@ -342,4 +342,29 @@
       }
     }
   })
+
+
+  // Remaining blocks
+  if ($('#RemainingBlocks').length) {
+    updateRemainingBlocks()
+    setInterval(updateRemainingBlocks, 15e3)
+  }
+
+  function updateRemainingBlocks() {
+    return getRemainingBlocks()
+    .then(function(remainingblocks) {
+      $('#RemainingBlocks').html(remainingblocks.toLocaleString())
+    })
+  }
+
+  function getRemainingBlocks() {
+    return new Promise(function(resolve, reject) {
+      $.get('https://api.etherscan.io/api?module=proxy&action=eth_blockNumber&apikey=YourAPIKey')
+      .done(function(response) {
+        var currentBlock = parseInt(response.result, 16)
+        var remainingblocks = 3939181 - currentBlock;
+        resolve(remainingblocks)
+      })
+    })
+  }
 })();

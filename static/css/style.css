@@ -820,7 +820,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
 :root:root:root .HomeCountdown .header {
   font-weight: normal;
   font-size: 1em;
-  text-transform: uppercase;
 }
 .clocks {
   margin: 0 auto;

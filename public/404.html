@@ -1148,51 +1148,60 @@ vendors, SSPs (Supply Side Platforms), publishers and service providers.
   <button id="open-popup" class="ui button white">Sign Up</button>
 </div>
 
-<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
-
 <script>
+(function() {
+  
+  var d = document
+  var el = d.head || d.body
+  var s = d.createElement('script')
+  s.src = 'https://s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js'
+  s.setAttribute('data-dojo-config', 'usePlainJson: true, isDebug: false')
+  el.appendChild(s);
 
-function showMailingPopUp() {
-  var config={"baseUrl":"mc.us5.list-manage.com","uuid":"0b1e10820775a3f5fa3032dfa","lid":"7382083765"};
-  require(["mojo/signup-forms/Loader"], function(L) {
-  L.start(config)
-  })
+  function showMailingPopUp() {
+    document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+    var config={"baseUrl":"mc.us5.list-manage.com","uuid":"0b1e10820775a3f5fa3032dfa","lid":"7382083765"};
+    require(["mojo/signup-forms/Loader"], function(L) {
+    document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+    L.start(config)
+    });
+    return
 
-  document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
 
-  ;(function() {
-    var d = document;
-    var el = d.head || d.body
-
-    
     ;(function() {
-      var google_conversion_id = 852091323;
-      var google_conversion_language = "en";
-      var google_conversion_format = "3";
-      var google_conversion_color = "ffffff";
-      var google_conversion_label = "VEnGCJSj7HEQu8OnlgM";
-      var google_remarketing_only = false;
+      var d = document;
+      var el = d.head || d.body
 
-      var s = d.createElement('script')
-      s.src = 'https://www.googleadservices.com/pagead/conversion.js'
-      el.appendChild(s)
+      
+      ;(function() {
+        var google_conversion_id = 852091323;
+        var google_conversion_language = "en";
+        var google_conversion_format = "3";
+        var google_conversion_color = "ffffff";
+        var google_conversion_label = "VEnGCJSj7HEQu8OnlgM";
+        var google_remarketing_only = false;
+
+        var s = d.createElement('script')
+        s.src = 'https://www.googleadservices.com/pagead/conversion.js'
+        el.appendChild(s)
+      })();
+
+      
+      (function() {
+        window._tfa = window._tfa || [];
+        _tfa.push({ notify: 'action',name: 'Newsletter_Sign_Up' });
+
+        var s = d.createElement('script')
+        s.src = 'https://cdn.taboola.com/libtrc/taboolaaccount-eddymetaxio/tfa.js'
+        el.appendChild(s);
+      })();
     })();
+  };
 
-    
-    (function() {
-      window._tfa = window._tfa || [];
-      _tfa.push({ notify: 'action',name: 'Newsletter_Sign_Up' });
-
-      var s = d.createElement('script')
-      s.src = 'https://cdn.taboola.com/libtrc/taboolaaccount-eddymetaxio/tfa.js'
-      el.appendChild(s);
-    })();
-  })();
-};
-
-document.getElementById("open-popup").addEventListener('click', function(event) {
-  showMailingPopUp()
-})
+  document.getElementById("open-popup").addEventListener('click', function(event) {
+    showMailingPopUp()
+  })
+})();
 </script>
 
   </div>

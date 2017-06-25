@@ -289,8 +289,9 @@
     return new Promise(function(resolve, reject) {
       $.get('https://api.etherscan.io/api?module=proxy&action=eth_blockNumber&apikey=YourAPIKey')
       .done(function(response) {
+        var startBlock = 3933451
         var currentBlock = parseInt(response.result, 16)
-        var remainingblocks = 3939181 - currentBlock;
+        var remainingblocks = startBlock - currentBlock;
         resolve(remainingblocks)
       })
     })

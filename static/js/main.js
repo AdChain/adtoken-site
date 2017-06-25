@@ -1,17 +1,12 @@
 ;(function() {
   'use strict';
 
-  if (window.ZeroClipboard) {
-    ZeroClipboard.config({
-      swfPath: '/js/vendor/ZeroClipboard.swf'
-    })
+  if (window.Clipboard) {
+    var clipboard = new Clipboard('.CopyToClipboard')
 
-    var client = new ZeroClipboard(document.querySelectorAll('.CopyToClipboard'));
-
-    client.on('copy', function(event) {
-      var target = event.target
+    clipboard.on('success', function(event) {
+      var target = event.trigger
       target.textContent = 'Copied!'
-      target.disabled = true
 
       setTimeout(function() {
         target.textContent = 'Copy'
@@ -24,73 +19,7 @@
     })
   }
 
-  (function() {
-    // Responsive Video
-    function responsiveVideo(selector) {
-      // Get videos
-      var videos = document.querySelectorAll(selector);
-
-      // Loop through videos
-      for (var i = 0; i < videos.length; i++) {
-        var video = videos[i];
-
-        // Get aspect ratio
-        var videoRatio = (video.height / video.width) * 100;
-
-        // Stretch video
-        video.style.position = 'absolute';
-        video.style.top = 0;
-        video.style.left = 0;
-        video.setAttribute('width','100%');
-        video.setAttribute('height','100%');
-
-        // Add a wrapper to contain video
-        var wrapper = document.createElement('div');
-        wrapper.className = 'video-wrap';
-        wrapper.style.width = '100%';
-        wrapper.style.position = 'relative';
-        wrapper.style.paddingTop = videoRatio + '%';
-
-        // Add it to the DOM
-        var parentNode = video.parentNode;
-        parentNode.insertBefore(wrapper, video);
-        wrapper.appendChild(video);
-      }
-    }
-
-    // Initialize. Make sure it's after DOMContentLoaded.
-    responsiveVideo('.video');
-  /*
-    document.querySelector('.videoPoster')
-    .addEventListener('click', function() {
-      this.style.display = 'none';
-
-      var iframe = document.querySelector('iframe.video');
-      iframe.src = iframe.dataset.src;
-    });
-    */
-  })();
-
   $(document).ready(function () {
-    $('.HomeHeroPlayButton')
-    .click(function(event) {
-      event.preventDefault()
-      var $iframe = $('.ui.modal iframe')
-
-      $('.ui.modal').modal({
-        onShow: function() {
-          $iframe.attr('src', $iframe.data('src'))
-        },
-        onHidden: function() {
-          $iframe.attr('src', '')
-        }
-      })
-      $('.ui.modal').modal('show')
-    })
-
-      $('#svgPlayButton').addClass('fill')
-
-
     // Tabs
     $('.ui.tabular .item').tab()
 
@@ -124,8 +53,7 @@
       var clock  = new Clock(opts)
     })()
 
-
-
+    // lazy loading
     $("img[data-src]")
     .unveil(400)
     .on('load', function() {
@@ -345,7 +273,7 @@
 
 
   // Remaining blocks
-  if ($('#RemainingBlocks').length) {
+  if ($('.RemainingBlocks').length) {
     updateRemainingBlocks()
     setInterval(updateRemainingBlocks, 15e3)
   }
@@ -353,7 +281,7 @@
   function updateRemainingBlocks() {
     return getRemainingBlocks()
     .then(function(remainingblocks) {
-      $('#RemainingBlocks').html(remainingblocks.toLocaleString())
+      $('.RemainingBlocks').html(remainingblocks.toLocaleString())
     })
   }
 

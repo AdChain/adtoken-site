@@ -19,6 +19,9 @@
     {{ if eq .Title "Token" }}
       {{ partial "token.html" . }}
     {{ end }}
+    {{ if eq .Title "FAQ" }}
+      {{ partial "faq.html" . }}
+    {{ end }}
     {{ if eq .Title "Terms and Conditions" }}
       {{ partial "terms.html" . }}
     {{ end }}

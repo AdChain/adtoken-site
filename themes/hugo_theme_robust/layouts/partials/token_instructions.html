@@ -15,7 +15,7 @@
         </p>
       </div>
 
-      <div class="column sixteen wide centered center aligned" id="date">
+      <div class="column sixteen wide centered center aligned" id="date" style="font-size: 1.2em;">
         {{ partial "token_launch_date.html" . }}
       </div>
 
@@ -112,7 +112,15 @@
 
       </div>
 
-      <div class="column ten wide centered left aligned">
+      <div class="column twelve wide centered left aligned" id="Price">
+        <p style="text-align: center;font-size:1.2em;"><strong>adToken Price</strong></p>
+        <p>The <strong>ADT price</strong> is set to <strong>66666666666670 Wei</strong>, or <strong>0.00006666666666667 Ether</strong>.<br />A one Ether purchase will get you <em>15,000</em> AdToken.</p>
+
+        <p>The <strong>nanoADT</strong> price (the price per one billionth of an AdToken) is <strong>66670 Wei</strong>, and this is the smallest possible purchase amount.
+      </p>
+    </div>
+
+      <div class="column ten wide centered left aligned" style="margin-top: 40px;">
         <p><strong>IMPORTANT NOTES</strong></p>
         <ul class="ui list">
           <li class="item"><strong>Do not send ETH directly to the adToken sale contract address. Please follow instructions <a href="#instructions" class="HashtagAnchor">further down</a> on how to properly execute the <em><code>purchaseTokens()</code></em> smart contract function in order to purchase adToken.</strong></li>

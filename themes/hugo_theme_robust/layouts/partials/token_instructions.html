@@ -3,14 +3,19 @@
 
     <div class="column sixteen wide center aligned">
       <h2 class="ui header">
-        Token launch details
+        adToken
         <div class="ui divider"></div>
       </h2>
     </div>
 
     <div class="column sixteen wide center aligned" style="margin-bottom:40px;">
-      {{ partial "thankyou.html" }}
-      <div class="ui divider" style="width:80%;margin:40px auto;"></div>
+        <div style="margin:0 auto;">
+          <ul class="ui list" style="display:inline-block;text-align:left;">
+            <li class="item">Total Supply: 1,000,000,000</li>
+            <li class="item">Token Decimals: 9</li>
+            <li class="item">Token Symbol: ADT</li>
+          </ul>
+        </div>
 
         <div class="ui medium header" id="address">
           adToken ERC20-TOKEN address
@@ -38,33 +43,6 @@
         </a></p>
 
         <p>NOTE: Do not send ether to this address</p>
-
-        <div class="ui tiny header" id="address" style="margin-top:70px;">
-          adToken Sale contract address
-        </div>
-
-        <div style="padding:20px 5px;max-width:540px;margin:0 auto;">
-          <div class="ui right labeled tiny input fluid">
-            <input
-              type="text"
-              id="SaleContractAddress"
-              value="0x5678bcea6d6f33f645dca8c8c9b7d8d5caf0a2b1">
-            <div class="ui label">
-              <a
-                  href="#SaleContractAddress"
-                  class="CopyToClipboard"
-                  data-clipboard-target="#SaleContractAddress">
-                  Copy
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <p><a href="https://etherscan.io/address/0x5678bcea6d6f33f645dca8c8c9b7d8d5caf0a2b1#code" target="_blank">
-          View adToken sale contract on etherscan
-        </a></p>
-
-        <p>NOTE: Sale is closed.</p>
 
     </div>
     </div>

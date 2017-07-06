@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    {{ partial "head.html" }}
+    {{ partial "head.html" . }}
   </head>
   <body>
-    {{ if eq .Title "White Paper" }}
+    {{ if eq .File.BaseFileName "white-paper" }}
       {{ partial "white_paper.html" . }}
     {{ end }}
-    {{ if eq .Title "About" }}
+    {{ if eq .File.BaseFileName "about" }}
       {{ partial "about.html" . }}
     {{ end }}
-    {{ if eq .Title "Team" }}
+    {{ if eq .File.BaseFileName "team" }}
       {{ partial "team.html" . }}
     {{ end }}
-    {{ if eq .Title "Resources" }}
+    {{ if eq .File.BaseFileName "resources" }}
       {{ partial "resources.html" . }}
     {{ end }}
-    {{ if eq .Title "Token" }}
+    {{ if eq .File.BaseFileName "token" }}
       {{ partial "token.html" . }}
     {{ end }}
-    {{ if eq .Title "FAQ" }}
+    {{ if eq .File.BaseFileName "faq" }}
       {{ partial "faq.html" . }}
     {{ end }}
-    {{ if eq .Title "Terms and Conditions" }}
+    {{ if eq .File.BaseFileName "terms" }}
       {{ partial "terms.html" . }}
     {{ end }}
 

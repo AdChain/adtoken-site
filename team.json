@@ -20,18 +20,19 @@
     "twitter": "https://twitter.com/jamesyoung"
   },
   {
-    "name": "Edwin Cheung",
-    "title": "Engineering",
-    "image": "/assets/team/headshots/edwin.jpg",
-    "linkedin": "https://www.linkedin.com/in/eccheung4"
-  },
-  {
     "name": "Miguel Mota",
     "title": "Engineering",
     "image": "/assets/team/headshots/miguel.jpg",
     "linkedin": "https://www.linkedin.com/in/miguelmota",
     "github": "https://github.com/miguelmota",
-    "twitter": "https://twitter.com/miguelmotah"
+    "twitter": "https://twitter.com/miguelmotah",
+    "stackoverflow": "https://stackoverflow.com/users/1439168"
+  },
+  {
+    "name": "Edwin Cheung",
+    "title": "Engineering",
+    "image": "/assets/team/headshots/edwin.jpg",
+    "linkedin": "https://www.linkedin.com/in/eccheung4"
   },
   {
     "name": "Miguel Morales",

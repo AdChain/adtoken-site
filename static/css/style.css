@@ -996,6 +996,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
   background-image: url(/assets/social/black/linkedin.png);
 }
 
+:root:root:root .TeamSection .description .stackoverflow {
+  background-image: url(/assets/social/black/stackoverflow.svg);
+}
+
 :root:root:root .TeamSection .cards {
   margin-bottom: 80px !important;
 }

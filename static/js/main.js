@@ -217,7 +217,7 @@
           "color": "#64B5F6"
           },
           {
-          "title": "Data & Marketing Association",
+          "title": "Industry Trade Organizations",
           "value": 14,
           "color": "#E57373"
           },

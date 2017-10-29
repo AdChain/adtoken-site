@@ -1,0 +1,85 @@
+<div class="column sixteen wide TeamSection Section TopHero">
+  <div class="ui grid padded stackable">
+    <div class="column sixteen wide center aligned">
+      <h2 class="ui header">
+          The adToken Team
+        <div class="ui divider"></div>
+        <div class="sub header">
+        </div>
+      </h2>
+    </div>
+    <div class="row ui grid stackable cards center aligned">
+      {{ $data := getJSON "team.json" }}
+      {{ range $index, $d := $data }}
+        <div class="column four wide center aligned">
+          <div class="ui card centered center aligned">
+            <div class="image center aligned centered">
+              <img data-src="{{ $d.image }}" />
+            </div>
+            <div class="content">
+              <div class="header">
+                {{ $d.name }}
+              </div>
+              <div class="description">
+                <p><em>{{ $d.title }}</em></p>
+              <p>
+                {{ if $d.linkedin }}
+                  <a href="{{ $d.linkedin }}" target="_blank"><i class="linkedin"></i></a>
+                {{ end }}
+                {{ if $d.twitter }}
+                  <a href="{{ $d.twitter }}" target="_blank"><i class="twitter"></i></a>
+                {{ end }}
+                {{ if $d.github }}
+                  <a href="{{ $d.github }}" target="_blank"><i class="github"></i></a>
+                {{ end }}
+                {{ if $d.stackoverflow }}
+                  <a href="{{ $d.stackoverflow }}" target="_blank"><i class="stackoverflow"></i></a>
+                {{ end }}
+              </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+    <div class="column sixteen wide center aligned">
+      <h2 class="ui header">
+          The adToken Advisors
+        <div class="ui divider"></div>
+        <div class="sub header">
+        </div>
+      </h2>
+    </div>
+    <div class="row ui grid stackable cards center aligned">
+      {{ $data := getJSON "advisors.json" }}
+      {{ range $index, $d := $data }}
+        <div class="column five wide center aligned">
+          <div class="ui card centered">
+            <div class="image center aligned">
+              <img data-src="{{ $d.image }}" />
+            </div>
+            <div class="content">
+              <div class="header">
+                {{ $d.name }}
+              </div>
+              <div class="description">
+                <p><em>{{ $d.title }}</em></p>
+              <p>
+                {{ if $d.linkedin }}
+                  <a href="{{ $d.linkedin }}" target="_blank"><i class="linkedin"></i></a>
+                {{ end }}
+                {{ if $d.twitter }}
+                  <a href="{{ $d.twitter }}" target="_blank"><i class="twitter"></i></a>
+                {{ end }}
+                {{ if $d.github }}
+                  <a href="{{ $d.github }}" target="_blank"><i class="github"></i></a>
+                {{ end }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+ </div>

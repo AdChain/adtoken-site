@@ -1,6 +1,6 @@
 ;(function() {
   'use strict';
-
+  console.log("test");
   if (window.Clipboard) {
     var clipboard = new Clipboard('.CopyToClipboard')
 
@@ -25,6 +25,28 @@
 
     // Accordion
     $('.ui.accordion').accordion()
+
+      $(window).scroll(function() {
+          var hT = $('.TimeLine').offset().top,
+              hH = $('.TimeLine').outerHeight(),
+              wH = $(window).height(),
+              wS = $(this).scrollTop();
+          if (wS > (hT+hH-wH)){
+              $('.timeline-layer1').addClass('start');
+              $('.timeline-layer2').addClass('start2');
+              $('.timeline-layer3').addClass('start3');
+              $('.timeline-layer5').addClass('start5');
+              setTimeout(function() {
+                  $('.timeline-layer4').addClass('show');
+              }, 4000);
+              setTimeout(function() {
+                  $('.timeline_stages').addClass('show');
+              }, 5000);
+
+
+              console.log("test")
+          }
+      });
 
     // countdown
     ;(function() {

@@ -1,0 +1,12 @@
+<div class="TopNav">
+  <div class="TopNavMenuContainer">
+    <div class="ui menu stackable">
+      <a href="/" class="item Logo">MetaX</a>
+      <div class="right menu overflow-x">
+        <a href="/" {{ if eq .File.BaseFileName ""}} class="item active" {{ else }} class="item" {{ end }}>Mission Control</a>
+        <a href="/about" {{ if eq .File.BaseFileName "about"}} class="item active" {{ else }} class="item" {{ end }}>About</a>
+        <a href="/resources" {{ if eq .File.BaseFileName "resources"}} class="item active" {{ else }} class="item" {{ end }}>Resources</a>
+      </div>
+    </div>
+  </div>
+</div>

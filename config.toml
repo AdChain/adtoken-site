@@ -1,4 +1,4 @@
 title = "AdToken"
 baseURL = "https://adtoken.com"
 languageCode = "en-us"
-theme = "hugo_theme_robust"
+theme = "hugo_theme_lunar"

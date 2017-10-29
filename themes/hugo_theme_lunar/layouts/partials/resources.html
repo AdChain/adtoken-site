@@ -1,0 +1,74 @@
+{{ partial "top_nav.html" . }}
+
+<main class="main ResourcesPage">
+  <div class="ui grid padded stackable">
+    <div class="column sixteen wide ResourcesSection Section TopHero">
+      <div class="ui grid padded stackable">
+        <div class="column sixteen wide center aligned">
+          <h2 class="ui header">
+            adToken Resources
+            <div class="ui divider"></div>
+          </h2>
+        </div>
+      </div>
+      <div class="ui grid padded stackable">
+        <div class="column sixteen wide left aligned">
+          <h3 class="ui header">
+            Documents
+            <div class="sub header">
+              <p><a href="/white-paper.pdf" target="_blank">adChain White Paper 🇺🇸🇬🇧</a></p>
+              <p><a href="/white-paper-cn.pdf" target="_blank">adChain White Paper (中文) 🇨🇳</a></p>
+              <p><a href="/white-paper-jp.pdf" target="_blank">adChain White Paper 🇯🇵</a></p>
+              <p><a href="/uploads/adtoken_one_pager.pdf" target="_blank">adToken One Pager</a></p>
+          </div>
+        </div>
+        </h3>
+        <!--
+        <div class="column sixteen wide left aligned">
+          <h3 class="ui header">
+            Presentations
+            <div class="sub header">
+              <p><a href="#" target="_blank">MetaX presents adChain</a></p>
+          </div>
+          </h3>
+        </div>
+        -->
+        <div class="column sixteen wide left aligned">
+          <h3 class="ui header">
+            Videos
+            <div class="sub header">
+              <p><a href="https://vimeo.com/220056099" target="_blank">CEO Ken Brook talks about adChain</a></p>
+              <p><a href="https://vimeo.com/220057184" target="_blank">Engineer Mike Goldin at ConsenSys talks about adChain</a></p>
+              <p><a href="https://vimeo.com/209302657" target="_blank">MetaX introduces adChain</a></p>
+          </div>
+          </h3>
+        </div>
+
+        <div class="column sixteen wide left aligned NewsSection">
+          <h3 class="ui header">
+            News
+            <div class="sub header">
+              {{ $items := getJSON "news.json" }}
+              {{ range $item := $items }}
+              <p>
+              <a href="{{ $item.url }}" target="_blank">
+                <img src="https://www.google.com/s2/favicons?domain={{ $item.domain }}" width="16" />
+                {{ $item.title }}</a><br/>
+              <small>
+                <a href="{{ $item.url }}" target="_blank">
+                  {{ $item.domain }}
+                </a>
+                </small>
+              </p>
+              {{ end }}
+          </div>
+          </h3>
+        </div>
+
+      </div>
+    </div>
+
+
+    {{ partial "footer.html" . }}
+  </div>
+</main>

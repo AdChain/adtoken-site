@@ -1,0 +1,49 @@
+<div class="ui equal width grid Missions fadeFromBottom">
+    <div class="column MissionBox ActiveMission">
+        <h5>{{ partial "liftoff_text.html" . }}</h5>
+        <div class="Oval OvalOut">
+                            <span class="Oval OvalMiddle">
+                                <span class="Oval OvalIn">
+                                    {{ partial "mission_one_phase_one.html" . }}
+                                </span>
+                            </span>
+        </div>
+        <h6>{{ partial "nov_text.html" . }}</h6>
+    </div>
+    <div class="column MissionBox MissionConnector mobile hidden">
+        <div class="MissionBoxConnection">
+
+        </div>
+    </div>
+    <div class="column MissionBox">
+
+        <h5>{{ partial "discovery_text.html" . }}</h5>
+        <div class="Oval OvalOut">
+            <span class="Oval OvalMiddle">
+                <span class="Oval OvalIn">
+                    {{ partial "mission_one_phase_two.html" . }}
+                </span>
+            </span>
+        </div>
+        <h6>{{ partial "nov_jan_text.html" . }}</h6>
+
+    </div>
+    <div class="column MissionBox MissionConnector mobile hidden">
+        <div class="MissionBoxConnection">
+
+        </div>
+    </div>
+    <div class="column MissionBox">
+
+        <h5>{{ partial "voyage_home_text.html" . }}</h5>
+        <div class="Oval OvalOut">
+                            <span class="Oval OvalMiddle">
+                                <span class="Oval OvalIn">
+                                    {{ partial "mission_one_phase_three.html" . }}
+                                </span>
+                            </span>
+        </div>
+        <h6>{{ partial "feb_text.html" . }}</h6>
+
+    </div>
+</div>

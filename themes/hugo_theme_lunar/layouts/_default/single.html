@@ -4,6 +4,9 @@
     {{ partial "head.html" . }}
   </head>
   <body>
+  {{ if eq .File.BaseFileName "breakdown" }}
+    {{ partial "breakdown.html" . }}
+  {{ end }}
     {{ if eq .File.BaseFileName "white-paper" }}
       {{ partial "white_paper.html" . }}
     {{ end }}
@@ -25,9 +28,7 @@
     {{ if eq .File.BaseFileName "terms" }}
       {{ partial "terms.html" . }}
     {{ end }}
-    {{ if eq .File.BaseFileName "breakdown" }}
-    {{ partial "breakdown.html" . }}
-    {{ end }}
+
     {{ partial "footer_scripts.html" }}
   </body>
 </html>

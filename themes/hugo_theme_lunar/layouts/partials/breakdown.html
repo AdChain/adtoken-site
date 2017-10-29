@@ -1,4 +1,4 @@
-{{ partial "top_nav_lunar.html" . }}
+{{ partial "top_nav.html" . }}
 <div class="Particles"></div>
 <main class="main BreakDown">
     <div class="ui grid padded stackable">
@@ -10,58 +10,12 @@
                         {{ partial "current_mission_rinkeby_rover.html" . }}
                     </div>
                 </div>
+                <div class="WorldFromMoon"></div>
             </div>
+
             <div class="LunarSurface"></div>
             <div class="LunarSurfaceOverlay"></div>
-            <div class="ui five column grid stackable Missions fadeFromBottom">
-                <div class="column MissionBox ActiveMission">
-                    <h5>{{ partial "liftoff_text.html" . }}</h5>
-                    <div class="Oval OvalOut">
-                            <span class="Oval OvalMiddle">
-                                <span class="Oval OvalIn">
-                                    {{ partial "mission_one_phase_one.html" . }}
-                                </span>
-                            </span>
-                    </div>
-                    <h6>{{ partial "nov_text.html" . }}</h6>
-                </div>
-                <div class="column MissionBox MissionConnector">
-                    <div class="MissionBoxConnection">
-
-                    </div>
-                </div>
-                <div class="column MissionBox">
-
-                    <h5>{{ partial "discovery_text.html" . }}</h5>
-                    <div class="Oval OvalOut">
-                            <span class="Oval OvalMiddle">
-                                <span class="Oval OvalIn">
-                                    {{ partial "mission_one_phase_two.html" . }}
-                                </span>
-                            </span>
-                    </div>
-                    <h6>{{ partial "nov_jan_text.html" . }}</h6>
-
-                </div>
-                <div class="column MissionBox MissionConnector">
-                    <div class="MissionBoxConnection">
-
-                    </div>
-                </div>
-                <div class="column MissionBox">
-
-                    <h5>{{ partial "voyage_home_text.html" . }}</h5>
-                    <div class="Oval OvalOut">
-                            <span class="Oval OvalMiddle">
-                                <span class="Oval OvalIn">
-                                    {{ partial "mission_one_phase_three.html" . }}
-                                </span>
-                            </span>
-                    </div>
-                    <h6>{{ partial "feb_text.html" . }}</h6>
-
-                </div>
-            </div>
+            {{ partial "mission_rinkeby_rover_phases.html" . }}
         </div>
     </div>
 
@@ -69,144 +23,13 @@
         <div class="column sixteen wide Section">
             <div class="ui grid padded stackable">
                 <div class="column sixteen wide centered aligned">
-
-                    <table class="ui definition table MissionTable clearTable basic">
-                        <thead>
-                        <tr>
-                            <th colspan="4" class="center aligned">{{ partial "rinkeby_rover_text.html" . }}
-                                <div class="ui divider"></div>
-                            </th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>{{ partial "objective_text.html" . }}</td>
-                            <td colspan="3">The objective of the Rinkeby Rover mission is to offer a preliminary look at
-                                the adChain Registry DApp and to gain valuable insights from the adToken community. The
-                                mission will serve as twofold: (1) to educate the adToken community on interacting with
-                                the adChain Registry and (2) to gather feedback to guide us towards Ethereum
-                                Colonization.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>{{ partial "phases_text.html" . }}</td>
-                            <td colspan="3">
-                                <table class="ui definition table PhaseTable clearTable phaseBox">
-                                    <tbody>
-                                    <tr>
-                                        <td class="single line">{{ partial "liftoff_text.html" . }}<br/>
-                                            {{ partial "nov_text.html" . }}
-                                        </td>
-                                        <td colspan="2">The Lift-Off phase marks the deployment of the adChain Registry
-                                            DApp to the Rinkeby Testnet.
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                                <table class="ui definition table PhaseTable clearTable phaseBox">
-                                    <tbody>
-                                    <tr>
-                                        <td class="single line">{{ partial "discovery_text.html" . }}<br/>
-                                            {{ partial "nov_jan_text.html" . }}
-                                        </td>
-                                        <td colspan="2">The Discovery phase is the when the adToken community can
-                                            explore and experiment with the adChain Registry DApp.
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                                <table class="ui definition table PhaseTable clearTable phaseBox">
-                                    <tbody>
-                                    <tr>
-                                        <td class="single line">{{ partial "voyage_home_text.html" . }}<br/>
-                                            {{ partial "feb_text.html" . }}
-                                        </td>
-                                        <td colspan="2">The Voyage Home is when we will close the adChain Registry DApp
-                                            on the Rinkeby Testnet and marks the beginning of the Refueling Stage.
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <table class="ui definition table MissionTable clearTable basic">
-                        <thead>
-                        <tr>
-                            <th colspan="3" class="center aligned">{{ partial "refueling_stage_text.html" . }}
-                                <div class="ui divider"></div>
-                            </th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>{{ partial "objective_text.html" . }}</td>
-                            <td colspan="2">
-                                The Refueling Stage is when the adChain Core Dev team will take all of the gathered
-                                intel from the Rinkeby Rover and make mission critical updates to the adChain Registry
-                                smart contracts in preperation for Ethereum Colonization.
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-
-                    <table class="ui definition table MissionTable clearTable basic">
-                        <thead>
-                        <tr>
-                            <th colspan="3" class="center aligned"> {{ partial "ethereum_colonization_text.html" . }}
-                                <div class="ui divider"></div>
-                            </th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>{{ partial "objective_text.html" . }}</td>
-                            <td colspan="2">
-                                The objective of Ethereum Colonization is to permanently deploy the adChain Registry
-                                smart contracts onto the Ethereum Mainnet and re-open the adChain Registry DApp to
-                                adToken holders.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>{{ partial "phases_text.html" . }}</td>
-                            <td colspan="2">
-                                <table class="ui definition table PhaseTable clearTable phaseBox">
-                                    <tbody>
-                                    <tr>
-                                        <td class="single line">{{ partial "liftoff_text.html" . }}<br/>
-                                            {{ partial "apr_2018_text.html" . }}
-                                        </td>
-                                        <td colspan="2">The Lift-Off phase marks the deployment of the adChain Registry
-                                            DApp to the Ethereum Mainnet.
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-
-                                <table class="ui definition table PhaseTable clearTable phaseBox">
-                                    <tbody>
-                                    <tr>
-                                        <td class="single line">{{ partial "discovery_text.html" . }}<br/>
-                                            {{ partial "apr_2018_forever_text.html" . }}
-                                        </td>
-                                        <td colspan="2">The Lunar Colony is the phase when the entire adChain ecosystem
-                                            is permanently deployed onto the Ethereum Mainnet and when the adChain
-                                            Registry DApp will be fully opened and decentralized.
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
+                    {{ partial "mission_rinkeby_rover.html" . }}
+                    {{ partial "mission_refueling_stage.html" . }}
+                    {{ partial "mission_ethereum_colonization.html" . }}
                 </div>
             </div>
         </div>
     </div>
-
 
     <div class="ui grid padded stackable">
         <div class="column sixteen wide DarkBlueBg">

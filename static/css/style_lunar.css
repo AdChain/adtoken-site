@@ -1441,6 +1441,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
   position: absolute;
 }
 
+.LunarScape .ui.grid {
+  position: relative;
+}
+
+.WorldFromMoon {
+   margin:0px;
+   width: 100px;
+   height: 100px;
+   right: 0px;
+   top: 60%;
+   background-image: url(../assets/lunarescape/world_from_moon.png);
+   background-position: center center;
+   background-size: contain;
+   background-repeat: no-repeat;
+   padding: 0px;
+   align-self: center;
+   position: absolute;
+}
+
 .LunarSurfaceOverlay {
   margin: 0px;
   width: 100%;
@@ -1455,7 +1474,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
   padding: 0;
   align-self: center;
   position: absolute;
-
 }
 
 .LunarScape {
@@ -1799,5 +1817,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
   100% {
     opacity:1;
     -ms-transform:  translate(0px,0px)  ;
+  }
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 767px) {
+  [class*="mobile hidden"],
+  [class*="tablet only"]:not(.mobile),
+  [class*="computer only"]:not(.mobile),
+  [class*="large monitor only"]:not(.mobile),
+  [class*="widescreen monitor only"]:not(.mobile),
+  [class*="or lower hidden"] {
+    display: none !important;
   }
 }

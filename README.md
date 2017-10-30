@@ -24,9 +24,17 @@ Setting default theme
 
 `config.toml`
 
-```
+```toml
 theme = "robust"
 ```
+
+Running web server with a specified theme
+
+```bash
+hugo serve --theme lunar
+```
+
+http://localhost:1313
 
 Stylesheet
 

@@ -31,7 +31,7 @@ theme = "robust"
 Running web server with a specified theme
 
 ```bash
-hugo serve --theme lunar
+hugo server --theme lunar
 ```
 
 http://localhost:1313

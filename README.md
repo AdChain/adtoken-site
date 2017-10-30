@@ -16,6 +16,18 @@ Run server
 $ hugo server
 ```
 
+Themes
+
+`themes/`
+
+Setting default theme
+
+`config.toml`
+
+```
+theme = "robust"
+```
+
 Stylesheet
 
 `static/css/styles.css`
@@ -58,7 +70,13 @@ npm run invalidate-cache
 Deploy to staging
 
 ```
-npm run deploy-staging
+npm run deploy:staging
+```
+
+Deploy lunarscape website
+
+```
+npm run deploy:lunar:staging
 ```
 
 ## Resources

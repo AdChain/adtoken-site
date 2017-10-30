@@ -1,6 +1,11 @@
 <script type="text/javascript">
-    var jsonfile = "/lunarscape/js/rocket1.json",
-        fps = 24,
+    var jsonfile = "/js/rocket1.json";
+
+    if (/adtoken\.com$/gi.test(window.location.host)) {
+      jsonfile = "/lunarscape/js/rocket1.json";
+    }
+
+    var fps = 24,
         width = 100,
         height = 100,
         AJAX_req;

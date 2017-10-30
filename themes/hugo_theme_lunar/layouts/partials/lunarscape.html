@@ -1,0 +1,61 @@
+{{ partial "top_nav.html" . }}
+<div class="Particles"></div>
+<main class="main BreakDown">
+    <div class="ui grid padded stackable">
+        <div class="column sixteen wide LunarScape Section">
+            <div class="ui grid padded stackable">
+                <div class="column ten wide centered aligned">
+                    <div class="LunarscapeLogo HeroTop">
+                        {{ partial "lunarscape_logo.html" . }}
+                        {{ partial "current_mission_rinkeby_rover.html" . }}
+                    </div>
+                </div>
+                <div class="WorldFromMoon"></div>
+            </div>
+
+            <div class="LunarSurface"></div>
+            <div class="LunarSurfaceOverlay"></div>
+            {{ partial "mission_rinkeby_rover_phases.html" . }}
+        </div>
+    </div>
+
+    <div class="ui grid padded stackable MissionDetailSection DarkBlueBg">
+        <div class="column sixteen wide Section">
+            <div class="ui grid padded stackable">
+                <div class="column sixteen wide centered aligned">
+                    {{ partial "mission_rinkeby_rover.html" . }}
+                    {{ partial "mission_refueling_stage.html" . }}
+                    {{ partial "mission_ethereum_colonization.html" . }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui grid padded stackable">
+        <div class="column sixteen wide DarkBlueBg">
+            <div class="ui grid padded stackable">
+                <div class="column ten wide centered aligned">
+                    <div class="LunarscapeLogo TimeLineHeader center aligned">
+                        {{ partial "lunarscape_logo.html" . }}
+                        {{ partial "timeline_text.html" . }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui grid padded stackable">
+        <div class="column sixteen wide Section DarkBlueBg">
+            <div class="ui grid padded stackable">
+                <div class="column sixteen wide centered aligned TimeLine">
+                    {{ partial "timeline_layer_one.html" . }}
+                    {{ partial "timeline_layer_two.html" . }}
+                    {{ partial "timeline_layer_three.html" . }}
+                    {{ partial "timeline_layer_four.html" . }}
+                    {{ partial "timeline_layer_five.html" . }}
+                    {{ partial "timeline_stages.html" . }}
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

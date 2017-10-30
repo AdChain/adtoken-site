@@ -4,9 +4,12 @@
     {{ partial "head.html" . }}
   </head>
   <body>
-  {{ if eq .File.BaseFileName "breakdown" }}
-    {{ partial "breakdown.html" . }}
-  {{ end }}
+    {{ if eq .File.BaseFileName "lunarscape" }}
+      {{ partial "lunarscape.html" . }}
+    {{ end }}
+    {{ if eq .File.BaseFileName "breakdown" }}
+      {{ partial "home.html" . }}
+    {{ end }}
     {{ if eq .File.BaseFileName "white-paper" }}
       {{ partial "white_paper.html" . }}
     {{ end }}

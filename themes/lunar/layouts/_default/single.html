@@ -7,29 +7,27 @@
     {{ if eq .File.BaseFileName "lunarscape" }}
       {{ partial "lunarscape.html" . }}
     {{ end }}
-    {{ if eq .File.BaseFileName "breakdown" }}
-      {{ partial "home.html" . }}
-    {{ end }}
-    {{ if eq .File.BaseFileName "white-paper" }}
-      {{ partial "white_paper.html" . }}
-    {{ end }}
+
     {{ if eq .File.BaseFileName "about" }}
-      {{ partial "about.html" . }}
+    <script>window.location.href="/breakdown/about"</script>
     {{ end }}
     {{ if eq .File.BaseFileName "team" }}
-      {{ partial "team.html" . }}
+    <script>window.location.href="/breakdown/team"</script>
     {{ end }}
     {{ if eq .File.BaseFileName "resources" }}
-      {{ partial "resources.html" . }}
+    <script>window.location.href="/breakdown/resources"</script>
     {{ end }}
     {{ if eq .File.BaseFileName "token" }}
-      {{ partial "token.html" . }}
+    <script>window.location.href="/breakdown/token"</script>
     {{ end }}
     {{ if eq .File.BaseFileName "faq" }}
-      {{ partial "faq.html" . }}
+    <script>window.location.href="/breakdown/faq"</script>
     {{ end }}
     {{ if eq .File.BaseFileName "terms" }}
-      {{ partial "terms.html" . }}
+    <script>window.location.href="/breakdown/terms"</script>
+    {{ end }}
+    {{ if eq .File.BaseFileName "white-paper" }}
+    <script>window.location.href="/breakdown/white-paper"</script>
     {{ end }}
 
     {{ partial "footer_scripts.html" }}

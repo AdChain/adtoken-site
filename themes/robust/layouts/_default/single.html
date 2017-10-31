@@ -4,6 +4,9 @@
     {{ partial "head.html" . }}
   </head>
   <body>
+    {{ if eq .File.BaseFileName "breakdown" }}
+      {{ partial "home.html" . }}
+    {{ end }}
     {{ if eq .File.BaseFileName "white-paper" }}
       {{ partial "white_paper.html" . }}
     {{ end }}

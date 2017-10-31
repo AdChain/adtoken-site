@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "hugo && npm run htmlmin && npm run uglifyjs && aws s3 sync ./public s3://adtoken.com --acl=public-read --profile=metax --region=us-west-2",
-    "deploy:staging": "hugo --theme=robust && npm run htmlmin && npm run uglifyjs && aws s3 sync ./public s3://staging.adtoken.com/ --acl=public-read --profile=metax --region=us-west-2",
-    "deploy:lunar:staging": "hugo --theme=lunar --baseUrl=\"http://staging.adtoken.com/lunarscape\" && npm run htmlmin && npm run uglifyjs && aws s3 sync ./public s3://staging.adtoken.com/lunarscape --acl=public-read --profile=metax --region=us-west-2",
+    "deploy:staging": "hugo --buildDrafts --theme=robust --baseUrl=\"http://staging.adtoken.com/breakdown\" && npm run htmlmin && npm run uglifyjs && aws s3 sync ./public s3://staging.adtoken.com/breakdown --acl=public-read --profile=metax --region=us-west-2",
+    "deploy:lunar:staging": "hugo --theme=lunar --baseUrl=\"http://staging.adtoken.com\" && npm run htmlmin && npm run uglifyjs && aws s3 sync ./public s3://staging.adtoken.com/ --acl=public-read --profile=metax --region=us-west-2",
     "invalidate-cache": "aws cloudfront create-invalidation --distribution-id E3MTBLBQ6FT84K --paths /index.html /* /assets/* /css/* /js/* /white-paper/* /team/* /about/* /resources/* /white-paper.pdf /white-paper.pdf/* /white-paper-cn.pdf /white-paper-cn.pdf/* /white-paper-jp.pdf/* /terms-of-use.pdf /purchase-agreement.pdf /uploads/* /error.html /uploads/* /token* /.well-known/acme-challenge/* /favicon.ico --profile=metax",
     "invalidate-cache:acme": "aws cloudfront create-invalidation --distribution-id E3MTBLBQ6FT84K --paths /.well-known/* /.well-known/acme-challenge/OTBnDYWah-9CDtIJAMAzx4_-AQBv1SWPyk765ncwu_A /.well-known/acme-challenge/*  --profile=metax",
     "ics": "node tools/reminder-generator.js",

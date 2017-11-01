@@ -2003,4 +2003,50 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
   [class*="or lower hidden"] {
     display: none !important;
   }
+
+  .OvalOut {
+    zoom: .6;
+  }
+
+  .MissionBox h5 svg {
+    height: 7px;
+  }
+
+  .MissionBox h6 svg {
+    height: 8px;
+    width: auto;
+  }
+
+  .TimeLine {
+    margin-top: -150px;
+    height: 290px;
+    min-height: 290px;
+  }
+
+  .TimeLine svg {
+    height: 100%;
+  }
+  .scrollMore {
+    margin-top: 0px !important;
+  }
+
+  .TimeLineHeader svg.adTokenLunarscapeLogo {
+    width: 100%; 
+  }
+
+  .WorldFromMoon {
+    display: none;
+  }
+
+  .LunarSurface {
+    height: 233px;
+  }
+  
+  .TopNav .SocialMenu {
+    display: none;
+  }
+
+  .LunarscapeLogo.HeroTop {
+    margin: 20px auto 20px auto;
+  }
 }

@@ -27,11 +27,11 @@
 
     // Timeline Animation layer triggers
     $(window).scroll(function() {
-        var hT = $('.TimeLine').offset().top,
-            hH = $('.TimeLine').outerHeight(),
+        var hT = $('.scrollMore').offset().top,
+            hH = $('.scrollMore').outerHeight(),
             wH = $(window).height(),
             wS = $(this).scrollTop();
-        if (wS > (hT+hH-wH)){
+        if (wS > (hT+hH-wH+250)){
             $('.timeline-layer1').addClass('start');
             $('.timeline-layer2').addClass('start2');
             $('.timeline-layer3').addClass('start3');

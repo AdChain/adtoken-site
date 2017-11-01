@@ -8,28 +8,6 @@
       {{ partial "lunarscape.html" . }}
     {{ end }}
 
-    {{ if eq .File.BaseFileName "about" }}
-    <script>window.location.href="/breakdown/about"</script>
-    {{ end }}
-    {{ if eq .File.BaseFileName "team" }}
-    <script>window.location.href="/breakdown/team"</script>
-    {{ end }}
-    {{ if eq .File.BaseFileName "resources" }}
-    <script>window.location.href="/breakdown/resources"</script>
-    {{ end }}
-    {{ if eq .File.BaseFileName "token" }}
-    <script>window.location.href="/breakdown/token"</script>
-    {{ end }}
-    {{ if eq .File.BaseFileName "faq" }}
-    <script>window.location.href="/breakdown/faq"</script>
-    {{ end }}
-    {{ if eq .File.BaseFileName "terms" }}
-    <script>window.location.href="/breakdown/terms"</script>
-    {{ end }}
-    {{ if eq .File.BaseFileName "white-paper" }}
-    <script>window.location.href="/breakdown/white-paper"</script>
-    {{ end }}
-
     {{ partial "footer_scripts.html" }}
   </body>
 </html>

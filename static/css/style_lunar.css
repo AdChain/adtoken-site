@@ -2008,6 +2008,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
     zoom: .6;
   }
 
+  .Missions .button {
+    min-width: 240px;
+  }
+
   .MissionBox h5 svg {
     height: 7px;
   }
@@ -2015,6 +2019,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
   .MissionBox h6 svg {
     height: 8px;
     width: auto;
+  }
+
+  .EthereumColonizationText svg {
+    width: 255px;
   }
 
   .TimeLine {
@@ -2031,7 +2039,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
   }
 
   .TimeLineHeader svg.adTokenLunarscapeLogo {
-    width: 100%; 
+    width: 100%;
   }
 
   .WorldFromMoon {
@@ -2041,7 +2049,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
   .LunarSurface {
     height: 233px;
   }
-  
+
   .TopNav .SocialMenu {
     display: none;
   }

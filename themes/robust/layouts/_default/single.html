@@ -4,7 +4,7 @@
     {{ partial "head.html" . }}
   </head>
   <body>
-    {{ if eq .File.BaseFileName "breakdown" }}
+    {{ if eq .File.BaseFileName "overview" }}
       {{ partial "home.html" . }}
     {{ end }}
     {{ if eq .File.BaseFileName "white-paper" }}

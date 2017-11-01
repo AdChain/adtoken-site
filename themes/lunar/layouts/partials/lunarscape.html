@@ -4,12 +4,14 @@
     <div class="ui grid padded stackable">
         <div class="column sixteen wide LunarScape Section">
             <div class="ui grid padded stackable">
-                <div class="column ten wide centered aligned">
+                <div class="column fourteen wide centered aligned">
                     <div class="LunarscapeLogo HeroTop">
                         {{ partial "lunarscape_logo.html" . }}
                         {{ partial "current_mission_rinkeby_rover.html" . }}
                     </div>
+                    {{ partial "hero_buttons.html" . }}
                 </div>
+
                 <div class="WorldFromMoon"></div>
             </div>
 
@@ -33,6 +35,7 @@
 
     <div class="ui grid padded stackable">
         <div class="column sixteen wide DarkBlueBg">
+            <div class="scrollMore animated fadeInUp"></div>
             <div class="ui grid padded stackable">
                 <div class="column ten wide centered aligned">
                     <div class="LunarscapeLogo TimeLineHeader center aligned">
@@ -58,4 +61,46 @@
             </div>
         </div>
     </div>
+
+    <div class="ui grid padded stackable JoinNewsletter BlueBg">
+        <div class="column sixteen wide Section">
+            <div class="ui grid padded stackable">
+                <div class="column ten wide center aligned centered">
+                    <h2 class="ui header inverted">Sign Up for our Newsletter</h2> <br />
+                    <div class="column center aligned">
+                        <a href="https://app.adchain.com" class="small ui blue button">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui grid padded stackable BlueBg ContentBottom">
+        <div class="column sixteen wide Section">
+            <div class="ui grid equal width padded stackable">
+                    <div class="column center aligned">
+                        <h3 class="ui header inverted grey">Access the Help Center</h3>
+                        <a href="https://adchain.zendesk.com/hc/en-us" class="small ui grey button">VIEW WALKTHROUGHS</a>
+                    </div>
+
+                    <div class="column center aligned">
+                        <h3 class="ui header inverted">Start testing the adChain Registry</h3>
+                        <a href="https://app.adchain.com" class="small ui blue button">ACCESS ADCHAIN REGISTRY DAPP</a>
+                    </div>
+
+                    <div class="column center aligned">
+                        <h3 class="ui header inverted grey">Join the adToken
+                            Lunarscape Conversation</h3>
+                        <a href="https://chat.adchain.com" class="small ui grey button">JOIN ROCKET.CHAT</a>
+                    </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    {{ partial "footer.html" . }}
+
+
 </main>

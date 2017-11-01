@@ -204,25 +204,25 @@ img[data-src] {
 .TopNav .menu .item,
 .TopNav .menu .item.active {
   color: rgba(255,255,255,0.9);
-  padding: 25px 15px;
+  padding: 3px 0px;
+  margin: 22px 15px;
   border: none;
   transition: all 0.2s ease-out;
-  text-transform: uppercase;
-  border-top: 4px solid transparent;
+  border-bottom: 2px solid transparent;
   box-shadow: none;
 }
 
 :root:root .TopNav .menu .item:hover {
   color: rgba(255,255,255,1);
-  background: rgba(0,0,0, 0.2);
-  border-top-color: rgba(76, 60, 76, 0.53)
+  /*background: rgba(0,0,0, 0.2);*/
+  /*border-bottom-color: rgba(76, 60, 76, 0.53)*/
 }
 
 :root:root .TopNav .menu .item.active,
 :root:root .TopNav .menu .item.active:hover {
   color: rgba(255,255,255,1);
   background: rgba(0,0,0, 0.2);
-  border-top-color: #0071BC;
+  border-bottom-color: #0071BC;
 }
 
 @media only screen and (max-width: 767px) {
@@ -285,11 +285,15 @@ img[data-src] {
 }
 
 :root:root:root .Section h2 {
-  font-size: 2.2em;
+  font-size: 1.8em;
+  font-weight: 300;
+  color: #0c8cff;
 }
 
 :root:root:root .Section h3 {
-  font-size: 1.8em;
+  font-size: 1em;
+  font-weight: 400;
+  color: #0c8cff;
 }
 
 :root:root:root .Section h2 .sub,
@@ -1149,9 +1153,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
  */
 :root:root:root .SiteFooter {
   width: 100%;
-  background: #4A4A4A;
   background-size: cover;
-  padding: 0;
+  padding: 0
 }
 
 .SiteFooterMenuContainer {
@@ -1192,12 +1195,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
 .SiteFooter .menu .item,
 .SiteFooter .menu .item.active {
   color: rgba(255,255,255,0.9);
-  padding: 25px 15px;
+  padding: 3px 0px;
+  margin: 22px 15px;
   border: none;
   box-shadow: none;
   transition: all 0.2s ease-out;
-  text-transform: uppercase;
-  border-top: 4px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 
 .SiteFooter .menu .item:before {
@@ -1206,8 +1209,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
 
 :root:root .SiteFooter .menu .item:not(.SocialSection):not(.divider):hover {
   color: rgba(255,255,255,1);
-  background: rgba(0,0,0, 0.2);
-  border-top-color: rgba(76, 60, 76, 0.53)
+}
+
+:root:root .SiteFooter .menu .item:not(.SocialSection):not(.divider).active {
+  border-bottom-color: #0071BC
 }
 
 :root:root .SiteFooter .divider {
@@ -1264,6 +1269,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
   background-image: url(/assets/social/white/slack.svg);
 }
 
+:root:root .SiteFooter .SocialIcon.rocketChat {
+  background-image: url(/assets/social/rocket.chat.svg);
+}
+
 @media only screen and (max-width: 767px) {
   :root:root .SiteFooter .right.menu {
     overflow: auto !important;
@@ -1289,6 +1298,71 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
 /**
  * /END SITE FOOTER
  */
+
+
+:root:root .TopNav .menu .item:not(.SocialSection):not(.divider):hover {
+  color: rgba(255,255,255,1);
+  /*background: rgba(0,0,0, 0.2);*/
+  /*border-top-color: rgba(76, 60, 76, 0.53)*/
+}
+
+:root:root .TopNav .divider {
+  padding: 0;
+  width: 2px;
+  height: 80%;
+  margin: auto;
+  background: #585858;
+  opacity: 1;
+}
+
+:root:root .TopNav .SocialSection a {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+:root:root .TopNav .SocialIcon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  opacity: 0.8;
+  transition: all 0.2s ease-out;
+}
+
+:root:root .TopNav .SocialIcon:hover {
+  opacity: 1;
+}
+
+:root:root .TopNav .SocialIcon.twitter {
+  background-image: url(/assets/social/white/twitter.svg);
+}
+
+:root:root .TopNav .SocialIcon.github {
+  background-image: url(/assets/social/white/github.svg);
+}
+
+:root:root .TopNav .SocialIcon.linkedin {
+  background-image: url(/assets/social/white/linkedin.svg);
+}
+
+:root:root .TopNav .SocialIcon.medium {
+  background-image: url(/assets/social/white/medium.svg);
+}
+
+:root:root .TopNav .SocialIcon.reddit {
+  background-image: url(/assets/social/white/reddit.svg);
+}
+
+:root:root .TopNav .SocialIcon.slack {
+  background-image: url(/assets/social/white/slack.svg);
+}
+
+:root:root .TopNav .SocialIcon.rocketChat {
+  background-image: url(/assets/social/rocket.chat.svg);
+}
 
 
 /**
@@ -1429,30 +1503,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
 .LunarSurface {
    margin:0px;
    width: 100%;
-   height:302px;
+   height: 352px;
+   margin-top: 50px;
    color: transparent;
    background-color: transparent;
-   background-image: url(../assets/lunarescape/lunar_surface.png);
-   background-position: center center;
-   background-size: contain;
-   background-repeat: no-repeat;
-   padding: 0px;
-   align-self: center;
-  position: absolute;
-}
-
-.LunarScape .ui.grid {
-  position: relative;
-}
-
-.WorldFromMoon {
-   margin:0px;
-   width: 100px;
-   height: 100px;
-   right: 0px;
-   top: 60%;
-   background-image: url(../assets/lunarescape/world_from_moon.png);
-   background-position: center center;
+   background-image: url(../assets/lunarescape/moon_bg_dark.png);
+   background-position: center bottom;
    background-size: contain;
    background-repeat: no-repeat;
    padding: 0px;
@@ -1460,12 +1516,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
    position: absolute;
 }
 
+.LunarScape .ui.grid {
+  position: relative;
+}
+
 .LunarSurfaceOverlay {
   margin: 0px;
   width: 100%;
-  height:302px;
+  height:352px;
+  margin-top: 50px;
   color: transparent;
-  background: -moz-linear-gradient(top, rgba(0,4,34,0) 0%, rgba(0,4,34,1) 99%, rgba(0,4,34,1) 100%);
+  background: -moz-linear-gradient(top, rgba(0,4,34,0) 0%, rgba(0,4,34,1) 50%, rgba(0,4,34,1) 100%);
   background: -webkit-linear-gradient(top, rgba(0,4,34,0) 0%,rgba(0,4,34,1) 99%,rgba(0,4,34,1) 100%);
   background: linear-gradient(to bottom, rgba(0,4,34,0) 0%,rgba(0,4,34,1) 99%,rgba(0,4,34,1) 100%);
   background-position: center center;
@@ -1476,12 +1537,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
   position: absolute;
 }
 
+.WorldFromMoon {
+   margin:0px;
+   width: 100px;
+   height: 100px;
+   right: 0px;
+   top: 100%;
+   background-image: url(../assets/lunarescape/world_from_moon.png);
+   background-position: center center;
+   background-size: contain;
+   background-repeat: no-repeat;
+   padding: 0px;
+   align-self: center;
+   position: absolute;
+}
+
+.MissionDetailSection {
+  margin-top: 60px !important;
+}
+
 .LunarScape {
   height: auto;
 }
 
 .LunarscapeLogo.HeroTop {
-  margin: 100px auto 200px auto;
+  margin: 50px auto 50px auto;
 }
 
 .LunarscapeLogo {
@@ -1501,13 +1581,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
   display: block;
 }
 
+:root:root:root:root:root .Section > .grid.Missions.ui {
+  margin-top: 100px !important;
+}
+
 .MissionBox {
   text-align: center;
 }
 .MissionBox h5 { text-align: center; }
 .MissionBox h5 svg {
-  height: 8px;
+  height: 10px;
   width: auto;
+
+}
+
+.MissionBox h5 svg path {
+  fill: #0C8DFF;
+}
+
+.ActiveMission.MissionBox h5 svg path,
+.ActiveMission.MissionBox h6 svg path{
+  fill: white;
 }
 
 .MissionBox .ui.segment {
@@ -1566,12 +1660,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
 }
 
 .phaseBox.ui.table td.single.line {
-  width: 230px;
+  width: 270px;
 }
 
 .TimeLine {
   position: relative;
   min-height: 680px;
+  margin-bottom: 60px;
 }
 .TimeLine svg {
   position: absolute;
@@ -1612,6 +1707,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
 
 .Oval {
   border-radius: 70px;
+}
+
+.MissionBox h6 {
+  margin: 0px;
 }
 
 .ActiveMission .OvalIn {
@@ -1662,6 +1761,40 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
   -o-transition: all 500ms cubic-bezier(0.845, 0.020, 0.250, 1.000);
   transition: all 500ms cubic-bezier(0.845, 0.020, 0.250, 1.000); /* custom */
 }
+
+.BlueBg {
+  background-color: #12164B;
+  border-top: 1px solid #202467;
+  border-bottom: 1px solid #000;
+}
+
+.JoinNewsletter.ui.grid { padding: 20px 0px; }
+
+:root:root .ui.menu {
+  font-family: 'Titillium Web', 'AvenirNextLTW01Regular', 'Lato','Helvetica Neue',Arial,Helvetica,sans-serif;
+}
+
+.ContentBottom.ui.grid {
+  padding:20px 0px;
+}
+
+.ContentBottom h3 { min-height: 50px; line-height: 20px;}
+
+
+.ContentBottom .Section .column.center.aligned {
+  border-right: 1px solid #000;
+  border-left: 1px solid #212367;
+}
+
+.ContentBottom .Section .column.center.aligned:first-child {
+  border-left: 0px solid #212367;
+}
+
+.ContentBottom .Section .column.center.aligned:last-child {
+  border-right: 0px solid #212367;
+}
+
+
 
 .scaleEffect{
   animation: scaleAnim ease-in-out 0.6s;
@@ -1817,6 +1950,45 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
   100% {
     opacity:1;
     -ms-transform:  translate(0px,0px)  ;
+  }
+}
+
+
+.scrollMore {
+  height: 60px;
+  width: 30px;
+  border-radius: 25vmin;
+  border: 1px solid #103e88;
+  position: relative;
+  margin: 30px auto 0 auto;
+}
+
+.scrollMore:before {
+  content: '';
+  position: absolute;
+  top: 13px;
+  height: 10px;
+  width: 10px;
+  left: 9px;
+  background: #0c8cff;
+  border-radius: 50%;
+  animation: scroll 2s infinite;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
   }
 }
 

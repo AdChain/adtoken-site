@@ -1705,6 +1705,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
   margin: 15px auto;
 }
 
+.figure_rocket {
+  margin: 25px auto;
+  width: 53px;
+  height: 52px;
+
+}
+
+.figure_rocket path {
+  fill: #215693;
+}
+
 .Oval {
   border-radius: 70px;
 }

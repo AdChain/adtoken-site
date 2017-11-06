@@ -68,23 +68,23 @@ https://console.aws.amazon.com/cloudfront/home?region=us-west-2#distribution-set
 aws cloudfront create-invalidation --distribution-id E28OQWP5J96YQH --paths /index.html /assets/* /* --profile=metax
 ```
 
-Using NPM scripts
-
-```
-npm run deploy
-npm run invalidate-cache
-```
-
 Deploy to staging
 
-```
+```bash
 npm run deploy:staging
 ```
 
 Deploy lunarscape website
 
-```
+```bash
 npm run deploy:lunar:staging
+```
+
+Deploy to production
+
+
+```bash
+npm run deploy && npm run invalidate-cache
 ```
 
 ## Resources

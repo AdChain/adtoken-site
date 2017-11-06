@@ -45,6 +45,14 @@
       var clock  = new Clock(opts)
     })()
 
+    $(document).ready(function () {
+      // Tabs
+      $('.ui.tabular .item').tab()
+
+      // Accordion
+      $('.ui.accordion').accordion()
+    })
+
     // lazy loading
     $("img[data-src]")
     .unveil(400)

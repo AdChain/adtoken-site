@@ -15,7 +15,7 @@
 
         </div>
     </div>
-    <div class="column MissionBox">
+    <div class="column MissionBox longDate">
 
         <h5>{{ partial "discovery_text.html" . }}</h5>
         <div class="Oval OvalOut">
@@ -33,7 +33,7 @@
 
         </div>
     </div>
-    <div class="column MissionBox ActiveMission">
+    <div class="column MissionBox longDate">
 
         <h5>{{ partial "voyage_home_text.html" . }}</h5>
         <div class="Oval OvalOut">
@@ -44,6 +44,24 @@
                             </span>
         </div>
         <h6>{{ partial "feb_text.html" . }}</h6>
+
+    </div>
+    <div class="column MissionBox MissionConnector mobile hidden">
+        <div class="MissionBoxConnection">
+
+        </div>
+    </div>
+    <div class="column MissionBox longDate ActiveMission">
+
+        <h5>{{ partial "eth_colony_text.html" . }}</h5>
+        <div class="Oval OvalOut">
+                            <span class="Oval OvalMiddle">
+                                <span class="Oval OvalIn">
+                                    {{ partial "mission_one_phase_four.html" . }}
+                                </span>
+                            </span>
+        </div>
+        <h6>{{ partial "aprToForever.html" . }}</h6>
 
     </div>
 </div>

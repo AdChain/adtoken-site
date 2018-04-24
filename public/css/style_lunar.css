@@ -1588,7 +1588,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
 .MissionBox {
   text-align: center;
 }
-.MissionBox h5 { text-align: center; }
+.MissionBox h5 { text-align: center; height: 25px; }
 .MissionBox h5 svg {
   height: 10px;
   width: auto;
@@ -1986,6 +1986,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
   animation: scroll 2s infinite;
 }
 
+.MissionBox h5 svg.eth-colonization-text {
+  height: 30px;
+}
+
+.MissionBox.longDate h6 {
+  margin-left: -20px;
+}
+
 @keyframes scroll {
   0% {
     opacity: 0;
@@ -2025,6 +2033,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
 
   .MissionBox h5 svg {
     height: 7px;
+  }
+
+  .MissionBox h5 svg.eth-colonization-text {
+    height: 18px;
   }
 
   .MissionBox h6 svg {

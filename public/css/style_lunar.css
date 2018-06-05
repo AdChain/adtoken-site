@@ -1273,6 +1273,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
   background-image: url(/assets/social/rocket.chat.svg);
 }
 
+:root:root .TopNav .SocialIcon.telegram {
+  background-image: url(/assets/social/telegram-whitecopy.svg);
+}
+
 @media only screen and (max-width: 767px) {
   :root:root .SiteFooter .right.menu {
     overflow: auto !important;
@@ -1362,6 +1366,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
 
 :root:root .TopNav .SocialIcon.rocketChat {
   background-image: url(/assets/social/rocket.chat.svg);
+}
+
+:root:root .TopNav .SocialIcon.telegram {
+  background-image: url(/assets/social/telegram-whitecopy.svg);
 }
 
 

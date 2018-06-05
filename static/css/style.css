@@ -1258,6 +1258,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
   background-image: url(/assets/social/white/reddit.svg);
 }
 
+:root:root .SiteFooter .SocialIcon.telegram {
+  background-image: url(/assets/social/telegram_blue.svg);
+}
+
 :root:root .SiteFooter .SocialIcon.slack {
   background-image: url(/assets/social/white/slack.svg);
 }

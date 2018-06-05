@@ -1242,7 +1242,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
 }
 
 :root:root .SiteFooter .SocialIcon:hover {
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 :root:root .SiteFooter .SocialIcon.twitter {
@@ -1272,6 +1272,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
 :root:root .SiteFooter .SocialIcon.rocketChat {
   background-image: url(/assets/social/rocket.chat.svg);
 }
+
+:root:root .SiteFooter .SocialIcon.telegram {
+  background-image: url(/assets/social/telegram_blue.svg);
+  opacity: 0.9; 
+  /* special opacity for this icon */
+}
+
 
 @media only screen and (max-width: 767px) {
   :root:root .SiteFooter .right.menu {
@@ -1333,7 +1340,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
 }
 
 :root:root .TopNav .SocialIcon:hover {
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 :root:root .TopNav .SocialIcon.twitter {
@@ -1362,6 +1369,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', end
 
 :root:root .TopNav .SocialIcon.rocketChat {
   background-image: url(/assets/social/rocket.chat.svg);
+}
+
+:root:root .TopNav .SocialIcon.telegram {
+  background-image: url(/assets/social/telegram_black.svg);
+  opacity: 0.9;
+  /* special opacity for telegram */
 }
 
 

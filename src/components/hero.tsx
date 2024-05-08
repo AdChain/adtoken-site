@@ -134,39 +134,44 @@ const Hero = () => {
                 </g>
               </svg>
             </div>
-            <div className="mt-20 md:flex gap-10 whitespace-nowrap">
+            <div className="mt-20 md:flex gap-24 whitespace-nowrap">
               <a
                 href="https://adchain.zendesk.com/hc/en-us"
                 target="_blank"
-                className="border-2 cursor-pointer my-5 h-10 w-72 mx-auto flex justify-center border-gray-500  hover:border-white rounded-md px-7 py-2 text-[12px] "
+                className="border-2 cursor-pointer my-5 h-10 w-44 mx-auto flex justify-center border-gray-500  hover:border-white rounded-[5px] px-7 py-2 text-[12px] "
               >
-                <span className="mt-1" rel="noreferrer noopener">
+                <span
+                  className="mt-0.5"
+                  rel="noreferrer noopener titillium-web-extralight"
+                >
                   VIEW WALKTHROUGHS
                 </span>
               </a>
-              <a
-                href="https://app.adchain.com/"
-                target="_blank"
-                className="border-2 my-5 flex justify-center items-center cursor-pointer border-gray-500 w-72 mx-auto hover:border-[#0071BC] hover:text-[#0071BC] rounded-md px-10 py-2 md:w-full text-center text-[12px]"
-              >
-                <span className="mt-1" rel="noreferrer noopener">
-                  ACCESS ADCHAIN REGISTRY DAPP
-                </span>
-              </a>
+              <div className="flex justify-center w-64 titillium-web-extralight">
+                <a
+                  href="https://app.adchain.com/"
+                  target="_blank"
+                  className="border-2 my-5  flex justify-center items-center cursor-pointer border-gray-500 w-20 mx-auto hover:border-[#0071BC] hover:text-[#0071BC] rounded-[5px] px-10 py-2 md:w-full text-center text-[12px]"
+                >
+                  <span className="mt-0.5" rel="noreferrer noopener">
+                    ACCESS ADCHAIN REGISTRY DAPP
+                  </span>
+                </a>
+              </div>
               <a
                 target="_blank"
                 href="https://t.me/adChain"
-                className="border-2 my-5 cursor-pointer h-10 flex justify-center w-72 mx-auto border-gray-500 hover:border-white rounded-md px-7 py-2 text-[12px]"
+                className="border-2 my-5 cursor-pointer titillium-web-extralight h-10 flex justify-center w-44 mx-auto border-gray-500 hover:border-white rounded-[5px] px-7 py-2 text-[12px]"
               >
-                <span className="mt-1" rel="noreferrer noopener">
-                  JOIN OUR TELEGRAM
+                <span className="mt-0.5" rel="noreferrer noopener">
+                  JOIN ROCKET.CHAT
                 </span>
               </a>
             </div>
           </div>
         </div>
       </div>
-      <div className="relative">
+      <div className="relative ">
         <MissionComponent />
         <div className=" pointer-events-none absolute -top-32 right-[20%] -z-10 scale-50">
           <img src="/world_from_moon.png" alt="" className="w-full h-full" />

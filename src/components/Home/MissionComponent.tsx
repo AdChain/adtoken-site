@@ -2,7 +2,7 @@ import React from "react";
 
 const MissionComponent = () => {
   return (
-    <div className="flex mt-24 max-w-6xl mx-auto relative  p-0">
+    <div className="flex mt-24 max-w-6xl mx-auto relative  p-0 fadeup">
       <div className="column MissionBox grow flex justify-center items-center flex-col scale-75 md:scale-100  p-[1rem] w-[10%] text-center">
         <h5 className="text-center h-[25px]">
           <svg

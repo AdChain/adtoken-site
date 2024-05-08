@@ -38,7 +38,7 @@ const Navbar = () => {
         <div className="flex gap-5 items-center">
           <Link
             href={"/"}
-            className="text-white font-bold  border-b-2 border-[#0071BC] py-2 text-sm"
+            className="text-white font-medium  border-b-2 border-[#0071BC] py-2 text-sm"
           >
             Mission Control
           </Link>

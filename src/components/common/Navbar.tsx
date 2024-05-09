@@ -31,7 +31,43 @@ const Navbar = () => {
   };
   return (
     <div className="max-w-5xl mx-auto w-full bg-transparent bg-cover overflow-hidden px-5">
-      <div className="flex items-center justify-between py-5">
+      <div className="py-2">
+        <div className="md:hidden justify-end gap-2 flex">
+          <div className="rounded-md  bg-gray-200 hover:bg-white text-black flex items-center justify-center cursor-pointer transform -rotate-12">
+            <a
+              href="https://twitter.com/ad_chain"
+              target="_blank"
+              className="rotate-12"
+            >
+              <FaTwitter />
+            </a>
+          </div>
+          <div className="rounded-md w-5 h-5 bg-gray-200 hover:bg-white text-black flex items-center justify-center cursor-pointer transform -rotate-12">
+            <a
+              href="https://medium.com/@AdChain"
+              target="_blank"
+              className="rotate-12"
+            >
+              <FaMediumM />
+            </a>
+          </div>
+          <div className="rounded-md w-5 h-5 bg-gray-200 hover:bg-white text-black flex items-center justify-center cursor-pointer transform -rotate-12">
+            <a
+              href="https://www.reddit.com/r/adChain/"
+              target="_blank"
+              className="rotate-12"
+            >
+              <FaRedditAlien />
+            </a>
+          </div>
+          <div className="rounded-md w-5 h-5 bg-gray-200 hover:bg-white text-black flex items-center justify-center cursor-pointer transform -rotate-12">
+            <a href="http://t.me/adchain" target="_blank" className="rotate-12">
+              <FaTelegramPlane />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="flex items-center justify-between md:py-5 ">
         <a href="https://adtoken.com/" className="logo">
           <img width={50} src="/logo.svg" alt="" srcSet="" />
         </a>
@@ -50,7 +86,7 @@ const Navbar = () => {
           >
             White Paper
           </div>
-          <div className="flex gap-2">
+          <div className="md:flex gap-2 hidden">
             <div className="rounded-md w-5 h-5 bg-gray-200 hover:bg-white text-black flex items-center justify-center cursor-pointer transform -rotate-12">
               <a
                 href="https://twitter.com/ad_chain"

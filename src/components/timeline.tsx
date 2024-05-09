@@ -4,11 +4,11 @@ import LazyLoad from "react-lazy-load";
 
 const Timeline = () => {
   return (
-    <div className="relative h-[1000px]">
+    <div className="relative md:h-[1000px] h-[550px]">
       <LazyLoad height={0} className="relative h-[1000px]">
         <div className="">
           {/* <img src="http://apod.nasa.gov/apod/image/1502/HDR_MVMQ20Feb2015ouellet1024.jpg" /> */}
-          <div className="flex flex-col mb-16 mt-36  justify-center items-center">
+          <div className="flex flex-col mb-10 md:mb-16 md:mt-36 mt-10 md:mx-5 mx-4 justify-center items-center md:scale-100 scale-90">
             <div className="scrollMore animated fadeInUp my-4 mx-auto"></div>
             <svg
               width="400"
@@ -83,13 +83,13 @@ const Timeline = () => {
           </div>
           <div className=" relative w-full">
             <svg
-              width="1000px"
-              height="700px"
+              // width="1000px"
+              // height="700px"
               viewBox="0 0 1000 700"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
-              className="timeline-layer1 start absolute w-full "
+              className="timeline-layer1 start absolute w-full  h-[300px] md:h-[700px]"
             >
               <defs />
               <g
@@ -116,13 +116,13 @@ const Timeline = () => {
               />
             </svg>{" "}
             <svg
-              width="1000px"
-              height="700px"
+              // width="1000px"
+              // height="700px"
               viewBox="0 0 1000 700"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
-              className="timeline-layer2 start2 absolute w-full"
+              className="timeline-layer2 start2 absolute w-full  h-[300px] md:h-[700px]"
             >
               <defs />
               <g
@@ -148,13 +148,13 @@ const Timeline = () => {
               />
             </svg>{" "}
             <svg
-              width="1000px"
-              height="700px"
+              // width="1000px"
+              // height="700px"
               viewBox="0 0 1000 700"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
-              className="timeline-layer3 start3 absolute w-full"
+              className="timeline-layer3 start3 absolute w-full  h-[300px] md:h-[700px]"
             >
               <defs />
               <g
@@ -206,9 +206,9 @@ const Timeline = () => {
               />
             </svg>{" "}
             <svg
-              width={1000}
-              height={700}
-              className="timeline-layer4 transition1 show absolute w-full"
+              // width={1000}
+              // height={700}
+              className="timeline-layer4 transition1 show absolute w-full  h-[300px] md:h-[700px]"
               viewBox="0 0 1000 700"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -252,13 +252,13 @@ const Timeline = () => {
               </g>
             </svg>{" "}
             <svg
-              width="1000px"
-              height="700px"
+              // width="1000px"
+              // height="700px"
               viewBox="0 0 1000 700"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
-              className="timeline-layer5 start5 absolute w-full"
+              className="timeline-layer5 start5 absolute w-full  h-[300px] md:h-[700px]"
             >
               <title>Artboard Copy 6</title>
               <desc>Created with Sketch.</desc>
@@ -384,9 +384,9 @@ const Timeline = () => {
               />
             </svg>{" "}
             <svg
-              className="timeline_stages transition1 show absolute w-full"
-              width={1000}
-              height={700}
+              className="timeline_stages transition1 show absolute w-full h-[300px] md:h-[700px]"
+              // width={1000}
+              // height={700}
               viewBox="0 0 1000 700"
               xmlns="http://www.w3.org/2000/svg"
             >

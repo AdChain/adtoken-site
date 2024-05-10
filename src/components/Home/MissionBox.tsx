@@ -13,7 +13,7 @@ const MissionBox = () => {
       const json = await response.json();
       // Initialize animation
       const container: any = document.getElementById("phase1");
-    // @ts-ignore
+      // @ts-ignore
       const comp = new SVGAnim(json, 100, 100, 24);
       container.appendChild(comp.s.node);
     };

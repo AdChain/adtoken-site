@@ -1,12 +1,15 @@
 "use client";
 import Link from "next/link";
 import React from "react";
+import { BiLogoMediumOld } from "react-icons/bi";
 import {
   FaMediumM,
   FaRedditAlien,
+  FaRocketchat,
   FaTelegramPlane,
   FaTwitter,
 } from "react-icons/fa";
+import { LiaRocketchat } from "react-icons/lia";
 
 const Navbar = () => {
   const handleDownload = async () => {
@@ -30,9 +33,9 @@ const Navbar = () => {
     }
   };
   return (
-    <div className="max-w-5xl mx-auto w-full bg-transparent bg-cover overflow-hidden px-5">
-      <div className="py-2">
-        <div className="md:hidden justify-end gap-2 flex">
+    <div className="max-w-5xl mx-auto w-full bg-transparent bg-cover overflow-hidden">
+      <div className="">
+        <div className="md:hidden justify-end gap-2 m-2 flex">
           <div className="rounded-md  bg-gray-200 hover:bg-white text-black flex items-center justify-center cursor-pointer transform -rotate-12">
             <a
               href="https://twitter.com/ad_chain"
@@ -48,7 +51,7 @@ const Navbar = () => {
               target="_blank"
               className="rotate-12"
             >
-              <FaMediumM />
+            <BiLogoMediumOld />
             </a>
           </div>
           <div className="rounded-md w-5 h-5 bg-gray-200 hover:bg-white text-black flex items-center justify-center cursor-pointer transform -rotate-12">
@@ -62,19 +65,19 @@ const Navbar = () => {
           </div>
           <div className="rounded-md w-5 h-5 bg-gray-200 hover:bg-white text-black flex items-center justify-center cursor-pointer transform -rotate-12">
             <a href="http://t.me/adchain" target="_blank" className="rotate-12">
-              <FaTelegramPlane />
+            <FaRocketchat />
             </a>
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-between md:py-5 ">
+      <div className="flex items-center justify-between md:py-4 md:pl-12 md:mx-0 mx-5">
         <a href="https://adtoken.com/" className="logo">
-          <img width={50} src="/logo.svg" alt="" srcSet="" />
+          <img width={43} src="/logo.svg" alt="" srcSet="" />
         </a>
-        <div className="flex gap-5 items-center">
+        <div className="flex gap-7 items-center">
           <Link
             href={"/"}
-            className="text-white font-medium  border-b-2 border-[#0071BC] py-2 text-sm"
+            className="text-white font-medium   border-b-2 border-[#0071BC] py-2 text-sm"
           >
             Mission Control
           </Link>
@@ -82,12 +85,12 @@ const Navbar = () => {
             onClick={() => handleDownload()}
             // target="_blank"
             // href={"https://adtoken.com/uploads/white-paper.pdf"}
-            className="text-white  py-2 text-sm cursor-pointer"
+            className="text-white font-medium md:mr-2 text-sm cursor-pointer"
           >
             White Paper
           </div>
-          <div className="md:flex gap-2 hidden">
-            <div className="rounded-md w-5 h-5 bg-gray-200 hover:bg-white text-black flex items-center justify-center cursor-pointer transform -rotate-12">
+          <div className="md:flex gap-3 hidden">
+            <div className="rounded-md w-[21px] h-[21px] bg-gray-200 hover:bg-white text-black flex items-center justify-center cursor-pointer transform -rotate-12">
               <a
                 href="https://twitter.com/ad_chain"
                 target="_blank"
@@ -96,16 +99,16 @@ const Navbar = () => {
                 <FaTwitter />
               </a>
             </div>
-            <div className="rounded-md w-5 h-5 bg-gray-200 hover:bg-white text-black flex items-center justify-center cursor-pointer transform -rotate-12">
+            <div className="rounded-md w-[21px] h-[21px] bg-gray-200 hover:bg-white text-black flex items-center justify-center cursor-pointer transform -rotate-12">
               <a
                 href="https://medium.com/@AdChain"
                 target="_blank"
                 className="rotate-12"
               >
-                <FaMediumM />
+                <BiLogoMediumOld />
               </a>
             </div>
-            <div className="rounded-md w-5 h-5 bg-gray-200 hover:bg-white text-black flex items-center justify-center cursor-pointer transform -rotate-12">
+            <div className="rounded-md w-[21px] h-[21px] bg-gray-200 hover:bg-white text-black flex items-center justify-center cursor-pointer transform -rotate-12">
               <a
                 href="https://www.reddit.com/r/adChain/"
                 target="_blank"
@@ -114,13 +117,13 @@ const Navbar = () => {
                 <FaRedditAlien />
               </a>
             </div>
-            <div className="rounded-md w-5 h-5 bg-gray-200 hover:bg-white text-black flex items-center justify-center cursor-pointer transform -rotate-12">
+            <div className="rounded-md w-[21px] h-[21px] bg-gray-200 hover:bg-white text-black flex items-center justify-center cursor-pointer transform -rotate-12">
               <a
                 href="http://t.me/adchain"
                 target="_blank"
                 className="rotate-12"
               >
-                <FaTelegramPlane />
+                <FaRocketchat />
               </a>
             </div>
           </div>

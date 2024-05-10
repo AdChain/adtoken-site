@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="relative">
         <div className="flex justify-center ">
           <div>
-            <div className="flex justify-center mx-5 ">
+            <div className="flex justify-center mx-5 md:mt-3 ">
               <svg
                 // width="300"
                 height="86"
@@ -78,7 +78,7 @@ const Hero = () => {
                 </g>
               </svg>
             </div>
-            <div className="flex  justify-center md:mt-5 mx-5 md:w-full w-[300px]">
+            <div className="flex justify-center md:mt-3 mx-5 md:w-full w-[300px]">
               <svg height="12" viewBox="0 0 360 12" className="">
                 <title>Group</title>
                 <desc>Created with Sketch.</desc>
@@ -134,15 +134,15 @@ const Hero = () => {
                 </g>
               </svg>
             </div>
-            <div className="md:mt-20 mt-10 md:flex gap-24 whitespace-nowrap mx-5">
+            <div className="md:mt-9  mt-10 md:flex gap-[90px] whitespace-nowrap mx-5">
               <a
                 href="https://adchain.zendesk.com/hc/en-us"
                 target="_blank"
-                className="border-2 cursor-pointer my-5 h-10 w-full  flex justify-center border-gray-500  hover:border-white rounded-[5px] px-7 py-2 text-[12px] "
+                className="border-2 font- cursor-pointer my-5 h-10 w-full  flex justify-center border-gray-500  hover:border-white rounded-[5px] px-6 py-2 text-[13px] "
               >
                 <span
-                  className="mt-0.5"
-                  rel="noreferrer noopener titillium-web-extralight"
+                  className="text-white font-medium"
+                  rel="noreferrer noopener titillium-web-extralight "
                 >
                   VIEW WALKTHROUGHS
                 </span>
@@ -150,19 +150,24 @@ const Hero = () => {
               <a
                 href="https://app.adchain.com/"
                 target="_blank"
-                className="border-2 cursor-pointer my-5 h-10 w-full  flex justify-center border-gray-500  hover:border-blue-500 hover:text-blue-500 rounded-[5px] px-7 py-2 text-[12px] "
-                // className="border-2 my-5  flex justify-center items-center cursor-pointer border-gray-500 w-20 mx-auto hover:border-[#0071BC] hover:text-[#0071BC] rounded-[5px] px-10 py-2 md:w-full text-center text-[12px]"
+                className="border-2  cursor-pointer my-5 h-10 w-full  flex justify-center border-gray-500 hover:border-[#54c8ff] hover:text-[#54c8ff] rounded-[5px] px-6 py-2 text-[13px] "
               >
-                <span className="mt-0.5" rel="noreferrer noopener ">
+                <span
+                  className=" font-medium"
+                  rel="noreferrer noopener "
+                >
                   ACCESS ADCHAIN REGISTRY DAPP
                 </span>
               </a>
               <a
                 target="_blank"
                 href="https://t.me/adChain"
-                className="border-2 my-5 cursor-pointer titillium-web-extralight h-10 flex justify-center w-full mx-auto border-gray-500 hover:border-white rounded-[5px] px-7 py-2 text-[12px]"
+                className="border-2 my-5 cursor-pointer titillium-web-extralight h-10 flex justify-center w-full mx-auto border-gray-500 hover:border-white rounded-[5px] px-7 py-2 text-[13px]"
               >
-                <span className="mt-0.5" rel="noreferrer noopener">
+                <span
+                  className="text-white font-medium"
+                  rel="noreferrer noopener"
+                >
                   JOIN ROCKET.CHAT
                 </span>
               </a>
@@ -172,13 +177,23 @@ const Hero = () => {
       </div>
       <div className="relative ">
         <MissionComponent />
-        <div className=" pointer-events-none absolute -top-32 right-[20%] -z-10 ">
-          <img src="/world_from_moon.png" alt="" className="w-full h-full" />
+        <div className=" pointer-events-none absolute -top-32 md:block hidden md:-top-[45%] right-[20%] md:right-[23%] -z-10 ">
+          <img
+            src="/world_from_moon.png"
+            alt=""
+            className="w-[100px]  h-full"
+          />
         </div>
-        <div className=" pointer-events-none absolute md:-top-24 top-[700px] -z-10 ">
-          <img src="/moon_bg_dark.png" alt="" className="w-full h-full" />
+        <div className=" pointer-events-none absolute md:-top-[25%]   top-[700px] -z-10 ">
+          <img
+            src="/moon_bg_dark.png"
+            alt=""
+            className="md:w-[100vw] h-full"
+          />
+          <div className="absolute inset-0 bg-black opacity-[30%]"></div>{" "}
         </div>
-        <div className="bg-gradient-to-b from-transparent to-[#000422] -z-10 h-[200px] absolute bottom-0 w-full pointer-events-none"></div>
+
+        <div className="bg-gradient-to-b  from-transparent to-[#000422] -z-10 h-[200px] absolute bottom-0 w-full pointer-events-none"></div>
       </div>
     </>
   );

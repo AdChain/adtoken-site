@@ -11,9 +11,9 @@ const Timeline = () => {
           <div className="flex flex-col mb-10 md:mb-16 md:mt-36 mt-10 md:mx-5 mx-4 justify-center items-center md:scale-100 scale-90">
             <div className="scrollMore animated fadeInUp my-4 mx-auto"></div>
             <svg
-              width="400"
+              width=""
               height="56"
-              className="adTokenLunarscapeLogo"
+              className="adTokenLunarscapeLogo md:w-[400px] w-[270px]"
               viewBox="0 0 600 86"
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"

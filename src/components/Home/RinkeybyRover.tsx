@@ -54,9 +54,9 @@ const RinkeybyRover = () => {
               </p>
             </div>
           </div>
-          <div className="grid lg:grid-cols-12 ">
+          <div className="grid lg:grid-cols-12  items-center ">
             <div className="lg:col-span-2 lg:mt-9">
-              <div className="lg:flex justify-center mt-10">
+              <div className="lg:flex justify-center items-center">
                 <svg
                   width="67"
                   height="14"

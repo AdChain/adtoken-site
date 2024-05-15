@@ -10,8 +10,10 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { LiaRocketchat } from "react-icons/lia";
+import { MdCheck, MdOutlineContentCopy } from "react-icons/md";
 
 const Navbar = () => {
+  const [isCopiedContent, setIsCopiedContent] = React.useState<any>("");
   const handleDownload = async () => {
     try {
       const res = await fetch("/white-paper.pdf");
@@ -30,6 +32,16 @@ const Navbar = () => {
       }
     } catch (error) {
       console.error("Error downloading file:", error);
+    }
+  };
+  const copyToClipboard = (content: any) => {
+    const Content = content;
+    if (Content) {
+      navigator.clipboard.writeText(Content);
+      setIsCopiedContent([Content]);
+      setTimeout(() => {
+        setIsCopiedContent("");
+      }, 2000);
     }
   };
   return (
@@ -51,7 +63,7 @@ const Navbar = () => {
               target="_blank"
               className="rotate-12"
             >
-            <BiLogoMediumOld />
+              <BiLogoMediumOld />
             </a>
           </div>
           <div className="rounded-md w-5 h-5 bg-gray-200 hover:bg-white text-black flex items-center justify-center cursor-pointer transform -rotate-12">
@@ -65,16 +77,26 @@ const Navbar = () => {
           </div>
           <div className="rounded-md w-5 h-5 bg-gray-200 hover:bg-white text-black flex items-center justify-center cursor-pointer transform -rotate-12">
             <a href="http://t.me/adchain" target="_blank" className="rotate-12">
-            <FaRocketchat />
+              <FaRocketchat />
             </a>
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-between md:py-4 md:pl-12 md:mx-0 mx-5">
-        <a href="https://adtoken.com/" className="logo">
-          <img width={43} src="/logo.svg" alt="" srcSet="" />
-        </a>
-        <div className="flex gap-7 items-center">
+      <div className="flex items-center justify-start md:py-4 md:pl-12 md:mx-0 mx-5">
+        <div className="flex gap-2 items-center">
+          <a href="https://adtoken.com/" className="logo">
+            <img width={43} src="/logo.svg" alt="" srcSet="" />
+          </a>
+          <p>0xd0d6d6c5fe4a677d343cc433536bb717bae167dd</p>
+          <div onClick={()=>copyToClipboard("https://etherscan.io/token/0xd0d6d6c5fe4a677d343cc433536bb717bae167dd")} className="cursor-pointer">
+            {isCopiedContent === "" ? (
+              <MdOutlineContentCopy size={15} />
+            ) : (
+              <MdCheck size={15} />
+            )}
+          </div>
+        </div>
+        {/* <div className="flex gap-7 items-center">
           <Link
             href={"/"}
             className="text-white font-medium   border-b-2 border-[#0071BC] py-2 text-sm"
@@ -127,7 +149,7 @@ const Navbar = () => {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -66,3 +66,10 @@ body {
     opacity: 1;
   }
 }
+.heading-text{
+  padding: 0 10px;
+  white-space: nowrap;
+  background: linear-gradient(to top, #808080,#9a9a9a, #ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

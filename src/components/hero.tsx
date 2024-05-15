@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import MissionComponent from "./Home/MissionComponent";
 import { MdVerified } from "react-icons/md";
@@ -22,8 +23,10 @@ const Hero = () => {
             </div>
             <div className="md:mt-9  mt-10 md:flex gap-[90px] whitespace-nowrap mx-5">
               <a
-                href="https://adtoken.com/uploads/white-paper.pdf"
+                href="/white-paper.pdf"
                 target="_blank"
+                rel="noopener noreferrer"
+                type="application/pdf"
                 className="border-2 font- cursor-pointer my-5 h-10 w-full  flex justify-center border-gray-500  hover:border-white rounded-[5px] px-6 py-2 text-[13px] "
               >
                 <span

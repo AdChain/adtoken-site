@@ -59,6 +59,13 @@ const Footer = () => {
         </div>
       </div>
 
+      <div className="border-t border-black ">
+        <div className="flex gap-5 py-3 max-w-xl mx-auto justify-center">
+          <a href="/legal">
+            Legal Disclaimer / Privacy Policy / Terms & Conditions
+          </a>
+        </div>
+      </div>
       <div className="border-t border-black">
         <Navbar />
       </div>

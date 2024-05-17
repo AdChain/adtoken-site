@@ -18,7 +18,7 @@ const Hero = () => {
             </div>
             <div className="flex justify-center md:mt-3 mx-auto md:w-full">
               <h1 className="md:text-4xl text-2xl">
-                Offical utility Token of AdChain and AdPrompt.Ai
+                Official utility Token of AdChain and AdPrompt.Ai
               </h1>
             </div>
             <div className="md:mt-9  mt-10 md:flex gap-[90px] whitespace-nowrap mx-5">

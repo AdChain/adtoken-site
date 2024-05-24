@@ -2,12 +2,27 @@
 import React from "react";
 import MissionComponent from "./Home/MissionComponent";
 import { MdVerified } from "react-icons/md";
+import { WavyBackground } from "./Home/WavyBackground";
+import HomeTabs from "./Home/HomeTabs";
+import TextGenerate from "./Home/TextGenerate";
 
 const Hero = () => {
   return (
     <>
       <div className="relative">
-        <div className="flex justify-center ">
+        <div>
+          <WavyBackground
+            containerClassName="!h-[500px] relative"
+            colors={["#0C8DFF", "#12164B"]}
+          >
+            <TextGenerate
+              words="AI is the future that can be ours if we own the means to
+            production"
+              className="!font-light !text-[48px] px-4"
+            />
+          </WavyBackground>
+        </div>
+        <div className="flex justify-center my-40 relative z-20">
           <div>
             <div className="flex justify-center mx-5 md:mt-3 text-2xl  font-bold items-center">
               <div className="line h-[1px] grow bg-gray-500"></div>
@@ -17,7 +32,7 @@ const Hero = () => {
               <div className="line h-[1px] grow bg-gray-500"></div>
             </div>
             <div className="flex justify-center md:mt-3 mx-auto md:w-full">
-              <h1 className="md:text-4xl text-2xl">
+              <h1 className="md:text-4xl text-2xl px-8 sm:px-0">
                 Official utility Token of AdChain and AdPrompt.Ai
               </h1>
             </div>
@@ -61,21 +76,25 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="relative ">
+      <div className="relative">
         <MissionComponent />
-        <div className=" pointer-events-none absolute -top-32 md:block hidden md:-top-[45%] right-[20%] md:right-[23%] -z-10 ">
+
+        <div className="pointer-events-none absolute -top-32 md:block hidden md:-top-[65%] right-[20%] md:right-[23%] -z-10 ">
           <img
             src="/world_from_moon.png"
             alt=""
             className="w-[100px]  h-full"
           />
         </div>
-        <div className=" pointer-events-none absolute md:-top-[25%]   top-[700px] -z-10 ">
-          <img src="/moon_bg_dark.png" alt="" className="md:w-[100vw] h-full" />
+        <div className=" pointer-events-none absolute md:-top-[50%] top-[700px] left-[1.5%] -z-10 ">
+          <img src="/moon_bg_dark.png" alt="" className="md:w-[90vw] h-full" />
           <div className="absolute inset-0 bg-black opacity-[30%]"></div>{" "}
         </div>
+      </div>
 
-        <div className="bg-gradient-to-b  from-transparent to-[#000422] -z-10 h-[200px] absolute bottom-0 w-full pointer-events-none"></div>
+      <div className="h-[1200px] sm:h-[800px] mt-[6rem] relative">
+        <HomeTabs />
+        <div className="bg-gradient-to-b from-transparent via-[#000422] to-[#000422] -z-10 h-[85rem] absolute bottom-0 w-full pointer-events-none"></div>
       </div>
     </>
   );

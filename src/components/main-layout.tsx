@@ -4,10 +4,10 @@ import Footer from "./common/Footer";
 
 const MainLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div>
+    <div className="">
       <Navbar />
       {children}
-      <Footer/>
+      <Footer />
     </div>
   );
 };

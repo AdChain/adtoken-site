@@ -47,40 +47,7 @@ const Navbar = () => {
   return (
     <div className="max-w-5xl mx-auto w-full bg-transparent bg-cover overflow-hidden">
       <div className="">
-        <div className="md:hidden justify-end gap-2 m-2 flex">
-          <div className="rounded-md  bg-gray-200 hover:bg-white text-black flex items-center justify-center cursor-pointer transform -rotate-12">
-            <a
-              href="https://twitter.com/ad_chain"
-              target="_blank"
-              className="rotate-12"
-            >
-              <FaTwitter />
-            </a>
-          </div>
-          <div className="rounded-md w-5 h-5 bg-gray-200 hover:bg-white text-black flex items-center justify-center cursor-pointer transform -rotate-12">
-            <a
-              href="https://medium.com/@AdChain"
-              target="_blank"
-              className="rotate-12"
-            >
-              <BiLogoMediumOld />
-            </a>
-          </div>
-          <div className="rounded-md w-5 h-5 bg-gray-200 hover:bg-white text-black flex items-center justify-center cursor-pointer transform -rotate-12">
-            <a
-              href="https://www.reddit.com/r/adChain/"
-              target="_blank"
-              className="rotate-12"
-            >
-              <FaRedditAlien />
-            </a>
-          </div>
-          <div className="rounded-md w-5 h-5 bg-gray-200 hover:bg-white text-black flex items-center justify-center cursor-pointer transform -rotate-12">
-            <a href="http://t.me/adchain" target="_blank" className="rotate-12">
-              <FaRocketchat />
-            </a>
-          </div>
-        </div>
+        <div className="md:hidden justify-end gap-2 m-2 flex"></div>
       </div>
       <div className="flex items-center justify-start md:py-4 md:pl-12 md:mx-0 mx-5">
         <div className="flex gap-2 items-center">
@@ -88,7 +55,14 @@ const Navbar = () => {
             <img width={43} src="/logo.svg" alt="" srcSet="" />
           </a>
           <p>0xd0d6d6c5fe4a677d343cc433536bb717bae167dd</p>
-          <div onClick={()=>copyToClipboard("https://etherscan.io/token/0xd0d6d6c5fe4a677d343cc433536bb717bae167dd")} className="cursor-pointer">
+          <div
+            onClick={() =>
+              copyToClipboard(
+                "https://etherscan.io/token/0xd0d6d6c5fe4a677d343cc433536bb717bae167dd",
+              )
+            }
+            className="cursor-pointer"
+          >
             {isCopiedContent === "" ? (
               <MdOutlineContentCopy size={15} />
             ) : (

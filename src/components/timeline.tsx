@@ -8,7 +8,7 @@ const Timeline = () => {
       <LazyLoad height={0} className="relative h-[1000px]">
         <div className="">
           {/* <img src="http://apod.nasa.gov/apod/image/1502/HDR_MVMQ20Feb2015ouellet1024.jpg" /> */}
-          <div className="flex flex-col mb-10 md:mb-16 md:mt-36 mt-10 md:mx-5 mx-4 justify-center items-center md:scale-100 scale-90">
+          <div className="flex flex-col mb-10 md:mb-16 md:mx-5 mx-4 justify-center items-center md:scale-100 scale-90">
             <div className="scrollMore animated fadeInUp my-4 mx-auto"></div>
             <svg
               width=""

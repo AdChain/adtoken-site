@@ -1,0 +1,7 @@
+query balances {
+    balances(first: 20, orderBy: balance, orderDirection: desc) {
+        id
+        address
+        balance
+    }
+}

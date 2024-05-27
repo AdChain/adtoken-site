@@ -7,11 +7,11 @@ export type MakeMaybe<T, K extends keyof T> = Omit<T, K> & { [SubKey in K]: Mayb
 export type MakeEmpty<T extends { [key: string]: unknown }, K extends keyof T> = { [_ in K]?: never };
 export type Incremental<T> = T | { [P in keyof T]?: P extends ' $fragmentName' | '__typename' ? T[P] : never };
 
-function fetcher<TData, TVariables>(endpoint: string, requestInit: RequestInit, query: string, variables?: TVariables) {
+function fetcher<TData, TVariables>(query: string, variables?: TVariables) {
   return async (): Promise<TData> => {
-    const res = await fetch(endpoint, {
-      method: 'POST',
-      ...requestInit,
+    const res = await fetch("https://api.studio.thegraph.com/proxy/65652/testing-adtoken/version/latest", {
+    method: "POST",
+    ...({"headers":{"content-type":"application/json"}}),
       body: JSON.stringify({ query, variables }),
     });
 
@@ -679,7 +679,6 @@ export type TokensQueryVariables = Exact<{ [key: string]: never; }>;
 export type TokensQuery = { __typename?: 'Query', tokens: Array<{ __typename?: 'Token', id: string, name: string, decimals: number, totalSupply: any }> };
 
 
-
 export const BalancesDocument = `
     query balances {
   balances(first: 20, orderBy: balance, orderDirection: desc) {
@@ -689,22 +688,18 @@ export const BalancesDocument = `
   }
 }
     `;
-
 export const useBalancesQuery = <
       TData = BalancesQuery,
       TError = unknown
     >(
-      dataSource: { endpoint: string, fetchParams?: RequestInit },
       variables?: BalancesQueryVariables,
       options?: UseQueryOptions<BalancesQuery, TError, TData>
-    ) => {
-    
-    return useQuery<BalancesQuery, TError, TData>(
+    ) =>
+    useQuery<BalancesQuery, TError, TData>(
       variables === undefined ? ['balances'] : ['balances', variables],
-      fetcher<BalancesQuery, BalancesQueryVariables>(dataSource.endpoint, dataSource.fetchParams || {}, BalancesDocument, variables),
+      fetcher<BalancesQuery, BalancesQueryVariables>(BalancesDocument, variables),
       options
-    )};
-
+    );
 export const DailyDatasDocument = `
     query dailyDatas {
   dailyDatas(orderBy: date, orderDirection: desc) {
@@ -715,22 +710,18 @@ export const DailyDatasDocument = `
   }
 }
     `;
-
 export const useDailyDatasQuery = <
       TData = DailyDatasQuery,
       TError = unknown
     >(
-      dataSource: { endpoint: string, fetchParams?: RequestInit },
       variables?: DailyDatasQueryVariables,
       options?: UseQueryOptions<DailyDatasQuery, TError, TData>
-    ) => {
-    
-    return useQuery<DailyDatasQuery, TError, TData>(
+    ) =>
+    useQuery<DailyDatasQuery, TError, TData>(
       variables === undefined ? ['dailyDatas'] : ['dailyDatas', variables],
-      fetcher<DailyDatasQuery, DailyDatasQueryVariables>(dataSource.endpoint, dataSource.fetchParams || {}, DailyDatasDocument, variables),
+      fetcher<DailyDatasQuery, DailyDatasQueryVariables>(DailyDatasDocument, variables),
       options
-    )};
-
+    );
 export const TokensDocument = `
     query tokens {
   tokens {
@@ -741,18 +732,15 @@ export const TokensDocument = `
   }
 }
     `;
-
 export const useTokensQuery = <
       TData = TokensQuery,
       TError = unknown
     >(
-      dataSource: { endpoint: string, fetchParams?: RequestInit },
       variables?: TokensQueryVariables,
       options?: UseQueryOptions<TokensQuery, TError, TData>
-    ) => {
-    
-    return useQuery<TokensQuery, TError, TData>(
+    ) =>
+    useQuery<TokensQuery, TError, TData>(
       variables === undefined ? ['tokens'] : ['tokens', variables],
-      fetcher<TokensQuery, TokensQueryVariables>(dataSource.endpoint, dataSource.fetchParams || {}, TokensDocument, variables),
+      fetcher<TokensQuery, TokensQueryVariables>(TokensDocument, variables),
       options
-    )};
+    );

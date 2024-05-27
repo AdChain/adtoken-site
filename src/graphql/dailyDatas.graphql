@@ -1,8 +1,8 @@
 query dailyDatas {
-    dailyDatas(orderBy: date, orderDirection: desc) {
-        id
-        date
-        txCount
-        volume
-    }
+  dailyDatas(orderBy: date, orderDirection: desc) {
+    id
+    date
+    txCount
+    volume
+  }
 }

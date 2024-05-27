@@ -4,7 +4,7 @@ import TokenGraph from "./TokenGraph";
 
 const RinkeybyRover = () => {
   return (
-    <div className="max-w-[1000px] flex mx-auto flex-col overflow-hidden px-5">
+    <div className="relative max-w-[1000px] flex mx-auto flex-col overflow-hidden px-5">
       <TokenGraph/>
       <div
         className="p-[20px] bg-[#1B2040] rounded-md"

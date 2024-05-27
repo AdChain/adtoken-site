@@ -1,5 +1,5 @@
 query dailyDatas {
-  dailyDatas(orderBy: date, orderDirection: desc) {
+  dailyDatas(first: 20, orderBy: date, orderDirection: desc) {
     id
     date
     txCount

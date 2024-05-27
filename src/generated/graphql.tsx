@@ -702,7 +702,7 @@ export const useBalancesQuery = <
     );
 export const DailyDatasDocument = `
     query dailyDatas {
-  dailyDatas(orderBy: date, orderDirection: desc) {
+  dailyDatas(first: 20,orderBy: date, orderDirection: desc) {
     id
     date
     txCount
@@ -722,6 +722,7 @@ export const useDailyDatasQuery = <
       fetcher<DailyDatasQuery, DailyDatasQueryVariables>(DailyDatasDocument, variables),
       options
     );
+
 export const TokensDocument = `
     query tokens {
   tokens {

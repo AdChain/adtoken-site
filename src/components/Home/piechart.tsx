@@ -1,61 +1,76 @@
 import { ResponsivePie } from "@nivo/pie";
 import React, { useEffect } from "react";
 
-const Piechart = ({ data, pieChartData, setPieChartData }: any) => {
+const Piechart = ({
+  data,
+  pieChartData,
+  setPieChartData,
+  gweiToEther,
+}: any) => {
+  const usedHues = new Set();
+  const getRandomColor = () => {
+    let hue;
+    // Generate a unique hue
+    do {
+      hue = Math.floor(Math.random() * 360);
+    } while (usedHues.has(hue));
+
+    usedHues.add(hue);
+    const saturation = 70; // fixed saturation
+    const lightness = 50; // fixed lightness
+    return `hsl(${hue}, ${saturation}%, ${lightness}%)`;
+  };
   useEffect(() => {
     if (Array.isArray(data?.balances) && data?.balances?.length > 0) {
-      console.log(data, "data");
       const chartData = data?.balances?.map((item: any) => ({
-        id: "dfas",
-        label: item.address,
-        color: "hsl(78, 70%, 50%)",
+        id:
+          item.address.substring(0, 6) +
+          "..." +
+          item.address.substring(item.address.length - 4),
+        label:
+          item.address.substring(0, 6) +
+          "..." +
+          item.address.substring(item.address.length - 4),
+        color: getRandomColor(),
         value: item.balance,
       }));
-      console.log(chartData);
       setPieChartData(chartData);
     }
   }, [data]);
+
   return (
-    <div>
+    <>
       <ResponsivePie
-        data={[
-          {
-            id: "stylus",
-            label: "stylus",
-            value: 469,
-            color: "hsl(78, 70%, 50%)",
-          },
-          {
-            id: "sass",
-            label: "sass",
-            value: 402,
-            color: "hsl(40, 70%, 50%)",
-          },
-          {
-            id: "javascript",
-            label: "javascript",
-            value: 546,
-            color: "hsl(353, 70%, 50%)",
-          },
-          {
-            id: "make",
-            label: "make",
-            value: 377,
-            color: "hsl(331, 70%, 50%)",
-          },
-          {
-            id: "css",
-            label: "css",
-            value: 142,
-            color: "hsl(114, 70%, 50%)",
-          },
-        ]}
-        margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
+        data={pieChartData}
+        margin={{ top: 80, right: 80, bottom: 100, left: 20 }}
         startAngle={-51}
         padAngle={0.7}
+        enableArcLabels={false}
         cornerRadius={3}
         activeOuterRadiusOffset={8}
+        tooltip={(input: any) => {
+          return (
+            <div
+              style={{
+                background: "white",
+                padding: "5px 12px",
+                border: "1px solid #ccc",
+                borderRadius: "5px",
+                color: "#000",
+                width: "",
+              }}
+            >
+              <div className="font-bold">
+                value :{gweiToEther(input?.datum?.data?.value)}
+              </div>
+              <div className="font-bold">
+                address :{input?.datum?.data?.label}
+              </div>
+            </div>
+          );
+        }}
         borderWidth={1}
+        colors={["#17257c", "#1290FF", "#3851f4"]}
         borderColor={{
           from: "color",
           modifiers: [["darker", 0.2]],
@@ -139,33 +154,8 @@ const Piechart = ({ data, pieChartData, setPieChartData }: any) => {
             id: "lines",
           },
         ]}
-        legends={[
-          {
-            anchor: "bottom",
-            direction: "row",
-            justify: false,
-            translateX: 0,
-            translateY: 56,
-            itemsSpacing: 0,
-            itemWidth: 100,
-            itemHeight: 18,
-            itemTextColor: "#999",
-            itemDirection: "left-to-right",
-            itemOpacity: 1,
-            symbolSize: 18,
-            symbolShape: "circle",
-            effects: [
-              {
-                on: "hover",
-                style: {
-                  itemTextColor: "#000",
-                },
-              },
-            ],
-          },
-        ]}
       />
-    </div>
+    </>
   );
 };
 

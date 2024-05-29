@@ -9,6 +9,7 @@ const DailyVolumes = ({
   setDailyDataChart,
   data,
   gweiToEther,
+  convertDateFormat,
 }: any) => {
   const convertToReadableDate = (epochInput: any) => {
     const epochTime = parseInt(epochInput, 10);
@@ -54,6 +55,12 @@ const DailyVolumes = ({
       setDailyDataChart(body);
     }
   }, [data]);
+  const getOddDates = (data: any) => {
+    const allDates = data[0]?.data
+      .filter((date: any, index: any) => index % 5 === 0)
+      ?.map((item: any) => item.x);
+    return allDates;
+  };
 
   return (
     <ResponsiveLine
@@ -62,7 +69,6 @@ const DailyVolumes = ({
       xScale={{ type: "point" }}
       colors={["#17257c"]}
       tooltip={(input: any) => {
-        console.log(input, "::::::");
         return (
           <div
             style={{
@@ -91,13 +97,15 @@ const DailyVolumes = ({
       axisTop={null}
       axisRight={null}
       axisBottom={{
-        tickSize: 5,
-        tickPadding: 5,
+        tickSize: 15,
+        tickPadding: 0,
         tickRotation: -60,
         legend: "Days",
         legendOffset: 70,
         legendPosition: "middle",
+        tickValues: getOddDates(dailyDataChart), // Use custom tick values for odd dates
         truncateTickAt: 0,
+        format: (value) => convertDateFormat(value),
       }}
       axisLeft={{
         tickSize: 5,

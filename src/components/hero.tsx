@@ -33,7 +33,7 @@ const Hero = () => {
                   className="text-white font-medium"
                   rel="noreferrer noopener titillium-web-extralight "
                 >
-                  Original Whitepaaper
+                  Original Whitepaper
                 </span>
               </a>
               <a

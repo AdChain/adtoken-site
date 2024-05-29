@@ -1,11 +1,17 @@
 import React, { useEffect } from "react";
 import { ResponsiveBar } from "@nivo/bar";
 
-const TransferDataChart = ({ transferData, setTransferData, data }: any) => {
+const TransferDataChart = ({
+  transferData,
+  setTransferData,
+  data,
+  convertDateFormat,
+}: any) => {
   useEffect(() => {
     if (Array.isArray(data?.dailyDatas) && data?.dailyDatas?.length > 0) {
       const chartData = data?.dailyDatas
         ?.reverse()
+        ?.slice(0, 20)
         .map((item: any, index: any) => ({
           date: convertToReadableDate(item.date), // Convert date to number if needed
           txCount: Number(item.txCount), // Convert txCount to number
@@ -36,6 +42,13 @@ const TransferDataChart = ({ transferData, setTransferData, data }: any) => {
       .filter((item: any, index: any) => index % 2 !== 0)
       .map((item: any) => item.date);
   };
+  const convertDate = (data: any) => {
+    const array: any = [];
+    data?.forEach((date: string) => {
+      array.push(convertDateFormat(date));
+    });
+    return array;
+  };
 
   return (
     <ResponsiveBar
@@ -63,7 +76,7 @@ const TransferDataChart = ({ transferData, setTransferData, data }: any) => {
               width: "",
             }}
           >
-            <div className="font-bold">Transfer :{input?.data?.txCount}</div>
+            <div className="font-bold">Transfers :{input?.data?.txCount}</div>
           </div>
         );
       }}
@@ -75,6 +88,7 @@ const TransferDataChart = ({ transferData, setTransferData, data }: any) => {
         legendPosition: "middle",
         legendOffset: 70,
         tickValues: getOddDates(transferData), // Use custom tick values for odd dates
+        format: (value) => convertDateFormat(value),
         truncateTickAt: 0,
       }}
       axisLeft={{
@@ -97,7 +111,7 @@ const TransferDataChart = ({ transferData, setTransferData, data }: any) => {
           justify: false,
           translateX: 400,
           translateY: 0,
-          itemsSpacing: 2,
+          itemsSpacing: 5,
           itemWidth: 73,
           itemHeight: 20,
           itemDirection: "left-to-right",

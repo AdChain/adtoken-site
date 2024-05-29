@@ -42,7 +42,7 @@ const Piechart = ({
     <>
       <ResponsivePie
         data={pieChartData}
-        margin={{ top: 80, right: 80, bottom: 100, left: 20 }}
+        margin={{ top: 40, right: 40, bottom: 100, left: 20 }}
         startAngle={-51}
         padAngle={0.7}
         enableArcLabels={false}

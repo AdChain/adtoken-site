@@ -702,7 +702,7 @@ export const useBalancesQuery = <
     );
 export const DailyDatasDocument = `
     query dailyDatas {
-  dailyDatas(first: 20, orderBy: date, orderDirection: desc) {
+  dailyDatas(first: 100, orderBy: date, orderDirection: desc) {
     id
     date
     txCount

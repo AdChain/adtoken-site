@@ -6,7 +6,7 @@ import {
   useTokensQuery,
 } from "@/generated/graphql";
 // yarn add @nivo/line
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Piechart from "./piechart";
 import TransferDataChart from "./transferDataChart";
 import DailyVolumes from "../dailyVolumes";

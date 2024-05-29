@@ -11,7 +11,7 @@ const TransferDataChart = ({
     if (Array.isArray(data?.dailyDatas) && data?.dailyDatas?.length > 0) {
       const chartData = data?.dailyDatas
         ?.reverse()
-        ?.slice(0, 20)
+        ?.slice(80, 99)
         .map((item: any, index: any) => ({
           date: convertToReadableDate(item.date), // Convert date to number if needed
           txCount: Number(item.txCount), // Convert txCount to number

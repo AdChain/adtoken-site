@@ -76,7 +76,8 @@ const TransferDataChart = ({
               width: "",
             }}
           >
-            <div className="font-bold">Transfers :{input?.data?.txCount}</div>
+            <div className="font-bold">Date: {convertDateFormat(input?.data?.date)}</div>
+            <div className="font-bold">Transfers: {input?.data?.txCount}</div>
           </div>
         );
       }}

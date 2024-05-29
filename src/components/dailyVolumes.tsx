@@ -81,7 +81,10 @@ const DailyVolumes = ({
             }}
           >
             <div className="font-bold">
-              Volume :{input?.point?.data?.yFormatted}
+              Date: {convertDateFormat(input?.point?.data?.xFormatted)}
+            </div>
+            <div className="font-bold">
+              Volume: {input?.point?.data?.yFormatted}
             </div>
           </div>
         );

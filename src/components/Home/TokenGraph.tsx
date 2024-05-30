@@ -42,7 +42,7 @@ const TokenGraph = () => {
   }
 
   return (
-    <div className="grid lg:grid-cols-2 gap-4 mb-5 mx-5">
+    <div className="grid lg:grid-cols-2 gap-4 mb-5">
       <div>
         <p className="text-white font-bold mb-4">Transfer per day</p>
 
@@ -78,10 +78,12 @@ const TokenGraph = () => {
           />
         </div>
       </div>
-      <div className=" h-[54vh] w-[90vw] md:w-full">
+      <div>
         <p className="text-white font-bold mb-4">Total supply of ADT</p>
-        <div className="h-[54vh] w-[90vw] md:w-full flex text-3xl justify-center items-center font-semibold">
-          <h2>{gweiToEther(tokensData?.tokens[0]?.totalSupply)}</h2>
+        <div className=" h-[54vh] w-[90vw] md:w-full bg-white rounded-lg ">
+          <div className="h-[54vh] w-[90vw] md:w-full flex text-3xl justify-center items-center font-semibold">
+            <h2 className="text-[#17257c]">{gweiToEther(tokensData?.tokens[0]?.totalSupply)}</h2>
+          </div>
         </div>
       </div>
     </div>

@@ -11,7 +11,7 @@ const TransferDataChart = ({
     if (Array.isArray(data?.dailyDatas) && data?.dailyDatas?.length > 0) {
       const chartData = data?.dailyDatas
         ?.reverse()
-        ?.slice(80, 99)
+        ?.slice(80, 100)
         .map((item: any, index: any) => ({
           date: convertToReadableDate(item.date), // Convert date to number if needed
           txCount: Number(item.txCount), // Convert txCount to number
@@ -39,8 +39,8 @@ const TransferDataChart = ({
   // Function to filter out even dates
   const getOddDates = (data: any) => {
     return data
-      .filter((item: any, index: any) => index % 2 !== 0)
-      .map((item: any) => item.date);
+      .map((item: any) => item.date)
+      .filter((item: any, index: any) => index % 2 === 0);
   };
   const convertDate = (data: any) => {
     const array: any = [];
@@ -76,13 +76,15 @@ const TransferDataChart = ({
               width: "",
             }}
           >
-            <div className="font-bold">Date: {convertDateFormat(input?.data?.date)}</div>
+            <div className="font-bold">
+              Date: {convertDateFormat(input?.data?.date)}
+            </div>
             <div className="font-bold">Transfers: {input?.data?.txCount}</div>
           </div>
         );
       }}
       axisBottom={{
-        tickSize: 5,
+        tickSize: 10,
         tickPadding: 5,
         tickRotation: -60,
         legend: "Days",
@@ -93,7 +95,7 @@ const TransferDataChart = ({
         truncateTickAt: 0,
       }}
       axisLeft={{
-        tickSize: 5,
+        tickSize:5,
         tickPadding: 5,
         tickRotation: 0,
         legend: "Transfers",

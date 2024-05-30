@@ -1,0 +1,8 @@
+query dailyDatas {
+  dailyDatas(first: 100, orderBy: date, orderDirection: desc) {
+    id
+    date
+    txCount
+    volume
+  }
+}

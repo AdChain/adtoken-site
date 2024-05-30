@@ -56,7 +56,7 @@ const Timeline = () => {
                   <stop stop-color="#FAFAFA" offset="100%"></stop>
                 </linearGradient>
               </defs>
-              <g fill="none" fill-rule="evenodd" opacity=".633">
+              <g fill="none" fillRule="evenodd" opacity=".633">
                 <g transform="translate(9 9)">
                   <use
                     fill="#000"

@@ -5,6 +5,7 @@ import { MdVerified } from "react-icons/md";
 import { WavyBackground } from "./Home/WavyBackground";
 import HomeTabs from "./Home/HomeTabs";
 import TextGenerate from "./Home/TextGenerate";
+import TokenGraph from "./Home/TokenGraph";
 
 const Hero = () => {
   return (
@@ -48,7 +49,7 @@ const Hero = () => {
                   className="text-white font-medium"
                   rel="noreferrer noopener titillium-web-extralight "
                 >
-                  Original Whitepaaper
+                  Original Whitepaper
                 </span>
               </a>
               <a
@@ -78,7 +79,7 @@ const Hero = () => {
       </div>
       <div className="relative">
         <MissionComponent />
-
+        <TokenGraph />
         <div className="pointer-events-none absolute -top-32 md:block hidden md:-top-[65%] right-[20%] md:right-[23%] -z-10 ">
           <img
             src="/world_from_moon.png"

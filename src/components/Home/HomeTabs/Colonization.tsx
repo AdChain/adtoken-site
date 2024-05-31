@@ -1,6 +1,6 @@
 const Colonization = () => {
   return (
-    <div className="p-[20px] bg-gradient-to-br from-[#335EAF] to-[#5A3D9A] rounded-md mt-10">
+    <div className="p-[20px] bg-gradient-to-br from-[#335EAF] via-[#5A3D9A] to-[#5A3D9A] rounded-md mt-10">
       <div className="flex justify-center py-5 border-b-2 border-[#000313]">
         <p className="text-3xl text-white tracking-wide">AI COLONIZATION</p>
       </div>

@@ -34,14 +34,14 @@ const SepoliaRover = () => {
             </div>
           </div>
           <div className="lg:col-span-10">
-            <div className="lg:mt-10 mt-5 p-3 bg-[#212850] rounded-md lg:grid grid-cols-11">
+            <div className="lg:mt-10 mt-5 p-3 rounded-md lg:grid grid-cols-11">
               <div className="lg:col-span-4 my-2">
                 <p className="text-xl tracking-wide">ADT Generation</p>
                 <div className="mt-3">
                   <p className="text-white text-xs">JUNE. 26, 2017</p>
                 </div>
               </div>
-              <div className="lg:col-span-7">
+              <div className="lg:col-span-7 w-full h-full flex items-center">
                 <p className="text-sm text-white">
                   AdChain introduced AdToken, a virtuous utility token designed
                   to empower transparency and trust in the digital advertising
@@ -50,14 +50,14 @@ const SepoliaRover = () => {
               </div>
             </div>
 
-            <div className="mt-5 p-3 bg-[#212850] rounded-md lg:grid grid-cols-11">
+            <div className="mt-5 p-3 rounded-md lg:grid grid-cols-11">
               <div className="lg:col-span-4 my-2">
                 <p className="text-xl tracking-wide">AdChain Deployment</p>
                 <div className="mt-3">
                   <p className="text-white text-xs">APRIL. 23, 2018</p>
                 </div>
               </div>
-              <div className="lg:col-span-7">
+              <div className="lg:col-span-7 w-full h-full flex items-center">
                 <p className="text-sm text-white">
                   Experience a new era of transparent digital advertising with
                   adChain Registry on Ethereum Mainnet, ensuring trust and
@@ -67,14 +67,14 @@ const SepoliaRover = () => {
               </div>
             </div>
 
-            <div className="mt-5 p-3 bg-[#212850] rounded-md lg:grid grid-cols-11">
+            <div className="mt-5 p-3 rounded-md lg:grid grid-cols-11">
               <div className="lg:col-span-4 my-2">
                 <p className="text-xl tracking-wide">AdChain Audits</p>
                 <div className="mt-3">
                   <p className="text-white text-xs">FEBRUARY. 21, 2019</p>
                 </div>
               </div>
-              <div className="lg:col-span-7">
+              <div className="lg:col-span-7 flex w-full h-full items-center">
                 <p className="text-sm text-white">
                   Introducing adChain Audits: Your Independent Shield Against Ad
                   Fraud, Ensuring Transparency and Trust in Digital Advertising.

@@ -34,7 +34,7 @@ const SepoliaRover = () => {
             </div>
           </div>
           <div className="lg:col-span-10">
-            <div className="lg:mt-10 mt-5 p-3 rounded-md lg:grid grid-cols-11">
+            <div className="lg:mt-10 mt-5 sm:p-3 rounded-md lg:grid grid-cols-11">
               <div className="lg:col-span-4 my-2">
                 <p className="text-xl tracking-wide">ADT Generation</p>
                 <div className="mt-3">
@@ -50,7 +50,7 @@ const SepoliaRover = () => {
               </div>
             </div>
 
-            <div className="mt-5 p-3 rounded-md lg:grid grid-cols-11">
+            <div className="mt-5 sm:p-3 rounded-md lg:grid grid-cols-11">
               <div className="lg:col-span-4 my-2">
                 <p className="text-xl tracking-wide">AdChain Deployment</p>
                 <div className="mt-3">
@@ -67,7 +67,7 @@ const SepoliaRover = () => {
               </div>
             </div>
 
-            <div className="mt-5 p-3 rounded-md lg:grid grid-cols-11">
+            <div className="mt-5 sm:p-3 rounded-md lg:grid grid-cols-11">
               <div className="lg:col-span-4 my-2">
                 <p className="text-xl tracking-wide">AdChain Audits</p>
                 <div className="mt-3">

@@ -2,7 +2,7 @@ import React from "react";
 
 const Disclaimer = () => {
   return (
-    <p className="text-sm">
+    <p className="text-sm text-center px-2">
       With respect to adToken and any information related thereto: All materials
       are solely for informational and illustrative purposes and provided
       without representation, warranty or guaranty of any kind, and do not

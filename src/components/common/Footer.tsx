@@ -4,7 +4,7 @@ import Disclaimer from "./Disclaimer";
 
 const Footer = () => {
   return (
-    <div className="bg-gradient-to-br from-[#335EAF] via-[#5A3D9A] to-[#5A3D9A] ">
+    <div className="bg-gradient-to-br from-[#335EAF] w-full via-[#5A3D9A] to-[#5A3D9A] rounded-[5px]">
       <div className="flex flex-col gap-10 py-10 border-b border-black">
         <h1 className="text-white text-center text-4xl ">
           Sign Up for our Newsletter

@@ -17,7 +17,7 @@ const Hero = () => {
         <div className="w-full flex justify-center">
           <WavyBackground
             containerClassName="!h-[400px] relative w-screen"
-            colors={["#0C8DFF", "#12164B"]}
+            colors={["#5A3D9A", "#335EAF"]}
           >
             <TextGenerate
               words="By owning the means of production, we will own the future of AI"
@@ -25,7 +25,7 @@ const Hero = () => {
             />
           </WavyBackground>
         </div>
-        <div className="flex justify-center mb-72 relative mt-44 z-20">
+        <div className="flex justify-center mb-16 relative mt-44 z-50">
           <div>
             <div className="flex justify-center mx-5 md:mt-40 text-2xl  font-bold items-center">
               <div className="line h-[1px] grow bg-gray-500"></div>
@@ -95,12 +95,12 @@ const Hero = () => {
         </div>
       </div>
       <div className="relative">
-        <div className="w-full flex justify-center mt-40 m-6 sm:mx-0">
+        <div className="w-full flex justify-center m-6 sm:mx-0">
           <TokenGraph />
         </div>
       </div>
 
-      <div className="h-full mt-40 mb-40 relative w-full flex flex-col items-center justify-center ">
+      <div className="h-full mt-12 mb-12 relative w-full flex flex-col items-center justify-center">
         <div className="h-full w-[1000px]">
           {/* <HomeTabs /> */}
           <SepoliaRover />
@@ -108,7 +108,7 @@ const Hero = () => {
           <Colonization />
         </div>
       </div>
-      <div className="my-80 relative">
+      <div className="my-16 relative">
         <MissionComponent />
       </div>
     </>

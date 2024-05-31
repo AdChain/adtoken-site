@@ -69,7 +69,7 @@ const DailyVolumes = ({
       data={dailyDataChart}
       margin={{ top: 50, right: 30, bottom: 100, left: 90 }}
       xScale={{ type: "point" }}
-      colors={["#17257c"]}
+      colors={["#335EAF"]}
       tooltip={(input: any) => {
         return (
           <div

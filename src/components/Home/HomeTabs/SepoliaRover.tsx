@@ -1,6 +1,6 @@
 const SepoliaRover = () => {
   return (
-    <div className="p-[20px] bg-[#1B2040] rounded-md">
+    <div className="p-[20px] bg-gradient-to-br from-[#5A3D9A] to-[#335EAF] rounded-md">
       <div className="flex justify-center py-5 border-b-2 border-[#000313]">
         <p className="text-3xl text-[#0C8DFF] tracking-wide">
           AdChain Development

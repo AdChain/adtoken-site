@@ -28,7 +28,7 @@ const Hero = () => {
         </div>
         <div className="flex justify-center mt-40 mb-72 relative z-20">
           <div>
-            <div className="flex justify-center mx-5 md:mt-3 text-2xl  font-bold items-center">
+            <div className="flex justify-center mx-5 md:mt-40 text-2xl  font-bold items-center">
               <div className="line h-[1px] grow bg-gray-500"></div>
               <p className="whitespace-nowrap flex px-3 heading-text">
                 The adToken (ADT) <MdVerified size={12} fill="#1799DD" />
@@ -78,6 +78,21 @@ const Hero = () => {
               </a>
             </div>
           </div>
+          <div className="pointer-events-none absolute -top-32 md:block hidden md:-top-[0%] right-[20%] md:right-[23%] -z-10 ">
+            <img
+              src="/world_from_moon.png"
+              alt=""
+              className="w-[100px]  h-full"
+            />
+          </div>
+          <div className=" pointer-events-none absolute md:top-[10%] top-[700px] left-[1.5%] -z-10 ">
+            <img
+              src="/moon_bg_dark.png"
+              alt=""
+              className="md:w-[90vw] h-full"
+            />
+            <div className="absolute inset-0 bg-black opacity-[30%]"></div>{" "}
+          </div>
         </div>
       </div>
       <div className="relative">
@@ -96,17 +111,6 @@ const Hero = () => {
       </div>
       <div className="my-80 relative">
         <MissionComponent />
-        <div className="pointer-events-none absolute -top-32 md:block hidden md:-top-[65%] right-[20%] md:right-[23%] -z-10 ">
-          <img
-            src="/world_from_moon.png"
-            alt=""
-            className="w-[100px]  h-full"
-          />
-        </div>
-        <div className=" pointer-events-none absolute md:-top-[20%] top-[700px] left-[1.5%] -z-10 ">
-          <img src="/moon_bg_dark.png" alt="" className="md:w-[90vw] h-full" />
-          <div className="absolute inset-0 bg-black opacity-[30%]"></div>{" "}
-        </div>
       </div>
     </>
   );

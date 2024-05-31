@@ -7,7 +7,7 @@ const RefuelingStage = () => {
             Research & Development
           </p>
           <div className="flex justify-center mt-3">
-            <p className="text-[#0C8DFF] text-xs">APRIL. 23, 2018</p>
+            <p className="text-[#0C8DFF] text-xs">Sep. 14, 2022</p>
           </div>
         </div>
       </div>

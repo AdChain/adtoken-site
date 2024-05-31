@@ -49,11 +49,14 @@ const Navbar = () => {
       <div className="">
         <div className="md:hidden justify-end gap-2 m-2 flex"></div>
       </div>
-      <div className="flex items-center justify-start md:py-4 md:pl-12 md:mx-0 mx-5">
+      <div className="flex items-center justify-between md:py-4 md:pl-12 md:mx-0 mx-5">
         <div className="flex gap-2 items-center">
           <a href="https://adtoken.com/" className="logo">
-            <img width={43} src="/logo.svg" alt="" srcSet="" />
+            <img width={100} src="/logo-2.svg" alt="" srcSet="" />
           </a>
+        </div>
+
+        <div className="flex gap-x-2">
           <p>0xd0d6d6c5fe4a677d343cc433536bb717bae167dd</p>
           <div
             onClick={() =>

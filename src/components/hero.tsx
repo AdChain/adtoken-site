@@ -16,7 +16,7 @@ const Hero = () => {
       <div className="relative">
         <div className="w-full flex justify-center">
           <WavyBackground
-            containerClassName="!h-[700px] relative w-screen"
+            containerClassName="!h-[600px] relative w-screen"
             colors={["#0C8DFF", "#12164B"]}
           >
             <TextGenerate
@@ -26,7 +26,7 @@ const Hero = () => {
             />
           </WavyBackground>
         </div>
-        <div className="flex justify-center mt-40 mb-72 relative z-20">
+        <div className="flex justify-center mb-72 relative z-20">
           <div>
             <div className="flex justify-center mx-5 md:mt-40 text-2xl  font-bold items-center">
               <div className="line h-[1px] grow bg-gray-500"></div>

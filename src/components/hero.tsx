@@ -45,7 +45,7 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 type="application/pdf"
-                className="border-2 font- cursor-pointer my-5 h-10 w-full  flex justify-center border-gray-500  hover:border-white rounded-[5px] px-6 py-2 text-[13px] "
+                className="border-2 font- cursor-pointer my-5 h-10 w-full  flex justify-center border-gray-500 hover:scale-105  hover:border-white rounded-[5px] px-6 py-2 text-[13px] "
               >
                 <span
                   className="text-white font-medium"
@@ -57,7 +57,7 @@ const Hero = () => {
               <a
                 href="https://medium.com/metax-publication"
                 target="_blank"
-                className="border-2  cursor-pointer my-5 h-10 w-full  flex justify-center border-gray-500 hover:border-[#54c8ff] hover:text-[#54c8ff] rounded-[5px] px-6 py-2 text-[13px] "
+                className="border-2  cursor-pointer my-5 h-10 w-full  flex justify-center border-gray-500 hover:border-[#ffffff] hover:scale-105 rounded-[5px] px-6 py-2 text-[13px] "
               >
                 <span className=" font-medium" rel="noreferrer noopener ">
                   Origin Story
@@ -66,7 +66,7 @@ const Hero = () => {
               <a
                 target="_blank"
                 href="https://t.me/adChain"
-                className="border-2 my-5 cursor-pointer titillium-web-extralight h-10 flex justify-center w-full mx-auto border-gray-500 hover:border-white rounded-[5px] px-7 py-2 text-[13px]"
+                className="border-2 my-5 cursor-pointer titillium-web-extralight h-10 flex justify-center w-full hover:scale-105 mx-auto border-gray-500 hover:border-white rounded-[5px] px-7 py-2 text-[13px]"
               >
                 <span
                   className="text-white font-medium"

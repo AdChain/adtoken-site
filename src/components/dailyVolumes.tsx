@@ -57,7 +57,7 @@ const DailyVolumes = ({
   }, [data]);
   const getOddDates = (data: any) => {
     const allDates = data[0]?.data
-      .filter((date: any, index: any) => index % 5 === 0)
+      .filter((date: any, index: any) => index % 6 === 0)
       ?.map((item: any) => item.x);
     return allDates;
   };
@@ -118,7 +118,6 @@ const DailyVolumes = ({
         legendOffset: -80,
         legendPosition: "middle",
         truncateTickAt: 0,
-        tickValues:10,
         format: (value) => formatVolume(value),
       }}
       pointSize={0}

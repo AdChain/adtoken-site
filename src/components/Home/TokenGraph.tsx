@@ -82,7 +82,7 @@ const TokenGraph = () => {
         <p className="text-white font-bold mb-4">Total supply of ADT</p>
         <div className=" h-[54vh] w-[90vw] md:w-full bg-white rounded-lg ">
           <div className="h-[54vh] w-[90vw] md:w-full flex text-3xl justify-center items-center font-semibold">
-            <h2 className="text-[#17257c]">{gweiToEther(tokensData?.tokens[0]?.totalSupply)}</h2>
+            <h2 className="text-[#17257c]">{gweiToEther(tokensData?.tokens[0]?.totalSupply||0)}</h2>
           </div>
         </div>
       </div>

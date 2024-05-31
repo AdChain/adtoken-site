@@ -33,6 +33,7 @@ const Piechart = ({
           item.address.substring(item.address.length - 4),
         color: getRandomColor(),
         value: item.balance,
+        tooltip : item.address
       }));
       setPieChartData(chartData);
     }
@@ -61,14 +62,15 @@ const Piechart = ({
               }}
             >
               <div className="font-bold">
-                value :{gweiToEther(input?.datum?.data?.value)}
+                Value: {gweiToEther(input?.datum?.data?.value)}
               </div>
               <div className="font-bold">
-                address :{input?.datum?.data?.label}
+                Address: {input?.datum?.data?.tooltip}
               </div>
             </div>
           );
         }}
+        
         borderWidth={1}
         colors={["#17257c", "#1290FF", "#3851f4"]}
         borderColor={{

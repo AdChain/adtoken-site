@@ -18,22 +18,22 @@ const queryClient = new QueryClient({
 const Home = () => {
   return (
     <>
-    <QueryClientProvider client={queryClient}>
-      <div className="w-full absolute inset-0 h-screen pointer-events-none -z-10">
-        <SparklesCore
-          id="tsparticlesfullpage"
-          background="transparent"
-          minSize={0.6}
-          maxSize={1.4}
-          particleDensity={5}
-          particleColor="#fff"
-        />
-      </div>
-      <Hero />
-        <div className="bg-[#000422]">
-          <Timeline />
+      <QueryClientProvider client={queryClient}>
+        <div className="w-full absolute inset-0 h-screen pointer-events-none -z-10">
+          <SparklesCore
+            id="tsparticlesfullpage"
+            background="transparent"
+            minSize={0.6}
+            maxSize={1.4}
+            particleDensity={5}
+            particleColor="#fff"
+          />
         </div>
-    </QueryClientProvider>
+        <Hero />
+        {/* <div className="bg-[#000422]">
+          <Timeline />
+        </div> */}
+      </QueryClientProvider>
     </>
   );
 };

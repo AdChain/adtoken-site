@@ -42,11 +42,11 @@ const TokenGraph = () => {
   }
 
   return (
-    <div className="grid lg:grid-cols-2 gap-4 mb-5">
+    <div className="grid lg:grid-cols-2 gap-4 mb-5 max-w-[1000px]">
       <div>
         <p className="text-white font-bold mb-4">Transfer per day</p>
 
-        <div className="h-[54vh] w-[90vw] md:w-full bg-white rounded-lg ">
+        <div className="h-[54vh] w-[90vw] md:w-full rounded-lg ">
           <TransferDataChart
             data={dailyDatasData}
             transferData={transferData}
@@ -57,7 +57,7 @@ const TokenGraph = () => {
       </div>
       <div>
         <p className="text-white font-bold mb-4">Top 20 ADT holders</p>
-        <div className="h-[54vh] w-[90vw] md:w-full bg-white rounded-lg ">
+        <div className="h-[54vh] w-[90vw] md:w-full rounded-lg ">
           <Piechart
             data={balancesData}
             pieChartData={pieChartData}
@@ -68,7 +68,7 @@ const TokenGraph = () => {
       </div>
       <div>
         <p className="text-white font-bold mb-4">Daily Volume </p>
-        <div className="h-[54vh] w-[90vw] md:w-full bg-white rounded-lg ">
+        <div className="h-[54vh] w-[100vw] max-w-[1000px] md:w-screen rounded-lg ">
           <DailyVolumes
             data={dailyDatasData}
             setDailyDataChart={setDailyDataChart}
@@ -76,14 +76,6 @@ const TokenGraph = () => {
             gweiToEther={gweiToEther}
             convertDateFormat={convertDateFormat}
           />
-        </div>
-      </div>
-      <div>
-        <p className="text-white font-bold mb-4">Total supply of ADT</p>
-        <div className=" h-[54vh] w-[90vw] md:w-full bg-white rounded-lg ">
-          <div className="h-[54vh] w-[90vw] md:w-full flex text-3xl justify-center items-center font-semibold">
-            <h2 className="text-[#17257c]">{gweiToEther(tokensData?.tokens[0]?.totalSupply)}</h2>
-          </div>
         </div>
       </div>
     </div>

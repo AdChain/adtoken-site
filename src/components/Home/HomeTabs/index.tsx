@@ -7,18 +7,18 @@ import Colonization from "./Colonization";
 const HomeTabs = () => {
   const propTabs: Tab[] = [
     {
-      title: "Rinkeyby Rover",
-      value: "all",
+      title: "AdChain Development",
+      value: "dev",
       content: <SepoliaRover />,
     },
     {
-      title: "Refueling Stage",
-      value: "active",
+      title: "Research & Development",
+      value: "rnd",
       content: <RefuelingStage />,
     },
     {
-      title: "Ethereum Colonization",
-      value: "upcoming",
+      title: "AI Colonization",
+      value: "colonization",
       content: <Colonization />,
     },
   ];

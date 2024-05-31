@@ -43,7 +43,6 @@
 //     },
 //   });
 
-
 //   return (
 //     <div>
 //       <div id="chart">
@@ -87,7 +86,6 @@ const ApexLineChart: React.FC<ApexLineChartProps> = ({
     categories: lableLineChart,
   };
 
-
   function formatVolume(volume: any) {
     const abbreviations = ["", "K", "M", "B", "T"];
     const numDigits = Math.floor(Math.log10(volume) / 3);
@@ -127,7 +125,6 @@ const ApexLineChart: React.FC<ApexLineChartProps> = ({
     yaxis: {
       labels: {
         formatter: function (value: any) {
-
           return formatVolume(value);
         },
       },

@@ -47,6 +47,28 @@ const Piechart = ({
         padAngle={0.7}
         enableArcLabels={false}
         cornerRadius={3}
+        theme={{
+          annotations: {
+            text: {
+              fill: "#ffffff",
+            },
+          },
+          axis: {
+            legend: {
+              text: {
+                fill: "#ffffff",
+              },
+            },
+            ticks: {
+              line: {
+                color: "#ffffff",
+              },
+              text: {
+                fill: "#ffffff",
+              },
+            },
+          },
+        }}
         activeOuterRadiusOffset={8}
         tooltip={(input: any) => {
           return (
@@ -76,20 +98,15 @@ const Piechart = ({
           modifiers: [["darker", 0.2]],
         }}
         arcLinkLabelsSkipAngle={10}
-        arcLinkLabelsTextColor="#333333"
+        arcLinkLabelsTextColor="#ffffff"
         arcLinkLabelsThickness={2}
-        arcLinkLabelsColor={{ from: "color" }}
         arcLabelsSkipAngle={10}
-        arcLabelsTextColor={{
-          from: "color",
-          modifiers: [["darker", 2]],
-        }}
         defs={[
           {
             id: "dots",
             type: "patternDots",
             background: "inherit",
-            color: "rgba(255, 255, 255, 0.3)",
+            color: "rgba(255, 255, 255)",
             size: 4,
             padding: 1,
             stagger: true,
@@ -98,7 +115,7 @@ const Piechart = ({
             id: "lines",
             type: "patternLines",
             background: "inherit",
-            color: "rgba(255, 255, 255, 0.3)",
+            color: "rgba(255, 255, 255)",
             rotation: -45,
             lineWidth: 6,
             spacing: 10,

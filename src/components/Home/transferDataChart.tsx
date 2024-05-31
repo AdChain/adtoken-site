@@ -54,6 +54,8 @@ const TransferDataChart = ({
     <ResponsiveBar
       data={transferData}
       keys={["txCount"]}
+      enableGridX={false}
+      enableGridY={false}
       indexBy="date"
       margin={{ top: 50, right: 30, bottom: 100, left: 60 }}
       padding={0.6}
@@ -83,6 +85,23 @@ const TransferDataChart = ({
           </div>
         );
       }}
+      theme={{
+        axis: {
+          legend: {
+            text: {
+              fill: "#ffffff",
+            },
+          },
+          ticks: {
+            line: {
+              color: "#ffffff",
+            },
+            text: {
+              fill: "#ffffff",
+            },
+          },
+        },
+      }}
       axisBottom={{
         tickSize: 10,
         tickPadding: 5,
@@ -95,7 +114,7 @@ const TransferDataChart = ({
         truncateTickAt: 0,
       }}
       axisLeft={{
-        tickSize:5,
+        tickSize: 5,
         tickPadding: 5,
         tickRotation: 0,
         legend: "Transfers",

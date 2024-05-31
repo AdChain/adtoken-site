@@ -79,7 +79,9 @@ const Hero = () => {
       </div>
       <div className="relative">
         <MissionComponent />
-        <TokenGraph />
+        <div className="w-full flex justify-center mt-40 m-6 sm:mx-0">
+          <TokenGraph />
+        </div>
         <div className="pointer-events-none absolute -top-32 md:block hidden md:-top-[65%] right-[20%] md:right-[23%] -z-10 ">
           <img
             src="/world_from_moon.png"
@@ -93,7 +95,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="h-[1200px] sm:h-[800px] mt-[6rem] relative">
+      <div className="h-[1400px] sm:h-[800px] mt-[6rem] relative">
         <HomeTabs />
         <div className="bg-gradient-to-b from-transparent via-[#000422] to-[#000422] -z-10 h-[85rem] absolute bottom-0 w-full pointer-events-none"></div>
       </div>

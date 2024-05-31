@@ -64,10 +64,11 @@ const DailyVolumes = ({
 
   return (
     <ResponsiveLine
+      enableGridX={false}
+      enableGridY={false}
       data={dailyDataChart}
       margin={{ top: 50, right: 30, bottom: 100, left: 90 }}
       xScale={{ type: "point" }}
-      
       colors={["#17257c"]}
       tooltip={(input: any) => {
         return (
@@ -77,7 +78,7 @@ const DailyVolumes = ({
               padding: "5px 12px",
               border: "1px solid #ccc",
               borderRadius: "5px",
-              color: "#000",
+              color: "black",
               width: "",
             }}
           >
@@ -118,8 +119,30 @@ const DailyVolumes = ({
         legendOffset: -80,
         legendPosition: "middle",
         truncateTickAt: 0,
-        tickValues:10,
+        tickValues: 10,
         format: (value) => formatVolume(value),
+      }}
+      theme={{
+        axis: {
+          legend: {
+            text: {
+              fill: "#ffffff",
+            },
+          },
+          ticks: {
+            line: {
+              color: "#ffffff",
+            },
+            text: {
+              fill: "#ffffff",
+            },
+          },
+        },
+        legends: {
+          text: {
+            fill: "#ffffff",
+          },
+        },
       }}
       pointSize={0}
       pointColor={{ theme: "background" }}

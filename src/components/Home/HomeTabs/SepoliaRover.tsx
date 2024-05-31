@@ -13,7 +13,7 @@ const SepoliaRover = () => {
               </p>
             </div>
           </div>
-          <div className="lg:col-span-10">
+          <div className="lg:col-span-10 bg-[#212850] p-3 rounded-md flex items-center justify-center">
             <p className="text-white leading-7 text-sm">
               AdChain was deployed to transform the advertising industry by
               combating ad fraud and fostering transparency. Our innovative
@@ -34,7 +34,7 @@ const SepoliaRover = () => {
             </div>
           </div>
           <div className="lg:col-span-10">
-            <div className="lg:mt-10 mt-5 sm:p-3 rounded-md lg:grid grid-cols-11">
+            <div className="lg:mt-10 mt-5 sm:p-3 rounded-md lg:grid grid-cols-11 bg-[#212850]">
               <div className="lg:col-span-4 my-2">
                 <p className="text-xl tracking-wide">ADT Generation</p>
                 <div className="mt-3">
@@ -50,7 +50,7 @@ const SepoliaRover = () => {
               </div>
             </div>
 
-            <div className="mt-5 sm:p-3 rounded-md lg:grid grid-cols-11">
+            <div className="mt-5 sm:p-3 rounded-md lg:grid grid-cols-11 bg-[#212850]">
               <div className="lg:col-span-4 my-2">
                 <p className="text-xl tracking-wide">AdChain Deployment</p>
                 <div className="mt-3">
@@ -67,14 +67,14 @@ const SepoliaRover = () => {
               </div>
             </div>
 
-            <div className="mt-5 sm:p-3 rounded-md lg:grid grid-cols-11">
+            <div className="mt-5 sm:p-3 rounded-md lg:grid grid-cols-11 bg-[#212850]">
               <div className="lg:col-span-4 my-2">
                 <p className="text-xl tracking-wide">AdChain Audits</p>
                 <div className="mt-3">
                   <p className="text-white text-xs">FEBRUARY. 21, 2019</p>
                 </div>
               </div>
-              <div className="lg:col-span-7 flex w-full h-full items-center">
+              <div className="lg:col-span-7 flex w-full h-full  items-center">
                 <p className="text-sm text-white">
                   Introducing adChain Audits: Your Independent Shield Against Ad
                   Fraud, Ensuring Transparency and Trust in Digital Advertising.

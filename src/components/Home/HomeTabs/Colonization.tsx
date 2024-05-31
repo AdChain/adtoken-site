@@ -13,7 +13,7 @@ const Colonization = () => {
               </p>
             </div>
           </div>
-          <div className="lg:col-span-10 flex w-full h-full items-center">
+          <div className="lg:col-span-10 flex w-full h-full items-center p-3 rounded-md bg-[#212850]">
             <p className="text-white leading-7 text-sm">
               In a world where AI drives innovation and efficiency, we believe
               that true progress comes when you hold the power to shape your
@@ -33,7 +33,7 @@ const Colonization = () => {
             </div>
           </div>
           <div className="col-span-10">
-            <div className="lg:mt-10 p-3 bg-black rounded-md lg:grid grid-cols-11">
+            <div className="lg:mt-10 p-3 bg-[#212850] rounded-md lg:grid grid-cols-11">
               <div className="lg:col-span-4 my-2">
                 <p className="text-white tracking-widest text-xl">
                   GenAI Integrations
@@ -52,7 +52,7 @@ const Colonization = () => {
               </div>
             </div>
 
-            <div className="mt-5 p-3 bg-black rounded-md lg:grid grid-cols-11">
+            <div className="mt-5 p-3 bg-[#212850] rounded-md lg:grid grid-cols-11">
               <div className="lg:col-span-4 my-2">
                 <p className="text-white tracking-widest text-xl">
                   ADT Lift-Off

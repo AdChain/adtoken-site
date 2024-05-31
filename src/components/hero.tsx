@@ -16,7 +16,7 @@ const Hero = () => {
       <div className="relative">
         <div className="w-full flex justify-center">
           <WavyBackground
-            containerClassName="!h-[400px] relative w-screen"
+            containerClassName="!h-[400px] relative w-screen mb-24 sm:mb-0"
             colors={["#5A3D9A", "#335EAF"]}
           >
             <TextGenerate
@@ -65,7 +65,7 @@ const Hero = () => {
               </a>
               <a
                 target="_blank"
-                href="https://t.me/adChain"
+                href="http://eepurl.com/iHFz1k"
                 className="border-2 my-5 cursor-pointer titillium-web-extralight h-10 flex justify-center w-full hover:scale-105 mx-auto border-gray-500 hover:border-white rounded-[5px] px-7 py-2 text-[13px]"
               >
                 <span
@@ -78,14 +78,14 @@ const Hero = () => {
             </div>
           </div>
           <div>
-            <div className="pointer-events-none absolute sm:-top-32 md:block hidden md:-top-[0%] right-[20%] md:right-[23%] -z-10 ">
+            <div className="pointer-events-none absolute top-0 sm:-top-32 md:block hidden md:-top-[0%] right-[20%] md:right-[23%] -z-10 ">
               <img
                 src="/world_from_moon.png"
                 alt=""
                 className="w-[100px]  h-full"
               />
             </div>
-            <div className=" pointer-events-none absolute md:top-[10%] top-[20px] sm:top-[700px] left-[1.5%] -z-10 ">
+            <div className="pointer-events-none absolute md:top-[10%] top-[20px] sm:top-[700px] left-[1.5%] -z-10 ">
               <img
                 src="/moon_bg_dark.png"
                 alt=""

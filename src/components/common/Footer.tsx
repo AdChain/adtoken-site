@@ -11,7 +11,7 @@ const Footer = () => {
         </h1>
         <div className="w-fit mx-auto">
           <a
-            href="https://adprompt.us17.list-manage.com/subscribe/post?u=ae4bf6d4d3e03a4b960f4ff36&amp;id=b4f9a4c85f&amp;f_id=00f8c2e1f0"
+            href="http://eepurl.com/iHFz1k"
             target="_blank"
             rel="noopener noreferrer"
             type="application/pdf"

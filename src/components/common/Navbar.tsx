@@ -52,8 +52,9 @@ const Navbar = () => {
       <div className="flex items-center justify-between md:py-4 md:pl-12 md:mx-0 mx-5">
         <div className="flex gap-2 items-center">
           <a href="https://adtoken.com/" className="logo">
-            <img width={100} src="/logo-2.svg" alt="" srcSet="" />
+            <img width={40} src="/logo.svg" alt="" srcSet="" />
           </a>
+          <p>adToken</p>
         </div>
 
         <div className="flex gap-x-2">

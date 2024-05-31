@@ -18,7 +18,7 @@
             <g id="adToken_Logo_Colored-Words" transform="translate(254.000000, 939.000000)">
                 <g id="adToken_Logo_Colored">
                     <g id="Group-2">
-                        <text id="adToken" fill="#1E4DA7" font-family="Serifa-Roman, Serifa" font-size="82" font-weight="normal" letter-spacing="-8.20000005">
+                        <text id="adToken" fill="#ffffff" font-family="Serifa-Roman, Serifa" font-size="82" font-weight="normal" letter-spacing="-8.20000005">
                             <tspan x="164.5" y="108">adToken</tspan>
                         </text>
                         <path d="M150.227581,41.2514041 L82.771101,2.26370687 C79.8239732,0.578764376 76.1751483,0.578764376 73.2280205,2.26370687 L5.77154022,41.2514041 C2.82441244,42.9363466 1,46.1190158 1,49.5357047 L1,127.464295 C1,130.880984 2.82441244,134.016849 5.77154022,135.748596 L73.2280205,174.736293 C76.1751483,176.421236 79.8239732,176.421236 82.771101,174.736293 L150.227581,135.748596 C153.174709,134.063653 154.999122,130.880984 154.999122,127.464295 L154.999122,49.4889008 C155.045901,46.1190158 153.221489,42.9363466 150.227581,41.2514041 Z" id="Path" fill="#FAFAFA"></path>

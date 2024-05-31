@@ -16,17 +16,17 @@ const Hero = () => {
       <div className="relative">
         <div className="w-full flex justify-center">
           <WavyBackground
-            containerClassName="!h-[600px] relative w-screen"
+            containerClassName="!h-[400px] relative w-screen"
             colors={["#0C8DFF", "#12164B"]}
           >
             <TextGenerate
               words="AI is the future that can be ours if we own the means to
             production"
-              className="!font-light !text-[48px] px-4"
+              className="!font-extralight !text-[48px]  px-4"
             />
           </WavyBackground>
         </div>
-        <div className="flex justify-center mb-72 relative z-20">
+        <div className="flex justify-center mb-72 relative mt-44 z-20">
           <div>
             <div className="flex justify-center mx-5 md:mt-40 text-2xl  font-bold items-center">
               <div className="line h-[1px] grow bg-gray-500"></div>

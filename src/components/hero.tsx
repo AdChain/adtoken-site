@@ -20,9 +20,8 @@ const Hero = () => {
             colors={["#0C8DFF", "#12164B"]}
           >
             <TextGenerate
-              words="AI is the future that can be ours if we own the means to
-            production"
-              className="!font-extralight !text-[48px]  px-4"
+              words="By owning the means of production, we will own the future of AI"
+              className="!font-extralight !text-[48px]  px-4 !text-center"
             />
           </WavyBackground>
         </div>

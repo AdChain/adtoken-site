@@ -100,7 +100,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="h-full mt-12 mb-12 relative w-full flex flex-col items-center justify-center">
+      <div className="h-full mt-12 relative w-full flex flex-col items-center justify-center">
         <div className="h-full w-[1000px]">
           {/* <HomeTabs /> */}
           <SepoliaRover />
@@ -108,7 +108,7 @@ const Hero = () => {
           <Colonization />
         </div>
       </div>
-      <div className="my-16 relative">
+      <div className="my-20 relative">
         <MissionComponent />
       </div>
     </>

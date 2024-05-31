@@ -1,17 +1,15 @@
 const SepoliaRover = () => {
   return (
-    <div className="p-[20px] bg-gradient-to-br from-[#5A3D9A] to-[#335EAF] rounded-md">
+    <div className="p-[20px] bg-gradient-to-br from-[#335EAF] via-[#5A3D9A] to-[#5A3D9A]  rounded-md">
       <div className="flex justify-center py-5 border-b-2 border-[#000313]">
-        <p className="text-3xl text-[#0C8DFF] tracking-wide">
-          AdChain Development
-        </p>
+        <p className="text-3xl text-white tracking-wide">AdChain Development</p>
       </div>
       <div className="mt-10">
         <div className="grid lg:grid-cols-12 ">
           <div className="lg:col-span-2 lg:my-9 my-3">
             <div className="lg:flex justify-center">
               <p className="text-white opacity-80 text-xl tracking-wide">
-                OBJECTIVE
+                Objective
               </p>
             </div>
           </div>
@@ -31,16 +29,16 @@ const SepoliaRover = () => {
           <div className="lg:col-span-2 lg:mt-9">
             <div className="lg:flex justify-center items-center">
               <p className="text-white opacity-80 text-xl tracking-wide">
-                PHASES
+                Phases
               </p>
             </div>
           </div>
           <div className="lg:col-span-10">
             <div className="lg:mt-10 mt-5 p-3 bg-[#212850] rounded-md lg:grid grid-cols-11">
               <div className="lg:col-span-4 my-2">
-                <p className="text-xl tracking-wide">ADT GENERATION</p>
+                <p className="text-xl tracking-wide">ADT Generation</p>
                 <div className="mt-3">
-                  <p className="text-[#0C8DFF] text-xs">JUNE. 26, 2017</p>
+                  <p className="text-white text-xs">JUNE. 26, 2017</p>
                 </div>
               </div>
               <div className="lg:col-span-7">
@@ -54,9 +52,9 @@ const SepoliaRover = () => {
 
             <div className="mt-5 p-3 bg-[#212850] rounded-md lg:grid grid-cols-11">
               <div className="lg:col-span-4 my-2">
-                <p className="text-xl tracking-wide">ADCHAIN DEPLOYMENT</p>
+                <p className="text-xl tracking-wide">AdChain Deployment</p>
                 <div className="mt-3">
-                  <p className="text-[#0C8DFF] text-xs">APRIL. 23, 2018</p>
+                  <p className="text-white text-xs">APRIL. 23, 2018</p>
                 </div>
               </div>
               <div className="lg:col-span-7">
@@ -71,9 +69,9 @@ const SepoliaRover = () => {
 
             <div className="mt-5 p-3 bg-[#212850] rounded-md lg:grid grid-cols-11">
               <div className="lg:col-span-4 my-2">
-                <p className="text-xl tracking-wide">ADCHAIN AUDITS</p>
+                <p className="text-xl tracking-wide">AdChain Audits</p>
                 <div className="mt-3">
-                  <p className="text-[#0C8DFF] text-xs">FEBRUARY. 21, 2019</p>
+                  <p className="text-white text-xs">FEBRUARY. 21, 2019</p>
                 </div>
               </div>
               <div className="lg:col-span-7">

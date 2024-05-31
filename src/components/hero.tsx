@@ -21,7 +21,7 @@ const Hero = () => {
           >
             <TextGenerate
               words="By owning the means of production, we will own the future of AI"
-              className="!font-extralight !text-[48px]  px-4 !text-center"
+              className="!font-light !text-[48px]  px-4 !text-center"
             />
           </WavyBackground>
         </div>

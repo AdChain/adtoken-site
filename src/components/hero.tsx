@@ -6,14 +6,17 @@ import { WavyBackground } from "./Home/WavyBackground";
 import HomeTabs from "./Home/HomeTabs";
 import TextGenerate from "./Home/TextGenerate";
 import TokenGraph from "./Home/TokenGraph";
+import SepoliaRover from "./Home/HomeTabs/SepoliaRover";
+import RefuelingStage from "./Home/HomeTabs/RefuelingStage";
+import Colonization from "./Home/HomeTabs/Colonization";
 
 const Hero = () => {
   return (
     <>
       <div className="relative">
-        <div>
+        <div className="w-full flex justify-center">
           <WavyBackground
-            containerClassName="!h-[500px] relative"
+            containerClassName="!h-[700px] relative w-screen"
             colors={["#0C8DFF", "#12164B"]}
           >
             <TextGenerate
@@ -23,7 +26,7 @@ const Hero = () => {
             />
           </WavyBackground>
         </div>
-        <div className="flex justify-center my-40 relative z-20">
+        <div className="flex justify-center mt-40 mb-72 relative z-20">
           <div>
             <div className="flex justify-center mx-5 md:mt-3 text-2xl  font-bold items-center">
               <div className="line h-[1px] grow bg-gray-500"></div>
@@ -78,10 +81,21 @@ const Hero = () => {
         </div>
       </div>
       <div className="relative">
-        <MissionComponent />
         <div className="w-full flex justify-center mt-40 m-6 sm:mx-0">
           <TokenGraph />
         </div>
+      </div>
+
+      <div className="h-full mt-40 mb-40 relative w-full flex flex-col items-center justify-center ">
+        <div className="h-full w-[1000px]">
+          {/* <HomeTabs /> */}
+          <SepoliaRover />
+          <RefuelingStage />
+          <Colonization />
+        </div>
+      </div>
+      <div className="my-80 relative">
+        <MissionComponent />
         <div className="pointer-events-none absolute -top-32 md:block hidden md:-top-[65%] right-[20%] md:right-[23%] -z-10 ">
           <img
             src="/world_from_moon.png"
@@ -89,15 +103,10 @@ const Hero = () => {
             className="w-[100px]  h-full"
           />
         </div>
-        <div className=" pointer-events-none absolute md:-top-[50%] top-[700px] left-[1.5%] -z-10 ">
+        <div className=" pointer-events-none absolute md:-top-[20%] top-[700px] left-[1.5%] -z-10 ">
           <img src="/moon_bg_dark.png" alt="" className="md:w-[90vw] h-full" />
           <div className="absolute inset-0 bg-black opacity-[30%]"></div>{" "}
         </div>
-      </div>
-
-      <div className="h-[1400px] sm:h-[800px] mt-[6rem] relative">
-        <HomeTabs />
-        <div className="bg-gradient-to-b from-transparent via-[#000422] to-[#000422] -z-10 h-[85rem] absolute bottom-0 w-full pointer-events-none"></div>
       </div>
     </>
   );

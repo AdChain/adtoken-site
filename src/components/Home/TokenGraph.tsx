@@ -66,7 +66,7 @@ const TokenGraph = () => {
           />
         </div>
       </div>
-      <div>
+      <div className="mt-20">
         <p className="text-white font-bold mb-4">Daily Volume </p>
         <div className="h-[54vh] w-[100vw] max-w-[1000px] md:w-screen rounded-lg ">
           <DailyVolumes

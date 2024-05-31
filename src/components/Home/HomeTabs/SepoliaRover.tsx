@@ -76,7 +76,7 @@ const SepoliaRover = () => {
                   Experience a new era of transparent digital advertising with
                   adChain Registry on Ethereum Mainnet, ensuring trust and
                   accountability in ad placement. Our work gave birth to the
-                  token curated registry (TCR)
+                  token curated registry (TCR).
                 </p>
               </div>
             </div>

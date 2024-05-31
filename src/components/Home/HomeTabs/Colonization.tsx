@@ -19,7 +19,7 @@ const Colonization = () => {
               that true progress comes when you hold the power to shape your
               destiny. Our platform is designed to put the control of AI-powered
               applications back into your hands, ensuring that the future is not
-              just built for you, but by you
+              just built for you, but by you.
             </p>
           </div>
         </div>

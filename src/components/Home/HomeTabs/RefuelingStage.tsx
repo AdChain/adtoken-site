@@ -31,7 +31,7 @@ const RefuelingStage = () => {
               correlates with the effort and resources invested in providing
               computation and content generation. This means that your hard work
               and creativity are recognized and rewarded proportionately,
-              fostering a fair and motivating environment for all contributors
+              fostering a fair and motivating environment for all contributors.
             </p>
           </div>
         </div>

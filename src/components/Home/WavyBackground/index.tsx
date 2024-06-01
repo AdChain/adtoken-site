@@ -13,6 +13,7 @@ export const WavyBackground = ({
   blur = 10,
   speed = "fast",
   waveOpacity = 0.5,
+  canvasStyle,
   ...props
 }: {
   children?: any;
@@ -24,6 +25,7 @@ export const WavyBackground = ({
   blur?: number;
   speed?: "slow" | "fast";
   waveOpacity?: number;
+  canvasStyle?: string;
   [key: string]: any;
 }) => {
   const noise = createNoise3D();
@@ -117,7 +119,7 @@ export const WavyBackground = ({
       )}
     >
       <canvas
-        className="absolute inset-0 z-0"
+        className={`absolute inset-0 z-0 ${canvasStyle}`}
         ref={canvasRef}
         id="canvas"
         style={{

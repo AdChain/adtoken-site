@@ -16,6 +16,7 @@ const Hero = () => {
       <div className="relative">
         <div className="w-full flex justify-center">
           <WavyBackground
+            canvasStyle="h-[600px] w-full md:h-[800px]"
             containerClassName="!h-[400px] relative w-screen mb-24 sm:mb-0"
             colors={["#5A3D9A", "#335EAF"]}
           >
@@ -25,7 +26,7 @@ const Hero = () => {
             />
           </WavyBackground>
         </div>
-        <div className="flex justify-center mb-16 relative mt-44 z-50">
+        <div className="flex justify-center mb-16 relative md:mt-44 z-50">
           <div>
             <div className="flex justify-center mx-5 md:mt-40 text-2xl  font-bold items-center">
               <div className="line h-[1px] grow bg-gray-500"></div>
@@ -77,7 +78,7 @@ const Hero = () => {
               </a>
             </div>
           </div>
-          <div>
+          <div className="hidden md:block">
             <div className="pointer-events-none absolute top-0 sm:-top-32 md:block hidden md:-top-[0%] right-[20%] md:right-[23%] -z-10 ">
               <img
                 src="/world_from_moon.png"

@@ -16,7 +16,7 @@ const MissionComponent = () => {
             <Rocket />
           </span>
         </div>
-        <h6 className="flex justify-center text-xs flex-col font-light text-white">
+        <h6 className="flex justify-center text-xs flex-col font-light text-white whitespace-nowrap">
           Monday Jun-26-2017 03:37:06 PM +UTC
           <a href="https://etherscan.io/txs?block=3933451">block #3933451</a>
         </h6>

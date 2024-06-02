@@ -67,7 +67,7 @@ const DailyVolumes = ({
       enableGridX={false}
       enableGridY={false}
       data={dailyDataChart}
-      margin={{ top: 50, right: 30, bottom: 100, left: 90 }}
+      margin={{ top: 50, right: 30, bottom: 120, left: 90 }}
       xScale={{ type: "point" }}
       colors={["#335EAF"]}
       tooltip={(input: any) => {
@@ -105,7 +105,7 @@ const DailyVolumes = ({
         tickPadding: 0,
         tickRotation: -60,
         legend: "Days",
-        legendOffset: 80,
+        legendOffset: 100,
         legendPosition: "middle",
         tickValues: getOddDates(dailyDataChart), // Use custom tick values for odd dates
         truncateTickAt: 0,

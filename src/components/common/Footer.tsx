@@ -32,10 +32,18 @@ const Footer = () => {
           <Disclaimer />
         </div>
       </div>
-      <div className="border-t border-black ">
-        <div className="flex gap-5 py-10 max-w-xl mx-auto justify-center">
-          <a href="/legal">
-            Legal Disclaimer / Privacy Policy / Terms & Conditions
+      <div className="border-t border-black w-full flex justify-center items-center">
+        <div className="flex gap-5 py-10 max-w-xl w-full justify-center">
+          <a href="/legal" className="text-sm hover:underline">
+            Legal Disclaimer
+          </a>
+          <div className="mx-1">/</div>
+          <a href="/legal" className="text-sm hover:underline">
+            Privacy Policy
+          </a>
+          <div className="mx-1">/</div>
+          <a href="/legal" className="text-sm hover:underline">
+            Terms & Conditions
           </a>
         </div>
       </div>

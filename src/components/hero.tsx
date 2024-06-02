@@ -9,6 +9,7 @@ import TokenGraph from "./Home/TokenGraph";
 import SepoliaRover from "./Home/HomeTabs/SepoliaRover";
 import RefuelingStage from "./Home/HomeTabs/RefuelingStage";
 import Colonization from "./Home/HomeTabs/Colonization";
+import Button from "./common/Button/Button";
 
 const Hero = () => {
   return (
@@ -16,13 +17,17 @@ const Hero = () => {
       <div className="relative">
         <div className="w-full flex justify-center">
           <WavyBackground
-            canvasStyle="h-[600px] w-full md:h-[800px]"
+            canvasStyle="h-[600px] w-full md:h-[700px]"
             containerClassName="!h-[400px] relative w-screen mb-24 sm:mb-0"
             colors={["#5A3D9A", "#335EAF"]}
           >
             <div className="hidden xl:block">
               <TextGenerate
-                words="By owning the means of production, we will own the future of AI"
+                words="By owning the means of production,"
+                className="!font-light text-3xl sm:!text-[48px]  px-4 !text-center"
+              />
+              <TextGenerate
+                words="we will own the future of AI"
                 className="!font-light text-3xl sm:!text-[48px]  px-4 !text-center"
               />
             </div>
@@ -66,9 +71,9 @@ const Hero = () => {
             </div>
           </WavyBackground>
         </div>
-        <div className="flex justify-center mb-16 relative md:mt-44 z-50">
+        <div className="flex justify-center mb-36 relative md:mt-24 z-50">
           <div>
-            <div className="flex justify-center mx-5 md:mt-40 text-2xl  font-bold items-center">
+            <div className="flex justify-center mx-5 md:mt-24 text-2xl  font-bold items-center">
               <div className="line h-[1px] grow bg-gray-500"></div>
               <p className="whitespace-nowrap flex px-3 heading-text">
                 The adToken (ADT) <MdVerified size={12} fill="#1799DD" />
@@ -76,12 +81,12 @@ const Hero = () => {
               <div className="line h-[1px] grow bg-gray-500"></div>
             </div>
             <div className="flex justify-center md:mt-3 mx-auto md:w-full">
-              <h1 className="md:text-4xl text-2xl px-8 sm:px-0">
+              <h1 className="md:text-4xl sm:text-2xl text-xl px-8 sm:px-0">
                 Official utility Token of AdChain and AdPrompt.Ai
               </h1>
             </div>
-            <div className="md:mt-9  mt-10 md:flex gap-[90px] whitespace-nowrap mx-5">
-              <a
+            <div className="md:mt-9 flex-col flex  mt-10 md:flex-row gap-y-4 md:gap-[90px] whitespace-nowrap mx-5">
+              {/* <a
                 href="/white-paper.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -94,8 +99,8 @@ const Hero = () => {
                 >
                   Original Whitepaper
                 </span>
-              </a>
-              <a
+              </a> */}
+              {/* <a
                 href="https://medium.com/metax-publication"
                 target="_blank"
                 className="border-2  cursor-pointer my-5 h-10 w-full  flex justify-center border-gray-500 hover:border-[#ffffff] hover:scale-105 rounded-[5px] px-6 py-2 text-[13px] "
@@ -103,8 +108,11 @@ const Hero = () => {
                 <span className=" font-medium" rel="noreferrer noopener ">
                   Origin Story
                 </span>
-              </a>
-              <a
+              </a> */}
+              <Button label="Original Whitepaper" href="/legal" />
+              <Button label="Origin Story" href="/legal" />
+              <Button label="What's Next" href="/legal" />
+              {/* <a
                 target="_blank"
                 href="http://eepurl.com/iHFz1k"
                 className="border-2 my-5 cursor-pointer titillium-web-extralight h-10 flex justify-center w-full hover:scale-105 mx-auto border-gray-500 hover:border-white rounded-[5px] px-7 py-2 text-[13px]"
@@ -115,26 +123,29 @@ const Hero = () => {
                 >
                   What's Next
                 </span>
-              </a>
+              </a> */}
             </div>
           </div>
-          <div className="hidden md:block">
-            <div className="pointer-events-none absolute top-0 sm:-top-32 md:block hidden md:-top-[0%] right-[20%] md:right-[23%] -z-10 ">
+
+          <div className="">
+            <div className="pointer-events-none absolute top-0 sm:-top-32 md:block hidden md:-top-[20%] right-[20%] md:right-[23%] -z-10 ">
               <img
                 src="/world_from_moon.png"
                 alt=""
                 className="w-[100px]  h-full"
               />
             </div>
-            <div className="pointer-events-none absolute md:top-[10%] top-[20px] sm:top-[700px] left-[1.5%] -z-10 ">
+            <div className="pointer-events-none absolute md:-top-[0%] -top-[2%] sm:top-[700px] left-[1.5%] -z-10 ">
               <img
                 src="/moon_bg_dark.png"
                 alt=""
-                className="md:w-[90vw] h-full"
+                className="md:w-[90vw] w-full h-full"
               />
               <div className="absolute inset-0 bg-black opacity-[30%]"></div>{" "}
             </div>
           </div>
+
+          <div className="h-16 blur-xl md:top-[110%] bg-black bg-opacity-90 w-full absolute z-50 hidden md:block" />
         </div>
       </div>
       <div className="relative">
@@ -144,7 +155,7 @@ const Hero = () => {
       </div>
 
       <div className="h-full mt-12 relative w-full flex flex-col items-center justify-center">
-        <div className="h-full md:w-[1000px] w-full px-4 sm:mx-0">
+        <div className="h-full lg:w-[1000px] w-full px-4 sm:mx-0">
           {/* <HomeTabs /> */}
           <SepoliaRover />
           <RefuelingStage />

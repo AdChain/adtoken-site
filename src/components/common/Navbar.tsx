@@ -49,7 +49,7 @@ const Navbar = () => {
       <div className="">
         <div className="md:hidden justify-end gap-2 m-2 flex"></div>
       </div>
-      <div className="flex flex-col sm:flex-row items-start gap-y-4 sm:items-center justify-between p-6 mt-6">
+      <div className="flex items-center gap-y-4 justify-between p-6 mt-6">
         <div className="flex gap-2 items-center">
           <a href="https://adtoken.com/" className="logo">
             <img width={40} src="/logo.svg" alt="" srcSet="" />
@@ -58,7 +58,12 @@ const Navbar = () => {
         </div>
 
         <div className="flex gap-x-2">
-          <p>0xd0d6d6c5fe4a677d343cc433536bb717bae167dd</p>
+          <div className="hidden md:block">
+            <p>0xd0d6d6c5fe4a677d343cc433536bb717bae167dd</p>
+          </div>
+          <div className="md:hidden">
+            <p>0xd0d6d6c5fe4......167</p>
+          </div>
           <div
             onClick={() =>
               copyToClipboard(

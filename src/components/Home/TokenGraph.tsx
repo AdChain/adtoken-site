@@ -71,8 +71,8 @@ const TokenGraph = () => {
         </div>
       </div>
       <div className="mt-20 pr-4 sm:pr-0">
-        <p className="text-white font-bold mb-4 pl-6 lg:pl-0">Daily Volume </p>
-        <div className="h-[54vh] w-[100vw] max-w-[1000px] md:w-screen rounded-lg ">
+        <p className="text-white font-bold mb-4 pl-6 lg:pl-0">Daily Volume</p>
+        <div className="h-[65vh] w-[100vw] max-w-[1000px] pl-2 md:w-screen rounded-lg ">
           <DailyVolumes
             data={dailyDatasData}
             setDailyDataChart={setDailyDataChart}

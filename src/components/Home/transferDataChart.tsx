@@ -108,7 +108,7 @@ const TransferDataChart = ({
         tickRotation: -60,
         legend: "Days",
         legendPosition: "middle",
-        legendOffset: 110,
+        legendOffset: 100,
         tickValues: getOddDates(transferData), // Use custom tick values for odd dates
         format: (value) => convertDateFormat(value),
         truncateTickAt: 0,

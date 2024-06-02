@@ -20,10 +20,50 @@ const Hero = () => {
             containerClassName="!h-[400px] relative w-screen mb-24 sm:mb-0"
             colors={["#5A3D9A", "#335EAF"]}
           >
-            <TextGenerate
-              words="By owning the means of production, we will own the future of AI"
-              className="!font-light text-3xl sm:!text-[48px]  px-4 !text-center"
-            />
+            <div className="hidden xl:block">
+              <TextGenerate
+                words="By owning the means of production, we will own the future of AI"
+                className="!font-light text-3xl sm:!text-[48px]  px-4 !text-center"
+              />
+            </div>
+            <div className="hidden lg:block xl:hidden">
+              <TextGenerate
+                words="By owning the means of production,"
+                className="!font-light text-3xl sm:!text-[48px]  px-4 !text-center"
+              />
+              <TextGenerate
+                words="we will own the future of AI"
+                className="!font-light text-3xl sm:!text-[48px]  px-4 !text-center"
+              />
+            </div>
+            <div className="hidden md:block lg:hidden">
+              <TextGenerate
+                words="By owning the means of "
+                className="!font-light text-3xl sm:!text-[48px]  px-4 !text-center"
+              />
+              <TextGenerate
+                words="production, we will own"
+                className="!font-light text-3xl sm:!text-[48px]  px-4 !text-center"
+              />
+              <TextGenerate
+                words="the future of AI"
+                className="!font-light text-3xl sm:!text-[48px]  px-4 !text-center"
+              />
+            </div>
+            <div className="block sm:block md:hidden">
+              <TextGenerate
+                words="By owning the means of"
+                className="!font-light text-3xl sm:!text-[48px]  px-4 !text-center"
+              />
+              <TextGenerate
+                words="production, we will own"
+                className="!font-light text-3xl sm:!text-[48px]  px-4 !text-center"
+              />
+              <TextGenerate
+                words="the future of AI"
+                className="!font-light text-3xl sm:!text-[48px]  px-4 !text-center"
+              />
+            </div>
           </WavyBackground>
         </div>
         <div className="flex justify-center mb-16 relative md:mt-44 z-50">
@@ -104,7 +144,7 @@ const Hero = () => {
       </div>
 
       <div className="h-full mt-12 relative w-full flex flex-col items-center justify-center">
-        <div className="h-full sm:w-[1000px] w-full px-4 sm:mx-0">
+        <div className="h-full md:w-[1000px] w-full px-4 sm:mx-0">
           {/* <HomeTabs /> */}
           <SepoliaRover />
           <RefuelingStage />
@@ -179,7 +219,9 @@ const Hero = () => {
             <path fill="#B1B1B1" d="M9 23h170v1H9zM416 23h170v1H416z"></path>
           </g>
         </svg>
-        <h2 className="text-[#0C8CFF] text-center text-3xl ">Timeline</h2>
+        <h2 className="text-white font-medium text-center text-3xl ">
+          Timeline
+        </h2>
       </div>
       <div className="my-20 relative">
         <MissionComponent />

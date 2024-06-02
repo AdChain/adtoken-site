@@ -57,7 +57,7 @@ const TransferDataChart = ({
       enableGridX={false}
       enableGridY={false}
       indexBy="date"
-      margin={{ top: 50, right: 30, bottom: 100, left: 60 }}
+      margin={{ top: 50, right: 30, bottom: 120, left: 100 }}
       padding={0.6}
       valueScale={{ type: "linear" }}
       indexScale={{ type: "band", round: true }}
@@ -108,7 +108,7 @@ const TransferDataChart = ({
         tickRotation: -60,
         legend: "Days",
         legendPosition: "middle",
-        legendOffset: 70,
+        legendOffset: 110,
         tickValues: getOddDates(transferData), // Use custom tick values for odd dates
         format: (value) => convertDateFormat(value),
         truncateTickAt: 0,
@@ -119,7 +119,7 @@ const TransferDataChart = ({
         tickRotation: 0,
         legend: "Transfers",
         legendPosition: "middle",
-        legendOffset: -40,
+        legendOffset: -70,
         truncateTickAt: 0,
       }}
       labelSkipWidth={20}

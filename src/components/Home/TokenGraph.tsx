@@ -42,11 +42,13 @@ const TokenGraph = () => {
   }
 
   return (
-    <div className="grid lg:grid-cols-2 gap-4 mb-5 max-w-[1000px]">
+    <div className="grid xl:grid-cols-2 gap-4 p-6 lg:p-0 mb-5 max-w-[1000px]">
       <div>
-        <p className="text-white font-bold mb-4">Transfer per day</p>
+        <p className="text-white font-bold mb-4 pl-6 lg:pl-0">
+          Transfers per day
+        </p>
 
-        <div className="h-[54vh] w-[90vw] md:w-full rounded-lg ">
+        <div className="h-[65vh] w-[95vw] md:w-full rounded-lg ">
           <TransferDataChart
             data={dailyDatasData}
             transferData={transferData}
@@ -55,9 +57,11 @@ const TokenGraph = () => {
           />
         </div>
       </div>
-      <div>
-        <p className="text-white font-bold mb-4">Top 20 ADT holders</p>
-        <div className="h-[54vh] w-[90vw] md:w-full rounded-lg ">
+      <div className="mt-20 lg:mt-0">
+        <p className="text-white font-bold mb-4 pl-6 lg:pl-0">
+          Top 20 ADT holders
+        </p>
+        <div className="h-[65vh] w-[95vw] md:w-full rounded-lg ">
           <Piechart
             data={balancesData}
             pieChartData={pieChartData}
@@ -67,7 +71,7 @@ const TokenGraph = () => {
         </div>
       </div>
       <div className="mt-20 pr-4 sm:pr-0">
-        <p className="text-white font-bold mb-4">Daily Volume </p>
+        <p className="text-white font-bold mb-4 pl-6 lg:pl-0">Daily Volume </p>
         <div className="h-[54vh] w-[100vw] max-w-[1000px] md:w-screen rounded-lg ">
           <DailyVolumes
             data={dailyDatasData}

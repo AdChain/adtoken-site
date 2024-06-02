@@ -25,8 +25,8 @@ const Colonization = () => {
         </div>
 
         <div className="grid lg:grid-cols-12 items-center ">
-          <div className="lg:col-span-2 mt-9">
-            <div className="lg:flex justify-center my-5">
+          <div className="lg:col-span-2 mt-9 lg:mt-0">
+            <div className="lg:flex justify-center lg:my-0 my-5">
               <p className="text-white opacity-80 text-xl tracking-wide">
                 Phases
               </p>

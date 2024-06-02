@@ -22,7 +22,7 @@ const RefuelingStage = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-10 -mt-2 flex bg-[#212850] p-3 rounded-md h-full w-full flex-col justify-center">
+          <div className="col-span-10 flex bg-[#212850] p-3 rounded-md h-full w-full flex-col justify-center">
             <p className="text-white text-xl mb-4">
               Looking Ahead - Earn Rewards for Real Effort
             </p>

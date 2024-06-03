@@ -107,7 +107,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="relative">
-        <div className="w-full flex justify-center m-6 sm:mx-0">
+        <div className="w-full flex justify-center m-6 lg:mx-0">
           <TokenGraph />
         </div>
       </div>

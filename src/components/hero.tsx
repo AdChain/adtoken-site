@@ -39,8 +39,9 @@ const Hero = () => {
               <div className="line h-[1px] grow bg-gray-500"></div>
             </div>
             <div className="flex justify-center md:mt-3 mx-auto md:w-full">
-              <h1 className="md:text-4xl sm:text-2xl text-xl px-8 sm:px-0">
-                Official utility Token of AdChain and AdPrompt.Ai
+              <h1 className="md:text-4xl sm:text-2xl text-xl px-8 sm:px-0 text-center mt-4">
+                Official utility Token of <br className="block md:hidden" />{" "}
+                AdChain and AdPrompt.Ai
               </h1>
             </div>
             <div className="md:mt-9 flex-col flex  mt-10 md:flex-row gap-y-4 md:gap-[90px] whitespace-nowrap mx-5">

@@ -46,8 +46,8 @@ const TextGenerate = ({
   return (
     <div className={cn("font-bold", className)}>
       <div className="mt-4">
-        <div className=" dark:text-white text-black leading-snug tracking-wide">
-          {renderWords()}
+        <div className="w-full flex justify-center items-center h-full dark:text-white text-black  leading-snug tracking-wide">
+          <div className="sm:max-w-[85%] lg:max-w-[55%]">{renderWords()}</div>
         </div>
       </div>
     </div>

@@ -34,15 +34,24 @@ const Footer = () => {
       </div>
       <div className="border-t border-black w-full flex justify-center items-center">
         <div className="flex gap-5 py-10 max-w-xl w-full justify-center">
-          <a href="/legal" className="text-sm hover:underline">
+          <a
+            href="/legal"
+            className="text-xs sm:text-sm hover:underline whitespace-nowrap"
+          >
             Legal Disclaimer
           </a>
           <div className="mx-1">/</div>
-          <a href="/legal" className="text-sm hover:underline">
+          <a
+            href="/legal"
+            className="text-xs sm:text-sm hover:underline whitespace-nowrap"
+          >
             Privacy Policy
           </a>
           <div className="mx-1">/</div>
-          <a href="/legal" className="text-sm hover:underline">
+          <a
+            href="/legal"
+            className="text-xs sm:text-sm hover:underline whitespace-nowrap"
+          >
             Terms & Conditions
           </a>
         </div>

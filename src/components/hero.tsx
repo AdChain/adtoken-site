@@ -21,51 +21,9 @@ const Hero = () => {
             containerClassName="!h-[400px] relative w-screen mb-24 sm:mb-0"
             colors={["#5A3D9A", "#335EAF"]}
           >
-            <div className="hidden xl:block">
+            <div className="">
               <TextGenerate
-                words="By owning the means of production,"
-                className="!font-light text-3xl sm:!text-[48px]  px-4 !text-center"
-              />
-              <TextGenerate
-                words="we will own the future of AI"
-                className="!font-light text-3xl sm:!text-[48px]  px-4 !text-center"
-              />
-            </div>
-            <div className="hidden lg:block xl:hidden">
-              <TextGenerate
-                words="By owning the means of production,"
-                className="!font-light text-3xl sm:!text-[48px]  px-4 !text-center"
-              />
-              <TextGenerate
-                words="we will own the future of AI"
-                className="!font-light text-3xl sm:!text-[48px]  px-4 !text-center"
-              />
-            </div>
-            <div className="hidden md:block lg:hidden">
-              <TextGenerate
-                words="By owning the means of "
-                className="!font-light text-3xl sm:!text-[48px]  px-4 !text-center"
-              />
-              <TextGenerate
-                words="production, we will own"
-                className="!font-light text-3xl sm:!text-[48px]  px-4 !text-center"
-              />
-              <TextGenerate
-                words="the future of AI"
-                className="!font-light text-3xl sm:!text-[48px]  px-4 !text-center"
-              />
-            </div>
-            <div className="block sm:block md:hidden">
-              <TextGenerate
-                words="By owning the means of"
-                className="!font-light text-3xl sm:!text-[48px]  px-4 !text-center"
-              />
-              <TextGenerate
-                words="production, we will own"
-                className="!font-light text-3xl sm:!text-[48px]  px-4 !text-center"
-              />
-              <TextGenerate
-                words="the future of AI"
+                words="By owning the means of production, we will own the future of AI"
                 className="!font-light text-3xl sm:!text-[48px]  px-4 !text-center"
               />
             </div>
@@ -128,7 +86,7 @@ const Hero = () => {
           </div>
 
           <div className="">
-            <div className="pointer-events-none absolute top-0 sm:-top-32 md:block hidden md:-top-[20%] right-[20%] md:right-[23%] -z-10 ">
+            <div className="pointer-events-none absolute -top-24 sm:-top-32 md:-top-[20%] right-[20%] md:right-[23%] -z-10 ">
               <img
                 src="/world_from_moon.png"
                 alt=""

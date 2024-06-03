@@ -68,9 +68,12 @@ const Hero = () => {
                   Origin Story
                 </span>
               </a> */}
-              <Button label="Original Whitepaper" href="/legal" />
-              <Button label="Origin Story" href="/legal" />
-              <Button label="What's Next" href="/legal" />
+              <Button label="Original Whitepaper" href="/white-paper.pdf" />
+              <Button
+                label="Origin Story"
+                href="https://medium.com/metax-publication"
+              />
+              <Button label="What's Next" href="https://t.me/adChain" />
               {/* <a
                 target="_blank"
                 href="http://eepurl.com/iHFz1k"

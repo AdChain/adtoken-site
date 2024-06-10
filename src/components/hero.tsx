@@ -3,7 +3,7 @@ import React from "react";
 import MissionComponent from "./Home/MissionComponent";
 import { MdVerified } from "react-icons/md";
 import { WavyBackground } from "./Home/WavyBackground";
-import HomeTabs from "./Home/HomeTabs";
+
 import TextGenerate from "./Home/TextGenerate";
 import TokenGraph from "./Home/TokenGraph";
 import SepoliaRover from "./Home/HomeTabs/SepoliaRover";

@@ -73,7 +73,7 @@ const Hero = () => {
                 label="Origin Story"
                 href="https://medium.com/metax-publication"
               />
-              <Button label="What's Next" href="https://t.me/adChain" />
+              <Button label="What's Next" href="http://eepurl.com/iHFz1k" />
               {/* <a
                 target="_blank"
                 href="http://eepurl.com/iHFz1k"

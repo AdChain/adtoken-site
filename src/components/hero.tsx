@@ -10,6 +10,7 @@ import SepoliaRover from "./Home/HomeTabs/SepoliaRover";
 import RefuelingStage from "./Home/HomeTabs/RefuelingStage";
 import Colonization from "./Home/HomeTabs/Colonization";
 import Button from "./common/Button/Button";
+import IndustryPartner from "./Home/IndustryPartner/IndustryPartner";
 
 const Hero = () => {
   return (
@@ -17,8 +18,8 @@ const Hero = () => {
       <div className="relative">
         <div className="w-full flex justify-center">
           <WavyBackground
-            canvasStyle="h-[600px] w-full md:h-[700px]"
-            containerClassName="!h-[400px] relative w-screen mb-24 sm:mb-0"
+            canvasStyle="h-[600px] w-full md:h-[700px] !z-50"
+            containerClassName="!h-[400px] relative w-screen mb-24 sm:mb-0 z-50"
             colors={["#5A3D9A", "#335EAF"]}
           >
             <div className="">
@@ -29,7 +30,7 @@ const Hero = () => {
             </div>
           </WavyBackground>
         </div>
-        <div className="flex justify-center mb-36 relative md:mt-24 z-50">
+        <div className="flex justify-center mb-36 relative md:mt-24 2xl:mb-64 z-50">
           <div>
             <div className="flex justify-center mx-5 md:mt-24 text-2xl  font-bold items-center">
               <div className="line h-[1px] grow bg-gray-500"></div>
@@ -89,25 +90,25 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="">
-            <div className="pointer-events-none absolute -top-24 sm:-top-32 md:-top-[20%] right-[20%] md:right-[23%] -z-10 ">
+          <div className="mt-40">
+            <div className="pointer-events-none absolute -top-24 sm:-top-32 md:-top-[20%]  right-[20%] md:right-[23%] -z-10 ">
               <img
                 src="/world_from_moon.png"
                 alt=""
                 className="w-[100px]  h-full"
               />
             </div>
-            <div className="pointer-events-none absolute md:-top-[0%] -top-[2%] sm:top-[700px] left-[1.5%] -z-10 ">
+            <div className="pointer-events-none absolute md:-top-[0%] -top-[2%] sm:top-[700px] -z-50 2xl:-top-[20%] left-[1.5%]">
               <img
                 src="/moon_bg_dark.png"
                 alt=""
-                className="md:w-[90vw] w-full h-full"
+                className="md:w-[90vw] 2xl:h-1/3 w-full h-full"
               />
               <div className="absolute inset-0 bg-black opacity-[30%]"></div>{" "}
             </div>
           </div>
 
-          <div className="h-16 blur-xl md:top-[110%] bg-black bg-opacity-90 w-full absolute z-50 hidden md:block" />
+          <div className="h-16 blur-xl md:top-[110%] bg-black bg-opacity-90 w-full absolute z-50 hidden md:block 2xl:top-[140%] 2xl:h-32 2xl:blur-lg 2xl:bg-opacity-100" />
         </div>
       </div>
       <div className="relative">
@@ -198,6 +199,9 @@ const Hero = () => {
       </div>
       <div className="my-20 relative">
         <MissionComponent />
+      </div>
+      <div className="my-20 relative">
+        <IndustryPartner />
       </div>
     </>
   );

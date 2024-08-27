@@ -18,7 +18,7 @@ const Hero = () => {
       <div className="relative">
         <div className="w-full flex justify-center">
           <WavyBackground
-            canvasStyle="h-[600px] w-full md:h-[700px] !z-50"
+            canvasStyle="h-[600px] w-full md:h-[700px]"
             containerClassName="!h-[400px] relative w-screen mb-24 sm:mb-0 z-50"
             colors={["#5A3D9A", "#335EAF"]}
           >

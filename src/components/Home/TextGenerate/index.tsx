@@ -30,10 +30,7 @@ const TextGenerate = ({
       <motion.div ref={scope}>
         {wordsArray.map((word, idx) => {
           return (
-            <motion.span
-              key={word + idx}
-              className="dark:text-white text-black opacity-0"
-            >
+            <motion.span key={word + idx} className="text-white opacity-0">
               {idx === 9 && <br />}
               {word}{" "}
             </motion.span>
@@ -46,7 +43,7 @@ const TextGenerate = ({
   return (
     <div className={cn("font-bold", className)}>
       <div className="mt-4">
-        <div className="w-full flex justify-center items-center h-full dark:text-white text-black  leading-snug tracking-wide">
+        <div className="w-full flex justify-center items-center h-full text-white  leading-snug tracking-wide">
           <div className="sm:max-w-[85%] lg:max-w-[55%]">{renderWords()}</div>
         </div>
       </div>

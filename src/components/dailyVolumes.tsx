@@ -62,6 +62,10 @@ const DailyVolumes = ({
     return allDates;
   };
 
+  if (!dailyDataChart || dailyDataChart.length === 0) {
+    return;
+  }
+
   return (
     <ResponsiveLine
       enableGridX={false}
